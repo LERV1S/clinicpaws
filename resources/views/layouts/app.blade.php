@@ -124,7 +124,10 @@
                 <a href="{{ route('dashboard') }}">Dashboard</a>
                 <a href="{{ route('pets.index') }}">Manage Pets</a>
                 <a href="{{ route('appointments.index') }}">Manage Appointments</a>
-                <a href="{{ route('medical_records.index') }}">Manage Records</a>
+                <a href="{{ route('inventories.index') }}">Manage Inventory</a>
+                <a href="{{ route('medical_records.index') }}">Manage MedicalRecord</a>
+                <a href="{{ route('invoices.index') }}">Manage Invoices</a>
+                <a href="{{ route('tickets.index') }}">Manage Tickets</a>
                 <!-- Add more routes as needed -->
             </nav>
 

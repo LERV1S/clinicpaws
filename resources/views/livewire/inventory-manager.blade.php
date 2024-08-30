@@ -1,22 +1,33 @@
 <div>
-    <h1>Manage Inventory</h1>
+    <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Manage Inventory</h1>
 
     <!-- Formulario para agregar o editar un item de inventario -->
-    <form wire:submit.prevent="saveInventory">
-        <input type="text" wire:model="item_name" placeholder="Item Name" required>
-        <input type="number" wire:model="quantity" placeholder="Quantity" required>
-        <input type="text" wire:model="unit" placeholder="Unit" required>
-        <button type="submit">{{ $selectedInventoryId ? 'Update Item' : 'Add Item' }}</button>
+    <form wire:submit.prevent="saveInventory" class="space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <input type="text" wire:model="item_name" class="input-field" placeholder="Item Name" required>
+            <input type="number" wire:model="quantity" class="input-field" placeholder="Quantity" required>
+            <input type="text" wire:model="unit" class="input-field" placeholder="Unit" required>
+        </div>
+        <div class="flex justify-start mt-4">
+            <button type="submit" class="cta-button">{{ $selectedInventoryId ? 'Update Item' : 'Add Item' }}</button>
+        </div>
     </form>
 
     <!-- Listado de inventario -->
-    <ul>
-        @foreach ($inventories as $inventory)
-            <li>
-                Item: {{ $inventory->item_name }} - Quantity: {{ $inventory->quantity }} - Unit: {{ $inventory->unit }}
-                <button wire:click="editInventory({{ $inventory->id }})">Edit</button>
-                <button wire:click="deleteInventory({{ $inventory->id }})">Delete</button>
-            </li>
-        @endforeach
-    </ul>
+    <div class="mt-6">
+        <ul class="space-y-4">
+            @foreach ($inventories as $inventory)
+                <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow flex justify-between items-center">
+                    <div>
+                        <p class="text-lg font-semibold">Item: {{ $inventory->item_name }}</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Quantity: {{ $inventory->quantity }} - Unit: {{ $inventory->unit }}</p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <button wire:click="editInventory({{ $inventory->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
+                        <button wire:click="deleteInventory({{ $inventory->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
+                    </div>
+                </li>
+            @endforeach
+        </ul>
+    </div>
 </div>
