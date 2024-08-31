@@ -110,6 +110,21 @@
             .container {
                 flex-wrap: wrap; /* Allow wrapping on smaller screens */
             }
+
+                .cta-button {
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 0.375rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
         }
     </style>
 </head>
@@ -128,6 +143,9 @@
                 <a href="{{ route('medical_records.index') }}">Manage MedicalRecord</a>
                 <a href="{{ route('invoices.index') }}">Manage Invoices</a>
                 <a href="{{ route('tickets.index') }}">Manage Tickets</a>
+                <a href="{{ route('prescriptions.index') }}">Manage prescriptions</a>
+                <a href="{{ route('employees.index') }}">Manage Employee</a>
+                <a href="{{ route('veterinarians.index') }}">Manage Veterinarian</a>
                 <!-- Add more routes as needed -->
             </nav>
 

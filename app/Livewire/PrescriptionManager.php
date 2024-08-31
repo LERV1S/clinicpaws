@@ -5,7 +5,7 @@ namespace App\Livewire;
 use Livewire\Component;
 use App\Models\Prescription;
 use App\Models\Pet;
-use App\Models\User;
+use App\Models\Veterinarian;
 
 class PrescriptionManager extends Component
 {
@@ -15,7 +15,7 @@ class PrescriptionManager extends Component
 
     public function mount()
     {
-        $this->prescriptions = Prescription::all();
+        $this->prescriptions = Prescription::with('veterinarian.user', 'pet')->get();
     }
 
     public function savePrescription()
@@ -24,8 +24,9 @@ class PrescriptionManager extends Component
             'date' => 'required|date',
             'medicine_name' => 'required|string',
             'dosage' => 'required|string',
-            'pet_id' => 'required',
-            'veterinarian_id' => 'required',
+            'pet_id' => 'required|exists:pets,id',
+            'veterinarian_id' => 'required|exists:veterinarians,id',
+            'instructions' => 'nullable|string',
         ]);
 
         if ($this->selectedPrescriptionId) {
@@ -50,7 +51,7 @@ class PrescriptionManager extends Component
         }
 
         $this->resetInputFields();
-        $this->prescriptions = Prescription::all();
+        $this->prescriptions = Prescription::with('veterinarian.user', 'pet')->get();
     }
 
     public function editPrescription($id)
@@ -68,7 +69,7 @@ class PrescriptionManager extends Component
     public function deletePrescription($id)
     {
         Prescription::find($id)->delete();
-        $this->prescriptions = Prescription::all();
+        $this->prescriptions = Prescription::with('veterinarian.user', 'pet')->get();
     }
 
     private function resetInputFields()
@@ -85,7 +86,7 @@ class PrescriptionManager extends Component
     public function render()
     {
         $pets = Pet::all();
-        $veterinarians = User::role('Veterinario')->get();
+        $veterinarians = Veterinarian::with('user')->get();
         return view('livewire.prescription-manager', compact('pets', 'veterinarians'));
     }
 }

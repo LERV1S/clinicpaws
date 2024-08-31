@@ -34,6 +34,12 @@ class Prescription extends Model
     /**
      * Relación con el modelo Veterinarian (Veterinario).
      */
+
+     public function user()
+     {
+         return $this->belongsTo(User::class);
+     }
+     
     public function veterinarian()
     {
         return $this->belongsTo(Veterinarian::class);
