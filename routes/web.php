@@ -53,4 +53,8 @@ Route::get('/tickets', function () {
     return view('tickets');  // Carga la vista que contiene el componente Livewire
 })->name('tickets.index');
 
+Route::get('/prescriptions', function () {
+    return view('prescriptions');  // Carga la vista que contiene el componente Livewire
+})->name('prescriptions.index');
+
 require __DIR__.'/auth.php';

@@ -81,21 +81,11 @@ class User extends Authenticatable
     {
         return $this->hasOne(Employee::class);
     }
-/*
-    protected static function booted()
+
+    // Nueva relación con prescripciones como veterinario
+    public function prescriptions()
     {
-        static::created(function ($user) {
-            // Verifica si el usuario tiene el rol de 'Cliente'
-            if ($user->hasRole('Cliente')) {
-                // Crear un registro en la tabla 'clients'
-                Client::create([
-                    'user_id' => $user->id,
-                    // Puedes incluir otros campos opcionales si son requeridos, como 'phone_number' o 'address'.
-                ]);
-            }
-        });
+        return $this->hasMany(Prescription::class, 'veterinarian_id');
     }
-*/
-    // Relación con el modelo Client (opcional si necesitas acceder al cliente desde el usuario)
 
 }
