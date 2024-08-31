@@ -25,4 +25,10 @@ class Veterinarian extends Model
     {
         return $this->hasMany(Appointment::class);
     }
+
+    // Nueva relación con prescripciones
+    public function prescriptions()
+    {
+        return $this->hasMany(Prescription::class, 'veterinarian_id');
+    }
 }

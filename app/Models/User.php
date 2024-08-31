@@ -80,4 +80,10 @@ class User extends Authenticatable
     {
         return $this->hasOne(Employee::class);
     }
+
+    // Nueva relación con prescripciones como veterinario
+    public function prescriptions()
+    {
+        return $this->hasMany(Prescription::class, 'veterinarian_id');
+    }
 }

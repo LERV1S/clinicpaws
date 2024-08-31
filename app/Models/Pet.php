@@ -35,4 +35,10 @@ class Pet extends Model
     {
         return $this->hasMany(MedicalRecord::class);
     }
+
+    // Nueva relación con prescripciones
+    public function prescriptions()
+    {
+        return $this->hasMany(Prescription::class, 'pet_id');
+    }
 }
