@@ -9,21 +9,24 @@ use App\Models\Client;
 class TicketManager extends Component
 {
     public $tickets;
+    public $clients; // Declarar la propiedad como pública
     public $client_id, $subject, $description, $status;
     public $selectedTicketId;
 
     public function mount()
     {
+        // Cargar los tickets y los clientes
         $this->tickets = Ticket::all();
+        $this->clients = Client::all();  // Ahora $clients está definida y accesible en la vista
     }
 
     public function saveTicket()
     {
         $this->validate([
-            'client_id' => 'required',
-            'subject' => 'required',
-            'description' => 'required',
-            'status' => 'required',
+            'client_id' => 'required|exists:clients,id',
+            'subject' => 'required|string',
+            'description' => 'required|string',
+            'status' => 'required|string',
         ]);
 
         if ($this->selectedTicketId) {
@@ -74,7 +77,8 @@ class TicketManager extends Component
 
     public function render()
     {
-        $clients = Client::all();
-        return view('livewire.ticket-manager', compact('clients'));
+        return view('livewire.ticket-manager', [
+            'clients' => $this->clients,
+        ]);
     }
 }

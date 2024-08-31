@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
+use App\Models\Client;
 
 class User extends Authenticatable
 {
@@ -80,4 +81,21 @@ class User extends Authenticatable
     {
         return $this->hasOne(Employee::class);
     }
+/*
+    protected static function booted()
+    {
+        static::created(function ($user) {
+            // Verifica si el usuario tiene el rol de 'Cliente'
+            if ($user->hasRole('Cliente')) {
+                // Crear un registro en la tabla 'clients'
+                Client::create([
+                    'user_id' => $user->id,
+                    // Puedes incluir otros campos opcionales si son requeridos, como 'phone_number' o 'address'.
+                ]);
+            }
+        });
+    }
+*/
+    // Relación con el modelo Client (opcional si necesitas acceder al cliente desde el usuario)
+
 }
