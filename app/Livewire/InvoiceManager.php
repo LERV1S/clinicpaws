@@ -9,20 +9,22 @@ use App\Models\Client;
 class InvoiceManager extends Component
 {
     public $invoices;
+    public $clients; // Declarar la propiedad como pública
     public $client_id, $total_amount, $status;
     public $selectedInvoiceId;
 
     public function mount()
     {
         $this->invoices = Invoice::all();
+        $this->clients = Client::all();  // Ahora $clients está definida y accesible en la vista
     }
 
     public function saveInvoice()
     {
         $this->validate([
-            'client_id' => 'required',
+            'client_id' => 'required|exists:clients,id',
             'total_amount' => 'required|numeric',
-            'status' => 'required',
+            'status' => 'required|string',
         ]);
 
         if ($this->selectedInvoiceId) {
@@ -69,7 +71,8 @@ class InvoiceManager extends Component
 
     public function render()
     {
-        $clients = Client::all();
-        return view('livewire.invoice-manager', compact('clients'));
+        return view('livewire.invoice-manager', [
+            'clients' => $this->clients,
+        ]);
     }
 }
