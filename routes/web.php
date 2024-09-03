@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TicketController;
 
 Route::view('/', 'welcome');
 
@@ -56,5 +57,8 @@ Route::get('/tickets', function () {
 Route::get('/prescriptions', function () {
     return view('prescriptions');  // Carga la vista que contiene el componente Livewire
 })->name('prescriptions.index');
+
+// Ruta para descargar el PDF de un ticket
+Route::get('tickets/{id}/download', [TicketController::class, 'downloadPDF'])->name('tickets.download');
 
 require __DIR__.'/auth.php';

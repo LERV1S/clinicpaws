@@ -21,6 +21,8 @@ return [
     // Agrega la siguiente línea si no está presente:
     App\Providers\EventServiceProvider::class,
     App\Providers\RouteServiceProvider::class,
+    Barryvdh\DomPDF\ServiceProvider::class,
+    'PDF' => Barryvdh\DomPDF\Facade::class,
 
     /*
     |--------------------------------------------------------------------------

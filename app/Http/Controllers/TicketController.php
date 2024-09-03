@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ticket;
+use PDF; // Alias de Barryvdh\DomPDF\Facade
 use Illuminate\Http\Request;
 
 class TicketController extends Controller
@@ -61,4 +63,17 @@ class TicketController extends Controller
     {
         //
     }
+
+    public function downloadPDF($id)
+    {
+        // Encuentra el ticket por su ID
+        $ticket = Ticket::with('client.user')->findOrFail($id);
+
+        // Carga la vista y pasa los datos del ticket
+        $pdf = PDF::loadView('tickets.pdf', compact('ticket'));
+
+        // Devuelve el PDF para descargar
+        return $pdf->download('ticket_' . $ticket->id . '.pdf');
+    }
+
 }

@@ -12,8 +12,14 @@
             </select>
 
             <input type="text" wire:model="subject" class="input-field" placeholder="Subject" required>
+
             <textarea wire:model="description" class="input-field" placeholder="Description" required></textarea>
-            <input type="text" wire:model="status" class="input-field" placeholder="Status" required>
+
+            <select wire:model="status" class="input-field" required>
+                <option value="">Select Status</option>
+                <option value="Pagado">Pagado</option>
+                <option value="En adeudo">En adeudo</option>
+            </select>
         </div>
         <div class="flex justify-start mt-4">
             <button type="submit" class="cta-button">{{ $selectedTicketId ? 'Update Ticket' : 'Add Ticket' }}</button>
@@ -32,6 +38,7 @@
                     <div class="flex space-x-4">
                         <button wire:click="editTicket({{ $ticket->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
                         <button wire:click="deleteTicket({{ $ticket->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
+                        <a href="{{ route('tickets.download', $ticket->id) }}" class="cta-button bg-green-500 hover:bg-green-600">Download PDF</a>
                     </div>
                 </li>
             @endforeach
