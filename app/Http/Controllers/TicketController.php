@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Ticket;
 use PDF; // Alias de Barryvdh\DomPDF\Facade
 use Illuminate\Http\Request;
-
+use Livewire\Component;
+use App\Models\Client;
+use App\Models\Inventory;
 class TicketController extends Controller
 {
     /**

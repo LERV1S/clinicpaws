@@ -42,6 +42,7 @@ Route::get('/inventories', function () {
     return view('inventories');  // Carga la vista que contiene el componente Livewire
 })->name('inventories.index');
 
+
 Route::get('/invoices', function () {
     return view('invoices');  // Carga la vista que contiene el componente Livewire
 })->name('invoices.index');
@@ -60,5 +61,6 @@ Route::get('/prescriptions', function () {
 
 // Ruta para descargar el PDF de un ticket
 Route::get('tickets/{id}/download', [TicketController::class, 'downloadPDF'])->name('tickets.download');
+
 
 require __DIR__.'/auth.php';
