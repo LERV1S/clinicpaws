@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -10,11 +9,68 @@ class MedicalRecord extends Model
     use HasFactory;
 
     protected $fillable = [
+        'owner_id',
         'pet_id',
+        'species_id',
+        'breed',
+        'age',
+        'sex',
+        'weight',
         'veterinarian_id',
         'record_date',
-        'diagnosis',
-        'treatment',
+        
+        'symptoms',
+        'medical_history',
+        'pharmacological_history',
+        'previous_illnesses',
+
+        'temperature',
+        'pulse',
+        'respiration',
+        'blood_pressure',
+        'visits',
+        'consultations',
+
+        'provisional_diagnosis',
+        'definitive_diagnosis',
+
+        'medication',
+        'therapies',
+        'diets',
+        'administered_medications',
+        'administered_treatments',
+        'dosage',
+        'frequency',
+        'duration',
+
+        'blood_analysis',
+        'urine_analysis',
+        'rbc_count',
+        'wbc_count',
+
+        'x_rays',
+        'ultrasound',
+        'ct_scans',
+        'biopsies',
+
+        'surgical_description',
+        'anesthesia',
+        'surgical_techniques',
+        'surgical_results',
+
+        'vaccination',
+        'antiparasitic_treatment',
+        'allergy_treatment',
+        'antibiotic_treatment',
+
+        'clinical_evolution',
+        'symptom_changes',
+        'treatment_response',
+        
+        'disease_summary',
+        'treatment_summary',
+        'responsible_recommendations',
+        'follow_up_plan',
     ];
 
     // Relación con la mascota (Pet)
