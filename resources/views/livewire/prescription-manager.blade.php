@@ -7,12 +7,19 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <input type="date" wire:model="date" class="input-field" required>
 
-                <select wire:model="pet_id" class="input-field" required>
-                    <option value="">Select Pet</option>
-                    @foreach($pets as $pet)
-                        <option value="{{ $pet->id }}">{{ $pet->name }}</option>
-                    @endforeach
-                </select>
+                <!-- Autocompletar de mascota -->
+                <div class="relative">
+                    <input type="text" wire:model.lazy="searchPetTerm" class="input-field" placeholder="Search Pet..." required>
+                    @if(!empty($petSuggestions))
+                        <ul class="absolute bg-white border border-gray-300 w-full z-10">
+                            @foreach($petSuggestions as $pet)
+                                <li wire:click="selectPet({{ $pet->id }})" class="cursor-pointer p-2 hover:bg-gray-200">
+                                    {{ $pet->name }}
+                                </li>
+                            @endforeach
+                        </ul>
+                    @endif
+                </div>
 
                 <select wire:model="veterinarian_id" class="input-field" required>
                     <option value="">Select Veterinarian</option>
@@ -32,6 +39,16 @@
                 </button>
             </div>
         </form>
+    </div>
+
+    <!-- Buscador para filtrar prescripciones por nombre de mascota -->
+    <div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6 mt-6">
+        <input 
+            type="text" 
+            wire:model.lazy="searchTerm" 
+            class="input-field" 
+            placeholder="Search by pet name..." 
+        />
     </div>
 
     <!-- Listado de prescripciones -->

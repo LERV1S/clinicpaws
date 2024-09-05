@@ -11,10 +11,40 @@ class EmployeeManager extends Component
     public $employees;
     public $user_id, $position;
     public $selectedEmployeeId;
+    public $searchUserTerm = ''; // Para manejar el término de búsqueda de usuario
+    public $searchEmployeeTerm = ''; // Para manejar el término de búsqueda de empleado
+    public $userSuggestions = []; // Para almacenar las sugerencias de usuarios
 
     public function mount()
     {
-        $this->employees = Employee::all();
+        $this->loadEmployees(); // Cargar empleados cuando el componente se monta
+    }
+
+    // Cargar empleados filtrados por nombre de usuario
+    public function loadEmployees()
+    {
+        $this->employees = Employee::whereHas('user', function ($query) {
+            $query->where('name', 'like', '%' . $this->searchEmployeeTerm . '%');
+        })->get();
+    }
+
+    // Escuchar cambios en el término de búsqueda de empleados
+    public function updatedSearchEmployeeTerm()
+    {
+        $this->loadEmployees(); // Recargar empleados al cambiar el término de búsqueda
+    }
+
+    // Autocompletar usuario en el formulario
+    public function updatedSearchUserTerm()
+    {
+        $this->userSuggestions = User::where('name', 'like', '%' . $this->searchUserTerm . '%')->get();
+    }
+
+    public function selectUser($userId)
+    {
+        $this->user_id = $userId;
+        $this->searchUserTerm = User::find($userId)->name;
+        $this->userSuggestions = [];
     }
 
     public function saveEmployee()
@@ -37,7 +67,7 @@ class EmployeeManager extends Component
         }
 
         $this->resetInputFields();
-        $this->employees = Employee::all();
+        $this->loadEmployees(); // Recargar la lista de empleados después de guardar
     }
 
     public function editEmployee($id)
@@ -51,7 +81,7 @@ class EmployeeManager extends Component
     public function deleteEmployee($id)
     {
         Employee::find($id)->delete();
-        $this->employees = Employee::all();
+        $this->loadEmployees(); // Recargar la lista de empleados después de eliminar
     }
 
     private function resetInputFields()
@@ -59,11 +89,14 @@ class EmployeeManager extends Component
         $this->user_id = '';
         $this->position = '';
         $this->selectedEmployeeId = null;
+        $this->searchUserTerm = ''; // Resetear el término de búsqueda de usuario
+        $this->userSuggestions = []; // Resetear las sugerencias de usuarios
     }
 
     public function render()
     {
-        $users = User::all();
-        return view('livewire.employee-manager', compact('users'));
+        return view('livewire.employee-manager', [
+            'employees' => $this->employees,
+        ]);
     }
 }

@@ -10,6 +10,7 @@ class InventoryManager extends Component
     public $inventories;
     public $item_name, $quantity, $price;
     public $selectedInventoryId;
+    public $searchTerm = ''; // Agregada propiedad para el término de búsqueda
 
     public function mount()
     {
@@ -64,6 +65,11 @@ class InventoryManager extends Component
         $this->quantity = '';
         $this->price = '';
         $this->selectedInventoryId = null;
+    }
+
+    public function updatedSearchTerm()
+    {
+        $this->inventories = Inventory::where('item_name', 'like', '%' . $this->searchTerm . '%')->get();
     }
 
     public function render()

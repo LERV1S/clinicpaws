@@ -6,16 +6,41 @@ use Livewire\Component;
 use App\Models\Appointment;
 use App\Models\Pet;
 use App\Models\User;
+use App\Models\Veterinarian;
 
 class AppointmentManager extends Component
 {
     public $appointments;
     public $pet_id, $veterinarian_id, $appointment_date, $status, $notes;
     public $selectedAppointmentId;
+    public $searchPetTerm = '';
+    public $petSuggestions = [];
+    public $veterinarians;
 
     public function mount()
     {
-        $this->appointments = Appointment::all();
+        $this->loadAppointments(); // Cargar las citas al montar el componente
+        $this->veterinarians = Veterinarian::with('user')->get(); // Cargar veterinarios
+    }
+
+    public function updatedSearchPetTerm()
+    {
+        $this->loadAppointments(); // Filtrar citas cuando cambie el término de búsqueda
+        $this->petSuggestions = Pet::where('name', 'like', '%' . $this->searchPetTerm . '%')->get();
+    }
+
+    public function loadAppointments()
+    {
+        $this->appointments = Appointment::whereHas('pet', function ($query) {
+            $query->where('name', 'like', '%' . $this->searchPetTerm . '%');
+        })->with(['pet', 'veterinarian.user'])->get();
+    }
+
+    public function selectPet($petId)
+    {
+        $this->pet_id = $petId;
+        $this->searchPetTerm = Pet::find($petId)->name;
+        $this->petSuggestions = [];
     }
 
     public function saveAppointment()
@@ -47,7 +72,7 @@ class AppointmentManager extends Component
         }
 
         $this->resetInputFields();
-        $this->appointments = Appointment::all();
+        $this->loadAppointments(); // Refrescar la lista de citas
     }
 
     public function editAppointment($id)
@@ -64,7 +89,7 @@ class AppointmentManager extends Component
     public function deleteAppointment($id)
     {
         Appointment::find($id)->delete();
-        $this->appointments = Appointment::all();
+        $this->loadAppointments(); // Refrescar la lista de citas
     }
 
     private function resetInputFields()
@@ -79,8 +104,9 @@ class AppointmentManager extends Component
 
     public function render()
     {
-        $pets = Pet::all();
-        $veterinarians = User::role('Veterinario')->get();
-        return view('livewire.appointment-manager', compact('pets', 'veterinarians'));
+        return view('livewire.appointment-manager', [
+            'appointments' => $this->appointments,
+            'veterinarians' => $this->veterinarians,
+        ]);
     }
 }

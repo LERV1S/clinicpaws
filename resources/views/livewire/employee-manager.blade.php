@@ -5,12 +5,19 @@
         <!-- Formulario para agregar o editar un empleado -->
         <form wire:submit.prevent="saveEmployee" class="space-y-4">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <select wire:model="user_id" class="input-field" required>
-                    <option value="">Select User</option>
-                    @foreach($users as $user)
-                        <option value="{{ $user->id }}">{{ $user->name }}</option>
-                    @endforeach
-                </select>
+                <!-- Autocompletar de usuario -->
+                <div class="relative">
+                    <input type="text" wire:model.lazy="searchUserTerm" class="input-field" placeholder="Search User..." required>
+                    @if(!empty($userSuggestions))
+                        <ul class="absolute bg-white border border-gray-300 w-full z-10">
+                            @foreach($userSuggestions as $user)
+                                <li wire:click="selectUser({{ $user->id }})" class="cursor-pointer p-2 hover:bg-gray-200">
+                                    {{ $user->name }}
+                                </li>
+                            @endforeach
+                        </ul>
+                    @endif
+                </div>
 
                 <input type="text" wire:model="position" class="input-field" placeholder="Position">
             </div>
@@ -21,6 +28,16 @@
                 </button>
             </div>
         </form>
+    </div>
+
+    <!-- Buscador para filtrar empleados por nombre de usuario -->
+    <div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6 mt-6">
+        <input 
+            type="text" 
+            wire:model.lazy="searchEmployeeTerm" 
+            class="input-field" 
+            placeholder="Search by employee name..." 
+        />
     </div>
 
     <!-- Listado de empleados -->
