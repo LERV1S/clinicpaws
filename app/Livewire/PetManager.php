@@ -4,7 +4,7 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\Pet;
-use App\Models\User; // Asegúrate de incluir el modelo User
+use App\Models\User; 
 
 class PetManager extends Component
 {

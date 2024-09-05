@@ -20,4 +20,4 @@ jobs:
 
       - name: Deploy to server  # Tercer paso: ejecutar comandos para desplegar en el servidor EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@ec2-3-143-227-62.us-east-2.compute.amazonaws.com "cd /var/www/html/clinicpaws && git pull origin main && composer install --no-dev && php artisan migrate --force && php artisan config:cache && php artisan route:cache && php artisan view:cache"
+          ssh -o StrictHostKeyChecking=no ubuntu@ec2-18-219-252-105.us-east-2.compute.amazonaws.com "cd /var/www/html/clinicpaws && sudo git pull origin main && sudo composer install --no-dev && sudo php artisan migrate --force && sudo php artisan config:cache && sudo php artisan route:cache && sudo php artisan view:cache"
