@@ -12,6 +12,11 @@ class Inventory extends Model
     protected $fillable = [
         'item_name',
         'quantity',
-        'unit',
+        'price',
     ];
+
+    public function tickets()
+    {
+        return $this->belongsToMany(Ticket::class)->withPivot('quantity')->withTimestamps();
+    }
 }

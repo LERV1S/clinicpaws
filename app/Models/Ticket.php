@@ -21,4 +21,8 @@ class Ticket extends Model
     {
         return $this->belongsTo(Client::class);
     }
+    public function inventories()
+    {
+        return $this->belongsToMany(Inventory::class)->withPivot('quantity')->withTimestamps();
+    }
 }

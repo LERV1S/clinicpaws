@@ -8,7 +8,7 @@ use App\Models\Inventory;
 class InventoryManager extends Component
 {
     public $inventories;
-    public $item_name, $quantity, $unit;
+    public $item_name, $quantity, $price;
     public $selectedInventoryId;
 
     public function mount()
@@ -21,7 +21,7 @@ class InventoryManager extends Component
         $this->validate([
             'item_name' => 'required',
             'quantity' => 'required|integer',
-            'unit' => 'required',
+            'price' => 'required|numeric',
         ]);
 
         if ($this->selectedInventoryId) {
@@ -29,13 +29,13 @@ class InventoryManager extends Component
             $inventory->update([
                 'item_name' => $this->item_name,
                 'quantity' => $this->quantity,
-                'unit' => $this->unit,
+                'price' => $this->price,
             ]);
         } else {
             Inventory::create([
                 'item_name' => $this->item_name,
                 'quantity' => $this->quantity,
-                'unit' => $this->unit,
+                'price' => $this->price,
             ]);
         }
 
@@ -49,7 +49,7 @@ class InventoryManager extends Component
         $this->selectedInventoryId = $inventory->id;
         $this->item_name = $inventory->item_name;
         $this->quantity = $inventory->quantity;
-        $this->unit = $inventory->unit;
+        $this->price = $inventory->price;
     }
 
     public function deleteInventory($id)
@@ -62,7 +62,7 @@ class InventoryManager extends Component
     {
         $this->item_name = '';
         $this->quantity = '';
-        $this->unit = '';
+        $this->price = '';
         $this->selectedInventoryId = null;
     }
 
