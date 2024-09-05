@@ -13,7 +13,7 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+    @livewireStyles <!-- Incluye los estilos de Livewire -->
     <style>
         /* Estilos para los campos de entrada */
         .input-field {
@@ -166,5 +166,6 @@
             </div>
         </div>
     </div>
+    @livewireScripts  <!-- Incluye los scripts de Livewire -->
 </body>
 </html>
