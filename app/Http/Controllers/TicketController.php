@@ -72,7 +72,7 @@ class TicketController extends Controller
         $ticket = Ticket::with('client.user')->findOrFail($id);
 
         // Carga la vista y pasa los datos del ticket
-        $pdf = PDF::loadView('tickets.pdf', compact('ticket'));
+        $pdf = PDF::loadView('pdf.tickets', compact('ticket'));
 
         // Devuelve el PDF para descargar
         return $pdf->download('ticket_' . $ticket->id . '.pdf');

@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TicketController;
+use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\PrescriptionController;
+
 
 Route::view('/', 'welcome');
 
@@ -12,6 +15,7 @@ Route::view('dashboard', 'dashboard')
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
+
 
 
 Route::get('/pets', function () {
@@ -62,5 +66,8 @@ Route::get('/prescriptions', function () {
 // Ruta para descargar el PDF de un ticket
 Route::get('tickets/{id}/download', [TicketController::class, 'downloadPDF'])->name('tickets.download');
 
+Route::get('appointments/{id}/download', [AppointmentController::class, 'downloadPDF'])->name('appointments.download');
+
+Route::get('prescriptions/{id}/download', [PrescriptionController::class, 'downloadPDF'])->name('prescriptions.download');
 
 require __DIR__.'/auth.php';

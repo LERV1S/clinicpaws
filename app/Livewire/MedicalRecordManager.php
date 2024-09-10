@@ -1,6 +1,7 @@
 <?php
 namespace App\Livewire;
 
+use App\Models\Veterinarian;
 use Livewire\Component;
 use App\Models\MedicalRecord;
 use App\Models\Pet;
@@ -14,6 +15,8 @@ class MedicalRecordManager extends Component
     public $owners; //PARA EL SELECT DE OWNER
     public $pets; //PARA EL SELECT DE PET
     public $species; //PARA EL SELECT DE SPECIES
+
+    public $veterinarians; 
 
     // COMPONENTES DEL FORMULARIO DE IZQUIERDA A DERECHA DE ARRIBA A ABAJO
     // PARTE 1
@@ -97,6 +100,8 @@ class MedicalRecordManager extends Component
         $this->owners = User::role('Cliente')->get(); //SE TOMAN SOLO LOS USUARIOS QUE SON CLIENTES
         $this->pets = Pet::all(); // Obtener todas las mascotas
         $this->species = Pet::distinct()->pluck('species'); // Obtener todas las especies únicas
+        $this->veterinarians = User::role('Veterinario')->get(); // Obtener todas las especies únicas
+
     }
 
     public function saveMedicalRecord()

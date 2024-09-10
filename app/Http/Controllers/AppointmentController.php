@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Appointment;
+use PDF; // Esto requiere Barryvdh DomPDF
 use Illuminate\Http\Request;
 
 class AppointmentController extends Controller
@@ -13,7 +15,7 @@ class AppointmentController extends Controller
     {
         //
     }
-
+    
     /**
      * Show the form for creating a new resource.
      */
@@ -60,5 +62,16 @@ class AppointmentController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+    public function downloadPDF($id)
+    {
+        // Cargar la cita con sus relaciones
+        $appointment = Appointment::with('pet', 'veterinarian.user')->findOrFail($id);
+
+        // Cargar la vista para generar el PDF
+        $pdf = PDF::loadView('pdf.appointments', compact('appointment'));
+
+        // Descargar el PDF con un nombre dinámico basado en el ID de la cita
+        return $pdf->download('appointment-'.$appointment->id.'.pdf');
     }
 }
