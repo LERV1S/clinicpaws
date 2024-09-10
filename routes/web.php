@@ -9,9 +9,9 @@ Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
-Route::view('profile', 'profile')
-    ->middleware(['auth'])
-    ->name('profile');
+//Route::view('profile', 'profile')
+    //->middleware(['auth'])
+    //->name('profile');
 
 
 Route::get('/pets', function () {
@@ -62,5 +62,8 @@ Route::get('/prescriptions', function () {
 // Ruta para descargar el PDF de un ticket
 Route::get('tickets/{id}/download', [TicketController::class, 'downloadPDF'])->name('tickets.download');
 
+Route::get('/profile', function () {
+    return view('profile');  // Carga la vista que contiene el componente Livewire
+})->middleware(['auth'])->name('profile');
 
 require __DIR__.'/auth.php';
