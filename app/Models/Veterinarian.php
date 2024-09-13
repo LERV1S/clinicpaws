@@ -18,7 +18,7 @@ class Veterinarian extends Model
     // Relaciones
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id'); // Asegúrate de que la columna en la tabla veterinarians es 'user_id'
     }
 
     public function appointments()

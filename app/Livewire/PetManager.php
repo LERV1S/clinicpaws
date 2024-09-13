@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Livewire;
 
 use Livewire\Component;
@@ -11,19 +12,48 @@ class PetManager extends Component
     public $owners; // Para almacenar la lista de dueños
     public $owner_id, $name, $species, $breed, $birthdate, $medical_conditions;
     public $selectedPetId;
+    public $searchOwnerTerm = ''; // Término de búsqueda para propietarios
+    public $ownerSuggestions = []; // Sugerencias de propietarios
+    public $searchPetTerm = ''; // Término de búsqueda para mascotas
 
     public function mount()
     {
-        // Inicializar las mascotas y los dueños
-        $this->pets = Pet::all();
+        $this->loadPets();
         $this->owners = User::all(); // Asumiendo que cada User es un dueño potencial
+    }
+
+    public function updatedSearchOwnerTerm()
+    {
+        if (!empty($this->searchOwnerTerm)) {
+            $this->ownerSuggestions = User::where('name', 'like', '%' . $this->searchOwnerTerm . '%')->get();
+        } else {
+            $this->ownerSuggestions = [];
+        }
+    }
+
+    public function selectOwner($ownerId)
+    {
+        $this->owner_id = $ownerId;
+        $this->searchOwnerTerm = User::find($ownerId)->name;
+        $this->ownerSuggestions = [];
+    }
+
+    public function updatedSearchPetTerm()
+    {
+        $this->loadPets();
+    }
+
+    public function loadPets()
+    {
+        $this->pets = Pet::with('owner')
+            ->where('name', 'like', '%' . $this->searchPetTerm . '%')
+            ->get();
     }
 
     public function savePet()
     {
-        // Validar la entrada del formulario
         $this->validate([
-            'owner_id' => 'required', // Asegura que owner_id esté presente
+            'owner_id' => 'required',
             'name' => 'required',
             'species' => 'required',
         ]);
@@ -39,7 +69,6 @@ class PetManager extends Component
                 'medical_conditions' => $this->medical_conditions,
             ]);
         } else {
-            // Crear una nueva mascota
             Pet::create([
                 'owner_id' => $this->owner_id,
                 'name' => $this->name,
@@ -50,30 +79,30 @@ class PetManager extends Component
             ]);
         }
 
-        // Reiniciar los campos del formulario
         $this->resetInputFields();
-        $this->pets = Pet::all(); // Refresca la lista de mascotas
+        $this->loadPets();
     }
 
     public function editPet($id)
     {
         $pet = Pet::find($id);
         $this->selectedPetId = $pet->id;
-        $this->owner_id = $pet->owner_id; // Asegúrate de que owner_id sea cargado
+        $this->owner_id = $pet->owner_id;
         $this->name = $pet->name;
         $this->species = $pet->species;
         $this->breed = $pet->breed;
         $this->birthdate = $pet->birthdate;
         $this->medical_conditions = $pet->medical_conditions;
+
+        $this->searchOwnerTerm = $pet->owner->name;
     }
 
     public function deletePet($id)
     {
         Pet::find($id)->delete();
-        $this->pets = Pet::all(); // Refresca la lista de mascotas
+        $this->loadPets();
     }
 
-    // Limpiar los campos de entrada del formulario
     private function resetInputFields()
     {
         $this->owner_id = '';
@@ -83,13 +112,16 @@ class PetManager extends Component
         $this->birthdate = '';
         $this->medical_conditions = '';
         $this->selectedPetId = null;
+        $this->searchOwnerTerm = '';
+        $this->ownerSuggestions = [];
     }
 
-    // Renderizar la vista del componente
     public function render()
     {
         return view('livewire.pet-manager', [
-            'owners' => $this->owners, // Pasar los dueños a la vista
+            'pets' => $this->pets,
+            'owners' => $this->owners,
+            'ownerSuggestions' => $this->ownerSuggestions,
         ]);
     }
 }

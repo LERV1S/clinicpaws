@@ -9,16 +9,47 @@ use App\Models\Client;
 class InvoiceManager extends Component
 {
     public $invoices;
-    public $clients; // Declarar la propiedad como pública
+    public $clients;
     public $client_id, $total_amount, $status;
     public $selectedInvoiceId;
-
+    public $searchTerm = ''; // Propiedad para el término de búsqueda
+    public $searchClientTerm = ''; // Para manejar el término de búsqueda de cliente
+    public $clientSuggestions = []; // Para almacenar las sugerencias de clientes
     public function mount()
     {
-        $this->invoices = Invoice::all();
-        $this->clients = Client::all();  // Ahora $clients está definida y accesible en la vista
+        $this->loadInvoices();
+        $this->clients = Client::all();
     }
 
+
+
+    // Cargar facturas filtradas por cliente
+    public function loadInvoices()
+    {
+        $this->invoices = Invoice::whereHas('client.user', function ($query) {
+            $query->where('name', 'like', '%' . $this->searchTerm . '%');
+        })->get();
+    }
+     // Autocompletar cliente en el formulario
+     public function updatedSearchClientTerm()
+     {
+         $this->clientSuggestions = Client::whereHas('user', function ($query) {
+             $query->where('name', 'like', '%' . $this->searchClientTerm . '%');
+         })->get();
+     }   
+    public function selectClient($clientId)
+    {
+        $this->client_id = $clientId;
+        $this->searchClientTerm = Client::find($clientId)->user->name;
+        $this->clientSuggestions = [];
+    }
+
+
+    public function updatedSearchTerm()
+    {
+        $this->loadInvoices();
+    }
+    // Guardar o actualizar una factura
     public function saveInvoice()
     {
         $this->validate([
@@ -43,7 +74,7 @@ class InvoiceManager extends Component
         }
 
         $this->resetInputFields();
-        $this->invoices = Invoice::all();
+        $this->loadInvoices();
     }
 
     public function editInvoice($id)
@@ -58,7 +89,7 @@ class InvoiceManager extends Component
     public function deleteInvoice($id)
     {
         Invoice::find($id)->delete();
-        $this->invoices = Invoice::all();
+        $this->loadInvoices();
     }
 
     private function resetInputFields()
@@ -67,12 +98,15 @@ class InvoiceManager extends Component
         $this->total_amount = '';
         $this->status = '';
         $this->selectedInvoiceId = null;
+        $this->searchClientTerm = ''; // Resetear el término de búsqueda
+        $this->clientSuggestions = []; // Resetear las sugerencias
     }
 
     public function render()
     {
         return view('livewire.invoice-manager', [
             'clients' => $this->clients,
+            'invoices' => $this->invoices,
         ]);
     }
 }

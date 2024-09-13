@@ -4,12 +4,21 @@
     <!-- Formulario para agregar o editar un ticket -->
     <form wire:submit.prevent="saveTicket" class="space-y-4">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <select wire:model="client_id" class="input-field" required>
-                <option value="">Select Client</option>
-                @foreach(\App\Models\Client::all() as $client)
-                    <option value="{{ $client->id }}">{{ $client->user->name }}</option>
-                @endforeach
-            </select>
+            <div class="relative">
+                <input type="text" wire:model.lazy="searchClientTerm" class="input-field" placeholder="Search Client..." required>
+                @if(!empty($clientSuggestions))
+                    <ul class="absolute bg-white border border-gray-300 w-full z-10">
+                        @foreach($clientSuggestions as $client)
+                            <li 
+                                wire:click="selectClient({{ $client->id }})" 
+                                class="cursor-pointer p-2 hover:bg-gray-200"
+                            >
+                                {{ $client->user->name }}
+                            </li>
+                        @endforeach
+                    </ul>
+                @endif
+            </div>
 
             <input type="text" wire:model="subject" class="input-field" placeholder="Subject" required>
             <textarea wire:model="description" class="input-field" placeholder="Description" required></textarea>
@@ -31,25 +40,35 @@
                             <option value="{{ $inventory->id }}">{{ $inventory->item_name }}</option>
                         @endforeach
                     </select>
-
-                    <input type="number" wire:model="inventoryItems.{{ $index }}.quantity" placeholder="Quantity" class="input-field" required>
-
+    
+                    <input type="number" wire:model="inventoryItems.{{ $index }}.quantity" placeholder="Quantity" class="input-field" required>                 
+                    @if(($inventoryItems[$index]['inventory_id']) && $inventoryItems[$index]['quantity'] > $inventories->find($inventoryItems[$index]['inventory_id'])->quantity)
+                        <p class="text-red-500">Not enough stock for {{ $inventories->find($inventoryItems[$index]['inventory_id'])->item_name }}</p>
+                    @endif
                     <button type="button" wire:click="removeInventoryItem({{ $index }})" class="cta-button bg-red-500 hover:bg-red-600">Remove</button>
                 </div>
             @endforeach
-
             <button type="button" wire:click="addInventoryItem" class="cta-button bg-blue-500 hover:bg-blue-600 mt-4">Add Another Item</button>
         </div>
-
         <div class="flex justify-start mt-4">
             <button type="submit" class="cta-button">{{ $selectedTicketId ? 'Update Ticket' : 'Add Ticket' }}</button>
         </div>
     </form>
 
+    <!-- Campo de búsqueda -->
+    <div class="mt-6">
+        <input 
+            type="text" 
+            wire:model.lazy="searchTicketTerm" 
+            class="input-field" 
+            placeholder="Search by client name..."
+        />
+    </div>
+
     <!-- Listado de tickets -->
     <div class="mt-6">
         <ul class="space-y-4">
-            @foreach ($tickets as $ticket)
+            @forelse ($tickets as $ticket)
                 <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow flex justify-between items-center">
                     <div>
                         <p class="text-lg font-semibold">Client: {{ $ticket->client->user->name }}</p>
@@ -74,13 +93,18 @@
                             <p class="mt-4 font-bold">Total: ${{ number_format($totalTicketPrice, 2) }}</p>
                         @endif
                     </div>
+                    
                     <div class="flex space-x-4">
                         <button wire:click="editTicket({{ $ticket->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
                         <button wire:click="deleteTicket({{ $ticket->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
                         <a href="{{ route('tickets.download', $ticket->id) }}" class="cta-button bg-green-500 hover:bg-green-600">Download PDF</a>
                     </div>
                 </li>
-            @endforeach
+            @empty
+                <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow">
+                    <p class="text-gray-600 dark:text-gray-400">No tickets found.</p>
+                </li>
+            @endforelse
         </ul>
     </div>
 </div>

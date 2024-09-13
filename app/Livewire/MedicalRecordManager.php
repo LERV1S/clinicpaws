@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Models\Veterinarian;
 use Livewire\Component;
 use App\Models\MedicalRecord;
 use App\Models\Pet;
@@ -24,6 +25,8 @@ class MedicalRecordManager extends Component
     public $owners; //PARA EL SELECT DE OWNER
     public $pets; //PARA EL SELECT DE PET
     public $species; //PARA EL SELECT DE SPECIES
+
+    public $veterinarians; 
 
     // COMPONENTES DEL FORMULARIO DE IZQUIERDA A DERECHA DE ARRIBA A ABAJO
     // PARTE 1
@@ -109,8 +112,6 @@ class MedicalRecordManager extends Component
     public $treatment_summary;
     public $responsible_recommendations;
     public $follow_up_plan;
-
-
 
 
     public function saveMedicalRecord()

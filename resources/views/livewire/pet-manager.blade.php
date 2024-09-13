@@ -4,12 +4,23 @@
     <!-- Formulario para agregar o editar una mascota -->
     <form wire:submit.prevent="savePet" class="space-y-4">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <select wire:model="owner_id" class="input-field" required>
-                <option value="">Select Owner</option>
-                @foreach($owners as $owner)
-                    <option value="{{ $owner->id }}">{{ $owner->name }}</option>
-                @endforeach
-            </select>
+            <!-- Campo de búsqueda de propietarios -->
+            <div class="relative">
+                <input type="text" wire:model.lazy="searchOwnerTerm" class="input-field" placeholder="Search Owner..." required>
+                @if(!empty($ownerSuggestions))
+                    <ul class="absolute bg-white border border-gray-300 w-full z-10">
+                        @foreach($ownerSuggestions as $owner)
+                            <li 
+                                wire:click="selectOwner({{ $owner->id }})" 
+                                class="cursor-pointer p-2 hover:bg-gray-200"
+                            >
+                                {{ $owner->name }}
+                            </li>
+                        @endforeach
+                    </ul>
+                @endif
+            </div>
+
             <input type="text" wire:model="name" class="input-field" placeholder="Name" required>
             <input type="text" wire:model="species" class="input-field" placeholder="Species" required>
             <input type="text" wire:model="breed" class="input-field" placeholder="Breed">
@@ -20,6 +31,16 @@
             <button type="submit" class="cta-button">{{ $selectedPetId ? 'Update Pet' : 'Add Pet' }}</button>
         </div>
     </form>
+
+    <!-- Campo de búsqueda de mascotas -->
+    <div class="mt-6">
+        <input 
+            type="text" 
+            wire:model.lazy="searchPetTerm" 
+            class="input-field" 
+            placeholder="Search by pet name..."
+        />
+    </div>
 
     <!-- Listado de mascotas -->
     <div class="mt-6">

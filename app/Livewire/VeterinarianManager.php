@@ -11,10 +11,40 @@ class VeterinarianManager extends Component
     public $veterinarians;
     public $user_id, $specialty, $license_number;
     public $selectedVeterinarianId;
+    public $searchUserTerm = ''; // Para manejar el término de búsqueda de usuario
+    public $searchVeterinarianTerm = ''; // Para manejar el término de búsqueda de veterinario
+    public $userSuggestions = []; // Para almacenar las sugerencias de usuarios
 
     public function mount()
     {
-        $this->veterinarians = Veterinarian::all();
+        $this->loadVeterinarians(); // Cargar veterinarios cuando el componente se monta
+    }
+
+    // Cargar veterinarios filtrados por nombre de usuario
+    public function loadVeterinarians()
+    {
+        $this->veterinarians = Veterinarian::whereHas('user', function ($query) {
+            $query->where('name', 'like', '%' . $this->searchVeterinarianTerm . '%');
+        })->get();
+    }
+
+    // Escuchar cambios en el término de búsqueda de veterinarios
+    public function updatedSearchVeterinarianTerm()
+    {
+        $this->loadVeterinarians(); // Recargar veterinarios al cambiar el término de búsqueda
+    }
+
+    // Autocompletar usuario en el formulario
+    public function updatedSearchUserTerm()
+    {
+        $this->userSuggestions = User::where('name', 'like', '%' . $this->searchUserTerm . '%')->get();
+    }
+
+    public function selectUser($userId)
+    {
+        $this->user_id = $userId;
+        $this->searchUserTerm = User::find($userId)->name;
+        $this->userSuggestions = [];
     }
 
     public function saveVeterinarian()
@@ -40,7 +70,7 @@ class VeterinarianManager extends Component
         }
 
         $this->resetInputFields();
-        $this->veterinarians = Veterinarian::all();
+        $this->loadVeterinarians(); // Recargar la lista de veterinarios después de guardar
     }
 
     public function editVeterinarian($id)
@@ -55,7 +85,7 @@ class VeterinarianManager extends Component
     public function deleteVeterinarian($id)
     {
         Veterinarian::find($id)->delete();
-        $this->veterinarians = Veterinarian::all();
+        $this->loadVeterinarians(); // Recargar la lista de veterinarios después de eliminar
     }
 
     private function resetInputFields()
@@ -64,11 +94,14 @@ class VeterinarianManager extends Component
         $this->specialty = '';
         $this->license_number = '';
         $this->selectedVeterinarianId = null;
+        $this->searchUserTerm = ''; // Resetear el término de búsqueda de usuario
+        $this->userSuggestions = []; // Resetear las sugerencias de usuarios
     }
 
     public function render()
     {
-        $users = User::all();
-        return view('livewire.veterinarian-manager', compact('users'));
+        return view('livewire.veterinarian-manager', [
+            'veterinarians' => $this->veterinarians,
+        ]);
     }
 }

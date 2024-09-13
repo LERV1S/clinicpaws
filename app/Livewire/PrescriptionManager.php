@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Livewire;
-
 use Livewire\Component;
 use App\Models\Prescription;
 use App\Models\Pet;
@@ -12,10 +11,37 @@ class PrescriptionManager extends Component
     public $prescriptions;
     public $date, $medicine_name, $dosage, $pet_id, $veterinarian_id, $instructions;
     public $selectedPrescriptionId;
+    public $searchPetTerm = ''; // Para manejar el término de búsqueda de mascota
+    public $petSuggestions = []; // Para almacenar las sugerencias de mascotas
+    public $searchTerm = ''; // Para el buscador de recetas
 
     public function mount()
     {
-        $this->prescriptions = Prescription::with('veterinarian.user', 'pet')->get();
+        $this->loadPrescriptions();
+    }
+
+    public function loadPrescriptions()
+    {
+        $this->prescriptions = Prescription::whereHas('pet', function ($query) {
+            $query->where('name', 'like', '%' . $this->searchTerm . '%');
+        })->with('veterinarian.user', 'pet')->get();
+    }
+
+    public function updatedSearchTerm()
+    {
+        $this->loadPrescriptions();
+    }
+
+    public function updatedSearchPetTerm()
+    {
+        $this->petSuggestions = Pet::where('name', 'like', '%' . $this->searchPetTerm . '%')->get();
+    }
+
+    public function selectPet($petId)
+    {
+        $this->pet_id = $petId;
+        $this->searchPetTerm = Pet::find($petId)->name;
+        $this->petSuggestions = [];
     }
 
     public function savePrescription()
@@ -51,7 +77,7 @@ class PrescriptionManager extends Component
         }
 
         $this->resetInputFields();
-        $this->prescriptions = Prescription::with('veterinarian.user', 'pet')->get();
+        $this->loadPrescriptions();
     }
 
     public function editPrescription($id)
@@ -69,7 +95,7 @@ class PrescriptionManager extends Component
     public function deletePrescription($id)
     {
         Prescription::find($id)->delete();
-        $this->prescriptions = Prescription::with('veterinarian.user', 'pet')->get();
+        $this->loadPrescriptions();
     }
 
     private function resetInputFields()
@@ -81,12 +107,16 @@ class PrescriptionManager extends Component
         $this->veterinarian_id = '';
         $this->instructions = '';
         $this->selectedPrescriptionId = null;
+        $this->searchPetTerm = ''; // Resetear el término de búsqueda de mascotas
+        $this->petSuggestions = []; // Resetear las sugerencias de mascotas
     }
 
     public function render()
     {
-        $pets = Pet::all();
         $veterinarians = Veterinarian::with('user')->get();
-        return view('livewire.prescription-manager', compact('pets', 'veterinarians'));
+        return view('livewire.prescription-manager', [
+            'prescriptions' => $this->prescriptions,
+            'veterinarians' => $veterinarians,
+        ]);
     }
 }

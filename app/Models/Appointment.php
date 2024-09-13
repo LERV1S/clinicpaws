@@ -18,16 +18,16 @@ class Appointment extends Model
     ];
 
     // Relación con la mascota (Pet)
-    public function pet()
-    {
-        return $this->belongsTo(Pet::class);
-    }
-
-    // Relación con el veterinario (User)
     public function veterinarian()
     {
-        return $this->belongsTo(User::class, 'veterinarian_id');
+        return $this->belongsTo(Veterinarian::class, 'veterinarian_id');
     }
+
+    public function pet()
+    {
+        return $this->belongsTo(Pet::class, 'pet_id');
+    }
+
 
     public function prescriptions()
     {

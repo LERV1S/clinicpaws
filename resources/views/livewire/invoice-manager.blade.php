@@ -4,12 +4,28 @@
     <!-- Formulario para agregar o editar una factura -->
     <form wire:submit.prevent="saveInvoice" class="space-y-4">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <select wire:model="client_id" class="input-field" required>
-                <option value="">Select Client</option>
-                @foreach($clients as $client)
-                    <option value="{{ $client->id }}">{{ $client->user->name }}</option>
-                @endforeach
-            </select>
+            <!-- Autocompletar para seleccionar cliente -->
+            <div class="relative">
+                <input 
+                    type="text" 
+                    wire:model.lazy="searchClientTerm" 
+                    class="input-field" 
+                    placeholder="Search Client..." 
+                    required
+                >
+                @if(!empty($clientSuggestions))
+                    <ul class="absolute bg-white border border-gray-300 w-full z-10">
+                        @foreach($clientSuggestions as $client)
+                            <li 
+                                wire:click="selectClient({{ $client->id }})" 
+                                class="cursor-pointer p-2 hover:bg-gray-200"
+                            >
+                                {{ $client->user->name }}
+                            </li>
+                        @endforeach
+                    </ul>
+                @endif
+            </div>
 
             <input type="number" wire:model="total_amount" class="input-field" placeholder="Total Amount" required>
             <input type="text" wire:model="status" class="input-field" placeholder="Status" required>
@@ -18,6 +34,16 @@
             <button type="submit" class="cta-button">{{ $selectedInvoiceId ? 'Update Invoice' : 'Add Invoice' }}</button>
         </div>
     </form>
+
+    <!-- Campo de búsqueda para filtrar facturas por nombre de cliente -->
+    <div class="mt-6">
+        <input 
+            type="text" 
+            wire:model.lazy="searchTerm" 
+            class="input-field" 
+            placeholder="Search by client name..."
+        />
+    </div>
 
     <!-- Listado de facturas -->
     <div class="mt-6">
