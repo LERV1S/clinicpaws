@@ -49,7 +49,7 @@ class MedicalRecord extends Model
         'wbc_count',
 
         'x_rays',
-        'ultrasound',
+        'ultrasounds',
         'ct_scans',
         'biopsies',
 
@@ -73,6 +73,14 @@ class MedicalRecord extends Model
         'follow_up_plan',
     ];
 
+    // Agregar casts para convertir JSON en arrays
+    protected $casts = [
+        'x_rays' => 'array',
+        'ultrasound' => 'array',
+        'ct_scans' => 'array',
+        'biopsies' => 'array',
+    ];
+
     // Relación con la mascota (Pet)
     public function pet()
     {
@@ -90,3 +98,4 @@ class MedicalRecord extends Model
         return $this->hasMany(Prescription::class);
     }
 }
+
