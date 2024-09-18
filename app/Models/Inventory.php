@@ -19,4 +19,9 @@ class Inventory extends Model
     {
         return $this->belongsToMany(Ticket::class)->withPivot('quantity')->withTimestamps();
     }
+    public function invoices()
+    {
+        return $this->belongsToMany(Invoice::class)->withPivot('quantity');
+    }
+
 }

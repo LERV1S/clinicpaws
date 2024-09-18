@@ -25,4 +25,8 @@ class Invoice extends Model
     {
         return $this->hasMany(Prescription::class);
     }
+    public function inventories()
+    {
+        return $this->belongsToMany(Inventory::class)->withPivot('quantity');
+    }
 }

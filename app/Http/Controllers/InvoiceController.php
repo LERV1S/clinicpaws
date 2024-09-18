@@ -3,17 +3,38 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Invoice;
+use PDF;
 
 class InvoiceController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+
+     
     public function index()
     {
         //
     }
 
+    
+    public function downloadPDF($id)
+    {
+        $invoice = Invoice::with('client.user', 'inventories')->findOrFail($id);
+
+
+        $pdf = PDF::loadView('pdf.invoice', compact('invoice'))
+          ->setPaper('a4', 'portrait')
+          ->setOptions(['isHtml5ParserEnabled' => true,
+          'isRemoteEnabled' => true,
+          'margin-top' => 0,
+          'margin-right' => 0,
+          'margin-bottom' => 0,
+          'margin-left' => 0]);
+
+        return $pdf->download('invoice-' . $invoice->id . '.pdf');
+    }
     /**
      * Show the form for creating a new resource.
      */
