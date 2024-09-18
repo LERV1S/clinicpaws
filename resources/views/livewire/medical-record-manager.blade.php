@@ -41,6 +41,7 @@
                 @endforeach
             </select>
 
+            
             <!-- SELECCIONAR LA RAZA -->
             <input type="text" id="breed" name="breed" wire:model="breed" class="input-field" placeholder="Breed">
 
@@ -55,7 +56,7 @@
             </select>
 
             <!-- SELECCIONAR EL PESO -->
-            <input type="number" id="weight" name="weight" wire:model="weight" step="0.1" class="input-field" placeholder="Weight">
+            <input type="number" id="weight" name="weight" wire:model="weight" step="0.1" class="input-field" placeholder="Weight Kilograms">
 
             <!-- SELECCIONAR EL VETERINARIO -->
             <select id="veterinarian_id" name="veterinarian_id" wire:model="veterinarian_id" class="input-field">
