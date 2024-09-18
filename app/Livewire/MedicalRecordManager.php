@@ -26,7 +26,7 @@ class MedicalRecordManager extends Component
     public $pets; //PARA EL SELECT DE PET
     public $species; //PARA EL SELECT DE SPECIES
 
-    public $veterinarians; 
+    // public $veterinarians; 
 
     // COMPONENTES DEL FORMULARIO DE IZQUIERDA A DERECHA DE ARRIBA A ABAJO
     // PARTE 1
