@@ -10,76 +10,106 @@
             line-height: 1.5;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            position: relative;
         }
+
         .invoice-container {
             background-color: #ffffff;
-            padding: 10px; /* Reduje el padding a 10px */
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Reduje el tamaño de la sombra */
-            max-width: 100%; /* Aprovecha todo el ancho disponible */
-            margin: 20px auto; /* Margen superior e inferior reducido */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 40px auto;
+            position: relative;
+            z-index: 1;
         }
+
         .invoice-header {
             text-align: center;
-            margin-bottom: 20px; /* Margen inferior reducido */
+            margin-bottom: 30px;
             color: #ffffff;
             background-color: #007BFF;
-            padding: 10px; /* Reduje el padding */
+            padding: 15px;
             border-radius: 10px 10px 0 0;
         }
+
         .invoice-header h1 {
-            font-size: 22px;
+            font-size: 24px;
             margin: 0;
             color: #ffffff;
         }
+
         .invoice-header p {
             margin: 5px 0;
-            font-size: 16px;
+            font-size: 18px;
             color: #ffffff;
         }
+
         .invoice-details, .inventory-items, .footer-message {
-            margin-bottom: 15px; /* Reducir espacio entre secciones */
+            margin-bottom: 20px;
         }
+
         .inventory-items h3 {
-            font-size: 16px;
-            margin-bottom: 8px;
+            font-size: 18px;
+            margin-bottom: 10px;
             color: #007BFF;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
         }
+
         th, td {
             border: 1px solid #ddd;
-            padding: 6px; /* Reducir padding en celdas */
+            padding: 8px;
             text-align: left;
         }
+
         th {
             background-color: #007BFF;
             color: white;
         }
+
         .total-price {
             font-weight: bold;
-            font-size: 14px;
-            margin-top: 10px; /* Reducir margen */
+            font-size: 16px;
+            margin-top: 20px;
             color: #333333;
         }
+
         .footer-message {
             text-align: center;
-            margin-top: 20px; /* Reducir espacio */
+            margin-top: 40px;
             font-style: italic;
             color: #007BFF;
         }
+
         .section-title {
             font-weight: bold;
-            margin-bottom: 8px; /* Reducir margen inferior */
+            margin-bottom: 10px;
             font-size: 16px;
             color: #007BFF;
         }
+
+        /* Estilos para la imagen de fondo */
+        .watermark-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60%;
+            height: auto;
+            z-index: 0;
+            opacity: 0.1; /* Ajusta la opacidad */
+            transform: translate(-50%, -50%);
+        }
+
     </style>
 </head>
 <body>
+
+    <!-- Marca de agua usando una ruta absoluta -->
+
     <div class="invoice-container">
         <!-- Header de la factura -->
         <div class="invoice-header">
@@ -154,5 +184,6 @@
             <p>We hope to see you again soon. Have a great day!</p>
         </div>
     </div>
+
 </body>
 </html>
