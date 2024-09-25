@@ -97,7 +97,7 @@
                     <div class="flex space-x-4">
                         <button wire:click="editInvoice({{ $invoice->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
                         <button wire:click="deleteInvoice({{ $invoice->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
-                        <a href="{{ route('invoices.download', $invoice->id) }}" class="cta-button bg-green-500 hover:bg-green-600">Download PDF</a>
+                        <a href="{{ route('invoices.download', $invoice->id) }}" target="_blank" class="cta-button bg-green-500 hover:bg-green-600">Download PDF</a>
                     </div>
                 </li>
             @endforeach

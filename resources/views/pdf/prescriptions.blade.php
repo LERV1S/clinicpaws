@@ -19,6 +19,7 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             max-width: 600px;
             margin: 40px auto;
+            position: relative;
         }
         .prescription-header {
             text-align: center;
@@ -53,9 +54,24 @@
             font-style: italic;
             color: #007BFF;
         }
+
+        /* Estilos para la marca de agua */
+        .watermark-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60%;
+            height: auto;
+            z-index: 0;
+            opacity: 0.1; /* Ajusta la opacidad */
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 <body>
+    <!-- Marca de agua usando una ruta absoluta -->
+    <img src="{{ public_path('images/Clinic_Paws2.png') }}" alt="Watermark" class="watermark-img">
+
     <div class="prescription-container">
         <!-- Header de la veterinaria -->
         <div class="prescription-header">

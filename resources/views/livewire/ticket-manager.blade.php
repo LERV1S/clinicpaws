@@ -29,6 +29,14 @@
             </select>
         </div>
 
+        <!-- Campo para generar factura -->
+        <div class="mt-4">
+            <label for="generateInvoice" class="flex items-center">
+                <input type="checkbox" wire:model="generateInvoice" id="generateInvoice" class="mr-2">
+                Generate Invoice for this ticket
+            </label>
+        </div>
+
         <!-- Inventario -->
         <div class="mt-4">
             <h2 class="text-lg font-semibold">Select Inventory Items</h2>
@@ -50,6 +58,7 @@
             @endforeach
             <button type="button" wire:click="addInventoryItem" class="cta-button bg-blue-500 hover:bg-blue-600 mt-4">Add Another Item</button>
         </div>
+
         <div class="flex justify-start mt-4">
             <button type="submit" class="cta-button">{{ $selectedTicketId ? 'Update Ticket' : 'Add Ticket' }}</button>
         </div>
@@ -65,7 +74,6 @@
         />
     </div>
 
-    <!-- Listado de tickets -->
     <div class="mt-6">
         <ul class="space-y-4">
             @forelse ($tickets as $ticket)
@@ -73,32 +81,45 @@
                     <div>
                         <p class="text-lg font-semibold">Client: {{ $ticket->client->user->name }}</p>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Subject: {{ $ticket->subject }} - Status: {{ $ticket->status }}</p>
-
+    
                         <!-- Listado de items del inventario -->
                         @if ($ticket->inventories->isNotEmpty())
                             <h4 class="mt-4 font-semibold">Inventory Items:</h4>
                             <ul class="list-disc list-inside">
+                                @php
+                                    $totalTicketPrice = 0;
+                                @endphp
                                 @foreach ($ticket->inventories as $inventory)
                                     @php
-                                        $totalItemPrice = $inventory->price * $inventory->pivot->quantity;
+                                        $itemPriceWithIVA = $inventory->price * 1.16;
+                                        $totalItemPrice = $itemPriceWithIVA * $inventory->pivot->quantity;
+                                        $totalTicketPrice += $totalItemPrice;
                                     @endphp
-                                    <li>{{ $inventory->item_name }} - Quantity: {{ $inventory->pivot->quantity }} - Price per item: ${{ number_format($inventory->price, 2) }} - Total: ${{ number_format($totalItemPrice, 2) }}</li>
+                                    <li>{{ $inventory->item_name }} - Quantity: {{ $inventory->pivot->quantity }} - Price per item: ${{ number_format($itemPriceWithIVA, 2) }} - Total: ${{ number_format($totalItemPrice, 2) }}</li>
                                 @endforeach
                             </ul>
-                            @php
-                                $totalTicketPrice = $ticket->inventories->sum(function ($inventory) {
-                                    return $inventory->price * $inventory->pivot->quantity;
-                                });
-                            @endphp
-                            <p class="mt-4 font-bold">Total: ${{ number_format($totalTicketPrice, 2) }}</p>
+                            <p class="mt-4 font-bold">Total (IVA incl.): ${{ number_format($totalTicketPrice, 2) }}</p>
                         @endif
                     </div>
                     
                     <div class="flex space-x-4">
+                        <!-- Botones: Editar, Borrar, Descargar Ticket, Generar/Ver Factura -->
                         <button wire:click="editTicket({{ $ticket->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
                         <button wire:click="deleteTicket({{ $ticket->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
-                        <a href="{{ route('tickets.download', $ticket->id) }}" class="cta-button bg-green-500 hover:bg-green-600">Download PDF</a>
+                    
+                        <!-- Botón de descarga del ticket -->
+                        <a href="{{ route('tickets.download', $ticket->id) }}" target="_blank" class="cta-button bg-green-500 hover:bg-green-600">Download Ticket</a>
+                    
+                        <!-- Mostrar botón de factura si no tiene factura aún -->
+                        @if (!$ticket->invoice)
+                            <button wire:click="createInvoiceForTicket({{ $ticket->id }})" class="cta-button bg-blue-500 hover:bg-blue-600">Generate Invoice</button>
+                        @else
+                            <!-- Si ya tiene factura, mostrar el botón de ver factura -->
+                            <a href="{{ route('invoices.download', $ticket->invoice->id) }}" target="_blank" class="cta-button bg-green-500 hover:bg-green-600">View Invoice</a>
+                        @endif
                     </div>
+                    
+                    
                 </li>
             @empty
                 <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow">
@@ -107,4 +128,6 @@
             @endforelse
         </ul>
     </div>
+    
+    
 </div>
