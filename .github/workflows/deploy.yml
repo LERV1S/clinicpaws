@@ -18,6 +18,12 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY2 }}  # Aquí se utiliza una clave privada almacenada como secreto en GitHub
 
+      - name: List SSH keys  # Verificar si la clave SSH se agregó correctamente
+        run: ssh-add -l
+
+      - name: Test SSH connection  # Probar la conexión SSH
+        run: ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ubuntu@ec2-18-219-252-105.us-east-2.compute.amazonaws.com "echo 'SSH connection successful'"
+
       - name: Deploy to server  # Tercer paso: ejecutar comandos para desplegar en el servidor EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@ec2-18-219-252-105.us-east-2.compute.amazonaws.com "cd /var/www/html/clinicpaws && sudo git pull origin main && sudo composer install --no-dev && sudo php artisan migrate --force && sudo php artisan config:cache && sudo php artisan route:cache && sudo php artisan view:cache"
+          ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ubuntu@ec2-18-219-252-105.us-east-2.compute.amazonaws.com "cd /var/www/html/clinicpaws && sudo git pull origin main && sudo composer install --no-dev && sudo php artisan migrate --force && sudo php artisan config:cache && sudo php artisan route:cache && sudo php artisan view:cache"
