@@ -16,7 +16,7 @@ jobs:
       - name: Set up SSH  # Segundo paso: configurar el acceso SSH para conectar con tu servidor EC2
         uses: webfactory/ssh-agent@v0.5.3
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}  # Aquí se utiliza una clave privada almacenada como secreto en GitHub
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY2 }}  # Aquí se utiliza una clave privada almacenada como secreto en GitHub
 
       - name: Deploy to server  # Tercer paso: ejecutar comandos para desplegar en el servidor EC2
         run: |
