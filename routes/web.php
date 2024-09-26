@@ -64,6 +64,10 @@ Route::get('/prescriptions', function () {
     return view('prescriptions');  // Carga la vista que contiene el componente Livewire
 })->name('prescriptions.index');
 
+Route::get('/medicines', function () {
+    return view('medicines');  // Carga la vista que contiene el componente Livewire
+})->name('medicines.index');
+
 // Ruta para descargar el PDF de un ticket
 Route::get('tickets/{id}/download', [TicketController::class, 'downloadPDF'])->name('tickets.download');
 

@@ -55,6 +55,24 @@
             color: #007BFF;
         }
 
+        /* Tabla de medicinas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
         /* Estilos para la marca de agua */
         .watermark-img {
             position: absolute;
@@ -63,7 +81,7 @@
             width: 60%;
             height: auto;
             z-index: 0;
-            opacity: 0.1; /* Ajusta la opacidad */
+            opacity: 0.1;
             transform: translate(-50%, -50%);
         }
     </style>
@@ -84,10 +102,28 @@
             <p class="date"><strong>Date:</strong> {{ $prescription->date }}</p>
             <p><strong>Veterinarian:</strong> {{ $prescription->veterinarian->user->name }}</p>
             <p><strong>Pet Name:</strong> {{ $prescription->pet->name }}</p>
-            <p><strong>Medicine:</strong> {{ $prescription->medicine_name }}</p>
-            <p><strong>Dosage:</strong> {{ $prescription->dosage }}</p>
-            <p><strong>Instructions:</strong> {{ $prescription->instructions }}</p>
         </div>
+
+        <!-- Tabla de medicinas -->
+        <h3>Medicines</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Medicine Name</th>
+                    <th>Dosage</th>
+                    <th>Instructions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($prescription->medicines as $medicine)
+                    <tr>
+                        <td>{{ $medicine->name }}</td>
+                        <td>{{ $medicine->pivot->dosage }}</td>
+                        <td>{{ $medicine->pivot->instructions }}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
 
         <!-- Mensaje de agradecimiento -->
         <div class="footer-message">
