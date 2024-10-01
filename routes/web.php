@@ -6,7 +6,7 @@ use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\PrescriptionController;
 use App\Http\Controllers\InvoiceController;
 
-
+// Rutas generales
 Route::view('/', 'welcome');
 
 Route::view('dashboard', 'dashboard')
@@ -17,64 +17,62 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-
-
+// Rutas con restricciones
 Route::get('/pets', function () {
     return view('pets');  // Carga la vista que contiene el componente Livewire
-})->name('pets.index');
+})->middleware('can:manage pets')->name('pets.index');
 
 Route::get('/appointments', function () {
     return view('appointments');  // Carga la vista que contiene el componente Livewire
-})->name('appointments.index');
+})->middleware('can:manage appointments')->name('appointments.index');
 
 Route::get('/medical_records', function () {
     return view('medical_records');  // Carga la vista que contiene el componente Livewire
-})->name('medical_records.index');
+})->middleware('can:view medical history')->name('medical_records.index');
 
 Route::get('/clients', function () {
     return view('clients');  // Carga la vista que contiene el componente Livewire
-})->name('clients.index');
+})->middleware('can:manage users')->name('clients.index');
 
 Route::get('/veterinarians', function () {
     return view('veterinarians');  // Carga la vista que contiene el componente Livewire
-})->name('veterinarians.index');
+})->middleware('can:manage users')->name('veterinarians.index');
 
 Route::get('/employees', function () {
     return view('employees');  // Carga la vista que contiene el componente Livewire
-})->name('employees.index');
+})->middleware('can:manage users')->name('employees.index');
 
 Route::get('/inventories', function () {
     return view('inventories');  // Carga la vista que contiene el componente Livewire
-})->name('inventories.index');
-
+})->middleware('can:manage inventory')->name('inventories.index');
 
 Route::get('/invoices', function () {
     return view('invoices');  // Carga la vista que contiene el componente Livewire
-})->name('invoices.index');
+})->middleware('can:manage invoices')->name('invoices.index');
 
 Route::get('/cages', function () {
     return view('cages');  // Carga la vista que contiene el componente Livewire
-})->name('cages.index');
+})->middleware('can:manage cages')->name('cages.index');
 
 Route::get('/tickets', function () {
     return view('tickets');  // Carga la vista que contiene el componente Livewire
-})->name('tickets.index');
+})->middleware('can:manage tickets')->name('tickets.index');
 
 Route::get('/prescriptions', function () {
     return view('prescriptions');  // Carga la vista que contiene el componente Livewire
-})->name('prescriptions.index');
+})->middleware('can:manage prescriptions')->name('prescriptions.index');
 
-Route::get('/medicines', function () {
-    return view('medicines');  // Carga la vista que contiene el componente Livewire
-})->name('medicines.index');
+// Rutas para descargar el PDF de un ticket
+Route::get('tickets/{id}/download', [TicketController::class, 'downloadPDF'])
+    ->middleware('can:view tickets')->name('tickets.download');
 
-// Ruta para descargar el PDF de un ticket
-Route::get('tickets/{id}/download', [TicketController::class, 'downloadPDF'])->name('tickets.download');
+Route::get('appointments/{id}/download', [AppointmentController::class, 'downloadPDF'])
+    ->middleware('can:view appointments')->name('appointments.download');
 
-Route::get('appointments/{id}/download', [AppointmentController::class, 'downloadPDF'])->name('appointments.download');
+Route::get('prescriptions/{id}/download', [PrescriptionController::class, 'downloadPDF'])
+    ->middleware('can:view prescriptions')->name('prescriptions.download');
 
-Route::get('prescriptions/{id}/download', [PrescriptionController::class, 'downloadPDF'])->name('prescriptions.download');
-
-route::get('invoices/{id}/download', [InvoiceController::class, 'downloadPDF'])->name('invoices.download');
+Route::get('invoices/{id}/download', [InvoiceController::class, 'downloadPDF'])
+    ->middleware('can:view invoices')->name('invoices.download');
 
 require __DIR__.'/auth.php';
