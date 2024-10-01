@@ -9,6 +9,8 @@ use App\Http\Controllers\InvoiceController;
 // Rutas generales
 Route::view('/', 'welcome');
 
+Route::view('/', 'welcome')->name('welcome');
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
@@ -68,6 +70,28 @@ Route::get('tickets/{id}/download', [TicketController::class, 'downloadPDF'])
 
 Route::get('appointments/{id}/download', [AppointmentController::class, 'downloadPDF'])
     ->middleware('can:view appointments')->name('appointments.download');
+
+// el yunjeon
+Route::get('/acerca-de', function () {
+    return view('acerca-de'); // Nombre de la vista que vamos a crear en la carpeta resources/views navbar "acerca de"
+})->name('about');
+
+Route::get('/servicios', function () {
+    return view('servicios'); // Nombre de la vista que vamos a crear en la carpeta resources/views navbar "acerca de"
+})->name('services');
+
+
+// esto ya no se utiliza contactos
+Route::get('/contactos', function () {
+    return view('contactos'); // Nombre de la vista que vamos a crear en la carpeta resources/views navbar "acerca de"
+})->name('contacts');
+
+Route::get('/faq', function () {
+    return view('faq'); // Nombre de la vista que vamos a crear en la carpeta resources/views navbar "acerca de"
+})->name('faqs');
+
+// Ruta para descargar el PDF de un ticket
+Route::get('tickets/{id}/download', [TicketController::class, 'downloadPDF'])->name('tickets.download');
 
 Route::get('prescriptions/{id}/download', [PrescriptionController::class, 'downloadPDF'])
     ->middleware('can:view prescriptions')->name('prescriptions.download');

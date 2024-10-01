@@ -1,0 +1,8 @@
+.bg-image-container {
+    background-image: url("/storage/prueba/irelia.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+    height: 100%;
+    min-height: 200px;
+}
