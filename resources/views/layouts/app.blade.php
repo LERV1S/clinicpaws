@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,12 +59,14 @@
             top: 0;
             bottom: 0;
             height: 100%;
-            transition: transform 0.4s ease-in-out; /* Ajuste en la duración y tipo de transición */
+            transition: transform 0.4s ease-in-out;
+            /* Ajuste en la duración y tipo de transición */
             z-index: 1000;
         }
 
         .sidebar.hidden {
-            transform: translateX(-250px); /* Mueve la sidebar completamente fuera de la vista */
+            transform: translateX(-250px);
+            /* Mueve la sidebar completamente fuera de la vista */
         }
 
         /* Estilos para los enlaces del menú lateral */
@@ -78,12 +81,14 @@
 
         /* Estilos para enlaces activos */
         .sidebar a.active {
-            background-color: #63b3ed; /* Cambia el color de fondo cuando el enlace está activo */
+            background-color: #63b3ed;
+            /* Cambia el color de fondo cuando el enlace está activo */
             color: white;
             border-color: #63b3ed;
         }
 
-        .sidebar a:hover, .sidebar a.active:hover {
+        .sidebar a:hover,
+        .sidebar a.active:hover {
             background-color: #4a5568;
             border-color: #63b3ed;
         }
@@ -111,31 +116,36 @@
             margin-left: 250px;
             margin-top: 4rem;
             min-height: calc(100vh - 4rem);
-            transition: margin-left 0.4s ease-in-out, width 0.4s ease-in-out; /* Transición más suave */
+            transition: margin-left 0.4s ease-in-out, width 0.4s ease-in-out;
+            /* Transición más suave */
         }
 
         .content.expanded {
             margin-left: 0;
-            width: calc(100% - 0px); /* Ancho completo al ocultar la barra */
+            width: calc(100% - 0px);
+            /* Ancho completo al ocultar la barra */
         }
 
         /* Estilos del botón para alternar Sidebar */
         .toggle-sidebar-btn {
             position: fixed;
             top: 1rem;
-            left: 270px; /* Ajustado para que no se encime sobre la barra lateral */
+            left: 270px;
+            /* Ajustado para que no se encime sobre la barra lateral */
             background-color: #4a5568;
             color: white;
             padding: 10px;
             border-radius: 50%;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             cursor: pointer;
-            transition: background-color 0.3s ease, left 0.4s ease-in-out, transform 0.4s ease-in-out; /* Ajuste en las transiciones */
+            transition: background-color 0.3s ease, left 0.4s ease-in-out, transform 0.4s ease-in-out;
+            /* Ajuste en las transiciones */
             z-index: 1002;
         }
 
         .toggle-sidebar-btn.moved {
-            transform: translateX(-250px); /* Mueve el botón a la izquierda con la barra */
+            transform: translateX(-250px);
+            /* Mueve el botón a la izquierda con la barra */
         }
 
         .toggle-sidebar-btn:hover {
@@ -155,7 +165,8 @@
             border-collapse: collapse;
         }
 
-        table th, table td {
+        table th,
+        table td {
             padding: 12px;
             text-align: left;
         }
@@ -176,6 +187,7 @@
                 height: auto;
                 position: static;
             }
+
             .content {
                 margin-left: 0;
             }
@@ -185,12 +197,15 @@
             }
 
             .toggle-sidebar-btn.moved {
-                transform: translateX(0); /* El botón no debe moverse en pantallas pequeñas */
+                transform: translateX(0);
+                /* El botón no debe moverse en pantallas pequeñas */
             }
         }
     </style>
 </head>
+
 <body class="font-sans antialiased">
+
     <div x-data="{ sidebarVisible: true }" class="min-h-screen bg-gray-100 dark:bg-gray-900">
         <!-- Esto llama a la barra de navegación de Livewire -->
         <livewire:layout.navigation />
@@ -213,11 +228,11 @@
         <div :class="sidebarVisible ? 'content' : 'content expanded'" class="content">
             <!-- Page Heading -->
             @if (isset($header))
-                <header class="bg-white dark:bg-gray-800 shadow mb-6">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
+            <header class="bg-white dark:bg-gray-800 shadow mb-6">
+                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    {{ $header }}
+                </div>
+            </header>
             @endif
 
             <main>
@@ -233,6 +248,9 @@
         </button>
     </div>
 
+
+
     @livewireScripts
 </body>
+
 </html>

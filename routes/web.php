@@ -6,7 +6,7 @@ use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\PrescriptionController;
 
 
-Route::view('/', 'welcome');
+Route::view('/', 'welcome')->name('welcome');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
@@ -62,6 +62,26 @@ Route::get('/tickets', function () {
 Route::get('/prescriptions', function () {
     return view('prescriptions');  // Carga la vista que contiene el componente Livewire
 })->name('prescriptions.index');
+
+
+// el yunjeon
+Route::get('/acerca-de', function () {
+    return view('acerca-de'); // Nombre de la vista que vamos a crear en la carpeta resources/views navbar "acerca de"
+})->name('about');
+
+Route::get('/servicios', function () {
+    return view('servicios'); // Nombre de la vista que vamos a crear en la carpeta resources/views navbar "acerca de"
+})->name('services');
+
+
+// esto ya no se utiliza contactos
+Route::get('/contactos', function () {
+    return view('contactos'); // Nombre de la vista que vamos a crear en la carpeta resources/views navbar "acerca de"
+})->name('contacts');
+
+Route::get('/faq', function () {
+    return view('faq'); // Nombre de la vista que vamos a crear en la carpeta resources/views navbar "acerca de"
+})->name('faqs');
 
 // Ruta para descargar el PDF de un ticket
 Route::get('tickets/{id}/download', [TicketController::class, 'downloadPDF'])->name('tickets.download');

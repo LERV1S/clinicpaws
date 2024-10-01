@@ -30,7 +30,7 @@ new class extends Component
                     </div>
 
                     <!-- Botón Toggle Sidebar -->
-                   
+
                 </div>
 
                 <!-- Settings Dropdown -->
