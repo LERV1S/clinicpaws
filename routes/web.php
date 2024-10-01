@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\PrescriptionController;
+use App\Http\Controllers\InvoiceController;
 
 
 Route::view('/', 'welcome')->name('welcome');
@@ -63,6 +64,10 @@ Route::get('/prescriptions', function () {
     return view('prescriptions');  // Carga la vista que contiene el componente Livewire
 })->name('prescriptions.index');
 
+Route::get('/medicines', function () {
+    return view('medicines');  // Carga la vista que contiene el componente Livewire
+})->name('medicines.index');
+
 
 // el yunjeon
 Route::get('/acerca-de', function () {
@@ -89,5 +94,7 @@ Route::get('tickets/{id}/download', [TicketController::class, 'downloadPDF'])->n
 Route::get('appointments/{id}/download', [AppointmentController::class, 'downloadPDF'])->name('appointments.download');
 
 Route::get('prescriptions/{id}/download', [PrescriptionController::class, 'downloadPDF'])->name('prescriptions.download');
+
+route::get('invoices/{id}/download', [InvoiceController::class, 'downloadPDF'])->name('invoices.download');
 
 require __DIR__.'/auth.php';

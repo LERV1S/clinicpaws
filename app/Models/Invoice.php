@@ -11,6 +11,7 @@ class Invoice extends Model
 
     protected $fillable = [
         'client_id',
+        'ticket_id',  // Asegurar que se pueda guardar ticket_id
         'total_amount',
         'status',
     ];
@@ -25,4 +26,13 @@ class Invoice extends Model
     {
         return $this->hasMany(Prescription::class);
     }
+    public function inventories()
+    {
+        return $this->belongsToMany(Inventory::class)->withPivot('quantity');
+    }
+    public function ticket()
+{
+    return $this->belongsTo(Ticket::class);
+}
+
 }

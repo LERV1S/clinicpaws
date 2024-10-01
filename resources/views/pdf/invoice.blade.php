@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ticket PDF</title>
+    <title>Invoice PDF</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@
             position: relative;
         }
 
-        .ticket-container {
+        .invoice-container {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
@@ -24,7 +24,7 @@
             z-index: 1;
         }
 
-        .ticket-header {
+        .invoice-header {
             text-align: center;
             margin-bottom: 30px;
             color: #ffffff;
@@ -33,19 +33,19 @@
             border-radius: 10px 10px 0 0;
         }
 
-        .ticket-header h1 {
+        .invoice-header h1 {
             font-size: 24px;
             margin: 0;
             color: #ffffff;
         }
 
-        .ticket-header p {
+        .invoice-header p {
             margin: 5px 0;
             font-size: 18px;
             color: #ffffff;
         }
 
-        .ticket-details, .inventory-items, .footer-message {
+        .invoice-details, .inventory-items, .footer-message {
             margin-bottom: 20px;
         }
 
@@ -85,6 +85,13 @@
             color: #007BFF;
         }
 
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #007BFF;
+        }
+
         /* Estilos para la imagen de fondo */
         .watermark-img {
             position: absolute;
@@ -102,22 +109,29 @@
 <body>
 
     <!-- Marca de agua usando una ruta absoluta -->
-    <img src="{{ public_path('images/Clinic_Paws2.png') }}" alt="Watermark" class="watermark-img">
 
-    <div class="ticket-container">
-        <!-- Header del ticket -->
-        <div class="ticket-header">
-            <h1>ClinicPaws Veterinary</h1>
-            <p>Thank you for trusting us with your pet's care!</p>
+    <div class="invoice-container">
+        <!-- Header de la factura -->
+        <div class="invoice-header">
+            <h1>ClinicPaws Veterinary Invoice</h1>
+            <p>Thank you for your trust in our services!</p>
         </div>
 
-        <!-- Detalles del ticket -->
-        <div class="ticket-details">
-            <p><strong>Client:</strong> {{ $ticket->client->user->name }}</p>
-            <p><strong>Subject:</strong> {{ $ticket->subject }}</p>
-            <p><strong>Description:</strong> {{ $ticket->description }}</p>
-            <p><strong>Status:</strong> {{ $ticket->status }}</p>
-            <p><strong>Created at:</strong> {{ $ticket->created_at->format('d/m/Y H:i') }}</p>
+        <!-- Detalles del emisor y receptor -->
+        <div class="invoice-details">
+            <p><strong>Invoice Number:</strong> {{ $invoice->id }}</p>
+            <p><strong>Invoice Series:</strong> A-{{ str_pad($invoice->id, 6, '0', STR_PAD_LEFT) }}</p>
+            <p><strong>Issue Date:</strong> {{ $invoice->created_at->format('d/m/Y') }}</p>
+            <p><strong>Payment Date:</strong> {{ $invoice->updated_at->format('d/m/Y') }}</p>
+            
+            <p class="section-title">Issuer Information</p>
+            <p><strong>Company:</strong> ClinicPaws Veterinary</p>
+            <p><strong>NIF:</strong> ABC123456</p>
+            <p><strong>Address:</strong> 123 Veterinary St, Animal City</p>
+
+            <p class="section-title">Client Information</p>
+            <p><strong>Name:</strong> {{ $invoice->client->user->name }}</p>
+            <p><strong>Email:</strong> {{ $invoice->client->user->email }}</p>
         </div>
 
         <!-- Items del inventario en formato tabla -->
@@ -128,38 +142,45 @@
                     <tr>
                         <th>Item Name</th>
                         <th>Quantity</th>
-                        <th>Price per Item (IVA incl.)</th>
-                        <th>Total (IVA incl.)</th>
+                        <th>Price per Item</th>
+                        <th>IVA (16%)</th>
+                        <th>Total (with IVA)</th>
                     </tr>
                 </thead>
                 <tbody>
                     @php
-                        $totalTicketPrice = 0;
+                        $baseImponible = 0;
+                        $ivaTotal = 0;
                     @endphp
-                    @foreach ($ticket->inventories as $inventory)
+                    @foreach ($invoice->inventories as $inventory)
                         @php
-                            // Cálculo del IVA y del precio total con IVA
-                            $itemPriceWithIVA = $inventory->price * 1.16;
-                            $totalItemPrice = $itemPriceWithIVA * $inventory->pivot->quantity;
-                            $totalTicketPrice += $totalItemPrice;
+                            $precioSinIva = $inventory->price;
+                            $cantidad = $inventory->pivot->quantity;
+                            $totalItemPrice = $precioSinIva * $cantidad;
+                            $ivaItem = $totalItemPrice * 0.16;  // Calculo del 16% de IVA
+                            $baseImponible += $totalItemPrice;
+                            $ivaTotal += $ivaItem;
                         @endphp
                         <tr>
                             <td>{{ $inventory->item_name }}</td>
-                            <td>{{ $inventory->pivot->quantity }}</td>
-                            <td>${{ number_format($itemPriceWithIVA, 2) }}</td>
-                            <td>${{ number_format($totalItemPrice, 2) }}</td>
+                            <td>{{ $cantidad }}</td>
+                            <td>${{ number_format($precioSinIva, 2) }}</td>
+                            <td>${{ number_format($ivaItem, 2) }}</td>
+                            <td>${{ number_format($totalItemPrice + $ivaItem, 2) }}</td>
                         </tr>
                     @endforeach
                 </tbody>
             </table>
         </div>
 
-        <!-- Total -->
-        <p class="total-price">Total (IVA incl.): ${{ number_format($totalTicketPrice, 2) }}</p>
+        <!-- Totales -->
+        <p class="total-price">Base Imponible: ${{ number_format($baseImponible, 2) }}</p>
+        <p class="total-price">IVA Total (16%): ${{ number_format($ivaTotal, 2) }}</p>
+        <p class="total-price">Total a Pagar: ${{ number_format($baseImponible + $ivaTotal, 2) }}</p>
 
         <!-- Mensaje de agradecimiento -->
         <div class="footer-message">
-            <p>Thank you for your visit, {{ $ticket->client->user->name }}!</p>
+            <p>Thank you for your visit, {{ $invoice->client->user->name }}!</p>
             <p>We hope to see you again soon. Have a great day!</p>
         </div>
     </div>

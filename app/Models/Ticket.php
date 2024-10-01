@@ -25,4 +25,10 @@ class Ticket extends Model
     {
         return $this->belongsToMany(Inventory::class)->withPivot('quantity')->withTimestamps();
     }
+    // Nueva relación con factura
+
+    public function invoice()
+    {
+        return $this->hasOne(Invoice::class);
+    }
 }

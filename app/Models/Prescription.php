@@ -16,11 +16,8 @@ class Prescription extends Model
      */
     protected $fillable = [
         'date',
-        'medicine_name',
-        'dosage',
         'pet_id',
         'veterinarian_id',
-        'instructions',
     ];
 
     /**
@@ -44,4 +41,11 @@ class Prescription extends Model
     {
         return $this->belongsTo(Veterinarian::class);
     }
+
+    public function medicines()
+    {
+        return $this->belongsToMany(Medicine::class)->withPivot('dosage', 'instructions')->withTimestamps();
+    }
+    
+
 }
