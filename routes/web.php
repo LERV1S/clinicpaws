@@ -84,8 +84,8 @@ Route::get('/contactos', function () {
     return view('contactos'); // Nombre de la vista que vamos a crear en la carpeta resources/views navbar "acerca de"
 })->name('contacts');
 
-Route::get('/faq', function () {
-    return view('faq'); // Nombre de la vista que vamos a crear en la carpeta resources/views navbar "acerca de"
+Route::get('/faqs', function () {
+    return view('faqs'); // Nombre de la vista que vamos a crear en la carpeta resources/views navbar "acerca de"
 })->name('faqs');
 
 // Ruta para descargar el PDF de un ticket
