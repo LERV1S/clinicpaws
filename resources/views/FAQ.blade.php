@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClinicPaws | FAQ</title>
-    <link rel="icon" href="{{ asset('storage/prueba/C.png')}}" type="image/png">
+    <link rel="icon" href="{{ asset('images/C.png')}}" type="image/png">
 </head>
 
 <body>
     <!-- resources/views/acerca-de.blade.php -->
     @extends('layouts.app2') <!-- Extiende el layout app.blade.php -->
 
-    @section('title', 'Preguntas Frecuentes de ClinicPaws') <!-- Define el título para esta página -->
+    <!-- Define el título para esta página -->
+    <!-- @section('title', 'Preguntas Frecuentes de ClinicPaws')  -->
 
     @section('content') <!-- Sección de contenido específico de la página -->
     <!-- <div class="container mx-auto px-32 py-8 bg-gray-100"> -->

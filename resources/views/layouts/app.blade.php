@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
+    <!-- <title>{{ config('app.name', 'ClinicPaws') }}</title> -->
+    <!-- Aquí configuramos el título -->
+    <title>@yield('title', 'ClinicPaws')</title>
+    <link rel="icon" href="{{ asset('images/C.png') }}" type="image/png">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
@@ -211,6 +213,8 @@
         <!-- Esto llama a la barra de navegación de Livewire -->
         <livewire:layout.navigation />
 
+
+
         <!-- Sidebar -->
         <nav :class="sidebarVisible ? 'sidebar' : 'sidebar hidden'" class="sidebar">
             <a href="{{ route('dashboard') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('dashboard') ? 'active' : '' }}">Dashboard</a>
@@ -230,6 +234,7 @@
             <!-- Page Heading -->
             @if (isset($header))
             <header class="bg-white dark:bg-gray-800 shadow mb-6">
+                
                 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                     {{ $header }}
                 </div>

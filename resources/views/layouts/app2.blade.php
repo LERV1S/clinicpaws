@@ -9,7 +9,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- <link rel="icon" href="{{ asset('/storage/prueba/C.png') }}" type="image/x-icon"> -->
-    <link rel="icon" href="{{ asset('storage/prueba/C.png')}}" type="image/png">
+    <link rel="icon" href="{{ asset('images/C.png')}}" type="image/png">
     <!-- <link rel="icon" href="{{ asset('icons/C.png')        }}?v=1" type="image/png"> -->
 
 
@@ -41,7 +41,7 @@
             <style>
                 /* Imagen en el lado izquierdo */
                 .bg-image-container-left {
-                    background-image: url("/storage/prueba/ClinicPawscp.png");
+                    background-image: url("images/ClinicPawscp.png");
                     background-repeat: repeat;
                     /* Repite verticalmente */
                     background-size: contain;
@@ -53,7 +53,7 @@
 
                 /* Imagen en el lado derecho */
                 .bg-image-container-right {
-                    background-image: url("/storage/prueba/ClinicPaws.png");
+                    background-image: url("images//ClinicPaws.png");
                     background-repeat: repeat-y;
                     background-size: 100% auto;
                     background-position: right top;

@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-    <link rel="icon" href="{{ asset('/storage/prueba/C.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('images/C.png') }}" type="image/x-icon">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
@@ -26,7 +26,7 @@
         <div>
             <a href="/" wire:navigate>
                 <!-- <x-application-logo class="w-20 h-20 fill-current text-gray-500" /> -->
-                <img src="{{ asset('/storage/prueba/ClinicPaws-H.png') }}" alt="Logo" class="w-350 h-40 mx-auto">
+                <img src="{{ asset('images/ClinicPaws-H.png') }}" alt="Logo" class="w-350 h-40 mx-auto">
             </a>
         </div>
 

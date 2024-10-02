@@ -9,7 +9,8 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <title>ClinicPaws | Inicio</title>
     
-    <link rel="icon" href="{{ asset('/storage/prueba/C.png') }}" type="image/x-icon">
+    <!-- <link rel="icon" href="{{ asset('/storage/prueba/C.png') }}" type="image/x-icon"> -->
+    <link rel="icon" href="{{ asset('images/C.png') }}" type="image/x-icon">
 
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -232,7 +233,7 @@
     <div class="navbar">
         <!-- <p><strong>ClinicPaws</strong></p> -->
         <a href="{{ route('welcome') }}">
-            <img src="/storage/prueba/ClinicPaws-H.png" alt="ClinicPaws Logo" class="logo">
+            <img src="images/ClinicPaws-H.png" alt="ClinicPaws Logo" class="logo">
         </a>
         <!-- <a href="{{ route('welcome') }}">Inicio</a> -->
         <a href="{{ route('about') }}">Acerca de</a> <!-- Enlace a la página de Acerca de -->
