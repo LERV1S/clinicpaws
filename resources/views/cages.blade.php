@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'ClinicPaws | Cages')
 @section('content')
     <h1>Manage Pets</h1>
 

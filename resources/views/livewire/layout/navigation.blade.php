@@ -25,12 +25,12 @@ new class extends Component
                     <!-- Logo -->
                     <div class="shrink-0 flex items-center">
                         <a href="{{ route('dashboard') }}" wire:navigate>
-                            <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+                        <img src="{{ asset('images/C.png') }}" alt="ClinicPaws Logo" class="pt-2" style="width: 80px; height: 70px;">
                         </a>
                     </div>
 
                     <!-- Botón Toggle Sidebar -->
-                   
+
                 </div>
 
                 <!-- Settings Dropdown -->

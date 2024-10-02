@@ -31,6 +31,7 @@ class RolesAndPermissionsSeeder extends Seeder
             'view reports',
             'manage users',
             'manage prescriptions',
+            'manage tickets',
         ];
 
         foreach ($permissions as $permission) {
@@ -41,7 +42,21 @@ class RolesAndPermissionsSeeder extends Seeder
 
         // Crear roles y asignar permisos
         $adminRole = Role::firstOrCreate(['name' => 'Administrador']);
-        $adminRole->givePermissionTo(Permission::all());
+        $adminRole->givePermissionTo([
+            'manage pets',
+            'view medical history',
+            'manage appointments',
+            'view and update medical records',
+            'manage surgeries',
+            'manage inventory',
+            'manage cages',
+            'process payments',
+            'manage invoices',
+            'view reports',
+            'manage users',
+            'manage prescriptions',
+            'manage tickets'
+        ]);
 
         $vetRole = Role::firstOrCreate(['name' => 'Veterinario']);
         $vetRole->givePermissionTo([
@@ -62,7 +77,9 @@ class RolesAndPermissionsSeeder extends Seeder
             'manage appointments',
             'process payments',
             'manage invoices',
-            'manage cages'
+            'manage cages',
+            'manage tickets',
+            'manage prescriptions'
         ]);
 
         $clientRole = Role::firstOrCreate(['name' => 'Cliente']);
@@ -70,7 +87,8 @@ class RolesAndPermissionsSeeder extends Seeder
             'manage pets',
             'view medical history',
             'manage appointments',
-            'view reports'
+            'view reports',
+            'manage tickets'
         ]);
     }
 }

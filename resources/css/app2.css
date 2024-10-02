@@ -1,0 +1,152 @@
+footer {
+    background-color: #6c757d;
+    padding: 3px 0;
+    color: #fff;
+}
+
+html,
+body {
+    /* background-color: #abb2b9; */
+    background-color: #E5E7EB;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #909497;
+    padding: 3px 0;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Estilos para títulos principales (h1) */
+h1 {
+    color: #3498db;
+    /* Un tono anaranjado */
+    text-align: center;
+}
+
+/* Estilos para subtítulos (h2, h3) */
+h2,
+h3 {
+    color: #3498db;
+    /* Un tono azul */
+}
+
+/* Estilos para párrafos (p) */
+p {
+    color: #9CA3AF;
+    /* Este es el valor hexadecimal de text-gray-400 */
+    /* font-size: 1.25rem;  */
+}
+
+/* es para todo el texto */
+.texto-grande {
+    color: #9CA3AF;
+    /* Color del texto */
+    font-size: 18px;
+    /* Tamaño de letra más grande */
+}
+
+/* estulos para subtitulos de preguntas frecuentes */
+.faqs {
+    font-size: 25px;
+    padding: 10px 10px 10px 10px;
+}
+
+
+/* barra de navegacion */
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2d3748;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5px 5px; */
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 9999;
+    width: 100%;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    flex-grow: 1;
+    /* Añadimos una línea de separación */
+    border-bottom: 0.5px solid #4a5568;
+}
+
+/* aqui no se le muevas */
+.navbar a:hover {
+    background-color: #4a5568;
+    color: white;
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 1024px) {
+    .navbar {
+        width: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        width: 100%;
+        /* text-align: left; */
+    }
+}
+
+
+/* imagen logo en la barra de navegacion que nos lleva al inicio */
+.navbar img.logo {
+    height: 35px;
+    /* Ajusta la altura de la imagen para que encaje en la barra */
+    display: inline-block;
+}
+
+/* integrantes del modular */
+.features-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.features-column {
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px); /* Tres columnas en pantallas grandes */
+    max-width: calc(33.333% - 40px);
+    text-align: center;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 1024px) {
+    .features-column {
+        flex: 1 1 100%; /* Cada columna ocupa el 100% del ancho */
+        max-width: 100%; /* Asegura que la columna ocupe todo el ancho disponible */
+        margin-bottom: 20px; /* Espacio entre las columnas al apilarse */
+    }
+}
