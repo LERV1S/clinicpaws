@@ -7,9 +7,8 @@ use App\Http\Controllers\PrescriptionController;
 use App\Http\Controllers\InvoiceController;
 
 // Rutas generales
-Route::view('/', 'welcome');
-
 Route::view('/', 'welcome')->name('welcome');
+
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
