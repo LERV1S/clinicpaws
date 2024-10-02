@@ -1,6 +1,17 @@
 <div>
     <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Manage Appointments</h1>
+<!-- Mostrar mensajes de éxito o error -->
+@if (session()->has('message'))
+    <div class="bg-green-500 text-white p-3 rounded-lg mb-4">
+        {{ session('message') }}
+    </div>
+@endif
 
+@if (session()->has('error'))
+    <div class="bg-red-500 text-white p-3 rounded-lg mb-4">
+        {{ session('error') }}
+    </div>
+@endif
     <!-- Formulario para agregar o editar una cita -->
     <form wire:submit.prevent="saveAppointment" class="space-y-4">
         <!-- Agrupación de inputs en una grid de 3 columnas -->
@@ -36,8 +47,63 @@
 
             <!-- Campo de fecha de cita -->
             <div>
-                <input type="datetime-local" wire:model="appointment_date" class="input-field" required>
-            </div>
+                <input id="appointment_date" 
+                       type="datetime-local" 
+                       wire:model="appointment_date" 
+                       min="{{ now()->format('Y-m-d\T08:00') }}" 
+                       max="{{ now()->addDays(7)->format('Y-m-d\T17:00') }}" 
+                       class="input-field" 
+                       required>
+            </div>      
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var appointmentDateInput = document.getElementById('appointment_date');
+            
+                    // Listener para ajustar solo los minutos a 00 y validar el rango de horas
+                    appointmentDateInput.addEventListener('change', function() {
+                        var value = appointmentDateInput.value;
+            
+                        // Convertir la fecha seleccionada a un objeto Date
+                        var selectedDate = new Date(value.replace('T', ' ') + ':00');
+            
+                        // Ajustar los minutos automáticamente a 00
+                        selectedDate.setMinutes(0);
+            
+                        // Verificar si la hora está dentro del horario laboral (8 AM a 5 PM)
+                        var selectedHour = selectedDate.getHours();
+                        if (selectedHour < 8) {
+                            selectedDate.setHours(8); // Ajustar a 8 AM si es menor
+                        } else if (selectedHour >= 18) {
+                            selectedDate.setHours(18); // Ajustar a 5 PM si es mayor
+                        }
+            
+                        // Verificar si la fecha es mayor a 7 días desde la fecha actual
+                        var now = new Date();
+                        var maxDate = new Date(now.getTime() + (7 * 24 * 60 * 60 * 1000)); // 7 días desde hoy
+            
+                        if (selectedDate > maxDate) {
+                            selectedDate = maxDate; // Si es mayor a 7 días, ajustarlo
+                        }
+            
+                        // Formatear la fecha y hora a 'YYYY-MM-DDTHH:00'
+                        var year = selectedDate.getFullYear();
+                        var month = ('0' + (selectedDate.getMonth() + 1)).slice(-2); // Mes en formato MM
+                        var day = ('0' + selectedDate.getDate()).slice(-2); // Día en formato DD
+                        var hours = ('0' + selectedDate.getHours()).slice(-2); // Hora en formato HH
+                        var minutes = ('0' + selectedDate.getMinutes()).slice(-2); // Minutos en formato MM
+            
+                        // Asignar la fecha ajustada al input
+                        var adjustedDate = `${year}-${month}-${day}T${hours}:${minutes}`;
+                        appointmentDateInput.value = adjustedDate;
+            
+                        // Validar en Livewire si es necesario
+                        appointmentDateInput.dispatchEvent(new Event('input'));
+                    });
+                });
+            </script>
+            
+            
+            
 
             <!-- Campo de estado -->
             <div>
@@ -86,3 +152,5 @@
         </ul>
     </div>
 </div>
+
+

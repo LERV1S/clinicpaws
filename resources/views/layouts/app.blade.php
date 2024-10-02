@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Scripts -->
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
     <style>
@@ -188,6 +189,9 @@
             .toggle-sidebar-btn.moved {
                 transform: translateX(0); /* El botón no debe moverse en pantallas pequeñas */
             }
+            #calendar {
+        min-height: 500px;
+    }
         }
     </style>
 </head>

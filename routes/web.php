@@ -5,7 +5,10 @@ use App\Http\Controllers\TicketController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\PrescriptionController;
 use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\DashboardController;
 
+use App\Models\Appointment;
+use Illuminate\Http\Request;
 
 Route::view('/', 'welcome');
 
@@ -16,12 +19,15 @@ Route::view('dashboard', 'dashboard')
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
-
-
+    
+//Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/appointments', [DashboardController::class, 'getAppointments']);
 
 Route::get('/pets', function () {
     return view('pets');  // Carga la vista que contiene el componente Livewire
 })->name('pets.index');
+
+Route::get('/appointments-data', [DashboardController::class, 'getAppointments']);
 
 Route::get('/appointments', function () {
     return view('appointments');  // Carga la vista que contiene el componente Livewire
@@ -76,5 +82,6 @@ Route::get('appointments/{id}/download', [AppointmentController::class, 'downloa
 Route::get('prescriptions/{id}/download', [PrescriptionController::class, 'downloadPDF'])->name('prescriptions.download');
 
 route::get('invoices/{id}/download', [InvoiceController::class, 'downloadPDF'])->name('invoices.download');
+
 
 require __DIR__.'/auth.php';

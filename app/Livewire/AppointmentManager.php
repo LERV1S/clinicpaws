@@ -21,6 +21,12 @@ class AppointmentManager extends Component
     {
         $this->loadAppointments(); // Cargar las citas al montar el componente
         $this->veterinarians = Veterinarian::with('user')->get(); // Cargar veterinarios
+            // Obtener los parámetros de la URL si están disponibles
+        $this->veterinarian_id = request('veterinarian_id') ?? $this->veterinarians->first()->id; // Default al primer veterinario si no hay datos
+        $this->appointment_date = request('appointment_date') ?? now()->format('Y-m-d\TH:i');
+
+        $this->loadAppointments(); // Cargar las citas al montar el componente
+        $this->veterinarians = Veterinarian::with('user')->get(); // Cargar veterinarios
     }
 
     public function updatedSearchPetTerm()
@@ -45,13 +51,26 @@ class AppointmentManager extends Component
 
     public function saveAppointment()
     {
+        // Validar los campos básicos primero
         $this->validate([
             'pet_id' => 'required',
             'veterinarian_id' => 'required',
             'appointment_date' => 'required|date',
             'status' => 'required',
         ]);
-
+    
+        // Verificar si ya existe una cita con el mismo veterinario y la misma fecha/hora
+        $existingAppointment = Appointment::where('veterinarian_id', $this->veterinarian_id)
+            ->where('appointment_date', $this->appointment_date)
+            ->first();
+    
+        if ($existingAppointment && (!$this->selectedAppointmentId || $existingAppointment->id != $this->selectedAppointmentId)) {
+            // Si ya existe una cita y no estamos editando esa cita, lanzar un error
+            session()->flash('error', 'Este veterinario ya tiene una cita a esa hora.');
+            return;
+        }
+    
+        // Si estamos editando una cita existente, actualizamos
         if ($this->selectedAppointmentId) {
             $appointment = Appointment::find($this->selectedAppointmentId);
             $appointment->update([
@@ -62,6 +81,7 @@ class AppointmentManager extends Component
                 'notes' => $this->notes,
             ]);
         } else {
+            // Si es una cita nueva, la creamos
             Appointment::create([
                 'pet_id' => $this->pet_id,
                 'veterinarian_id' => $this->veterinarian_id,
@@ -70,10 +90,16 @@ class AppointmentManager extends Component
                 'notes' => $this->notes,
             ]);
         }
-
+    
+        // Resetear los campos del formulario y recargar las citas
         $this->resetInputFields();
         $this->loadAppointments(); // Refrescar la lista de citas
+    
+        // Mostrar mensaje de éxito
+        session()->flash('message', $this->selectedAppointmentId ? 'Cita actualizada exitosamente.' : 'Cita añadida exitosamente.');
     }
+    
+
 
     public function editAppointment($id)
     {
