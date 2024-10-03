@@ -1,6 +1,8 @@
 <div>
     <h3 class="text-lg font-semibold">Calendario de Citas</h3>
+
  <!-- Aquí estará el calendario -->
+ <div id='calendar' style="min-height: 600px;"></div>
 
     <!-- Estilos adicionales y inicialización de FullCalendar -->
     <style>
@@ -77,12 +79,9 @@
     }
 
     </style>
-    
-
     <!-- Incluir los estilos de Livewire -->
-
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
-
+    <script defer src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
@@ -107,7 +106,6 @@
                             var filteredEvents = data.appointments.filter(function(event) {
                                 return new Date(event.start) >= now;
                             });
-
                             successCallback(filteredEvents);
                         })
                         .catch(error => {
@@ -155,7 +153,6 @@
     });
 </script>
 
-<div id='calendar' style="min-height: 600px;"></div>
 
     <!-- Incluir los scripts de Livewire -->
     <div id="occupiedModal" class="modal">
