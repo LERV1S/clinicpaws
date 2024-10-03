@@ -41,7 +41,7 @@
                 @endforeach
             </select>
 
-            
+
             <!-- SELECCIONAR LA RAZA -->
             <input type="text" id="breed" name="breed" wire:model="breed" class="input-field" placeholder="Breed">
 
@@ -445,9 +445,14 @@
         </div>
 
         <!-- Boton de anadir o actualizar -->
-        <div class="flex justify-start mt-4">
-            <button type="submit" class="cta-button">{{ $selectedMedicalRecordId ? 'Update Record' : 'Add Record' }}</button>
-        </div>
+        @role('Administrador|Veterinario|Empleado')
+            <div class="flex justify-start mt-4">
+                <button type="submit" class="cta-button">
+                    {{ $selectedMedicalRecordId ? 'Update Record' : 'Add Record' }}
+                </button>
+            </div>
+        @endrole
+
     </form>
 
     <!-- Listado de registros médicos -->
@@ -462,9 +467,14 @@
                     </p>
                 </div>
                 <!-- Botones de editar y eliminar -->
+                @role('Administrador|Veterinario|Empleado')
                 <div class="flex space-x-4">
                     <button wire:click="editMedicalRecord({{ $record->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
                     <button wire:click="deleteMedicalRecord({{ $record->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
+                </div>
+                @endrole
+                <div class="flex space-x-4">
+                    <button wire:click="editMedicalRecord({{ $record->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Ver</button>
                 </div>
             </li>
             @endforeach

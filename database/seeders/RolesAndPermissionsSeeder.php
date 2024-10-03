@@ -88,7 +88,8 @@ class RolesAndPermissionsSeeder extends Seeder
             'view medical history',
             'manage appointments',
             'view reports',
-            'manage tickets'
+            'manage tickets',
+            'manage invoices'
         ]);
     }
 }
