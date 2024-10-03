@@ -32,7 +32,7 @@ new #[Layout('layouts.guest')] class extends Component
 
         Auth::login($user);
 
-        $this->redirect(route('dashboard', absolute: false), navigate: true);
+        $this->redirect(route('verification.notice'), navigate: true);
     }
 }; ?>
 
@@ -85,8 +85,8 @@ new #[Layout('layouts.guest')] class extends Component
             <!-- <x-primary-button class="ms-4" wire:loading.attr="disabled">
                 {{ __('Register') }}
             </x-primary-button> -->
-            
+
         </div>
-        
+
     </form>
 </div>
