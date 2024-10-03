@@ -55,29 +55,5 @@ class DashboardComponent extends Component
         ]);
         
     }
-    public function getAppointments(Request $request)
-    {
-        // Validar los parámetros de fecha que envía FullCalendar
-        $request->validate([
-            'start' => 'required|date',
-            'end' => 'required|date',
-        ]);
 
-        // Obtener las citas entre las fechas indicadas
-        $appointments = Appointment::whereBetween('appointment_date', [$request->start, $request->end])
-            ->get(['title', 'appointment_date as start', 'appointment_date as end', 'veterinarian_id', 'color']);
-
-        // Formatear y devolver las citas en formato JSON
-        return response()->json(['appointments' => $appointments]);
-    }
-
-
-
-
-    public function render()
-    {
-        return view('livewire.dashboard-component', [
-            'appointments' => $this->appointments
-        ]);
-    }
 }
