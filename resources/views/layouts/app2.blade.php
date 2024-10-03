@@ -53,7 +53,7 @@
 
                 /* Imagen en el lado derecho */
                 .bg-image-container-right {
-                    background-image: url("images//ClinicPaws.png");
+                    background-image: url("images/ClinicPaws.png");
                     background-repeat: repeat-y;
                     background-size: 100% auto;
                     background-position: right top;
