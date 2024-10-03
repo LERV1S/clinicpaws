@@ -6,18 +6,18 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <!-- Autocompletar para seleccionar cliente -->
             <div class="relative">
-                <input 
-                    type="text" 
-                    wire:model.lazy="searchClientTerm" 
-                    class="input-field" 
-                    placeholder="Search Client..." 
+                <input
+                    type="text"
+                    wire:model.lazy="searchClientTerm"
+                    class="input-field"
+                    placeholder="Search Client..."
                     required
                 >
                 @if(!empty($clientSuggestions))
                     <ul class="absolute bg-white border border-gray-300 w-full z-10">
                         @foreach($clientSuggestions as $client)
-                            <li 
-                                wire:click="selectClient({{ $client->id }})" 
+                            <li
+                                wire:click="selectClient({{ $client->id }})"
                                 class="cursor-pointer p-2 hover:bg-gray-200"
                             >
                                 {{ $client->user->name }}
@@ -26,10 +26,10 @@
                     </ul>
                 @endif
             </div>
-        
+
             <input type="text" wire:model="status" class="input-field" placeholder="Status" required>
         </div>
-        
+
 
         <!-- Inventario para las facturas -->
         <div class="mt-4">
@@ -45,23 +45,36 @@
 
                     <input type="number" wire:model="inventoryItems.{{ $index }}.quantity" placeholder="Quantity" class="input-field" required>
 
-                    <button type="button" wire:click="removeInventoryItem({{ $index }})" class="cta-button bg-red-500 hover:bg-red-600">Remove</button>
+                    @role('Administrador|Empleado')
+
+                        <button type="button" wire:click="removeInventoryItem({{ $index }})" class="cta-button bg-red-500 hover:bg-red-600">Remove</button>
+
+                    @endrole
                 </div>
             @endforeach
-            <button type="button" wire:click="addInventoryItem" class="cta-button bg-blue-500 hover:bg-blue-600 mt-4">Add Another Item</button>
+            @role('Administrador|Empleado')
+
+                <button type="button" wire:click="addInventoryItem" class="cta-button bg-blue-500 hover:bg-blue-600 mt-4">Add Another Item</button>
+
+            @endrole
         </div>
 
         <div class="flex justify-start mt-4">
-            <button type="submit" class="cta-button">{{ $selectedInvoiceId ? 'Update Invoice' : 'Add Invoice' }}</button>
+
+            @role('Administrador|Empleado')
+
+                <button type="submit" class="cta-button">{{ $selectedInvoiceId ? 'Update Invoice' : 'Add Invoice' }}</button>
+
+            @endrole
         </div>
     </form>
 
     <!-- Campo de búsqueda para filtrar facturas por nombre de cliente -->
     <div class="mt-6">
-        <input 
-            type="text" 
-            wire:model.lazy="searchTerm" 
-            class="input-field" 
+        <input
+            type="text"
+            wire:model.lazy="searchTerm"
+            class="input-field"
             placeholder="Search by client name..."
         />
     </div>
@@ -95,8 +108,14 @@
                     </div>
 
                     <div class="flex space-x-4">
-                        <button wire:click="editInvoice({{ $invoice->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
-                        <button wire:click="deleteInvoice({{ $invoice->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
+
+                        @role('Administrador|Empleado')
+
+                            <button wire:click="editInvoice({{ $invoice->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
+                            <button wire:click="deleteInvoice({{ $invoice->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
+
+                        @endrole
+
                         <a href="{{ route('invoices.download', $invoice->id) }}" target="_blank" class="cta-button bg-green-500 hover:bg-green-600">Download PDF</a>
                     </div>
                 </li>

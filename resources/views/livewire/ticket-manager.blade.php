@@ -9,8 +9,8 @@
                 @if(!empty($clientSuggestions))
                     <ul class="absolute bg-white border border-gray-300 w-full z-10">
                         @foreach($clientSuggestions as $client)
-                            <li 
-                                wire:click="selectClient({{ $client->id }})" 
+                            <li
+                                wire:click="selectClient({{ $client->id }})"
                                 class="cursor-pointer p-2 hover:bg-gray-200"
                             >
                                 {{ $client->user->name }}
@@ -31,10 +31,14 @@
 
         <!-- Campo para generar factura -->
         <div class="mt-4">
-            <label for="generateInvoice" class="flex items-center">
-                <input type="checkbox" wire:model="generateInvoice" id="generateInvoice" class="mr-2">
-                Generate Invoice for this ticket
-            </label>
+            @role('Administrador|Empleado')
+
+                <label for="generateInvoice" class="flex items-center">
+                    <input type="checkbox" wire:model="generateInvoice" id="generateInvoice" class="mr-2">
+                    Generate Invoice for this ticket
+                </label>
+
+            @endrole
         </div>
 
         <!-- Inventario -->
@@ -48,28 +52,40 @@
                             <option value="{{ $inventory->id }}">{{ $inventory->item_name }}</option>
                         @endforeach
                     </select>
-    
-                    <input type="number" wire:model="inventoryItems.{{ $index }}.quantity" placeholder="Quantity" class="input-field" required>                 
+
+                    <input type="number" wire:model="inventoryItems.{{ $index }}.quantity" placeholder="Quantity" class="input-field" required>
                     @if(($inventoryItems[$index]['inventory_id']) && $inventoryItems[$index]['quantity'] > $inventories->find($inventoryItems[$index]['inventory_id'])->quantity)
                         <p class="text-red-500">Not enough stock for {{ $inventories->find($inventoryItems[$index]['inventory_id'])->item_name }}</p>
                     @endif
-                    <button type="button" wire:click="removeInventoryItem({{ $index }})" class="cta-button bg-red-500 hover:bg-red-600">Remove</button>
+                    @role('Administrador|Empleado')
+
+                        <button type="button" wire:click="removeInventoryItem({{ $index }})" class="cta-button bg-red-500 hover:bg-red-600">Remove</button>
+
+                    @endrole
                 </div>
             @endforeach
-            <button type="button" wire:click="addInventoryItem" class="cta-button bg-blue-500 hover:bg-blue-600 mt-4">Add Another Item</button>
+            @role('Administrador|Empleado')
+
+                <button type="button" wire:click="addInventoryItem" class="cta-button bg-blue-500 hover:bg-blue-600 mt-4">Add Another Item</button>
+
+            @endrole
         </div>
 
         <div class="flex justify-start mt-4">
-            <button type="submit" class="cta-button">{{ $selectedTicketId ? 'Update Ticket' : 'Add Ticket' }}</button>
+            @role('Administrador|Empleado')
+
+                <button type="submit" class="cta-button">{{ $selectedTicketId ? 'Update Ticket' : 'Add Ticket' }}</button>
+
+            @endrole
         </div>
     </form>
 
     <!-- Campo de búsqueda -->
     <div class="mt-6">
-        <input 
-            type="text" 
-            wire:model.lazy="searchTicketTerm" 
-            class="input-field" 
+        <input
+            type="text"
+            wire:model.lazy="searchTicketTerm"
+            class="input-field"
             placeholder="Search by client name..."
         />
     </div>
@@ -81,7 +97,7 @@
                     <div>
                         <p class="text-lg font-semibold">Client: {{ $ticket->client->user->name }}</p>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Subject: {{ $ticket->subject }} - Status: {{ $ticket->status }}</p>
-    
+
                         <!-- Listado de items del inventario -->
                         @if ($ticket->inventories->isNotEmpty())
                             <h4 class="mt-4 font-semibold">Inventory Items:</h4>
@@ -101,25 +117,32 @@
                             <p class="mt-4 font-bold">Total (IVA incl.): ${{ number_format($totalTicketPrice, 2) }}</p>
                         @endif
                     </div>
-                    
+
                     <div class="flex space-x-4">
                         <!-- Botones: Editar, Borrar, Descargar Ticket, Generar/Ver Factura -->
-                        <button wire:click="editTicket({{ $ticket->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
-                        <button wire:click="deleteTicket({{ $ticket->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
-                    
+                        @role('Administrador|Empleado')
+
+                            <button wire:click="editTicket({{ $ticket->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
+                            <button wire:click="deleteTicket({{ $ticket->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
+
+                        @endrole
                         <!-- Botón de descarga del ticket -->
                         <a href="{{ route('tickets.download', $ticket->id) }}" target="_blank" class="cta-button bg-green-500 hover:bg-green-600">Download Ticket</a>
-                    
+
                         <!-- Mostrar botón de factura si no tiene factura aún -->
-                        @if (!$ticket->invoice)
-                            <button wire:click="createInvoiceForTicket({{ $ticket->id }})" class="cta-button bg-blue-500 hover:bg-blue-600">Generate Invoice</button>
-                        @else
-                            <!-- Si ya tiene factura, mostrar el botón de ver factura -->
-                            <a href="{{ route('invoices.download', $ticket->invoice->id) }}" target="_blank" class="cta-button bg-green-500 hover:bg-green-600">View Invoice</a>
-                        @endif
+                        @role('Administrador|Empleado')
+
+                            @if (!$ticket->invoice)
+                                <button wire:click="createInvoiceForTicket({{ $ticket->id }})" class="cta-button bg-blue-500 hover:bg-blue-600">Generate Invoice</button>
+                            @else
+                                <!-- Si ya tiene factura, mostrar el botón de ver factura -->
+                                <a href="{{ route('invoices.download', $ticket->invoice->id) }}" target="_blank" class="cta-button bg-green-500 hover:bg-green-600">View Invoice</a>
+                            @endif
+
+                        @endrole
                     </div>
-                    
-                    
+
+
                 </li>
             @empty
                 <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow">
@@ -128,6 +151,6 @@
             @endforelse
         </ul>
     </div>
-    
-    
+
+
 </div>
