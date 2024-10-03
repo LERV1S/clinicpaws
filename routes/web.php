@@ -6,6 +6,7 @@ use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\PrescriptionController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PredictionController;
 
 use App\Models\Appointment;
 use Illuminate\Http\Request;
@@ -21,7 +22,7 @@ Route::view('dashboard', 'dashboard')
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
-    
+
 //Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/appointments', [DashboardController::class, 'getAppointments']);
 
@@ -108,5 +109,6 @@ Route::get('prescriptions/{id}/download', [PrescriptionController::class, 'downl
 Route::get('invoices/{id}/download', [InvoiceController::class, 'downloadPDF'])
     ->middleware('can:view invoices')->name('invoices.download');
 
+Route::post('/predict', [PredictionController::class, 'predictDangerous']);
 
 require __DIR__.'/auth.php';
