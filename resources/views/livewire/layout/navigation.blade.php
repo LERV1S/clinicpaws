@@ -24,7 +24,7 @@ new class extends Component
                 <div class="flex">
                     <!-- Logo -->
                     <div class="shrink-0 flex items-center">
-                        <a href="{{ route('dashboard') }}" wire:navigate>
+                        <a href="{{ route('dashboard') }}">
                         <img src="{{ asset('images/C.png') }}" alt="ClinicPaws Logo" class="pt-2" style="width: 80px; height: 70px;">
                         </a>
                     </div>

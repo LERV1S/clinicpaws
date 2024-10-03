@@ -49,33 +49,58 @@ class EmployeeManager extends Component
 
     public function saveEmployee()
     {
+        // Validar que se haya seleccionado un usuario
         $this->validate([
             'user_id' => 'required',
         ]);
 
+        // Verificar si el usuario ya está registrado como empleado
+        $existingEmployee = Employee::where('user_id', $this->user_id)->first();
+        if ($existingEmployee && !$this->selectedEmployeeId) {
+            // Si ya existe y no es una edición, devolver un error
+            session()->flash('error', 'This user is already an employee.');
+            return;
+        }
+
         if ($this->selectedEmployeeId) {
+            // Editar empleado existente
             $employee = Employee::find($this->selectedEmployeeId);
             $employee->update([
                 'user_id' => $this->user_id,
                 'position' => $this->position,
             ]);
+            session()->flash('message', 'Employee updated successfully.');
         } else {
+            // Crear un nuevo empleado
             Employee::create([
                 'user_id' => $this->user_id,
                 'position' => $this->position,
             ]);
+            session()->flash('message', 'Employee added successfully.');
         }
+
+        // Actualizar el rol en la tabla model_has_roles
+        \DB::table('model_has_roles')
+            ->updateOrInsert(
+                ['model_id' => $this->user_id, 'model_type' => 'App\Models\User'],
+                ['role_id' => 3] // Role de empleado es 3
+            );
 
         $this->resetInputFields();
         $this->loadEmployees(); // Recargar la lista de empleados después de guardar
     }
 
+    
     public function editEmployee($id)
     {
         $employee = Employee::find($id);
         $this->selectedEmployeeId = $employee->id;
         $this->user_id = $employee->user_id;
         $this->position = $employee->position;
+    
+        // Mostrar el nombre del usuario en el input de búsqueda
+        $this->searchUserTerm = User::find($employee->user_id)->name;
+    
     }
 
     public function deleteEmployee($id)

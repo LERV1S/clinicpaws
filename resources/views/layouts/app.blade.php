@@ -15,6 +15,12 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+        <!-- FullCalendar CSS -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css' rel='stylesheet' />
+
+    <!-- FullCalendar JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js'></script>
+
     <!-- Scripts -->
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -237,6 +243,7 @@
         <!-- Sidebar -->
         <nav :class="sidebarVisible ? 'sidebar' : 'sidebar hidden'" class="sidebar">
             <a href="{{ route('dashboard') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('dashboard') ? 'active' : '' }}">Dashboard</a>
+            <a href="{{ route('calendar') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('calendar') ? 'active' : '' }}">Calendar</a>
             <a href="{{ route('pets.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('pets.index') ? 'active' : '' }}">Manage Pets</a>
             <a href="{{ route('appointments.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('appointments.index') ? 'active' : '' }}">Manage Appointments</a>
             <a href="{{ route('inventories.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('inventories.index') ? 'active' : '' }}">Manage Inventory</a>

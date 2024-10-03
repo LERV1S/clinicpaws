@@ -13,6 +13,13 @@ class Veterinarian extends Model
         'user_id',
         'specialty',
         'license_number',
+        'works_on_monday',
+        'works_on_tuesday',
+        'works_on_wednesday',
+        'works_on_thursday',
+        'works_on_friday',
+        'works_on_saturday',
+        'works_on_sunday',
     ];
 
     // Relaciones

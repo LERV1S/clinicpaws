@@ -1,13 +1,15 @@
 <div>
     <h3 class="text-lg font-semibold">Calendario de Citas</h3>
-    <div id="calendar"></div> <!-- Aquí estará el calendario -->
+
+ <!-- Aquí estará el calendario -->
+ <div id='calendar' style="min-height: 600px;"></div>
 
     <!-- Estilos adicionales y inicialización de FullCalendar -->
     <style>
         .fc-timegrid-slot-label {
             color: black !important; /* Cambiar el color de las horas en la barra lateral */
         }
-
+    
         #calendar {
             font-family: 'Arial', sans-serif;
             background-color: white;
@@ -16,7 +18,7 @@
             height: calc(100vh - 100px); /* Hacer que el calendario ocupe casi toda la pantalla */
             overflow-y: auto; /* Agregar desplazamiento vertical si es necesario */
         }
-
+    
         .fc-event {
             border: 1px solid #1e3a8a; /* Añadir un borde alrededor de los eventos */
             border-radius: 4px;
@@ -27,74 +29,137 @@
             overflow: hidden; /* Esconder texto si es muy largo */
             text-overflow: ellipsis; /* Mostrar puntos suspensivos si el texto es muy largo */
         }
-
+    
         .fc .fc-toolbar-title {
             font-size: 18px;
             color: #1e3a8a; /* Cambiar el color del título del mes */
         }
+    
+        .fc-daygrid-day-number {
+            color: black !important; /* Cambiar el color del número del día */
+            font-size: 14px; /* Ajustar el tamaño de la fuente del número del día */
+            font-weight: bold; /* Asegurar que el número se vea destacado */
+        }
+            /* El estilo del modal */
+    .modal {
+        display: none; /* Oculto por defecto */
+        position: fixed; /* Fijo en la pantalla */
+        z-index: 1; /* Por encima del contenido */
+        left: 0;
+        top: 0;
+        width: 100%; /* Ancho completo */
+        height: 100%; /* Altura completa */
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    }
+
+    /* Contenido del modal */
+    .modal-content {
+        background-color: #101826;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 300px;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    /* El botón de cerrar */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
     </style>
-
     <!-- Incluir los estilos de Livewire -->
-
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
+    <script defer src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
     
-            if (calendarEl) {
-                var calendar = new FullCalendar.Calendar(calendarEl, {
-                    initialView: 'timeGridWeek',
-                    headerToolbar: {
-                        left: 'prev,next today',
-                        center: 'title',
-                        right: 'dayGridMonth,timeGridWeek,timeGridDay'
-                    },
-                    height: 'auto',
-                    contentHeight: 'auto',
-                    events: function(fetchInfo, successCallback, failureCallback) {
-                        // Llamada al endpoint /appointments-data para obtener los eventos
-                        fetch('/appointments-data?start=' + fetchInfo.startStr + '&end=' + fetchInfo.endStr)
-                            .then(response => response.json())
-                            .then(data => {
-                                console.log("Eventos recibidos:", data.appointments);
-                                successCallback(data.appointments); // Cargar eventos en el calendario
-                            })
-                            .catch(error => {
-                                console.error("Error al cargar los datos:", error);
-                                failureCallback(error);
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var modal = document.getElementById("occupiedModal");
+        var span = document.getElementsByClassName("close")[0];
+
+        if (calendarEl) {
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                height: 'auto',
+                contentHeight: 'auto',
+                events: function(fetchInfo, successCallback, failureCallback) {
+                    fetch('/appointments-data?start=' + fetchInfo.startStr + '&end=' + fetchInfo.endStr)
+                        .then(response => response.json())
+                        .then(data => {
+                            var now = new Date();
+                            var filteredEvents = data.appointments.filter(function(event) {
+                                return new Date(event.start) >= now;
                             });
-                    },
-                    editable: false,
-                    droppable: false,
-    
-                    // Cuando se da clic en una cita
-                    eventClick: function(info) {
-                    var veterinarianId = info.event.extendedProps.veterinarian_id;
-                    
-                    // Retrasar la hora 6 horas
-                    var appointmentDate = new Date(info.event.start);
-                    appointmentDate.setHours(appointmentDate.getHours() - 6); // Restar 6 horas
+                            successCallback(filteredEvents);
+                        })
+                        .catch(error => {
+                            console.error("Error al cargar los datos:", error);
+                            failureCallback(error);
+                        });
+                },
+                editable: false,
+                droppable: false,
 
-                    // Convertir a ISO string sin los segundos
-                    var formattedDate = appointmentDate.toISOString().slice(0, 19); // YYYY-MM-DDTHH:mm:ss
-
-                    // Redirigir a appointment-manager con los datos de la cita seleccionada
-                    window.location.href = '/appointments?veterinarian_id=' + veterinarianId + '&appointment_date=' + formattedDate;
-                }
-                ,
-                    eventContent: function(info) {
-                        return {
-                            html: `<span style="color: ${info.event.color};">●</span> ${info.event.start.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} ${info.event.title}`
-                        };
+                // Cuando se da clic en una cita
+                eventClick: function(info) {
+                    // Verificar si la cita está ocupada por el color rojo
+                    if (info.event.backgroundColor === 'red') {
+                        // Mostrar el modal en lugar de una alerta
+                        modal.style.display = "block";
+                    } else {
+                        var veterinarianId = info.event.extendedProps.veterinarian_id;
+                        var appointmentDate = new Date(info.event.start);
+                        appointmentDate.setHours(appointmentDate.getHours() - 6);
+                        var formattedDate = appointmentDate.toISOString().slice(0, 19);
+                        window.location.href = '/appointments?veterinarian_id=' + veterinarianId + '&appointment_date=' + formattedDate;
                     }
-                });
-                calendar.render();
+                },
+                eventContent: function(info) {
+                    return {
+                        html: `<span style="color: ${info.event.color};">●</span> ${info.event.start.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} ${info.event.title}`
+                    };
+                }
+            });
+            calendar.render();
+        }
+
+        // Cerrar el modal cuando el usuario haga clic en la "X"
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Cerrar el modal cuando el usuario haga clic fuera del modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
             }
-        });
-    </script>
-    
-    
+        }
+    });
+</script>
+
 
     <!-- Incluir los scripts de Livewire -->
+    <div id="occupiedModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Esta cita ya está ocupada. Por favor selecciona otra fecha/hora.</p>
+        </div>
+    </div>
+
 </div>

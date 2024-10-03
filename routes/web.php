@@ -26,6 +26,15 @@ Route::view('profile', 'profile')
 //Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/appointments', [DashboardController::class, 'getAppointments']);
 
+// Ruta para el nuevo dashboard
+Route::get('/dashboard', function () {
+    return view('dashboard_home');
+})->name('dashboard');
+
+// Ruta para el calendario
+Route::get('/calendar', function () {
+    return view('dashboard'); // Asegúrate de que la vista de calendario esté configurada aquí
+})->name('calendar');
 
 // Rutas con restricciones
 Route::get('/pets', function () {

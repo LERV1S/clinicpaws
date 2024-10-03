@@ -1,20 +1,21 @@
 <div>
     <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Manage Appointments</h1>
-<!-- Mostrar mensajes de éxito o error -->
-@if (session()->has('message'))
-    <div class="bg-green-500 text-white p-3 rounded-lg mb-4">
-        {{ session('message') }}
-    </div>
-@endif
 
-@if (session()->has('error'))
-    <div class="bg-red-500 text-white p-3 rounded-lg mb-4">
-        {{ session('error') }}
-    </div>
-@endif
     <!-- Formulario para agregar o editar una cita -->
     <form wire:submit.prevent="saveAppointment" class="space-y-4">
         <!-- Agrupación de inputs en una grid de 3 columnas -->
+        <!-- Mostrar mensajes de éxito o error -->
+@if (session()->has('message'))
+<div class="bg-green-500 text-white p-3 rounded-lg mb-4">
+    {{ session('message') }}
+</div>
+@endif
+
+@if (session()->has('error'))
+<div class="bg-red-500 text-white p-3 rounded-lg mb-4">
+    {{ session('error') }}
+</div>
+@endif
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <!-- Campo de búsqueda de mascotas (dentro del formulario para seleccionar una mascota) -->
             <div class="relative">
