@@ -219,7 +219,7 @@
         .text-lg {
     color: rgb(255, 255, 255);
 }
-.fixed {
+.fixed2 {
             position: fixed;
             bottom: 20px;
             right: 20px;
@@ -230,10 +230,10 @@
             cursor: pointer;
             transition: background-color 0.3s ease-in-out;
         }
-
-        .fixed:hover {
+        .fixed2:hover {
             background-color: #1d4ed8;
         }
+
     </style>
 </head>
 
@@ -282,7 +282,7 @@
         </button>
 
         <!-- Botón flotante para hacer scroll hacia arriba -->
-        <button class="fixed" onclick="scrollToTop()">
+        <button class="fixed2" onclick="scrollToTop()">
             <i class="fas fa-arrow-up"></i>
         </button>
         <!-- JavaScript para el scroll al inicio -->

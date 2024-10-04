@@ -101,9 +101,9 @@
 
     <!-- Modal para introducir los datos de pago -->
     @if($isPaymentModalOpen)
-    <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+    <div class="fixed inset-0 flex items-center justify-center  bg-opacity-50 z-50">
         <div class="bg-white p-6 rounded-lg shadow-lg w-96">
-            <h2 class="text-lg font-bold mb-4">Datos de Pago</h2>
+            <h2 class="font-bold mb-4">Datos de Pago</h2>
     
             <!-- Select del método de pago -->
             <div class="mb-4">
