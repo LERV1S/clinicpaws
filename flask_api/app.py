@@ -22,7 +22,10 @@ def predict():
     # Validar que no haya más de 5 síntomas
     if len(symptoms) > 5:
         return jsonify({'error': 'No se permiten más de 5 síntomas'}), 400
-
+        
+    # Rellenar con cadenas vacías si hay síntomas nulos
+    symptoms = [symptom if symptom is not None else '' for symptom in symptoms]
+    
     # Rellenar con síntomas vacíos si faltan
     symptoms += [''] * (5 - len(symptoms))
 
