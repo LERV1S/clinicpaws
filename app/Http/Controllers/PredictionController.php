@@ -7,26 +7,28 @@ use Illuminate\Support\Facades\Http;
 
 class PredictionController extends Controller
 {
-    public function predictDangerous(Request $request)
+    public function predict(Request $request)
     {
-        // Preparar los datos de los síntomas y el nombre del animal desde el formulario o API de Laravel
-        $data = [
-            'AnimalName' => $request->AnimalName,
-            'symptoms1' => $request->symptoms1,
-            'symptoms2' => $request->symptoms2,
-            'symptoms3' => $request->symptoms3,
-            'symptoms4' => $request->symptoms4,
-            'symptoms5' => $request->symptoms5,
-        ];
+        $request->validate([
+            'animal' => 'required|string',
+            'symptoms' => 'required|array|max:5',
+        ]);
 
-        // Enviar la solicitud a la API Flask
-        $response = Http::post('http://<EC2_IP>:5000/predict', $data);
+        $animal = $request->input('animal');
+        $symptoms = $request->input('symptoms');
 
-        // Obtener la respuesta de la API
-        $prediction = $response->json();
+        // Enviar los datos a la API Flask
+        $response = Http::post('http://<tu-ip-ec2>:5000/predict', [
+            'animal' => $animal,
+            'symptoms' => $symptoms,
+        ]);
 
-        // Mostrar la predicción en una vista
-        return view('result', ['dangerous' => $prediction['dangerous']]);
+        // Manejar errores de la API
+        if ($response->failed()) {
+            return back()->withErrors(['error' => 'La API de predicción falló.']);
+        }
+
+        // Mostrar el resultado en la vista
+        return view('prediction.result', ['prediction' => $response->json()]);
     }
 }
-

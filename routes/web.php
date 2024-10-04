@@ -23,6 +23,10 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
+Route::get('/predict', function () {
+    return view('predict');
+});
+
 //Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/appointments', [DashboardController::class, 'getAppointments']);
 
@@ -118,6 +122,6 @@ Route::get('prescriptions/{id}/download', [PrescriptionController::class, 'downl
 Route::get('invoices/{id}/download', [InvoiceController::class, 'downloadPDF'])
     ->middleware('can:view invoices')->name('invoices.download');
 
-Route::post('/predict', [PredictionController::class, 'predictDangerous']);
+Route::post('/predict', [PredictionController::class, 'predict'])->name('predict');
 
 require __DIR__.'/auth.php';

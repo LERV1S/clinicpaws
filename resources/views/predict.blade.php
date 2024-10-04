@@ -1,22 +1,27 @@
-<form action="/predict" method="POST">
-    @csrf
-    <label for="AnimalName">Nombre del Animal:</label>
-    <input type="text" name="AnimalName" id="AnimalName" required><br>
+@extends('layouts.app')
 
-    <label for="symptoms1">Síntoma 1:</label>
-    <input type="text" name="symptoms1" id="symptoms1" required><br>
+@section('content')
+    <div class="container">
+        <h1>Formulario de Predicción</h1>
 
-    <label for="symptoms2">Síntoma 2:</label>
-    <input type="text" name="symptoms2" id="symptoms2" required><br>
+        <form method="POST" action="{{ route('predict') }}">
+            @csrf
+            <div class="form-group">
+                <label for="animal">Animal</label>
+                <input type="text" class="form-control" name="animal" id="animal" required>
+            </div>
 
-    <label for="symptoms3">Síntoma 3:</label>
-    <input type="text" name="symptoms3" id="symptoms3" required><br>
+            <div class="form-group">
+                <label for="symptoms">Síntomas</label>
+                <input type="text" class="form-control" name="symptoms[]" placeholder="Síntoma 1" required>
+                <input type="text" class="form-control" name="symptoms[]" placeholder="Síntoma 2">
+                <input type="text" class="form-control" name="symptoms[]" placeholder="Síntoma 3">
+                <input type="text" class="form-control" name="symptoms[]" placeholder="Síntoma 4">
+                <input type="text" class="form-control" name="symptoms[]" placeholder="Síntoma 5">
+            </div>
 
-    <label for="symptoms4">Síntoma 4:</label>
-    <input type="text" name="symptoms4" id="symptoms4" required><br>
+            <button type="submit" class="btn btn-primary">Predecir</button>
+        </form>
+    </div>
+@endsection
 
-    <label for="symptoms5">Síntoma 5:</label>
-    <input type="text" name="symptoms5" id="symptoms5" required><br>
-
-    <button type="submit">Predecir</button>
-</form>
