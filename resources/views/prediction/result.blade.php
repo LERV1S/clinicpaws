@@ -3,6 +3,6 @@
 @section('content')
     <div class="container">
         <h1>Resultado de la predicción</h1>
-        <p>{{ $prediction['prediction'] }}</p>
+        <p>{{ $interpretation }}</p>
     </div>
 @endsection
