@@ -5,11 +5,11 @@ import pandas as pd
 app = Flask(__name__)
 
 # Cargar el modelo de machine learning entrenado
-with open('model.pkl', 'rb') as file:
+with open('/var/www/html/clinicpaws/flask_api/model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Cargar el codificador de nombres de animales
-with open('animal_label_encoder.pkl', 'rb') as file:
+with open('/var/www/html/clinicpaws/flask_api/animal_label_encoder.pkl', 'rb') as file:
     animal_label_encoder = pickle.load(file)
 
 @app.route('/predict', methods=['POST'])
