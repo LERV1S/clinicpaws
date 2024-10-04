@@ -30,6 +30,18 @@ class PredictionController extends Controller
             return back()->withErrors(['error' => 'La API de predicción falló.']);
         }
 
+        // Interpretar el resultado de la predicción
+        $prediction = $response->json()['prediction'];
+        
+        $interpretation = '';
+        if ($prediction == 1) {
+            $interpretation = "Se recomienda acudir al veterinario lo más pronto posible.";
+        } elseif ($prediction == 0) {
+            $interpretation = "Monitorea al animal y acude al veterinario si los síntomas persisten.";
+        } else {
+            $interpretation = "Predicción desconocida.";
+        }
+
         // Mostrar el resultado en la vista
         return view('prediction.result', ['prediction' => $response->json()]);
     }
