@@ -18,7 +18,7 @@ class PredictionController extends Controller
         $symptoms = $request->input('symptoms');
 
         // Enviar los datos a la API Flask
-        $response = Http::post('http://<tu-ip-ec2>:5000/predict', [
+        $response = Http::post('https://18.219.252.105:5000/predict', [
             'animal' => $animal,
             'symptoms' => $symptoms,
         ]);
