@@ -15,7 +15,7 @@ with open('/var/www/html/clinicpaws/flask_api/animal_label_encoder.pkl', 'rb') a
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json()
-
+    print(data)
     animal = data['animal'].lower().strip()
     symptoms = data['symptoms']
 
