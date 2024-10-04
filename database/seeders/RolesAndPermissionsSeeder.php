@@ -91,7 +91,12 @@ class RolesAndPermissionsSeeder extends Seeder
             'manage cages',
             'manage tickets',
             'manage inventory',
-            'manage prescriptions'
+            'manage prescriptions',
+            'manage medicines',
+            'view tickets',
+            'view invoices',
+            'view prescriptions'
+
         ]);
 
         $clientRole = Role::firstOrCreate(['name' => 'Cliente']);
