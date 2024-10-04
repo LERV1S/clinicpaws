@@ -64,8 +64,8 @@
 
             <!-- Campo de fecha de cita -->
             <div>
-                <input id="appointment_date" type="datetime-local" wire:model="appointment_date"
-                    min="{{ now()->format('Y-m-d\T08:00') }}" max="{{ now()->addDays(7)->format('Y-m-d\T17:00') }}"
+                <input id="appointment_date" type="datetime-local" wire:model="appointment_date" 
+                    min="{{ now()->format('Y-m-d\T08:00') }}" max="{{ now()->addDays(7)->format('Y-m-d\T17:00') }}" 
                     class="input-field" required>
             </div>
 
@@ -78,7 +78,7 @@
             <div class="col-span-3">
                 <button type="button" class="cta-button bg-blue-500 hover:bg-blue-600" wire:click="openPaymentModal">
                     Payment method
-                </button>
+                    </button>
             </div>
         </div>
 
@@ -101,12 +101,6 @@
                 <div>
                     <p class="text-lg font-semibold">Pet: {{ $appointment->pet->name }}</p>
                     <p class="text-sm text-gray-600 dark:text-gray-400">
-<<<<<<< HEAD
-                        Veterinarian: 
-=======
-                        <!-- Mostrar nombre del veterinario correctamente utilizando el user_id -->
-                        Veterinarian:
->>>>>>> 88da841ce5828a659963f7d482d64961845b5806
                         @php
                             $veterinarian = \App\Models\Veterinarian::where('user_id', $appointment->veterinarian_id)->first();
                         @endphp
@@ -118,7 +112,11 @@
                     <button wire:click="editAppointment({{ $appointment->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
                     <button wire:click="deleteAppointment({{ $appointment->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
                     @endrole
+                    @role('')
+
                     <a href="{{ route('appointments.download', $appointment->id) }}" class="cta-button bg-green-500 hover:bg-green-600">Download PDF</a>
+                    @endrole
+
                 </div>
             </li>
             @endforeach
@@ -129,57 +127,57 @@
     @if($isPaymentModalOpen)
     <div class="fixed inset-0 flex items-center justify-center  bg-opacity-50 z-50">
         <div class="bg-white p-6 rounded-lg shadow-lg w-96">
-            <h2 class="font-bold mb-4">Datos de Pago</h2>
-
+            <h2 class="font-bold mb-4">Payment Information</h2>
+    
             <!-- Select del método de pago -->
             <div class="mb-4">
                 <select wire:model.lazy="payment_method" class="input-field" required>
-                    <option value="">Selecciona el método de pago</option>
-                    <option value="credit_card">Tarjeta de Crédito</option>
+                    <option value="">Payment Method</option>
+                    <option value="credit_card">Credit Card</option>
                     <option value="paypal">PayPal</option>
                 </select>
             </div>
-
+    
             <!-- Mostrar campos si el método de pago es tarjeta de crédito -->
             @if($payment_method === 'credit_card')
             <div class="mb-4">
-                <input type="text" wire:model.lazy="credit_card_number" class="input-field" placeholder="Número de Tarjeta" required>
+                <input type="text" wire:model.lazy="credit_card_number" class="input-field" placeholder="Number of Card" required>
             </div>
             <div class="mb-4">
-                <input type="text" wire:model.lazy="credit_card_expiry" class="input-field" placeholder="Fecha de Expiración (MM/AA)" required>
+                <input type="text" wire:model.lazy="credit_card_expiry" class="input-field" placeholder="Expiration Date (MM/AA)" required>
             </div>
             <div class="mb-4">
                 <input type="text" wire:model.lazy="credit_card_cvv" class="input-field" placeholder="CVV" required>
             </div>
             @endif
-
+    
             <!-- Mostrar campos si el método de pago es PayPal -->
             @if($payment_method === 'paypal')
             <div class="mb-4">
-                <input type="email" wire:model.lazy="paypal_email" class="input-field" placeholder="Correo Electrónico de PayPal" required>
+                <input type="email" wire:model.lazy="paypal_email" class="input-field" placeholder="E-Mail  PayPal" required>
             </div>
             @endif
-
+    
             <!-- Cantidad a pagar (select entre 0 y 50 pesos) -->
             <div class="mb-4">
                 <select wire:model.lazy="payment_amount" class="input-field" required>
-                    <option value="0">0 - En proceso</option>
-                    <option value="50">50 - Pagado</option>
+                    <option value="0">0 - Proces</option>
+                    <option value="50">50 - Paid</option>
                 </select>
             </div>
-
+    
             <!-- Referencia de pago -->
             <div class="mb-4">
-                <input type="text" wire:model.lazy="payment_reference" class="input-field" placeholder="Referencia de Pago (opcional)">
+                <input type="text" wire:model.lazy="payment_reference" class="input-field" placeholder="Payment Reference (optional)">
             </div>
-
+    
             <!-- Botones para guardar o cancelar -->
             <div class="flex justify-end space-x-4">
-                <button class="cta-button bg-gray-500 hover:bg-gray-600" wire:click="closePaymentModal">Cancelar</button>
-                <button class="cta-button bg-blue-500 hover:bg-blue-600" wire:click="savePayment">Guardar Pago</button>
+                <button class="cta-button bg-gray-500 hover:bg-gray-600" wire:click="closePaymentModal">Cancel</button>
+                <button class="cta-button bg-blue-500 hover:bg-blue-600" wire:click="savePayment">Save</button>
             </div>
         </div>
-    </div>
+    </div>    
     @endif
 </div>
 <script>

@@ -199,12 +199,15 @@ public function createInvoiceForTicket($ticket)
         $inventoryItems[$inventory->id] = ['quantity' => $inventory->pivot->quantity];
     }
 
+    // Determinar el estado de la factura basado en el estado del ticket
+    $invoiceStatus = ($ticket->status === 'En adeudo') ? 'Pending' : 'Paid';
+
     // Crear la factura y asociarla al ticket
     $invoice = Invoice::create([
         'client_id' => $ticket->client_id,
         'ticket_id' => $ticket->id,  // Asociar la factura al ticket
         'total_amount' => $totalAmount,
-        'status' => 'Pending',
+        'status' => $invoiceStatus,  // Usar la variable de estado determinada
     ]);
 
     // Asociar los productos del inventario a la factura
@@ -214,6 +217,7 @@ public function createInvoiceForTicket($ticket)
 
     session()->flash('success', 'Invoice created successfully for the ticket.');
 }
+
 
 
 

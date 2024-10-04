@@ -29,8 +29,8 @@
             <textarea wire:model="description" class="input-field" placeholder="Description" required></textarea>
             <select wire:model="status" class="input-field col-span-1" required>
                 <option value="">Select Status</option>
-                <option value="Pagado">Pagado</option>
-                <option value="En adeudo">En adeudo</option>
+                <option value="Pagado">Paid</option>
+                <option value="En adeudo">Pending</option>
             </select>
         </div>
 

@@ -252,40 +252,44 @@
             @endrole
 
             @role('Administrador|Veterinario|Empleado|Cliente')
-            <a href="{{ route('pets.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('pets.index') ? 'active' : '' }}">Manage Pets</a>
+            <a href="{{ route('pets.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('pets.index') ? 'active' : '' }}">Pets</a>
             @endrole
 
             @role('Administrador|Veterinario|Empleado|Cliente')
-            <a href="{{ route('appointments.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('appointments.index') ? 'active' : '' }}">Manage Appointments</a>
+            <a href="{{ route('appointments.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('appointments.index') ? 'active' : '' }}">Appointments</a>
             @endrole
 
             @role('Administrador|Veterinario|Empleado')
-            <a href="{{ route('inventories.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('inventories.index') ? 'active' : '' }}">Manage Inventory</a>
+            <a href="{{ route('inventories.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('inventories.index') ? 'active' : '' }}">Inventory</a>
             @endrole
 
             @role('Administrador|Veterinario|Cliente')
-            <a href="{{ route('medical_records.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('medical_records.index') ? 'active' : '' }}">Manage MedicalRecord</a>
+            <a href="{{ route('medical_records.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('medical_records.index') ? 'active' : '' }}">MedicalRecord</a>
             @endrole
 
             @role('Administrador|Empleado|Cliente')
-            <a href="{{ route('invoices.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('invoices.index') ? 'active' : '' }}">Manage Invoices</a>
+            <a href="{{ route('invoices.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('invoices.index') ? 'active' : '' }}">Invoices</a>
             @endrole
 
             @role('Administrador|Cliente|Empleado')
-            <a href="{{ route('tickets.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('tickets.index') ? 'active' : '' }}">Manage Tickets</a>
+            <a href="{{ route('tickets.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('tickets.index') ? 'active' : '' }}">Tickets</a>
             @endrole
 
             @role('Administrador|Veterinario|Empleado|Cliente')
-            <a href="{{ route('prescriptions.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('prescriptions.index') ? 'active' : '' }}">Manage Prescriptions</a>
+            <a href="{{ route('prescriptions.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('prescriptions.index') ? 'active' : '' }}">Prescriptions</a>
             @endrole
 
             @role('Administrador')
-            <a href="{{ route('employees.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('employees.index') ? 'active' : '' }}">Manage Employee</a>
+            <a href="{{ route('employees.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('employees.index') ? 'active' : '' }}">Employee's</a>
             @endrole
 
             @role('Administrador')
-            <a href="{{ route('veterinarians.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('veterinarians.index') ? 'active' : '' }}">Manage Veterinarian</a>
+            <a href="{{ route('veterinarians.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('veterinarians.index') ? 'active' : '' }}">Veterinarian's</a>
             @endrole
+            @role('Administrador|Empleado|Veterinario')
+            <a href="{{ route('medicines.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('medicines.index') ? 'active' : '' }}">Medicines</a>
+            @endrole
+
         </nav>
 
         <!-- Main Content -->

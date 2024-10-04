@@ -114,8 +114,10 @@ Route::get('/faqs', function () {
 })->name('faqs');
 
 // Ruta para descargar el PDF de un ticket
-Route::get('tickets/{id}/download', [TicketController::class, 'downloadPDF'])->name('tickets.download');
-
+Route::get('tickets/{id}/download', [TicketController::class, 'downloadPDF'])
+    ->middleware('can:view tickets') // Asegúrate de usar el middleware correcto
+    ->name('tickets.download');
+    
 Route::get('prescriptions/{id}/download', [PrescriptionController::class, 'downloadPDF'])
     ->middleware('can:view prescriptions')->name('prescriptions.download');
 
@@ -123,5 +125,10 @@ Route::get('invoices/{id}/download', [InvoiceController::class, 'downloadPDF'])
     ->middleware('can:view invoices')->name('invoices.download');
 
 Route::post('/predict', [PredictionController::class, 'predict'])->name('predict');
+
+// Rutas para las medicinas
+Route::get('/medicines', function () {
+    return view('medicines');  // Carga la vista que contiene el componente Livewire de medicinas
+})->middleware('can:manage medicines')->name('medicines.index');
 
 require __DIR__.'/auth.php';

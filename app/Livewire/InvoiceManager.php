@@ -6,6 +6,7 @@ use Livewire\Component;
 use App\Models\Invoice;
 use App\Models\Client;
 use App\Models\Inventory;
+use Illuminate\Support\Facades\Auth;
 
 class InvoiceManager extends Component
 {
@@ -19,6 +20,8 @@ class InvoiceManager extends Component
     public $clientSuggestions = []; // Para almacenar las sugerencias de clientes
     public $inventoryItems = [];
     public $inventories;
+    public $filterStatus = ''; // Nuevo filtro para el estado
+
     public function mount()
     {
         $this->loadInvoices();
@@ -26,14 +29,41 @@ class InvoiceManager extends Component
         $this->inventories = Inventory::all();
 
     }
+    public function updatedSearchTerm()
+    {
+        $this->loadInvoices();
+    }
+
+    public function updatedFilterStatus()
+    {
+        $this->loadInvoices();
+    }
+
 
     // Cargar facturas filtradas por cliente
     public function loadInvoices()
     {
-        $this->invoices = Invoice::whereHas('client.user', function ($query) {
-            $query->where('name', 'like', '%' . $this->searchTerm . '%');
-        })->get();
+        $query = Invoice::query();
+    
+        if (Auth::user()->hasRole('Cliente')) {
+            $query->whereHas('client', function ($query) {
+                $query->where('user_id', Auth::id()); // Filtrar por cliente autenticado
+            });
+        } else {
+            // Filtrar por nombre de cliente
+            $query->whereHas('client.user', function ($query) {
+                $query->where('name', 'like', '%' . $this->searchTerm . '%');
+            });
+        }
+    
+        // Aplicar filtro por estado si está definido
+        if (!empty($this->filterStatus)) {
+            $query->where('status', $this->filterStatus);
+        }
+    
+        $this->invoices = $query->get();
     }
+    
      // Autocompletar cliente en el formulario
      public function updatedSearchClientTerm()
      {
@@ -49,10 +79,7 @@ class InvoiceManager extends Component
     }
 
 
-    public function updatedSearchTerm()
-    {
-        $this->loadInvoices();
-    }
+
     // Guardar o actualizar una factura
     public function saveInvoice()
     {

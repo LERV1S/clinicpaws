@@ -6,6 +6,7 @@ use App\Models\Prescription;
 use App\Models\Pet;
 use App\Models\Veterinarian;
 use App\Models\Medicine;
+use Illuminate\Support\Facades\Auth;
 
 class PrescriptionManager extends Component
 {
@@ -53,25 +54,49 @@ public function selectMedicine($medicineId, $index)
     }
 }
     
-    public function loadPrescriptions()
-    {
+public function loadPrescriptions()
+{
+    // Si el usuario es cliente, solo mostrar las prescripciones de sus mascotas
+    if (Auth::user()->hasRole('Cliente')) {
         $this->prescriptions = Prescription::whereHas('pet', function ($query) {
-            $query->where('name', 'like', '%' . $this->searchTerm . '%');
-        })->with('veterinarian.user', 'pet', 'medicines')->get(); // Asegúrate de que las medicinas se carguen junto con las prescripciones
+            $query->where('owner_id', Auth::id())
+                  ->where('name', 'like', '%' . $this->searchTerm . '%'); // Filtrar por el nombre de la mascota
+        })->with('veterinarian.user', 'pet', 'medicines')->get();
+    } else {
+        // Mostrar todas las prescripciones y filtrar por el nombre de la mascota si el rol es diferente
+        $this->prescriptions = Prescription::whereHas('pet', function ($query) {
+            $query->where('name', 'like', '%' . $this->searchTerm . '%'); // Filtrar por el nombre de la mascota
+        })->with('veterinarian.user', 'pet', 'medicines')->get();
     }
+}
+
+public function updatedSearchTerm()
+{
+    $this->loadPrescriptions(); // Volver a cargar las prescripciones al cambiar el término de búsqueda
+}
 
     
     public function updatedSearchPetTerm()
     {
-        $this->petSuggestions = Pet::where('name', 'like', '%' . $this->searchPetTerm . '%')->get();
+        // Solo mostrar mascotas del usuario autenticado si es un cliente
+        if (Auth::user()->hasRole('Cliente')) {
+            $this->petSuggestions = Pet::where('owner_id', Auth::id())
+                ->where('name', 'like', '%' . $this->searchPetTerm . '%')
+                ->get();
+        } else {
+            // Si es administrador, veterinario o empleado, mostrar todas las mascotas
+            $this->petSuggestions = Pet::where('name', 'like', '%' . $this->searchPetTerm . '%')->get();
+        }
     }
+
 
     public function selectPet($petId)
     {
         $this->pet_id = $petId;
-        $this->searchPetTerm = Pet::find($petId)->name;
-        $this->petSuggestions = [];
+        $this->searchPetTerm = Pet::find($petId)->name; // Mostrar el nombre de la mascota en el campo de búsqueda
+        $this->petSuggestions = []; // Limpiar las sugerencias después de la selección
     }
+
 
     public function addMedicine()
     {

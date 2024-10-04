@@ -1,5 +1,5 @@
 <div>
-    <h3 class="text-lg font-semibold">Calendario de Citas</h3>
+    <h3 class="text-lg font-semibold">Appointment Calendar</h3>
 
  <!-- Aquí estará el calendario -->
  <div id='calendar' style="min-height: 600px;"></div>

@@ -32,6 +32,11 @@ class RolesAndPermissionsSeeder extends Seeder
             'manage users',
             'manage prescriptions',
             'manage tickets',
+            'manage medicines',
+            'view prescriptions',
+            'view invoices',
+            'view tickets'
+
         ];
 
         foreach ($permissions as $permission) {
@@ -55,7 +60,12 @@ class RolesAndPermissionsSeeder extends Seeder
             'view reports',
             'manage users',
             'manage prescriptions',
-            'manage tickets'
+            'manage tickets',
+            'manage medicines',
+            'view prescriptions',
+            'view invoices',
+            'view tickets'
+
         ]);
 
         $vetRole = Role::firstOrCreate(['name' => 'Veterinario']);
@@ -68,7 +78,8 @@ class RolesAndPermissionsSeeder extends Seeder
             'manage inventory',
             'manage cages',
             'view reports',
-            'manage prescriptions'
+            'manage prescriptions',
+            'view tickets'
         ]);
 
         $employeeRole = Role::firstOrCreate(['name' => 'Empleado']);
@@ -91,7 +102,10 @@ class RolesAndPermissionsSeeder extends Seeder
             'view reports',
             'manage tickets',
             'manage invoices',
-            'manage prescriptions'
+            'manage prescriptions',
+            'view prescriptions',
+            'view invoices',
+            'view tickets'
         ]);
     }
 }

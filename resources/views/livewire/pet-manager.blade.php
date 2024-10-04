@@ -59,7 +59,9 @@
                         </div>
                         <div class="flex space-x-4">
                             <button wire:click="editPet({{ $pet->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
+                            @role('Administrador|Empleado|Veterinario')
                             <button wire:click="deletePet({{ $pet->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
+                            @endrole
                         </div>
                     </li>
                 @endforeach

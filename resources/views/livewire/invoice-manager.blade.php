@@ -1,9 +1,12 @@
 <div>
+<div>
     <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Manage Invoices</h1>
-
     <!-- Formulario para agregar o editar una factura -->
     <form wire:submit.prevent="saveInvoice" class="space-y-4">
+        @role('Administrador|Empleado|Veterinario')
+
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
             <!-- Autocompletar para seleccionar cliente -->
             <div class="relative">
                 <input
@@ -28,11 +31,15 @@
             </div>
 
             <input type="text" wire:model="status" class="input-field" placeholder="Status" required>
+            @endrole
+
         </div>
 
 
         <!-- Inventario para las facturas -->
         <div class="mt-4">
+            @role('Administrador|Empleado|Veterinario')
+
             <h2 class="text-lg font-semibold dark:text-white">Select Inventory Items</h2>
             @foreach($inventoryItems as $index => $item)
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
@@ -52,20 +59,20 @@
                     @endrole
                 </div>
             @endforeach
+            @endrole
+
             @role('Administrador|Empleado')
 
                 <button type="button" wire:click="addInventoryItem" class="cta-button bg-blue-500 hover:bg-blue-600 mt-4">Add Another Item</button>
 
-            @endrole
         </div>
 
         <div class="flex justify-start mt-4">
 
-            @role('Administrador|Empleado')
 
                 <button type="submit" class="cta-button">{{ $selectedInvoiceId ? 'Update Invoice' : 'Add Invoice' }}</button>
 
-            @endrole
+            
         </div>
     </form>
 
@@ -78,7 +85,19 @@
             placeholder="Search by client name..."
         />
     </div>
+    @endrole
 
+    <!-- Campo de búsqueda para filtrar facturas por estatus -->
+
+    <div class="mt-6">
+        <label for="filterStatus" class="block text-gray-700 dark:text-white">Filter by Status:</label>
+        <select wire:model.lazy="filterStatus" id="filterStatus" class="input-field mt-2">
+            <option value="">All</option>
+            <option value="Pending">Pending</option>
+            <option value="Paid">Paid</option>
+        </select>
+    </div>
+    
     <!-- Listado de facturas -->
     <div class="mt-6">
         <ul class="space-y-4">
@@ -116,10 +135,11 @@
 
                         @endrole
 
-                        <a href="{{ route('invoices.download', $invoice->id) }}" target="_blank" class="cta-button bg-green-500 hover:bg-green-600">Download PDF</a>
+                        <a href="{{ route('invoices.download', $invoice->id) }}" target="_blank" class="cta-button bg-green-500 hover:bg-green-600">Download Invoice</a>
                     </div>
                 </li>
             @endforeach
         </ul>
     </div>
+</div>
 </div>
