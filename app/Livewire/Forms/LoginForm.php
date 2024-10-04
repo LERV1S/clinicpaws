@@ -38,6 +38,15 @@ class LoginForm extends Form
             ]);
         }
 
+        // Verificar si el correo ha sido verificado
+        $user = Auth::user();
+        if (!$user || !$user->hasVerifiedEmail()) {
+            Auth::logout();  // Cerrar sesión si el correo no está verificado
+            throw ValidationException::withMessages([
+                'form.email' => 'You need to verify your email address before logging in.',
+            ]);
+        }
+
         RateLimiter::clear($this->throttleKey());
     }
 

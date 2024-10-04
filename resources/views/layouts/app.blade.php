@@ -210,19 +210,30 @@
                 transform: translateX(0);
                 /* El botón no debe moverse en pantallas pequeñas */
             }
+
             #calendar {
         min-height: 500px;
     }
-
-    
         }
 
         .text-lg {
     color: rgb(255, 255, 255);
 }
-.li{
-    color: rgb(74, 72, 72);
-}
+.fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #3182ce;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .fixed:hover {
+            background-color: #1d4ed8;
+        }
     </style>
 </head>
 
@@ -231,8 +242,6 @@
     <div x-data="{ sidebarVisible: true }" class="min-h-screen bg-gray-100 dark:bg-gray-900">
         <!-- Esto llama a la barra de navegación de Livewire -->
         <livewire:layout.navigation />
-
-
 
         <!-- Sidebar -->
         <nav :class="sidebarVisible ? 'sidebar' : 'sidebar hidden'" class="sidebar">
@@ -254,7 +263,6 @@
             <!-- Page Heading -->
             @if (isset($header))
             <header class="bg-white dark:bg-gray-800 shadow mb-6">
-                
                 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                     {{ $header }}
                 </div>
@@ -272,11 +280,25 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
         </button>
-    </div>
+
+        <!-- Botón flotante para hacer scroll hacia arriba -->
+        <button class="fixed" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <!-- JavaScript para el scroll al inicio -->
+        <script>
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+        </v>
 
 
 
-    @livewireScripts
+        @livewireScripts
 </body>
 
 </html>

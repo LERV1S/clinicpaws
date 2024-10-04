@@ -4,6 +4,10 @@
 
     <!-- Formulario para agregar o editar un registro médico -->
     <form wire:submit.prevent="saveMedicalRecord" class="space-y-4" enctype="multipart/form-data">
+        <!-- Propiedad que determina si los campos son solo para visualización -->
+        @php
+        $isReadonly = true; // Puedes cambiar esta variable según las necesidades
+        @endphp
 
         <br>
         <hr class="my-6 border-gray-300 dark:border-gray-600" style="border-width: 3px;">
@@ -43,7 +47,7 @@
 
 
             <!-- SELECCIONAR LA RAZA -->
-            <input type="text" id="breed" name="breed" wire:model="breed" class="input-field" placeholder="Breed">
+            <input type="text" id="breed" name="breed" wire:model="breed" class="input-field" placeholder="Breed"  @if($isReadonly) readonly @endif>
 
             <!-- SELECCIONAR LA EDAD -->
             <input type="number" id="age" name="age" wire:model="age" class="input-field" placeholder="Age">
@@ -446,11 +450,11 @@
 
         <!-- Boton de anadir o actualizar -->
         @role('Administrador|Veterinario|Empleado')
-            <div class="flex justify-start mt-4">
-                <button type="submit" class="cta-button">
-                    {{ $selectedMedicalRecordId ? 'Update Record' : 'Add Record' }}
-                </button>
-            </div>
+        <div class="flex justify-start mt-4">
+            <button type="submit" class="cta-button">
+                {{ $selectedMedicalRecordId ? 'Update Record' : 'Add Record' }}
+            </button>
+        </div>
         @endrole
 
     </form>
@@ -473,11 +477,34 @@
                     <button wire:click="deleteMedicalRecord({{ $record->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
                 </div>
                 @endrole
+                @role('Cliente')
                 <div class="flex space-x-4">
-                    <button wire:click="editMedicalRecord({{ $record->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Ver</button>
+                    <button wire:click="editMedicalRecord({{ $record->id }})" class="cta-button bg-green-500 hover:bg-green-600">Ver Expediente</button>
                 </div>
+                @endrole
             </li>
             @endforeach
         </ul>
     </div>
+
+    <button onclick="scrollToTop()" class="fixed bottom-5 right-5 bg-blue-500 text-white rounded-full p-3 shadow-lg hover:bg-blue-700">
+        ↑
+    </button>
+
+    <!-- JavaScript para el scroll al inicio -->
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    <!-- Estilos para hacer que el botón flote en la esquina -->
+    <style>
+        .fixed {
+            position: fixed;
+        }
+    </style>
 </div>
