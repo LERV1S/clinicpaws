@@ -7,6 +7,7 @@ use App\Models\Ticket;
 use App\Models\Client;
 use App\Models\Inventory;
 use App\Models\Invoice;
+use Illuminate\Support\Facades\Auth;  // Importante para identificar al usuario logeado
 
 class TicketManager extends Component
 {
@@ -19,7 +20,8 @@ class TicketManager extends Component
     public $searchTicketTerm = ''; // Para la búsqueda de tickets en la lista
     public $clientSuggestions = [];
     public $generateInvoice = false; // Checkbox para generar facturas
-
+    public $filterStatus = '';  // Agregar $filterStatus
+   
     public function mount()
     {
         $this->loadTickets();
@@ -46,15 +48,37 @@ class TicketManager extends Component
 
     public function loadTickets()
     {
-        $this->tickets = Ticket::with('client.user', 'invoice') // Cargar la relación de factura
-            ->whereHas('client.user', function ($query) {
+        $query = Ticket::with('client.user', 'invoice');
+    
+        if (Auth::user()->hasRole('Cliente')) {
+            // Mostrar solo los tickets del cliente logueado
+            $query->where('client_id', Auth::user()->client->id);
+        }
+    
+        // Aplicar el filtro por nombre de cliente (si es un administrador o empleado)
+        if (!empty($this->searchTicketTerm)) {
+            $query->whereHas('client.user', function ($query) {
                 $query->where('name', 'like', '%' . $this->searchTicketTerm . '%');
-            })
-            ->get();
+            });
+        }
+    
+        // Aplicar el filtro por estado (si está seleccionado)
+        if (!empty($this->filterStatus)) {
+            $query->where('status', $this->filterStatus);
+        }
+    
+        // Obtener los resultados
+        $this->tickets = $query->get();
     }
+    
     
 
     public function updatedSearchTicketTerm()
+    {
+        $this->loadTickets();
+    }
+
+    public function updatedFilterStatus()  // Actualizar al filtrar por estado
     {
         $this->loadTickets();
     }

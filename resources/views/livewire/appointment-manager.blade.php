@@ -1,3 +1,4 @@
+<div> 
 <div>
     <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Manage Appointments</h1>
 
@@ -17,8 +18,11 @@
         @endif
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            @role('Administrador|Veterinario|Empleado')
+
             <!-- Campo de búsqueda de mascotas -->
             <div class="relative">
+
                 <input type="text" wire:model.lazy="searchPetTerm" class="input-field" placeholder="Search Pet..." required>
                 @if(!empty($petSuggestions))
                     <ul class="absolute bg-white border border-gray-300 w-full z-10">
@@ -28,20 +32,35 @@
                             </li>
                         @endforeach
                     </ul>
-                @endif
+                @endif  
             </div>
+                @endrole
 
-            <!-- Select de veterinario -->
-            <div>
-                <select wire:model="veterinarian_id" class="input-field" required>
-                    <option value="">Select Veterinarian</option>
-                    @foreach($veterinarians as $vet)
-                        <option value="{{ $vet->id }}">
-                            {{ $vet->user ? $vet->user->name : 'User not found' }}
-                        </option>
-                    @endforeach
-                </select>
+            @role('Cliente')
+            <!-- Mostrar solo las mascotas del cliente -->
+            <div class="relative" required>
+                <div>
+                    <select wire:model="pet_id" class="input-field w-full" required>
+                        <option value="">Selecciona tu mascota</option>
+                        @foreach(Auth::user()->pets as $pet)
+                            <option value="{{ $pet->id }}">{{ $pet->name }}</option>
+                        @endforeach
+                    </select>
+                </div>
             </div>
+    @endrole
+           
+           <!-- Select de veterinario -->
+        <div>
+            <select wire:model="veterinarian_id" class="input-field" required>
+                <option value="">Select Veterinarian</option>
+                @foreach($veterinarians as $vet)
+                    <option value="{{ $vet->id }}">
+                        {{ $vet->user ? $vet->user->name : 'User not found' }}
+                    </option>
+                @endforeach
+            </select>
+        </div>
 
             <!-- Campo de fecha de cita -->
             <div>
@@ -69,19 +88,19 @@
     </form>
 
     <!-- Campo de búsqueda para filtrar citas por nombre de mascota -->
+<!-- Campo de búsqueda para filtrar citas por nombre de mascota -->
     <div class="mt-6">
-        <input type="text" wire:model.lazy="searchPetTerm" class="input-field" placeholder="Search by pet name...">
+        <input type="text" wire:model.lazy="searchAppointmentTerm" class="input-field" placeholder="Search by pet name...">
     </div>
 
     <!-- Listado de citas -->
-    <div class="mt-6">
+     <div class="mt-6">
         <ul class="space-y-4">
             @foreach ($appointments as $appointment)
             <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow flex justify-between items-center">
                 <div>
                     <p class="text-lg font-semibold">Pet: {{ $appointment->pet->name }}</p>
                     <p class="text-sm text-gray-600 dark:text-gray-400">
-                        <!-- Mostrar nombre del veterinario correctamente utilizando el user_id -->
                         Veterinarian: 
                         @php
                             $veterinarian = \App\Models\Veterinarian::where('user_id', $appointment->veterinarian_id)->first();
@@ -90,15 +109,17 @@
                     </p>
                 </div>
                 <div class="flex space-x-4">
+                    @role('Administrador|Veterinario|Empleado')
                     <button wire:click="editAppointment({{ $appointment->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
                     <button wire:click="deleteAppointment({{ $appointment->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
+                    @endrole
                     <a href="{{ route('appointments.download', $appointment->id) }}" class="cta-button bg-green-500 hover:bg-green-600">Download PDF</a>
                 </div>
             </li>
             @endforeach
         </ul>
     </div>
-
+</div>
     <!-- Modal para introducir los datos de pago -->
     @if($isPaymentModalOpen)
     <div class="fixed inset-0 flex items-center justify-center  bg-opacity-50 z-50">
@@ -156,7 +177,6 @@
     </div>    
     @endif
 </div>
-
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var appointmentDateInput = document.getElementById('appointment_date');

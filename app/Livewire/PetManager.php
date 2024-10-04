@@ -5,6 +5,8 @@ namespace App\Livewire;
 use Livewire\Component;
 use App\Models\Pet;
 use App\Models\User; 
+use Illuminate\Support\Facades\Auth;
+
 
 class PetManager extends Component
 {
@@ -16,6 +18,8 @@ class PetManager extends Component
     public $ownerSuggestions = []; // Sugerencias de propietarios
     public $searchPetTerm = ''; // Término de búsqueda para mascotas
 
+
+    
     public function mount()
     {
         $this->loadPets();
@@ -45,15 +49,25 @@ class PetManager extends Component
 
     public function loadPets()
     {
-        $this->pets = Pet::with('owner')
-            ->where('name', 'like', '%' . $this->searchPetTerm . '%')
-            ->get();
+        if (Auth::user()->hasRole('Administrador')) {
+            // Mostrar todas las mascotas para el administrador
+            $this->pets = Pet::with('owner')
+                ->where('name', 'like', '%' . $this->searchPetTerm . '%')
+                ->get();
+        } else {
+            // Mostrar solo las mascotas del usuario autenticado
+            $this->owner_id = Auth::id(); // Obtener el ID del usuario autenticado
+            $this->pets = Pet::with('owner')
+                ->where('owner_id', $this->owner_id)
+                ->where('name', 'like', '%' . $this->searchPetTerm . '%')
+                ->get();
+        }
     }
 
-    public function savePet()
+
+       public function savePet()
     {
         $this->validate([
-            'owner_id' => 'required',
             'name' => 'required',
             'species' => 'required',
         ]);
@@ -61,7 +75,7 @@ class PetManager extends Component
         if ($this->selectedPetId) {
             $pet = Pet::find($this->selectedPetId);
             $pet->update([
-                'owner_id' => $this->owner_id,
+                'owner_id' => $this->owner_id ?? Auth::id(), // Asignar el dueño como el usuario autenticado
                 'name' => $this->name,
                 'species' => $this->species,
                 'breed' => $this->breed,
@@ -70,7 +84,7 @@ class PetManager extends Component
             ]);
         } else {
             Pet::create([
-                'owner_id' => $this->owner_id,
+                'owner_id' => $this->owner_id ?? Auth::id(), // Asignar el dueño como el usuario autenticado
                 'name' => $this->name,
                 'species' => $this->species,
                 'breed' => $this->breed,
@@ -93,8 +107,6 @@ class PetManager extends Component
         $this->breed = $pet->breed;
         $this->birthdate = $pet->birthdate;
         $this->medical_conditions = $pet->medical_conditions;
-
-        $this->searchOwnerTerm = $pet->owner->name;
     }
 
     public function deletePet($id)

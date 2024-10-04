@@ -1,9 +1,14 @@
 <div>
+<div>
+
     <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Manage Tickets</h1>
 
     <!-- Formulario para agregar o editar un ticket -->
     <form wire:submit.prevent="saveTicket" class="space-y-4">
+
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            @role('Administrador|Empleado')
+
             <div class="relative">
                 <input type="text" wire:model.lazy="searchClientTerm" class="input-field" placeholder="Search Client..." required>
                 @if(!empty($clientSuggestions))
@@ -31,19 +36,27 @@
 
         <!-- Campo para generar factura -->
         <div class="mt-4">
-            @role('Administrador|Empleado')
+            
 
                 <label for="generateInvoice" class="flex items-center dark:text-white">
                     <input type="checkbox" wire:model="generateInvoice" id="generateInvoice" class="mr-2">
                     Generate Invoice for this ticket
                 </label>
 
-            @endrole
         </div>
 
+
+        
         <!-- Inventario -->
         <div class="mt-4">
+
             <h2 class="text-lg font-semibold dark:text-white">Select Inventory Items</h2>
+            @endrole
+
+
+
+            @role('Administrador|Empleado')
+
             @foreach($inventoryItems as $index => $item)
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
                     <select wire:model="inventoryItems.{{ $index }}.inventory_id" class="input-field" required>
@@ -57,13 +70,14 @@
                     @if(($inventoryItems[$index]['inventory_id']) && $inventoryItems[$index]['quantity'] > $inventories->find($inventoryItems[$index]['inventory_id'])->quantity)
                         <p class="text-red-500">Not enough stock for {{ $inventories->find($inventoryItems[$index]['inventory_id'])->item_name }}</p>
                     @endif
-                    @role('Administrador|Empleado')
+
 
                         <button type="button" wire:click="removeInventoryItem({{ $index }})" class="cta-button bg-red-500 hover:bg-red-600">Remove</button>
 
-                    @endrole
                 </div>
             @endforeach
+                                @endrole
+
             @role('Administrador|Empleado')
 
                 <button type="button" wire:click="addInventoryItem" class="cta-button bg-blue-500 hover:bg-blue-600 mt-4">Add Another Item</button>
@@ -81,7 +95,11 @@
     </form>
 
     <!-- Campo de búsqueda -->
+    @role('Administrador|Empleado')
+
     <div class="mt-6">
+        <label for="filterStatus" class="block text-gray-700 dark:text-white">Filter by Client :</label>
+
         <input
             type="text"
             wire:model.lazy="searchTicketTerm"
@@ -89,6 +107,19 @@
             placeholder="Search by client name..."
         />
     </div>
+    @endrole
+    @role('Cliente|Administrador|Empleado')
+
+                    <!-- Filtro por status -->
+                    <div class="mt-6">
+                        <label for="filterStatus" class="block text-gray-700 dark:text-white">Filter by Status:</label>
+                        <select wire:model.lazy="filterStatus" id="filterStatus" class="input-field mt-2">
+                            <option value="">All</option>
+                            <option value="Pagado">Pagado</option>
+                            <option value="En adeudo">En adeudo</option>
+                        </select>
+                    </div>
+                    @endrole
 
     <div class="mt-6">
         <ul class="space-y-4">
@@ -153,4 +184,5 @@
     </div>
 
 
+</div>
 </div>

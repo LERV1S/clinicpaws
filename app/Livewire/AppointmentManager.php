@@ -7,6 +7,7 @@ use App\Models\Appointment;
 use App\Models\Pet;
 use App\Models\User;
 use App\Models\Veterinarian;
+use Illuminate\Support\Facades\Auth;
 
 class AppointmentManager extends Component
 {
@@ -20,6 +21,7 @@ class AppointmentManager extends Component
     public $petSuggestions = [];
     public $veterinarians;
     public $isPaymentModalOpen = false;
+    public $searchAppointmentTerm = ''; // Nueva propiedad para buscar citas
 
     public function mount()
     {
@@ -55,17 +57,38 @@ class AppointmentManager extends Component
         $this->isPaymentModalOpen = false;
     }
 
+    // Esta función solo maneja la búsqueda de mascotas
     public function updatedSearchPetTerm()
     {
-        $this->loadAppointments();
         $this->petSuggestions = Pet::where('name', 'like', '%' . $this->searchPetTerm . '%')->get();
+    }
+
+    // Esta función maneja la búsqueda de citas
+    public function updatedSearchAppointmentTerm()
+    {
+        $this->loadAppointments(); // Recargar las citas según el término de búsqueda de citas
     }
 
     public function loadAppointments()
     {
-        $this->appointments = Appointment::whereHas('pet', function ($query) {
-            $query->where('name', 'like', '%' . $this->searchPetTerm . '%');
-        })->with(['pet', 'veterinarian.user'])->get();
+        if (Auth::user()->hasRole('Cliente')) {
+            // Mostrar solo las citas del cliente autenticado
+            $this->appointments = Appointment::whereHas('pet', function ($query) {
+                $query->where('owner_id', Auth::id());
+            })
+            ->whereHas('pet', function ($query) {
+                $query->where('name', 'like', '%' . $this->searchAppointmentTerm . '%'); // Filtro por nombre de cita
+            })
+            ->with(['pet', 'veterinarian.user'])
+            ->get();
+        } else {
+            // Mostrar todas las citas para los roles con más permisos
+            $this->appointments = Appointment::whereHas('pet', function ($query) {
+                $query->where('name', 'like', '%' . $this->searchAppointmentTerm . '%'); // Filtro por nombre de cita
+            })
+            ->with(['pet', 'veterinarian.user'])
+            ->get();
+        }
     }
 
     public function selectPet($petId)
@@ -77,22 +100,19 @@ class AppointmentManager extends Component
 
     public function saveAppointment()
     {
-        // Validar los campos básicos primero
         $this->validate([
             'pet_id' => 'required',
             'veterinarian_id' => 'required',  
             'appointment_date' => 'required|date',
         ]);
     
-        // Obtener el veterinario por su id de la tabla veterinarians
         $veterinarian = Veterinarian::find($this->veterinarian_id);
         if (!$veterinarian) {
             session()->flash('error', 'Veterinario no encontrado.');
             return;
         }
     
-        // Verificar si el veterinario trabaja el día de la cita
-        $appointmentDayOfWeek = (new \DateTime($this->appointment_date))->format('N'); // 1 (Lunes) - 7 (Domingo)
+        $appointmentDayOfWeek = (new \DateTime($this->appointment_date))->format('N');
         $worksOnDay = $this->veterinarianWorksOnDay($veterinarian, $appointmentDayOfWeek);
     
         if (!$worksOnDay) {
@@ -102,7 +122,6 @@ class AppointmentManager extends Component
     
         $userId = $veterinarian->user_id;
     
-        // Verificar si ya existe una cita con el mismo veterinario (user_id) y la misma fecha/hora
         $existingAppointment = Appointment::where('veterinarian_id', $userId)
             ->where('appointment_date', $this->appointment_date)
             ->first();
@@ -111,11 +130,20 @@ class AppointmentManager extends Component
             session()->flash('error', 'Este veterinario ya tiene una cita a esa hora.');
             return;
         }
+
+        // Verificar si la mascota ya tiene una cita asignada a la misma hora con cualquier veterinario
+        $existingPetAppointment = Appointment::where('pet_id', $this->pet_id)
+            ->where('appointment_date', $this->appointment_date)
+            ->first();
+
+        if ($existingPetAppointment) {
+            session()->flash('error', 'Esta mascota ya tiene una cita asignada en esa fecha y hora con otro veterinario.');
+            return;
+        }
+
     
-        // Asignar el status basado en el payment_amount
         $this->status = ($this->payment_amount == 50) ? 'Pagado' : 'En proceso';
     
-        // Si estamos editando una cita existente, actualizamos
         if ($this->selectedAppointmentId) {
             $appointment = Appointment::find($this->selectedAppointmentId);
             $appointment->update([
@@ -131,7 +159,6 @@ class AppointmentManager extends Component
                 'payment_reference' => $this->payment_reference,
             ]);
         } else {
-            // Si es una cita nueva, la creamos
             Appointment::create([
                 'pet_id' => $this->pet_id,
                 'veterinarian_id' => $userId,

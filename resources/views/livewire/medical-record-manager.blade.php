@@ -1,6 +1,6 @@
 <div>
 
-    <h1 class="text-xl font-bold text-gray-900 dark:text-white mb-6">Manage Medical Records</h1>
+    <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Manage Medical Records</h1>
 
     <!-- Formulario para agregar o editar un registro médico -->
     <form wire:submit.prevent="saveMedicalRecord" class="space-y-4" enctype="multipart/form-data">
