@@ -9,13 +9,21 @@ class PredictionController extends Controller
 {
     public function predict(Request $request)
     {
+        // Validar la entrada del usuario
         $request->validate([
             'animal' => 'required|string',
             'symptoms' => 'required|array|max:5',
         ]);
 
+        // Obtener los valores del formulario
         $animal = $request->input('animal');
         $symptoms = $request->input('symptoms');
+
+        // Dump de los datos para verificar que se envían correctamente
+        dd([
+            'animal' => $animal,
+            'symptoms' => $symptoms,
+        ]);
 
         // Enviar los datos a la API Flask
         $response = Http::post('http://18.219.252.105:5000/predict', [
