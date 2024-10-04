@@ -3,30 +3,27 @@
 
     <!-- Formulario para agregar o editar una cita -->
     <form wire:submit.prevent="saveAppointment" class="space-y-4">
-        <!-- Agrupación de inputs en una grid de 3 columnas -->
         <!-- Mostrar mensajes de éxito o error -->
-@if (session()->has('message'))
-<div class="bg-green-500 text-white p-3 rounded-lg mb-4">
-    {{ session('message') }}
-</div>
-@endif
+        @if (session()->has('message'))
+        <div class="bg-green-500 text-white p-3 rounded-lg mb-4">
+            {{ session('message') }}
+        </div>
+        @endif
 
-@if (session()->has('error'))
-<div class="bg-red-500 text-white p-3 rounded-lg mb-4">
-    {{ session('error') }}
-</div>
-@endif
+        @if (session()->has('error'))
+        <div class="bg-red-500 text-white p-3 rounded-lg mb-4">
+            {{ session('error') }}
+        </div>
+        @endif
+
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <!-- Campo de búsqueda de mascotas (dentro del formulario para seleccionar una mascota) -->
+            <!-- Campo de búsqueda de mascotas -->
             <div class="relative">
                 <input type="text" wire:model.lazy="searchPetTerm" class="input-field" placeholder="Search Pet..." required>
                 @if(!empty($petSuggestions))
                     <ul class="absolute bg-white border border-gray-300 w-full z-10">
                         @foreach($petSuggestions as $pet)
-                            <li 
-                                wire:click="selectPet({{ $pet->id }})" 
-                                class="cursor-pointer p-2 hover:bg-gray-200"
-                            >
+                            <li wire:click="selectPet({{ $pet->id }})" class="cursor-pointer p-2 hover:bg-gray-200">
                                 {{ $pet->name }}
                             </li>
                         @endforeach
@@ -48,72 +45,21 @@
 
             <!-- Campo de fecha de cita -->
             <div>
-                <input id="appointment_date" 
-                       type="datetime-local" 
-                       wire:model="appointment_date" 
-                       min="{{ now()->format('Y-m-d\T08:00') }}" 
-                       max="{{ now()->addDays(7)->format('Y-m-d\T17:00') }}" 
-                       class="input-field" 
-                       required>
-            </div>      
-            <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    var appointmentDateInput = document.getElementById('appointment_date');
-            
-                    // Listener para ajustar solo los minutos a 00 y validar el rango de horas
-                    appointmentDateInput.addEventListener('change', function() {
-                        var value = appointmentDateInput.value;
-            
-                        // Convertir la fecha seleccionada a un objeto Date
-                        var selectedDate = new Date(value.replace('T', ' ') + ':00');
-            
-                        // Ajustar los minutos automáticamente a 00
-                        selectedDate.setMinutes(0);
-            
-                        // Verificar si la hora está dentro del horario laboral (8 AM a 5 PM)
-                        var selectedHour = selectedDate.getHours();
-                        if (selectedHour < 8) {
-                            selectedDate.setHours(8); // Ajustar a 8 AM si es menor
-                        } else if (selectedHour >= 18) {
-                            selectedDate.setHours(18); // Ajustar a 5 PM si es mayor
-                        }
-            
-                        // Verificar si la fecha es mayor a 7 días desde la fecha actual
-                        var now = new Date();
-                        var maxDate = new Date(now.getTime() + (7 * 24 * 60 * 60 * 1000)); // 7 días desde hoy
-            
-                        if (selectedDate > maxDate) {
-                            selectedDate = maxDate; // Si es mayor a 7 días, ajustarlo
-                        }
-            
-                        // Formatear la fecha y hora a 'YYYY-MM-DDTHH:00'
-                        var year = selectedDate.getFullYear();
-                        var month = ('0' + (selectedDate.getMonth() + 1)).slice(-2); // Mes en formato MM
-                        var day = ('0' + selectedDate.getDate()).slice(-2); // Día en formato DD
-                        var hours = ('0' + selectedDate.getHours()).slice(-2); // Hora en formato HH
-                        var minutes = ('0' + selectedDate.getMinutes()).slice(-2); // Minutos en formato MM
-            
-                        // Asignar la fecha ajustada al input
-                        var adjustedDate = `${year}-${month}-${day}T${hours}:${minutes}`;
-                        appointmentDateInput.value = adjustedDate;
-            
-                        // Validar en Livewire si es necesario
-                        appointmentDateInput.dispatchEvent(new Event('input'));
-                    });
-                });
-            </script>
-            
-            
-            
-
-            <!-- Campo de estado -->
-            <div>
-                <input type="text" wire:model="status" class="input-field" placeholder="Status" required>
+                <input id="appointment_date" type="datetime-local" wire:model="appointment_date" 
+                    min="{{ now()->format('Y-m-d\T08:00') }}" max="{{ now()->addDays(7)->format('Y-m-d\T17:00') }}" 
+                    class="input-field" required>
             </div>
 
             <!-- Campo de notas -->
             <div class="col-span-3">
                 <textarea wire:model="notes" class="input-field" placeholder="Notes"></textarea>
+            </div>
+
+            <!-- Botón para abrir el modal de pago -->
+            <div class="col-span-3">
+                <button type="button" class="cta-button bg-blue-500 hover:bg-blue-600" wire:click="openPaymentModal">
+                    Introducir datos de pago
+                </button>
             </div>
         </div>
 
@@ -124,12 +70,7 @@
 
     <!-- Campo de búsqueda para filtrar citas por nombre de mascota -->
     <div class="mt-6">
-        <input 
-            type="text" 
-            wire:model.lazy="searchPetTerm" 
-            class="input-field" 
-            placeholder="Search by pet name..."
-        />
+        <input type="text" wire:model.lazy="searchPetTerm" class="input-field" placeholder="Search by pet name...">
     </div>
 
     <!-- Listado de citas -->
@@ -140,7 +81,12 @@
                 <div>
                     <p class="text-lg font-semibold">Pet: {{ $appointment->pet->name }}</p>
                     <p class="text-sm text-gray-600 dark:text-gray-400">
-                        Veterinarian: {{ $appointment->veterinarian && $appointment->veterinarian->user ? $appointment->veterinarian->user->name : 'No Veterinarian Assigned' }} - Date: {{ $appointment->appointment_date }}
+                        <!-- Mostrar nombre del veterinario correctamente utilizando el user_id -->
+                        Veterinarian: 
+                        @php
+                            $veterinarian = \App\Models\Veterinarian::where('user_id', $appointment->veterinarian_id)->first();
+                        @endphp
+                        {{ $veterinarian && $veterinarian->user ? $veterinarian->user->name : 'No Veterinarian Assigned' }} - Date: {{ $appointment->appointment_date }}
                     </p>
                 </div>
                 <div class="flex space-x-4">
@@ -152,6 +98,94 @@
             @endforeach
         </ul>
     </div>
+
+    <!-- Modal para introducir los datos de pago -->
+    @if($isPaymentModalOpen)
+    <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+            <h2 class="text-lg font-bold mb-4">Datos de Pago</h2>
+    
+            <!-- Select del método de pago -->
+            <div class="mb-4">
+                <select wire:model.lazy="payment_method" class="input-field" required>
+                    <option value="">Selecciona el método de pago</option>
+                    <option value="credit_card">Tarjeta de Crédito</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </div>
+    
+            <!-- Mostrar campos si el método de pago es tarjeta de crédito -->
+            @if($payment_method === 'credit_card')
+            <div class="mb-4">
+                <input type="text" wire:model.lazy="credit_card_number" class="input-field" placeholder="Número de Tarjeta" required>
+            </div>
+            <div class="mb-4">
+                <input type="text" wire:model.lazy="credit_card_expiry" class="input-field" placeholder="Fecha de Expiración (MM/AA)" required>
+            </div>
+            <div class="mb-4">
+                <input type="text" wire:model.lazy="credit_card_cvv" class="input-field" placeholder="CVV" required>
+            </div>
+            @endif
+    
+            <!-- Mostrar campos si el método de pago es PayPal -->
+            @if($payment_method === 'paypal')
+            <div class="mb-4">
+                <input type="email" wire:model.lazy="paypal_email" class="input-field" placeholder="Correo Electrónico de PayPal" required>
+            </div>
+            @endif
+    
+            <!-- Cantidad a pagar (select entre 0 y 50 pesos) -->
+            <div class="mb-4">
+                <select wire:model.lazy="payment_amount" class="input-field" required>
+                    <option value="0">0 - En proceso</option>
+                    <option value="50">50 - Pagado</option>
+                </select>
+            </div>
+    
+            <!-- Referencia de pago -->
+            <div class="mb-4">
+                <input type="text" wire:model.lazy="payment_reference" class="input-field" placeholder="Referencia de Pago (opcional)">
+            </div>
+    
+            <!-- Botones para guardar o cancelar -->
+            <div class="flex justify-end space-x-4">
+                <button class="cta-button bg-gray-500 hover:bg-gray-600" wire:click="closePaymentModal">Cancelar</button>
+                <button class="cta-button bg-blue-500 hover:bg-blue-600" wire:click="savePayment">Guardar Pago</button>
+            </div>
+        </div>
+    </div>    
+    @endif
 </div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var appointmentDateInput = document.getElementById('appointment_date');
+        appointmentDateInput.addEventListener('change', function() {
+            var value = appointmentDateInput.value;
+            var selectedDate = new Date(value.replace('T', ' ') + ':00');
+            selectedDate.setMinutes(0);
+            var selectedHour = selectedDate.getHours();
+            if (selectedHour < 8) {
+                selectedDate.setHours(8);
+            } else if (selectedHour >= 18) {
+                selectedDate.setHours(18);
+            }
 
+            var now = new Date();
+            var maxDate = new Date(now.getTime() + (7 * 24 * 60 * 60 * 1000));
+            if (selectedDate > maxDate) {
+                selectedDate = maxDate;
+            }
+
+            var year = selectedDate.getFullYear();
+            var month = ('0' + (selectedDate.getMonth() + 1)).slice(-2);
+            var day = ('0' + selectedDate.getDate()).slice(-2);
+            var hours = ('0' + selectedDate.getHours()).slice(-2);
+            var minutes = ('0' + selectedDate.getMinutes()).slice(-2);
+
+            var adjustedDate = `${year}-${month}-${day}T${hours}:${minutes}`;
+            appointmentDateInput.value = adjustedDate;
+            appointmentDateInput.dispatchEvent(new Event('input'));
+        });
+    });
+</script>

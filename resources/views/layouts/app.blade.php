@@ -213,7 +213,16 @@
             #calendar {
         min-height: 500px;
     }
+
+    
         }
+
+        .text-lg {
+    color: rgb(255, 255, 255);
+}
+.li{
+    color: rgb(74, 72, 72);
+}
     </style>
 </head>
 

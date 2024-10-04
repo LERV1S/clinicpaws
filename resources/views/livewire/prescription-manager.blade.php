@@ -31,7 +31,7 @@
 
             <!-- Medicinas -->
             <div class="mt-4">
-                <h2 class="text-lg font-semibold">Select Medicines</h2>
+                <h2 class="text-lg font-semibold dark:text-white">Select Medicines</h2>
                 @foreach($medicines as $index => $medicine)
                     <div class="flex items-center gap-4 mt-2">
                         <div class="relative flex-1">
