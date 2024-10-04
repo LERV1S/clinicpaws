@@ -45,8 +45,8 @@
 
             <!-- Campo de fecha de cita -->
             <div>
-                <input id="appointment_date" type="datetime-local" wire:model="appointment_date" 
-                    min="{{ now()->format('Y-m-d\T08:00') }}" max="{{ now()->addDays(7)->format('Y-m-d\T17:00') }}" 
+                <input id="appointment_date" type="datetime-local" wire:model="appointment_date"
+                    min="{{ now()->format('Y-m-d\T08:00') }}" max="{{ now()->addDays(7)->format('Y-m-d\T17:00') }}"
                     class="input-field" required>
             </div>
 
@@ -58,7 +58,7 @@
             <!-- Botón para abrir el modal de pago -->
             <div class="col-span-3">
                 <button type="button" class="cta-button bg-blue-500 hover:bg-blue-600" wire:click="openPaymentModal">
-                    Introducir datos de pago
+                    Payment method
                 </button>
             </div>
         </div>
@@ -82,7 +82,7 @@
                     <p class="text-lg font-semibold">Pet: {{ $appointment->pet->name }}</p>
                     <p class="text-sm text-gray-600 dark:text-gray-400">
                         <!-- Mostrar nombre del veterinario correctamente utilizando el user_id -->
-                        Veterinarian: 
+                        Veterinarian:
                         @php
                             $veterinarian = \App\Models\Veterinarian::where('user_id', $appointment->veterinarian_id)->first();
                         @endphp
@@ -104,7 +104,7 @@
     <div class="fixed inset-0 flex items-center justify-center  bg-opacity-50 z-50">
         <div class="bg-white p-6 rounded-lg shadow-lg w-96">
             <h2 class="font-bold mb-4">Datos de Pago</h2>
-    
+
             <!-- Select del método de pago -->
             <div class="mb-4">
                 <select wire:model.lazy="payment_method" class="input-field" required>
@@ -113,7 +113,7 @@
                     <option value="paypal">PayPal</option>
                 </select>
             </div>
-    
+
             <!-- Mostrar campos si el método de pago es tarjeta de crédito -->
             @if($payment_method === 'credit_card')
             <div class="mb-4">
@@ -126,14 +126,14 @@
                 <input type="text" wire:model.lazy="credit_card_cvv" class="input-field" placeholder="CVV" required>
             </div>
             @endif
-    
+
             <!-- Mostrar campos si el método de pago es PayPal -->
             @if($payment_method === 'paypal')
             <div class="mb-4">
                 <input type="email" wire:model.lazy="paypal_email" class="input-field" placeholder="Correo Electrónico de PayPal" required>
             </div>
             @endif
-    
+
             <!-- Cantidad a pagar (select entre 0 y 50 pesos) -->
             <div class="mb-4">
                 <select wire:model.lazy="payment_amount" class="input-field" required>
@@ -141,19 +141,19 @@
                     <option value="50">50 - Pagado</option>
                 </select>
             </div>
-    
+
             <!-- Referencia de pago -->
             <div class="mb-4">
                 <input type="text" wire:model.lazy="payment_reference" class="input-field" placeholder="Referencia de Pago (opcional)">
             </div>
-    
+
             <!-- Botones para guardar o cancelar -->
             <div class="flex justify-end space-x-4">
                 <button class="cta-button bg-gray-500 hover:bg-gray-600" wire:click="closePaymentModal">Cancelar</button>
                 <button class="cta-button bg-blue-500 hover:bg-blue-600" wire:click="savePayment">Guardar Pago</button>
             </div>
         </div>
-    </div>    
+    </div>
     @endif
 </div>
 
