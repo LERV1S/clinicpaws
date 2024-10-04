@@ -42,7 +42,7 @@ class PredictionController extends Controller
             $interpretation = "Predicción desconocida.";
         }
 
-        // Mostrar el resultado en la vista
-        return view('prediction.result', ['prediction' => $response->json()]);
+        // Retornar la vista con el resultado de la predicción interpretado
+        return view('prediction.result', ['interpretation' => $interpretation]);
     }
 }
