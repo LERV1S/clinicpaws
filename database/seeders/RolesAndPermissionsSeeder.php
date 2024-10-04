@@ -90,7 +90,8 @@ class RolesAndPermissionsSeeder extends Seeder
             'manage appointments',
             'view reports',
             'manage tickets',
-            'manage invoices'
+            'manage invoices',
+            'manage prescriptions'
         ]);
     }
 }

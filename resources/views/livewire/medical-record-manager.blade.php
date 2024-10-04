@@ -47,7 +47,8 @@
 
 
             <!-- SELECCIONAR LA RAZA -->
-            <input type="text" id="breed" name="breed" wire:model="breed" class="input-field" placeholder="Breed"  @if($isReadonly) readonly @endif>
+
+            <input type="text" id="breed" name="breed" wire:model="breed" class="input-field" placeholder="Breed">
 
             <!-- SELECCIONAR LA EDAD -->
             <input type="number" id="age" name="age" wire:model="age" class="input-field" placeholder="Age">
