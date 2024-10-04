@@ -15,6 +15,11 @@ class Appointment extends Model
         'appointment_date',
         'status',
         'notes',
+        'is_payment_required', // Nuevo campo
+        'payment_status',      // Nuevo campo
+        'payment_method',      // Nuevo campo
+        'payment_amount',      // Nuevo campo
+        'payment_reference',   // Nuevo campo
     ];
 
     // Relación con la mascota (Pet)

@@ -29,9 +29,21 @@ class DashboardComponent extends Component
 
     public function fillAppointmentFields($data)
     {
-        $this->veterinarian_id = $data['veterinarian_id'];
+        // Buscar el veterinario basado en el user_id
+        $veterinarian = Veterinarian::where('user_id', $data['veterinarian_id'])->first();
+    
+        // Verificar si se encontró el veterinario
+        if ($veterinarian) {
+            $this->veterinarian_id = $veterinarian->id;  // Asignar el id del veterinario
+        } else {
+            session()->flash('error', 'Veterinario no encontrado.');
+            return;
+        }
+    
+        // Formatear la fecha y asignarla al campo
         $this->appointment_date = \Carbon\Carbon::parse($data['appointment_date'])->format('Y-m-d\TH:i');
     }
+    
     
     public function createAppointment(Request $request)
     {

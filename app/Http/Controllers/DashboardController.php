@@ -42,15 +42,15 @@ class DashboardController extends Controller
             $end = clone $start;
             $end->modify('+59 minutes'); // Duración de 59 minutos para la cita
     
-            // Obtener el veterinario relacionado con la cita
-            $veterinarian = Veterinarian::find($appointment->veterinarian_id);
+            // Buscar el veterinario por el user_id (veterinarian_id en appointments es ahora user_id)
+            $veterinarian = Veterinarian::where('user_id', $appointment->veterinarian_id)->first();
             $veterinarianName = $veterinarian && $veterinarian->user ? $veterinarian->user->name : 'Veterinario no encontrado';
     
             $events[] = [
                 'title' => 'Cita con ' . $veterinarianName,
                 'start' => $start->format('Y-m-d\TH:i:s'),
                 'end'   => $end->format('Y-m-d\TH:i:s'),
-                'veterinarian_id' => $appointment->veterinarian_id,
+                'veterinarian_id' => $appointment->veterinarian_id, // Este es el user_id
                 'color' => 'red' // Las citas ocupadas se muestran en rojo
             ];
         }
@@ -104,7 +104,7 @@ class DashboardController extends Controller
     
                         // Verificar si este veterinario ya tiene una cita a esta hora
                         $isOccupied = $appointments->filter(function ($appointment) use ($dateTime, $veterinarian) {
-                            return $appointment->veterinarian_id == $veterinarian->id &&
+                            return $appointment->veterinarian_id == $veterinarian->user_id && // Comparar con el user_id
                                 (new \DateTime($appointment->appointment_date))->format('Y-m-d H:i') == $dateTime->format('Y-m-d H:i');
                         })->isNotEmpty();
     
@@ -115,7 +115,7 @@ class DashboardController extends Controller
                                 'start' => $dateTime->format('Y-m-d\TH:i:s'),
                                 'end' => $dateTime->modify('+59 minutes')->format('Y-m-d\TH:i:s'),
                                 'color' => 'green',
-                                'veterinarian_id' => $veterinarian->id
+                                'veterinarian_id' => $veterinarian->user_id // Aquí también se usa el user_id
                             ];
                         }
                     }
@@ -132,6 +132,7 @@ class DashboardController extends Controller
             'veterinarians' => $veterinarians
         ]);
     }
+    
     
 
 }

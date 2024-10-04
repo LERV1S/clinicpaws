@@ -83,74 +83,92 @@
     <script defer src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
     
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var modal = document.getElementById("occupiedModal");
-        var span = document.getElementsByClassName("close")[0];
+   document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var modal = document.getElementById("occupiedModal");
+    var span = document.getElementsByClassName("close")[0];
 
-        if (calendarEl) {
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth',
-                headerToolbar: {
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
-                },
-                height: 'auto',
-                contentHeight: 'auto',
-                events: function(fetchInfo, successCallback, failureCallback) {
-                    fetch('/appointments-data?start=' + fetchInfo.startStr + '&end=' + fetchInfo.endStr)
-                        .then(response => response.json())
-                        .then(data => {
-                            var now = new Date();
-                            var filteredEvents = data.appointments.filter(function(event) {
-                                return new Date(event.start) >= now;
-                            });
-                            successCallback(filteredEvents);
-                        })
-                        .catch(error => {
-                            console.error("Error al cargar los datos:", error);
-                            failureCallback(error);
+    // Definir los veterinarios
+    var veterinarians = []; // Aquí debes cargar los veterinarios desde tu JSON
+
+    if (calendarEl) {
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            headerToolbar: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'dayGridMonth,timeGridWeek,timeGridDay'
+            },
+            height: 'auto',
+            contentHeight: 'auto',
+            events: function(fetchInfo, successCallback, failureCallback) {
+                fetch('/appointments-data?start=' + fetchInfo.startStr + '&end=' + fetchInfo.endStr)
+                    .then(response => response.json())
+                    .then(data => {
+                        var now = new Date();
+                        var filteredEvents = data.appointments.filter(function(event) {
+                            return new Date(event.start) >= now;
                         });
-                },
-                editable: false,
-                droppable: false,
+                        // Guardamos los veterinarios obtenidos del JSON
+                        veterinarians = data.veterinarians;
+                        successCallback(filteredEvents);
+                    })
+                    .catch(error => {
+                        console.error("Error al cargar los datos:", error);
+                        failureCallback(error);
+                    });
+            },
+            editable: false,
+            droppable: false,
 
-                // Cuando se da clic en una cita
-                eventClick: function(info) {
-                    // Verificar si la cita está ocupada por el color rojo
-                    if (info.event.backgroundColor === 'red') {
-                        // Mostrar el modal en lugar de una alerta
-                        modal.style.display = "block";
-                    } else {
-                        var veterinarianId = info.event.extendedProps.veterinarian_id;
+            eventClick: function(info) {
+                // Verificar si la cita está ocupada por el color rojo
+                if (info.event.backgroundColor === 'red') {
+                    // Mostrar el modal en lugar de una alerta
+                    modal.style.display = "block";
+                } else {
+                    // Obtener el user_id (que corresponde a veterinarian_id en tu JSON de eventos)
+                    var userId = info.event.extendedProps.veterinarian_id;
+
+                    // Buscar el `veterinarian_id` en los veterinarios usando el `user_id`
+                    var veterinarian = veterinarians.find(vet => vet.user_id == userId);
+                    if (veterinarian) {
+                        var veterinarianId = veterinarian.id;
+
+                        // Obtener la fecha de la cita
                         var appointmentDate = new Date(info.event.start);
-                        appointmentDate.setHours(appointmentDate.getHours() - 6);
+                        appointmentDate.setHours(appointmentDate.getHours() - 6); // Ajusta según tu zona horaria
                         var formattedDate = appointmentDate.toISOString().slice(0, 19);
-                        window.location.href = '/appointments?veterinarian_id=' + veterinarianId + '&appointment_date=' + formattedDate;
-                    }
-                },
-                eventContent: function(info) {
-                    return {
-                        html: `<span style="color: ${info.event.color};">●</span> ${info.event.start.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} ${info.event.title}`
-                    };
-                }
-            });
-            calendar.render();
-        }
 
-        // Cerrar el modal cuando el usuario haga clic en la "X"
-        span.onclick = function() {
+                        // Redirigir con el veterinarian_id correcto
+                        window.location.href = '/appointments?veterinarian_id=' + veterinarianId + '&appointment_date=' + formattedDate;
+                    } else {
+                        console.error("No se encontró el veterinarian_id correspondiente.");
+                    }
+                }
+            },
+
+            eventContent: function(info) {
+                return {
+                    html: `<span style="color: ${info.event.color};">●</span> ${info.event.start.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} ${info.event.title}`
+                };
+            }
+        });
+        calendar.render();
+    }
+
+    // Cerrar el modal cuando el usuario haga clic en la "X"
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Cerrar el modal cuando el usuario haga clic fuera del modal
+    window.onclick = function(event) {
+        if (event.target == modal) {
             modal.style.display = "none";
         }
-
-        // Cerrar el modal cuando el usuario haga clic fuera del modal
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    });
+    }
+});
 </script>
 
 

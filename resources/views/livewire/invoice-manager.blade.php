@@ -33,7 +33,7 @@
 
         <!-- Inventario para las facturas -->
         <div class="mt-4">
-            <h2 class="text-lg font-semibold">Select Inventory Items</h2>
+            <h2 class="text-lg font-semibold dark:text-white">Select Inventory Items</h2>
             @foreach($inventoryItems as $index => $item)
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
                     <select wire:model="inventoryItems.{{ $index }}.inventory_id" class="input-field" required>
@@ -89,13 +89,13 @@
                         <p class="text-sm text-gray-600 dark:text-gray-400">Total  with IVA: ${{ $invoice->total_amount }} - Status: {{ $invoice->status }}</p>
                         <!-- Listado de items del inventario -->
                         @if ($invoice->inventories->isNotEmpty())
-                            <h4 class="mt-4 font-semibold">Inventory Items:</h4>
+                            <h4 class="mt-4 font-semibold text-lg">Inventory Items:</h4>
                             <ul class="list-disc list-inside">
                                 @foreach ($invoice->inventories as $inventory)
                                     @php
                                         $totalItemPrice = $inventory->price * $inventory->pivot->quantity;
                                     @endphp
-                                    <li>{{ $inventory->item_name }} - Quantity: {{ $inventory->pivot->quantity }} - Price per item: ${{ number_format($inventory->price, 2) }} - Total: ${{ number_format($totalItemPrice, 2) }}</li>
+                                    <li class="text-gray-400">{{ $inventory->item_name }} - Quantity: {{ $inventory->pivot->quantity }} - Price per item: ${{ number_format($inventory->price, 2) }} - Total: ${{ number_format($totalItemPrice, 2) }}</li>
                                 @endforeach
                             </ul>
                             @php
@@ -103,7 +103,7 @@
                                     return $inventory->price * $inventory->pivot->quantity;
                                 });
                             @endphp
-                            <p class="mt-4 font-bold">Total: ${{ number_format($totalInvoicePrice, 2) }}</p>
+                            <p class="mt-4 font-bold text-lg">Total: ${{ number_format($totalInvoicePrice, 2) }}</p>
                         @endif
                     </div>
 

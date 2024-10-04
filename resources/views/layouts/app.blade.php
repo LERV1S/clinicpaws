@@ -212,11 +212,14 @@
             }
 
             #calendar {
-                min-height: 500px;
-            }
+        min-height: 500px;
+    }
         }
 
-        .fixed {
+        .text-lg {
+    color: rgb(255, 255, 255);
+}
+.fixed {
             position: fixed;
             bottom: 20px;
             right: 20px;
