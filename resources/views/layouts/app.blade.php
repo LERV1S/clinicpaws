@@ -243,16 +243,46 @@
         <!-- Sidebar -->
         <nav :class="sidebarVisible ? 'sidebar' : 'sidebar hidden'" class="sidebar">
             <a href="{{ route('dashboard') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('dashboard') ? 'active' : '' }}">Dashboard</a>
+
+            @role('Administrador|Veterinario|Empleado|Cliente')
             <a href="{{ route('calendar') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('calendar') ? 'active' : '' }}">Calendar</a>
+            @endrole
+
+            @role('Administrador|Veterinario|Empleado|Cliente')
             <a href="{{ route('pets.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('pets.index') ? 'active' : '' }}">Manage Pets</a>
+            @endrole
+
+            @role('Administrador|Veterinario|Empleado|Cliente')
             <a href="{{ route('appointments.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('appointments.index') ? 'active' : '' }}">Manage Appointments</a>
+            @endrole
+
+            @role('Administrador|Veterinario|Empleado')
             <a href="{{ route('inventories.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('inventories.index') ? 'active' : '' }}">Manage Inventory</a>
+            @endrole
+
+            @role('Administrador|Veterinario|Cliente')
             <a href="{{ route('medical_records.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('medical_records.index') ? 'active' : '' }}">Manage MedicalRecord</a>
+            @endrole
+
+            @role('Administrador|Empleado|Cliente')
             <a href="{{ route('invoices.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('invoices.index') ? 'active' : '' }}">Manage Invoices</a>
+            @endrole
+
+            @role('Administrador|Cliente|Empleado')
             <a href="{{ route('tickets.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('tickets.index') ? 'active' : '' }}">Manage Tickets</a>
+            @endrole
+
+            @role('Administrador|Veterinario|Empleado|Cliente')
             <a href="{{ route('prescriptions.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('prescriptions.index') ? 'active' : '' }}">Manage Prescriptions</a>
+            @endrole
+
+            @role('Administrador')
             <a href="{{ route('employees.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('employees.index') ? 'active' : '' }}">Manage Employee</a>
+            @endrole
+
+            @role('Administrador')
             <a href="{{ route('veterinarians.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('veterinarians.index') ? 'active' : '' }}">Manage Veterinarian</a>
+            @endrole
         </nav>
 
         <!-- Main Content -->

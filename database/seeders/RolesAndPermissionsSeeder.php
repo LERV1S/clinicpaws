@@ -79,6 +79,7 @@ class RolesAndPermissionsSeeder extends Seeder
             'manage invoices',
             'manage cages',
             'manage tickets',
+            'manage inventory',
             'manage prescriptions'
         ]);
 
