@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 import pandas as pd
 import joblib
+from custom_vectorizer import CustomTfidfVectorizer  # Importa la clase
 
 app = Flask(__name__)
 
