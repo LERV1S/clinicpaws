@@ -1,19 +1,11 @@
 from flask import Flask, request, jsonify
 import pandas as pd
-import numpy as np
 import joblib
-import pickle
 
 app = Flask(__name__)
 
-# Cargar el modelo y los codificadores
+# Cargar el modelo y el LabelEncoder
 model = joblib.load('model.pkl')
-
-# Cargar el LabelEncoder para AnimalName
-with open('animal_label_encoder.pkl', 'rb') as file:
-    animal_label_encoder = pickle.load(file)
-
-# Cargar los LabelEncoders
 animal_label_encoder = joblib.load('animal_label_encoder.pkl')
 
 @app.route('/predict', methods=['POST'])
