@@ -56,3 +56,6 @@ def predict():
         return jsonify({'prediction': int(prediction[0])})
     except Exception as e:
         return jsonify({'error': f'Error al procesar la solicitud: {str(e)}'}), 500
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
