@@ -19,6 +19,9 @@ class PredictionController extends Controller
         $animal = $request->input('animal');
         $symptoms = $request->input('symptoms');
 
+        // Rellenar con cadenas vacías si hay menos de 5 síntomas
+        $symptoms = array_pad($symptoms, 5, '');
+
         try {
             // Enviar los datos a la API Flask
             $response = Http::post('http://184.169.254.251:5000/predict', [
