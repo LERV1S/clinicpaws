@@ -29,7 +29,7 @@ def predict():
         # Procesar el nombre del animal
         animal = data['animal'].lower().strip()
         if animal not in animal_label_encoder.classes_:
-            return jsonify({'error': f'El animal "{animal}" no está registrado en el codificador.'}), 400
+            return jsonify({'error': f'El animal "{animal}" no está registrado.'}), 400
 
         animal_encoded = animal_label_encoder.transform([animal])[0]
 
@@ -56,6 +56,7 @@ def predict():
         return jsonify({'prediction': int(prediction[0])})
     except Exception as e:
         return jsonify({'error': f'Error al procesar la solicitud: {str(e)}'}), 500
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
