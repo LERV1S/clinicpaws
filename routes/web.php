@@ -25,7 +25,9 @@ Route::view('profile', 'profile')
 
 Route::get('/predict', function () {
     return view('predict');
-});
+})->name('predict');
+
+Route::post('/predict', [PredictionController::class, 'predict']);
 
 //Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/appointments', [DashboardController::class, 'getAppointments']);

@@ -20,7 +20,7 @@ class PredictionController extends Controller
         $symptoms = $request->input('symptoms');
 
         // Enviar los datos a la API Flask
-        $response = Http::post('http://18.219.252.105:5000/predict', [
+        $response = Http::post('http://184.169.254.251:5000/predict', [
             'animal' => $animal,
             'symptoms' => $symptoms,
         ]);
@@ -32,7 +32,7 @@ class PredictionController extends Controller
 
         // Interpretar el resultado de la predicción
         $prediction = $response->json()['prediction'];
-        
+
         $interpretation = '';
         if ($prediction == 1) {
             $interpretation = "Se recomienda acudir al veterinario lo más pronto posible.";
