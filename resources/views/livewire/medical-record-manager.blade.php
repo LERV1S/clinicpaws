@@ -1,6 +1,6 @@
 <div>
 
-    <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Manage Medical Records</h1>
+    <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Gestion de Expedientes Medicos</h1>
 
     <!-- Formulario para agregar o editar un registro médico -->
     <form wire:submit.prevent="saveMedicalRecord" class="space-y-4" enctype="multipart/form-data">
@@ -23,7 +23,7 @@
 
             <!-- SELECCIONAR EL PROPIETARIO -->
             <select id="owner_id" name="owner_id" wire:model.live="owner_id" class="input-field" required>
-                <option value="">Select Owner</option>
+                <option value="">Seleccionar Propietario</option>
                 @foreach($owners as $owner)
                 <option value="{{ $owner->id }}">{{ $owner->name }}</option>
                 @endforeach
@@ -31,7 +31,7 @@
 
             <!-- SELECCIONAR A LA MASCOTA (Dependiente de Owner) -->
             <select id="pet_id" name="pet_id" wire:model.live="pet_id" class="input-field">
-                <option value="">Select Pet</option>
+                <option value="">Seleccionar Mascota</option>
                 @foreach($pets as $pet)
                 <option value="{{ $pet->id }}">{{ $pet->name }}</option>
                 @endforeach
@@ -39,7 +39,7 @@
 
             <!-- SELECCIONAR LA ESPECIE (Dependiente de Pet) -->
             <select id="species_id" name="species_id" wire:model.live="species_id" class="input-field">
-                <option value="">Select Species</option>
+                <option value="">Seleccion Especies</option>
                 @foreach($species as $specie)
                 <option value="{{ $specie }}">{{ $specie }}</option>
                 @endforeach
@@ -48,24 +48,24 @@
 
             <!-- SELECCIONAR LA RAZA -->
 
-            <input type="text" id="breed" name="breed" wire:model="breed" class="input-field" placeholder="Breed">
+            <input type="text" id="breed" name="breed" wire:model="breed" class="input-field" placeholder="Raza">
 
             <!-- SELECCIONAR LA EDAD -->
-            <input type="number" id="age" name="age" wire:model="age" class="input-field" placeholder="Age">
+            <input type="number" id="age" name="age" wire:model="age" class="input-field" placeholder="Edad">
 
             <!-- SELECCIONAR EL SEXO -->
             <select id="sex" name="sex" wire:model="sex" class="input-field">
-                <option value="">Select Sex</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
+                <option value="">Seleccionar Sexo</option>
+                <option value="male">Macho</option>
+                <option value="female">Hembra</option>
             </select>
 
             <!-- SELECCIONAR EL PESO -->
-            <input type="number" id="weight" name="weight" wire:model="weight" step="0.1" class="input-field" placeholder="Weight Kilograms">
+            <input type="number" id="weight" name="weight" wire:model="weight" step="0.1" class="input-field" placeholder="Peso Kilogramos">
 
             <!-- SELECCIONAR EL VETERINARIO -->
             <select id="veterinarian_id" name="veterinarian_id" wire:model="veterinarian_id" class="input-field">
-                <option value="">Select Veterinarian</option>
+                <option value="">Seleccionar Veterinario</option>
                 @foreach($veterinarians as $vet)
                 <option value="{{ $vet->id }}">{{ $vet->name }}</option>
                 @endforeach
@@ -89,44 +89,44 @@
             <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
                 <h3 class="text-lg font-bold text-gray-900 dark:text-white">Anamnesis</h3>
                 <br>
-                <textarea id="symptoms" name="symptoms" wire:model="symptoms" class="input-field text-sm" placeholder="Symptoms"></textarea>
-                <textarea id="medical_history" name="medical_history" wire:model="medical_history" class="input-field text-sm" placeholder="Medical History"></textarea>
-                <textarea id="pharmacological_history" name="pharmacological_history" wire:model="pharmacological_history" class="input-field text-sm" placeholder="Pharmacological History"></textarea>
-                <textarea id="previous_illnesses" name="previous_illnesses" wire:model="previous_illnesses" class="input-field text-sm" placeholder="Previous Illnesses"></textarea>
+                <textarea id="symptoms" name="symptoms" wire:model="symptoms" class="input-field text-sm" placeholder="Sintomas"></textarea>
+                <textarea id="medical_history" name="medical_history" wire:model="medical_history" class="input-field text-sm" placeholder="Historial Medico"></textarea>
+                <textarea id="pharmacological_history" name="pharmacological_history" wire:model="pharmacological_history" class="input-field text-sm" placeholder="Historial farmacológica"></textarea>
+                <textarea id="previous_illnesses" name="previous_illnesses" wire:model="previous_illnesses" class="input-field text-sm" placeholder="Enfermedades previas"></textarea>
             </div>
 
             <!-- Exámenes Físicos -->
             <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg mt-4">
                 <h3 class="text-lg font-bold text-gray-900 dark:text-white">Exámenes Físicos</h3>
                 <br>
-                <input type="number" id="temperature" name="temperature" wire:model="temperature" step="0.1" class="input-field text-sm" placeholder="Temperature (°C)">
-                <input type="number" id="pulse" name="pulse" wire:model="pulse" class="input-field text-sm" placeholder="Pulse (bpm)">
-                <input type="number" id="respiration" name="respiration" wire:model="respiration" class="input-field text-sm" placeholder="Respiration (rpm)">
-                <input type="number" id="blood_pressure" name="blood_pressure" wire:model="blood_pressure" class="input-field text-sm" placeholder="Blood Pressure(mmHg)">
-                <textarea id="visits" name="visits" wire:model="visits" class="input-field text-sm" placeholder="Visits"></textarea>
-                <textarea id="consultations" name="consultations" wire:model="consultations" class="input-field text-sm" placeholder="consultations"></textarea>
+                <input type="number" id="temperature" name="temperature" wire:model="temperature" step="0.1" class="input-field text-sm" placeholder="Temperatura (°C)">
+                <input type="number" id="pulse" name="pulse" wire:model="pulse" class="input-field text-sm" placeholder="Pulso (bpm)">
+                <input type="number" id="respiration" name="respiration" wire:model="respiration" class="input-field text-sm" placeholder="Respiracion (rpm)">
+                <input type="number" id="blood_pressure" name="blood_pressure" wire:model="blood_pressure" class="input-field text-sm" placeholder="Presion de sangre(mmHg)">
+                <textarea id="visits" name="visits" wire:model="visits" class="input-field text-sm" placeholder="Visitas"></textarea>
+                <textarea id="consultations" name="consultations" wire:model="consultations" class="input-field text-sm" placeholder="Consultas"></textarea>
             </div>
 
             <!-- Diagnósticos -->
             <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg mt-4">
                 <h3 class="text-lg font-bold text-gray-900 dark:text-white">Diagnósticos</h3>
                 <br>
-                <textarea id="provisional_diagnosis" name="provisional_diagnosis" wire:model="provisional_diagnosis" class="input-field text-sm" placeholder="Provisional Diagnosis"></textarea>
-                <textarea id="definitive_diagnosis" name="definitive_diagnosis" wire:model="definitive_diagnosis" class="input-field text-sm" placeholder="Definitive Diagnosis"></textarea>
+                <textarea id="provisional_diagnosis" name="provisional_diagnosis" wire:model="provisional_diagnosis" class="input-field text-sm" placeholder="Diagnostico previo"></textarea>
+                <textarea id="definitive_diagnosis" name="definitive_diagnosis" wire:model="definitive_diagnosis" class="input-field text-sm" placeholder="Diagnostivo definitivo"></textarea>
             </div>
 
             <!-- Tratamiento y Medicación -->
             <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg mt-4">
                 <h3 class="text-lg font-bold text-gray-900 dark:text-white">Tratamiento y Medicación</h3>
                 <br>
-                <textarea id="medication" name="medication" wire:model="medication" class="input-field text-sm" placeholder="Medication"></textarea>
-                <textarea id="therapies" name="therapies" wire:model="therapies" class="input-field text-sm" placeholder="Therapies"></textarea>
-                <textarea id="diets" name="diets" wire:model="diets" class="input-field text-sm" placeholder="Diets"></textarea>
-                <textarea id="administered_medications" name="administered_medications" wire:model="administered_medications" class="input-field text-sm" placeholder="Administered Medications"></textarea>
-                <textarea id="administered_treatments" name="administered_treatments" wire:model="administered_treatments" class="input-field text-sm" placeholder="Administered_Treatments"></textarea>
-                <input type="number" id="dosage" name="dosage" wire:model="dosage" step="0.1" class="input-field text-sm" placeholder="Dosage">
-                <input type="text" id="frequency" name="frequency" wire:model="frequency" class="input-field text-sm" placeholder="Frequency">
-                <input type="text" id="duration" name="duration" wire:model="duration" class="input-field text-sm" placeholder="Duration">
+                <textarea id="medication" name="medication" wire:model="medication" class="input-field text-sm" placeholder="Medicacion"></textarea>
+                <textarea id="therapies" name="therapies" wire:model="therapies" class="input-field text-sm" placeholder="Terapia"></textarea>
+                <textarea id="diets" name="diets" wire:model="diets" class="input-field text-sm" placeholder="Dietas"></textarea>
+                <textarea id="administered_medications" name="administered_medications" wire:model="administered_medications" class="input-field text-sm" placeholder="Medicacion Administrada"></textarea>
+                <textarea id="administered_treatments" name="administered_treatments" wire:model="administered_treatments" class="input-field text-sm" placeholder="Tratamientos Administrados"></textarea>
+                <input type="number" id="dosage" name="dosage" wire:model="dosage" step="0.1" class="input-field text-sm" placeholder="Dosis">
+                <input type="text" id="frequency" name="frequency" wire:model="frequency" class="input-field text-sm" placeholder="Frecuencia">
+                <input type="text" id="duration" name="duration" wire:model="duration" class="input-field text-sm" placeholder="Duracion">
             </div>
         </div>
 
@@ -142,10 +142,10 @@
             <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
                 <h3 class="text-lg font-bold text-gray-900 dark:text-white">Análisis de Laboratorio</h3>
                 <br>
-                <textarea id="blood_analysis" name="blood_analysis" wire:model="blood_analysis" class="input-field text-sm" placeholder="Blood Analysis"></textarea>
-                <textarea id="urine_analysis" name="urine_analysis" wire:model="urine_analysis" class="input-field text-sm" placeholder="Urine Analysis"></textarea>
-                <textarea id="rbc_count" name="rbc_count" wire:model="rbc_count" class="input-field text-sm" placeholder="RBC Count"></textarea>
-                <textarea id="wbc_count" name="wbc_count" wire:model="wbc_count" class="input-field text-sm" placeholder="WBC Count"></textarea>
+                <textarea id="blood_analysis" name="blood_analysis" wire:model="blood_analysis" class="input-field text-sm" placeholder="Analisis de Sangre"></textarea>
+                <textarea id="urine_analysis" name="urine_analysis" wire:model="urine_analysis" class="input-field text-sm" placeholder="Analisis de Orina"></textarea>
+                <textarea id="rbc_count" name="rbc_count" wire:model="rbc_count" class="input-field text-sm" placeholder="Cuenta de Globulos rojos"></textarea>
+                <textarea id="wbc_count" name="wbc_count" wire:model="wbc_count" class="input-field text-sm" placeholder="Cuenta de Globulos blancos"></textarea>
             </div>
 
             <!-- Imágenes Diagnósticas -->
@@ -395,10 +395,10 @@
             <h2 class="text-xl font-bold text-gray-900 dark:text-white text-center">Procedimientos Quirúrgicos</h2>
             <br>
             <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-                <textarea id="surgical_description" name="surgical_description" wire:model="surgical_description" class="input-field text-sm" placeholder="Surgical Description"></textarea>
-                <textarea id="anesthesia" name="anesthesia" wire:model="anesthesia" class="input-field text-sm" placeholder="Anesthesia"></textarea>
-                <textarea id="surgical_techniques" name="surgical_techniques" wire:model="surgical_techniques" class="input-field text-sm" placeholder="Surgical Techniques"></textarea>
-                <textarea id="surgical_results" name="surgical_results" wire:model="surgical_results" class="input-field text-sm" placeholder="Surgical Results"></textarea>
+                <textarea id="surgical_description" name="surgical_description" wire:model="surgical_description" class="input-field text-sm" placeholder="Descripcion de cirugia"></textarea>
+                <textarea id="anesthesia" name="anesthesia" wire:model="anesthesia" class="input-field text-sm" placeholder="Anestesia"></textarea>
+                <textarea id="surgical_techniques" name="surgical_techniques" wire:model="surgical_techniques" class="input-field text-sm" placeholder="Tecnicas de Quirurgicas"></textarea>
+                <textarea id="surgical_results" name="surgical_results" wire:model="surgical_results" class="input-field text-sm" placeholder="Resultados"></textarea>
             </div>
         </div>
 
@@ -411,10 +411,10 @@
             <h2 class="text-xl font-bold text-gray-900 dark:text-white text-center">Procedimientos Terapéuticos</h2>
             <br>
             <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-                <textarea id="vaccination" name="vaccination" wire:model="vaccination" class="input-field text-sm" placeholder="Vaccination"></textarea>
-                <textarea id="antiparasitic_treatment" name="antiparasitic_treatment" wire:model="antiparasitic_treatment" class="input-field text-sm" placeholder="Antiparasitic Treatment"></textarea>
-                <textarea id="allergy_treatment" name="allergy_treatment" wire:model="allergy_treatment" class="input-field text-sm" placeholder="Allergy Treatment"></textarea>
-                <textarea id="antibiotic_treatment" name="antibiotic_treatment" wire:model="antibiotic_treatment" class="input-field text-sm" placeholder="Antibiotic Treatment"></textarea>
+                <textarea id="vaccination" name="vaccination" wire:model="vaccination" class="input-field text-sm" placeholder="Vacunacion"></textarea>
+                <textarea id="antiparasitic_treatment" name="antiparasitic_treatment" wire:model="antiparasitic_treatment" class="input-field text-sm" placeholder="Tratamiento antidesparasitante"></textarea>
+                <textarea id="allergy_treatment" name="allergy_treatment" wire:model="allergy_treatment" class="input-field text-sm" placeholder="Tratamiento de alergias"></textarea>
+                <textarea id="antibiotic_treatment" name="antibiotic_treatment" wire:model="antibiotic_treatment" class="input-field text-sm" placeholder="Tratamiento de antibioticos"></textarea>
             </div>
         </div>
 
@@ -427,9 +427,9 @@
             <h2 class="text-xl font-bold text-gray-900 dark:text-white text-center">Seguimiento y Evolución</h2>
             <br>
             <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-                <textarea id="clinical_evolution" name="clinical_evolution" wire:model="clinical_evolution" class="input-field text-sm" placeholder="Clinical Evolution"></textarea>
-                <textarea id="symptom_changes" name="symptom_changes" wire:model="symptom_changes" class="input-field text-sm" placeholder="Symptom Changes"></textarea>
-                <textarea id="treatment_response" name="treatment_response" wire:model="treatment_response" class="input-field text-sm" placeholder="Treatment Response"></textarea>
+                <textarea id="clinical_evolution" name="clinical_evolution" wire:model="clinical_evolution" class="input-field text-sm" placeholder="Evolucion Clinica"></textarea>
+                <textarea id="symptom_changes" name="symptom_changes" wire:model="symptom_changes" class="input-field text-sm" placeholder="Cambio de sintomas"></textarea>
+                <textarea id="treatment_response" name="treatment_response" wire:model="treatment_response" class="input-field text-sm" placeholder="Respuesta al tratamiento"></textarea>
             </div>
         </div>
 
@@ -442,10 +442,10 @@
             <h2 class="text-xl font-bold text-gray-900 dark:text-white text-center">Conclusión y Recomendaciones</h2>
             <br>
             <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-                <textarea id="disease_summary" name="disease_summary" wire:model="disease_summary" class="input-field text-sm" placeholder="Disease Summary"></textarea>
-                <textarea id="treatment_summary" name="treatment_summary" wire:model="treatment_summary" class="input-field text-sm" placeholder="Treatment Summary"></textarea>
-                <textarea id="responsible_recommendations" name="responsible_recommendations" wire:model="responsible_recommendations" class="input-field text-sm" placeholder="Responsible Recommendations"></textarea>
-                <textarea id="follow_up_plan" name="follow_up_plan" wire:model="follow_up_plan" class="input-field text-sm" placeholder="Follow up Plan"></textarea>
+                <textarea id="disease_summary" name="disease_summary" wire:model="disease_summary" class="input-field text-sm" placeholder="Resumen de la Enfermedad"></textarea>
+                <textarea id="treatment_summary" name="treatment_summary" wire:model="treatment_summary" class="input-field text-sm" placeholder="Resumen del Tratamiento"></textarea>
+                <textarea id="responsible_recommendations" name="responsible_recommendations" wire:model="responsible_recommendations" class="input-field text-sm" placeholder="Recomendaciones responsables"></textarea>
+                <textarea id="follow_up_plan" name="follow_up_plan" wire:model="follow_up_plan" class="input-field text-sm" placeholder="Plan de seguimiento"></textarea>
             </div>
         </div>
 
@@ -453,7 +453,7 @@
         @role('Administrador|Veterinario|Empleado')
         <div class="flex justify-start mt-4">
             <button type="submit" class="cta-button">
-                {{ $selectedMedicalRecordId ? 'Update Record' : 'Add Record' }}
+                {{ $selectedMedicalRecordId ? 'Actualizar Registro' : 'Añadir Registro' }}
             </button>
         </div>
         @endrole
@@ -466,16 +466,16 @@
             @foreach ($medicalRecords as $record)
             <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow flex justify-between items-center">
                 <div>
-                    <p class="text-lg font-semibold">Pet: {{ $record->pet->name }}</p>
+                    <p class="text-lg font-semibold">Mascota: {{ $record->pet->name }}</p>
                     <p class="text-sm text-gray-600 dark:text-gray-400">
-                        Veterinarian: {{ $record->veterinarian->name }} - Date: {{ $record->record_date }}
+                        Veterinario: {{ $record->veterinarian->name }} - Fecha: {{ $record->record_date }}
                     </p>
                 </div>
                 <!-- Botones de editar y eliminar -->
                 @role('Administrador|Veterinario|Empleado')
                 <div class="flex space-x-4">
-                    <button wire:click="editMedicalRecord({{ $record->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
-                    <button wire:click="deleteMedicalRecord({{ $record->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
+                    <button wire:click="editMedicalRecord({{ $record->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Editar</button>
+                    <button wire:click="deleteMedicalRecord({{ $record->id }})" class="cta-button bg-red-500 hover:bg-red-600">Borrar</button>
                 </div>
                 @endrole
                 @role('Cliente')

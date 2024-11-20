@@ -1,6 +1,6 @@
 <div> 
 <div>
-    <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Manage Appointments</h1>
+    <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Gestion de Citas</h1>
 
     <!-- Formulario para agregar o editar una cita -->
     <form wire:submit.prevent="saveAppointment" class="space-y-4">
@@ -23,7 +23,7 @@
             <!-- Campo de búsqueda de mascotas -->
             <div class="relative">
 
-                <input type="text" wire:model.lazy="searchPetTerm" class="input-field" placeholder="Search Pet..." required>
+                <input type="text" wire:model.lazy="searchPetTerm" class="input-field" placeholder="Buscar mascota..." required>
                 @if(!empty($petSuggestions))
                     <ul class="absolute bg-white border border-gray-300 w-full z-10">
                         @foreach($petSuggestions as $pet)
@@ -53,10 +53,10 @@
            <!-- Select de veterinario -->
         <div>
             <select wire:model="veterinarian_id" class="input-field" required>
-                <option value="">Select Veterinarian</option>
+                <option value="">Selecciona Veterinario</option>
                 @foreach($veterinarians as $vet)
                     <option value="{{ $vet->id }}">
-                        {{ $vet->user ? $vet->user->name : 'User not found' }}
+                        {{ $vet->user ? $vet->user->name : 'Usuario no Encontrado' }}
                     </option>
                 @endforeach
             </select>
@@ -71,26 +71,26 @@
 
             <!-- Campo de notas -->
             <div class="col-span-3">
-                <textarea wire:model="notes" class="input-field" placeholder="Notes"></textarea>
+                <textarea wire:model="notes" class="input-field" placeholder="Notas"></textarea>
             </div>
 
             <!-- Botón para abrir el modal de pago -->
             <div class="col-span-3">
                 <button type="button" class="cta-button bg-blue-500 hover:bg-blue-600" wire:click="openPaymentModal">
-                    Payment method
+                    Metodo de pago
                     </button>
             </div>
         </div>
 
         <div class="flex justify-start mt-4">
-            <button type="submit" class="cta-button">{{ $selectedAppointmentId ? 'Update Appointment' : 'Add Appointment' }}</button>
+            <button type="submit" class="cta-button">{{ $selectedAppointmentId ? 'Actualizar cita' : 'Añadir Cita' }}</button>
         </div>
     </form>
 
     <!-- Campo de búsqueda para filtrar citas por nombre de mascota -->
 <!-- Campo de búsqueda para filtrar citas por nombre de mascota -->
     <div class="mt-6">
-        <input type="text" wire:model.lazy="searchAppointmentTerm" class="input-field" placeholder="Search by pet name...">
+        <input type="text" wire:model.lazy="searchAppointmentTerm" class="input-field" placeholder="Buscar por nombre de mascota...">
     </div>
 
     <!-- Listado de citas -->
@@ -99,22 +99,21 @@
             @foreach ($appointments as $appointment)
             <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow flex justify-between items-center">
                 <div>
-                    <p class="text-lg font-semibold">Pet: {{ $appointment->pet->name }}</p>
+                    <p class="text-lg font-semibold">Mascota: {{ $appointment->pet->name }}</p>
                     <p class="text-sm text-gray-600 dark:text-gray-400">
                         @php
                             $veterinarian = \App\Models\Veterinarian::where('user_id', $appointment->veterinarian_id)->first();
                         @endphp
-                        {{ $veterinarian && $veterinarian->user ? $veterinarian->user->name : 'No Veterinarian Assigned' }} - Date: {{ $appointment->appointment_date }}
+                        {{ $veterinarian && $veterinarian->user ? $veterinarian->user->name : 'No veterinario asignado' }} - Fecha: {{ $appointment->appointment_date }}
                     </p>
                 </div>
                 <div class="flex space-x-4">
                     @role('Administrador|Veterinario|Empleado')
-                    <button wire:click="editAppointment({{ $appointment->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
-                    <button wire:click="deleteAppointment({{ $appointment->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
+                    <button wire:click="editAppointment({{ $appointment->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Editar</button>
+                    <button wire:click="deleteAppointment({{ $appointment->id }})" class="cta-button bg-red-500 hover:bg-red-600">Borrar</button>
                     @endrole
                     @role('')
-
-                    <a href="{{ route('appointments.download', $appointment->id) }}" class="cta-button bg-green-500 hover:bg-green-600">Download PDF</a>
+                    <a href="{{ route('appointments.download', $appointment->id) }}" class="cta-button bg-green-500 hover:bg-green-600">Descargar PDF</a>
                     @endrole
 
                 </div>
@@ -127,13 +126,14 @@
     @if($isPaymentModalOpen)
     <div class="fixed inset-0 flex items-center justify-center  bg-opacity-50 z-50">
         <div class="bg-white p-6 rounded-lg shadow-lg w-96">
-            <h2 class="font-bold mb-4">Payment Information</h2>
+            <h2 class="font-bold mb-4">Informacion de pago</h2>
     
             <!-- Select del método de pago -->
             <div class="mb-4">
                 <select wire:model.lazy="payment_method" class="input-field" required>
-                    <option value="">Payment Method</option>
-                    <option value="credit_card">Credit Card</option>
+                    <option value="">Metodo de pago</option>
+                    <option value="">Efectivo</option>
+                    <option value="credit_card">Tarjeta de Credito</option>
                     <option value="paypal">PayPal</option>
                 </select>
             </div>
@@ -141,10 +141,10 @@
             <!-- Mostrar campos si el método de pago es tarjeta de crédito -->
             @if($payment_method === 'credit_card')
             <div class="mb-4">
-                <input type="text" wire:model.lazy="credit_card_number" class="input-field" placeholder="Number of Card" required>
+                <input type="text" wire:model.lazy="credit_card_number" class="input-field" placeholder="Numero de tarjeta" required>
             </div>
             <div class="mb-4">
-                <input type="text" wire:model.lazy="credit_card_expiry" class="input-field" placeholder="Expiration Date (MM/AA)" required>
+                <input type="text" wire:model.lazy="credit_card_expiry" class="input-field" placeholder="Fecha de expiración (MM/AA)" required>
             </div>
             <div class="mb-4">
                 <input type="text" wire:model.lazy="credit_card_cvv" class="input-field" placeholder="CVV" required>
@@ -154,27 +154,27 @@
             <!-- Mostrar campos si el método de pago es PayPal -->
             @if($payment_method === 'paypal')
             <div class="mb-4">
-                <input type="email" wire:model.lazy="paypal_email" class="input-field" placeholder="E-Mail  PayPal" required>
+                <input type="email" wire:model.lazy="paypal_email" class="input-field" placeholder="Correo | PayPal" required>
             </div>
             @endif
     
             <!-- Cantidad a pagar (select entre 0 y 50 pesos) -->
             <div class="mb-4">
                 <select wire:model.lazy="payment_amount" class="input-field" required>
-                    <option value="0">0 - Proces</option>
-                    <option value="50">50 - Paid</option>
+                    <option value="0">0 - En Proceso</option>
+                    <option value="50">50 - Pagado</option>
                 </select>
             </div>
     
             <!-- Referencia de pago -->
             <div class="mb-4">
-                <input type="text" wire:model.lazy="payment_reference" class="input-field" placeholder="Payment Reference (optional)">
+                <input type="text" wire:model.lazy="payment_reference" class="input-field" placeholder="Referencia (optional)">
             </div>
     
             <!-- Botones para guardar o cancelar -->
             <div class="flex justify-end space-x-4">
-                <button class="cta-button bg-gray-500 hover:bg-gray-600" wire:click="closePaymentModal">Cancel</button>
-                <button class="cta-button bg-blue-500 hover:bg-blue-600" wire:click="savePayment">Save</button>
+                <button class="cta-button bg-gray-500 hover:bg-gray-600" wire:click="closePaymentModal">Cerrar</button>
+                <button class="cta-button bg-blue-500 hover:bg-blue-600" wire:click="savePayment">Guardar</button>
             </div>
         </div>
     </div>    

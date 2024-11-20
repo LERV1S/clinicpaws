@@ -22,10 +22,34 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js'></script>
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
     <style>
+
+         /* Estilo para limitar el tamaño de los gráficos */
+    canvas {
+        max-width: 400px; /* Ajusta el ancho máximo del gráfico */
+        max-height: 200px; /* Ajusta el alto máximo del gráfico */
+        margin: 10px auto; /* Centra los gráficos horizontalmente */
+        display: block;
+    }
+
+    .chart-container {
+        display: inline-block; /* Coloca los gráficos en línea */
+        width: 45%; /* Ajusta el tamaño del contenedor */
+        margin: 0 2%; /* Espaciado entre gráficos */
+        text-align: center; /* Centra el contenido del contenedor */
+    }
+
+    /* Asegura que los gráficos se adapten bien a pantallas pequeñas */
+    @media screen and (max-width: 768px) {
+        .chart-container {
+            width: 100%; /* Los gráficos ocupan todo el ancho en pantallas pequeñas */
+            margin-bottom: 20px; /* Agrega espacio entre los gráficos */
+        }
+    }
         /* Estilos para los campos de entrada */
         .input-field {
             background-color: #ffffff;
@@ -245,30 +269,30 @@
 
         <!-- Sidebar -->
         <nav :class="sidebarVisible ? 'sidebar' : 'sidebar hidden'" class="sidebar">
-            <a href="{{ route('dashboard') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('dashboard') ? 'active' : '' }}">Dashboard</a>
+            <a href="{{ route('dashboard') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('dashboard') ? 'active' : '' }}">Tablero de inicio</a>
 
             @role('Administrador|Veterinario|Empleado|Cliente')
-            <a href="{{ route('calendar') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('calendar') ? 'active' : '' }}">Calendar</a>
+            <a href="{{ route('calendar') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('calendar') ? 'active' : '' }}">Calendario</a>
             @endrole
 
             @role('Administrador|Veterinario|Empleado|Cliente')
-            <a href="{{ route('pets.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('pets.index') ? 'active' : '' }}">Pets</a>
+            <a href="{{ route('pets.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('pets.index') ? 'active' : '' }}">Mascotas</a>
             @endrole
 
             @role('Administrador|Veterinario|Empleado|Cliente')
-            <a href="{{ route('appointments.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('appointments.index') ? 'active' : '' }}">Appointments</a>
+            <a href="{{ route('appointments.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('appointments.index') ? 'active' : '' }}">Citas</a>
             @endrole
 
             @role('Administrador|Veterinario|Empleado')
-            <a href="{{ route('inventories.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('inventories.index') ? 'active' : '' }}">Inventory</a>
+            <a href="{{ route('inventories.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('inventories.index') ? 'active' : '' }}">Inventario</a>
             @endrole
 
             @role('Administrador|Veterinario|Cliente')
-            <a href="{{ route('medical_records.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('medical_records.index') ? 'active' : '' }}">MedicalRecord</a>
+            <a href="{{ route('medical_records.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('medical_records.index') ? 'active' : '' }}">Expediente Medico</a>
             @endrole
 
             @role('Administrador|Empleado|Cliente')
-            <a href="{{ route('invoices.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('invoices.index') ? 'active' : '' }}">Invoices</a>
+            <a href="{{ route('invoices.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('invoices.index') ? 'active' : '' }}">Facturas</a>
             @endrole
 
             @role('Administrador|Cliente|Empleado')
@@ -276,19 +300,20 @@
             @endrole
 
             @role('Administrador|Veterinario|Empleado|Cliente')
-            <a href="{{ route('prescriptions.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('prescriptions.index') ? 'active' : '' }}">Prescriptions</a>
+            <a href="{{ route('prescriptions.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('prescriptions.index') ? 'active' : '' }}">Recetas</a>
             @endrole
 
             @role('Administrador')
-            <a href="{{ route('employees.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('employees.index') ? 'active' : '' }}">Employee's</a>
+            <a href="{{ route('employees.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('employees.index') ? 'active' : '' }}">Empleados</a>
             @endrole
 
             @role('Administrador')
-            <a href="{{ route('veterinarians.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('veterinarians.index') ? 'active' : '' }}">Veterinarian's</a>
+            <a href="{{ route('veterinarians.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('veterinarians.index') ? 'active' : '' }}">Veterinarios</a>
             @endrole
             @role('Administrador|Empleado|Veterinario')
-            <a href="{{ route('medicines.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('medicines.index') ? 'active' : '' }}">Medicines</a>
+            <a href="{{ route('medicines.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('medicines.index') ? 'active' : '' }}">Medicinas</a>
             @endrole
+
 
         </nav>
 

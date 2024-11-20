@@ -1,5 +1,5 @@
 <div>
-    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Appointment Calendar</h2>
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Calendario de Citas</h2>
 
  <!-- Aquí estará el calendario -->
  <div id='calendar' style="min-height: 600px;"></div>
