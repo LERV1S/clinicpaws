@@ -17,20 +17,18 @@
         <!-- Formulario -->
         <form method="POST" action="{{ route('predict') }}" class="space-y-6">
             @csrf
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div>
-                    <label for="animal" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Animal</label>
-                    <input type="text" id="animal" name="animal" class="input-field" placeholder="Ejemplo: Perro" required>
-                </div>
-                <div class="col-span-2">
-                    <label for="symptoms" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Síntomas</label>
-                    <div class="space-y-2">
-                        <input type="text" name="symptoms[]" class="input-field" placeholder="Síntoma 1" required>
-                        <input type="text" name="symptoms[]" class="input-field" placeholder="Síntoma 2">
-                        <input type="text" name="symptoms[]" class="input-field" placeholder="Síntoma 3">
-                        <input type="text" name="symptoms[]" class="input-field" placeholder="Síntoma 4">
-                        <input type="text" name="symptoms[]" class="input-field" placeholder="Síntoma 5">
-                    </div>
+            <div>
+                <label for="animal" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Animal</label>
+                <input type="text" id="animal" name="animal" class="input-field" placeholder="Ejemplo: Perro" required>
+            </div>
+            <div>
+                <label for="symptoms" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Síntomas</label>
+                <div class="space-y-2">
+                    <input type="text" name="symptoms[]" class="input-field" placeholder="Síntoma 1" required>
+                    <input type="text" name="symptoms[]" class="input-field" placeholder="Síntoma 2">
+                    <input type="text" name="symptoms[]" class="input-field" placeholder="Síntoma 3">
+                    <input type="text" name="symptoms[]" class="input-field" placeholder="Síntoma 4">
+                    <input type="text" name="symptoms[]" class="input-field" placeholder="Síntoma 5">
                 </div>
             </div>
             <div class="flex justify-end mt-4">
