@@ -30,7 +30,7 @@ class Veterinarian extends Model
 
     public function appointments()
     {
-        return $this->hasMany(Appointment::class);
+        return $this->hasMany(Appointment::class, 'veterinarian_id');
     }
 
     // Nueva relación con prescripciones

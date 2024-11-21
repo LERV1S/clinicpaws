@@ -1,7 +1,7 @@
 <div>
 <div>
 
-    <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Manage Tickets</h1>
+    <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Gestion de Tickets</h1>
 
     <!-- Formulario para agregar o editar un ticket -->
     <form wire:submit.prevent="saveTicket" class="space-y-4">
@@ -10,7 +10,7 @@
             @role('Administrador|Empleado')
 
             <div class="relative">
-                <input type="text" wire:model.lazy="searchClientTerm" class="input-field" placeholder="Search Client..." required>
+                <input type="text" wire:model.lazy="searchClientTerm" class="input-field" placeholder="Buscar Cliente..." required>
                 @if(!empty($clientSuggestions))
                     <ul class="absolute bg-white border border-gray-300 w-full z-10">
                         @foreach($clientSuggestions as $client)
@@ -25,12 +25,12 @@
                 @endif
             </div>
 
-            <input type="text" wire:model="subject" class="input-field" placeholder="Subject" required>
-            <textarea wire:model="description" class="input-field" placeholder="Description" required></textarea>
+            <input type="text" wire:model="subject" class="input-field" placeholder="Materia" required>
+            <textarea wire:model="description" class="input-field" placeholder="Descripcion" required></textarea>
             <select wire:model="status" class="input-field col-span-1" required>
-                <option value="">Select Status</option>
-                <option value="Pagado">Paid</option>
-                <option value="En adeudo">Pending</option>
+                <option value="">Seleccionar Estatus</option>
+                <option value="Pagado">Pagado</option>
+                <option value="En adeudo">Pendiente</option>
             </select>
         </div>
 
@@ -40,7 +40,7 @@
 
                 <label for="generateInvoice" class="flex items-center dark:text-white">
                     <input type="checkbox" wire:model="generateInvoice" id="generateInvoice" class="mr-2">
-                    Generate Invoice for this ticket
+                    Generar factura para este ticket
                 </label>
 
         </div>
@@ -50,29 +50,26 @@
         <!-- Inventario -->
         <div class="mt-4">
 
-            <h2 class="text-lg font-semibold dark:text-white">Select Inventory Items</h2>
+            <h2 class="text-lg font-semibold dark:text-white">Selecionar objetos del inventario</h2>
             @endrole
-
-
-
             @role('Administrador|Empleado')
 
             @foreach($inventoryItems as $index => $item)
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
                     <select wire:model="inventoryItems.{{ $index }}.inventory_id" class="input-field" required>
-                        <option value="">Select Inventory Item</option>
+                        <option value="">Seleccionar objetos del invenario</option>
                         @foreach($inventories as $inventory)
                             <option value="{{ $inventory->id }}">{{ $inventory->item_name }}</option>
                         @endforeach
                     </select>
 
-                    <input type="number" wire:model="inventoryItems.{{ $index }}.quantity" placeholder="Quantity" class="input-field" required>
+                    <input type="number" wire:model="inventoryItems.{{ $index }}.quantity" placeholder="Cantidad" class="input-field" required>
                     @if(($inventoryItems[$index]['inventory_id']) && $inventoryItems[$index]['quantity'] > $inventories->find($inventoryItems[$index]['inventory_id'])->quantity)
-                        <p class="text-red-500">Not enough stock for {{ $inventories->find($inventoryItems[$index]['inventory_id'])->item_name }}</p>
+                        <p class="text-red-500">no hay suficientes de: {{ $inventories->find($inventoryItems[$index]['inventory_id'])->item_name }}</p>
                     @endif
 
 
-                        <button type="button" wire:click="removeInventoryItem({{ $index }})" class="cta-button bg-red-500 hover:bg-red-600">Remove</button>
+                        <button type="button" wire:click="removeInventoryItem({{ $index }})" class="cta-button bg-red-500 hover:bg-red-600">Remover</button>
 
                 </div>
             @endforeach
@@ -80,7 +77,7 @@
 
             @role('Administrador|Empleado')
 
-                <button type="button" wire:click="addInventoryItem" class="cta-button bg-blue-500 hover:bg-blue-600 mt-4">Add Another Item</button>
+                <button type="button" wire:click="addInventoryItem" class="cta-button bg-blue-500 hover:bg-blue-600 mt-4">Añadir otro objeto</button>
 
             @endrole
         </div>
@@ -88,7 +85,7 @@
         <div class="flex justify-start mt-4">
             @role('Administrador|Empleado')
 
-                <button type="submit" class="cta-button">{{ $selectedTicketId ? 'Update Ticket' : 'Add Ticket' }}</button>
+                <button type="submit" class="cta-button">{{ $selectedTicketId ? 'Actualizar Ticket' : 'añadir Ticket' }}</button>
 
             @endrole
         </div>
@@ -98,13 +95,13 @@
     @role('Administrador|Empleado')
 
     <div class="mt-6">
-        <label for="filterStatus" class="block text-gray-700 dark:text-white">Filter by Client :</label>
+        <label for="filterStatus" class="block text-gray-700 dark:text-white">Filtrar por nombre de cliente:</label>
 
         <input
             type="text"
             wire:model.lazy="searchTicketTerm"
             class="input-field"
-            placeholder="Search by client name..."
+            placeholder="Buscar por nombre de cliente..."
         />
     </div>
     @endrole
@@ -112,9 +109,9 @@
 
                     <!-- Filtro por status -->
                     <div class="mt-6">
-                        <label for="filterStatus" class="block text-gray-700 dark:text-white">Filter by Status:</label>
+                        <label for="filterStatus" class="block text-gray-700 dark:text-white">Filtrar por estado:</label>
                         <select wire:model.lazy="filterStatus" id="filterStatus" class="input-field mt-2">
-                            <option value="">All</option>
+                            <option value="">Todos</option>
                             <option value="Pagado">Pagado</option>
                             <option value="En adeudo">En adeudo</option>
                         </select>
@@ -126,12 +123,12 @@
             @forelse ($tickets as $ticket)
                 <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow flex justify-between items-center">
                     <div>
-                        <p class="text-lg font-semibold">Client: {{ $ticket->client->user->name }}</p>
-                        <p class="text-sm text-gray-600 dark:text-gray-400">Subject: {{ $ticket->subject }} - Status: {{ $ticket->status }}</p>
+                        <p class="text-lg font-semibold">Cliente: {{ $ticket->client->user->name }}</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Materia: {{ $ticket->subject }} - Estado: {{ $ticket->status }}</p>
 
                         <!-- Listado de items del inventario -->
                         @if ($ticket->inventories->isNotEmpty())
-                            <h4 class="mt-4 font-semibold text-lg">Inventory Items:</h4>
+                            <h4 class="mt-4 font-semibold text-lg">Objetos del invetario:</h4>
                             <ul class="list-disc list-inside">
                                 @php
                                     $totalTicketPrice = 0;
@@ -142,7 +139,7 @@
                                         $totalItemPrice = $itemPriceWithIVA * $inventory->pivot->quantity;
                                         $totalTicketPrice += $totalItemPrice;
                                     @endphp
-                                    <li class="text-gray-400">{{ $inventory->item_name }} - Quantity: {{ $inventory->pivot->quantity }} - Price per item: ${{ number_format($itemPriceWithIVA, 2) }} - Total: ${{ number_format($totalItemPrice, 2) }}</li>
+                                    <li class="text-gray-400">{{ $inventory->item_name }} - Cantidad: {{ $inventory->pivot->quantity }} - Precio por Objeto: ${{ number_format($itemPriceWithIVA, 2) }} - Total: ${{ number_format($totalItemPrice, 2) }}</li>
                                 @endforeach
                             </ul>
                             <p class="mt-4 font-bold text-lg">Total (IVA incl.): ${{ number_format($totalTicketPrice, 2) }}</p>
@@ -153,21 +150,21 @@
                         <!-- Botones: Editar, Borrar, Descargar Ticket, Generar/Ver Factura -->
                         @role('Administrador|Empleado')
 
-                            <button wire:click="editTicket({{ $ticket->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Edit</button>
-                            <button wire:click="deleteTicket({{ $ticket->id }})" class="cta-button bg-red-500 hover:bg-red-600">Delete</button>
+                            <button wire:click="editTicket({{ $ticket->id }})" class="cta-button bg-yellow-500 hover:bg-yellow-600">Editar</button>
+                            <button wire:click="deleteTicket({{ $ticket->id }})" class="cta-button bg-red-500 hover:bg-red-600">Borrar</button>
 
                         @endrole
                         <!-- Botón de descarga del ticket -->
-                        <a href="{{ route('tickets.download', $ticket->id) }}" target="_blank" class="cta-button bg-green-500 hover:bg-green-600">Download Ticket</a>
+                        <a href="{{ route('tickets.download', $ticket->id) }}" target="_blank" class="cta-button bg-green-500 hover:bg-green-600">Descargar Ticket</a>
 
                         <!-- Mostrar botón de factura si no tiene factura aún -->
                         @role('Administrador|Empleado')
 
                             @if (!$ticket->invoice)
-                                <button wire:click="createInvoiceForTicket({{ $ticket->id }})" class="cta-button bg-blue-500 hover:bg-blue-600">Generate Invoice</button>
+                                <button wire:click="createInvoiceForTicket({{ $ticket->id }})" class="cta-button bg-blue-500 hover:bg-blue-600">Genarar factura</button>
                             @else
                                 <!-- Si ya tiene factura, mostrar el botón de ver factura -->
-                                <a href="{{ route('invoices.download', $ticket->invoice->id) }}" target="_blank" class="cta-button bg-green-500 hover:bg-green-600">View Invoice</a>
+                                <a href="{{ route('invoices.download', $ticket->invoice->id) }}" target="_blank" class="cta-button bg-green-500 hover:bg-green-600">ver factura</a>
                             @endif
 
                         @endrole
@@ -177,7 +174,7 @@
                 </li>
             @empty
                 <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow">
-                    <p class="text-gray-600 dark:text-gray-400">No tickets found.</p>
+                    <p class="text-gray-600 dark:text-gray-400">No hay tickets encontrados.</p>
                 </li>
             @endforelse
         </ul>

@@ -10,6 +10,7 @@
             <div class="p-6 text-gray-900 dark:text-gray-100">
                 <h1 class="text-2xl font-bold mb-4">Dashboard</h1>
                     <!-- Puedes agregar otros enlaces aquí -->
+                    @livewire('dashboard-graphics')
                 </ul>
             </div>
         </div>
