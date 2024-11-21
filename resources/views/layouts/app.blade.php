@@ -313,7 +313,9 @@
             @role('Administrador|Empleado|Veterinario')
             <a href="{{ route('medicines.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('medicines.index') ? 'active' : '' }}">Medicinas</a>
             @endrole
-
+            @role('Administrador|Empleado|Veterinario')
+            <a href="{{ route('predict') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('predict') ? 'active' : '' }}">Predict</a>
+            @endrole
 
         </nav>
 
