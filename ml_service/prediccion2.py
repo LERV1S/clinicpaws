@@ -16,24 +16,20 @@ with open('animal_label_encoder.pkl', 'rb') as file:
 def predict():
     data = request.get_json()
 
-    # Imprime los datos que llegan para verificar qué se está enviando
-    print(data)
+    # Imprimir datos para depuración
+    print("Datos recibidos:", data)
 
     animal = data['animal'].lower().strip()
-    symptoms = data['symptoms']  # Recoge el array de síntomas enviado por Laravel
+    symptoms = data['symptoms']
 
-    # Validar que no haya más de 5 síntomas
-    if len(symptoms) > 5:
-        return jsonify({'error': 'No se permiten más de 5 síntomas'}), 400
+    # Reemplazar valores None en síntomas con cadenas vacías
+    symptoms = [symptom if symptom is not None else '' for symptom in symptoms]
 
-    # Rellenar con síntomas vacíos si faltan
-    symptoms += [''] * (5 - len(symptoms))
-
-    # Verificar si el animal existe en el codificador
+    # Validar que el animal esté en las clases del codificador
     if animal not in animal_label_encoder.classes_:
         return jsonify({'error': f"Animal '{animal}' no fue visto durante el entrenamiento."}), 400
 
-    # Codificar los datos de entrada
+    # Preparar los datos para la predicción
     input_data = pd.DataFrame({
         'AnimalName': [animal_label_encoder.transform([animal])[0]],
         'symptoms1': [symptoms[0]], 'symptoms2': [symptoms[1]],
