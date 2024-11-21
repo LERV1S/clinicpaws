@@ -2,8 +2,9 @@
 
 @section('content')
     <div class="container">
-        <h1>Resultado de la predicción</h1>
+        <h1>Resultado de la Predicción</h1>
+
+        {{-- Mostrar el mensaje interpretado basado en la predicción --}}
         <p>{{ $interpretation }}</p>
-        <a href="{{ route('predict') }}" class="btn btn-secondary">Volver</a>
     </div>
 @endsection
