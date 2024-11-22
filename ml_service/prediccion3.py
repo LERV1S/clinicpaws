@@ -8,7 +8,7 @@ from sklearn.pipeline import Pipeline
 app = Flask(__name__)
 
 # Cargar el modelo de machine learning entrenado con su pipeline completo
-with open('animal_label_encoder.pkl', 'rb') as file:
+with open('ml_service/animal_label_encoder.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Crear el preprocesador para las columnas de síntomas (usando TfidfVectorizer)
@@ -35,18 +35,15 @@ def predict():
     symptoms = [symptom if symptom is not None else '' for symptom in symptoms]
     symptoms += [''] * (5 - len(symptoms))  # Completar con cadenas vacías si es necesario
 
-    # Preparar los datos para la predicción (sin codificar el nombre del animal)
+    # Preparar los datos para la predicción (convertir a DataFrame)
     input_data = pd.DataFrame({
         'AnimalName': [animal],  # El nombre del animal ya es texto, no es necesario transformarlo
         'symptoms1': [symptoms[0]], 'symptoms2': [symptoms[1]],
         'symptoms3': [symptoms[2]], 'symptoms4': [symptoms[3]], 'symptoms5': [symptoms[4]]
     })
 
-    # Aplicar el preprocesador a los síntomas
+    # Asegurarse de que el ColumnTransformer reciba un DataFrame
     symptoms_transformed = preprocessor.fit_transform(input_data)
-
-    # Extraer el nombre del animal por separado (no se transforma)
-    animal_name = input_data['AnimalName'][0]
 
     # Aplicar el modelo de predicción solo a las transformaciones de síntomas
     prediction = model.predict(symptoms_transformed)[0]
