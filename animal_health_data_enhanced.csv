@@ -1,0 +1,1001 @@
+AnimalName,Symptoms1,Symptoms2,Symptoms3,Symptoms4,Symptoms5,Dangerous
+Dog,Panting,Yes,,,,
+Dog,Dry eyes,Joint stiffness,Minor diarrhea,Increased thirst,No,
+Cat,Coughing,Opaque cornea,Yes,,,
+Cat,Dry stool,No,,,,
+Dog,Joint stiffness,Minor diarrhea,No,,,
+Cat,Sneezing,Mild conjunctivitis,No,,,
+Dog,Joint stiffness,Increased thirst,No,,,
+Dog,Joint stiffness,Minor diarrhea,Dry eyes,Dry skin,No,
+Cat,Foam at the mouth,Opaque cornea,Fast breathing,Yes,,
+Dog,Blood in vomit,Fatigue,Glassy eyes,Yes,,
+Cat,Occasional hairball vomit,Runny nose,Increased scratching,Sneezing,No,
+Dog,Tremors,Seizures,Panting,Depression,Yes,
+Cat,Minor weight loss,Runny nose,No,,,
+Dog,Bad breath,Joint stiffness,Minor diarrhea,Dry eyes,No,
+Cat,Minor weight loss,Increased scratching,Mild conjunctivitis,Dry stool,Runny nose,No
+Dog,Increased thirst,Bad breath,Dry eyes,Minor diarrhea,Dry skin,No
+Cat,Panting,Bloody vomit,Excess drooling,Bloody stool,Yes,
+Dog,Glassy eyes,Seizures,Panting,High glucose,Drooling,Yes
+Cat,Swollen eyes,Pale gums,Excess drooling,Yes,,
+Dog,Dry eyes,Minor diarrhea,Joint stiffness,No,,
+Cat,Fast breathing,Pale gums,Tremors,Yes,,
+Dog,Joint stiffness,Minor diarrhea,Dry eyes,Bad breath,Increased thirst,No
+Cat,Dry stool,Occasional hairball vomit,Minor weight loss,Sneezing,No,
+Dog,Bad breath,Dry eyes,Dry skin,No,,
+Dog,Vomiting,Anxiety,Blood in vomit,Panting,Fever,Yes
+Dog,Paralysis,Weight loss,Disorientation,Yes,,
+Dog,Bad breath,Dry skin,Joint stiffness,Dry eyes,Increased thirst,No
+Dog,Increased thirst,Joint stiffness,No,,,
+Dog,Loss of appetite,Vomiting,Depression,Anxiety,Yes,
+Cat,Increased scratching,Occasional hairball vomit,No,,,
+Dog,Blood in vomit,Panting,Yes,,,
+Cat,Swollen eyes,Yes,,,,
+Dog,Dry eyes,No,,,,
+Cat,Pale gums,Yes,,,,
+Dog,Anxiety,Vomiting,Yes,,,
+Cat,Mild conjunctivitis,Dry stool,Runny nose,No,,
+Cat,Opaque cornea,Bloody stool,Coughing,Yes,,
+Dog,Increased thirst,Dry eyes,Joint stiffness,No,,
+Cat,Mild conjunctivitis,Increased scratching,Sneezing,No,,
+Dog,Minor diarrhea,Joint stiffness,Dry skin,Dry eyes,No,
+Dog,High glucose,Anxiety,Vomiting,Yes,,
+Cat,Bloody stool,Foam at the mouth,Excess drooling,Yes,,
+Cat,Bloody stool,Yes,,,,
+Dog,Anxiety,High glucose,Drooling,Yes,,
+Cat,Pale gums,Opaque cornea,Swollen eyes,Yes,,
+Dog,Paralysis,Fever,Anxiety,Vomiting,Yes,
+Dog,Bad breath,Minor diarrhea,Joint stiffness,No,,
+Cat,Convulsions,Excess drooling,Yes,,,
+Dog,Fatigue,Glassy eyes,Fever,Loss of appetite,Yes,
+Cat,Fast breathing,Lethargy,Bloody stool,Panting,Noisy breathing,Yes
+Dog,Minor diarrhea,Increased thirst,Dry skin,No,,
+Cat,Dry stool,Sneezing,Mild conjunctivitis,Increased scratching,No,
+Dog,Joint stiffness,Increased thirst,Dry eyes,Dry skin,Minor diarrhea,No
+Dog,Vomiting,Paralysis,Yes,,,
+Cat,Bloody vomit,Convulsions,Pale gums,Opaque cornea,Coughing,Yes
+Cat,Bloody stool,Panting,Yes,,,
+Dog,Dry eyes,Dry skin,Bad breath,No,,
+Cat,Opaque cornea,Yes,,,,
+Cat,Coughing,Foam at the mouth,Yes,,,
+Cat,Minor weight loss,Increased scratching,Dry stool,Mild conjunctivitis,Sneezing,No
+Cat,Fast breathing,Noisy breathing,Yes,,,
+Dog,Dry skin,Increased thirst,No,,,
+Dog,Minor diarrhea,No,,,,
+Dog,Dry eyes,No,,,,
+Cat,Runny nose,No,,,,
+Cat,Dry stool,Increased scratching,Mild conjunctivitis,Sneezing,No,
+Cat,Bloody stool,Bloody vomit,Foam at the mouth,Lethargy,Convulsions,Yes
+Dog,Excessive thirst,Tremors,Yes,,,
+Cat,Fast breathing,Yes,,,,
+Cat,Lethargy,Excess drooling,Noisy breathing,Opaque cornea,Yes,
+Dog,Minor diarrhea,Increased thirst,Dry skin,No,,
+Dog,Bad breath,Minor diarrhea,Joint stiffness,Dry eyes,Dry skin,No
+Cat,Minor weight loss,No,,,,
+Dog,Fever,Blood in vomit,Yes,,,
+Dog,Glassy eyes,Nausea,Drooling,High glucose,Yes,
+Cat,Bloody stool,Panting,Yes,,,
+Dog,Minor diarrhea,Joint stiffness,Bad breath,Increased thirst,No,
+Dog,Fatigue,Glassy eyes,Drooling,Panting,Yes,
+Cat,Pale gums,Swollen eyes,Yes,,,
+Cat,Convulsions,Noisy breathing,Tremors,Bloody vomit,Bloody stool,Yes
+Cat,Noisy breathing,Excess drooling,Swollen eyes,Opaque cornea,Fast breathing,Yes
+Dog,Seizures,Excessive thirst,Paralysis,Drooling,Weight loss,Yes
+Cat,Increased scratching,Minor weight loss,Dry stool,Sneezing,No,
+Dog,Tremors,Panting,Anxiety,Yes,,
+Cat,Dry stool,Runny nose,Increased scratching,No,,
+Cat,Panting,Opaque cornea,Foam at the mouth,Lethargy,Yes,
+Cat,Bloody vomit,Foam at the mouth,Tremors,Coughing,Yes,
+Cat,Minor weight loss,Mild conjunctivitis,Occasional hairball vomit,Increased scratching,Sneezing,No
+Dog,Paralysis,Yes,,,,
+Cat,Dry stool,Increased scratching,Mild conjunctivitis,No,,
+Dog,Seizures,Blood in vomit,Weight loss,Tremors,High glucose,Yes
+Dog,Dry skin,Bad breath,No,,,
+Dog,Weight loss,Tremors,Panting,Yes,,
+Cat,Mild conjunctivitis,Minor weight loss,Runny nose,Dry stool,Increased scratching,No
+Cat,Sneezing,No,,,,
+Cat,Excess drooling,Panting,Coughing,Yes,,
+Cat,Panting,Bloody stool,Yes,,,
+Dog,Minor diarrhea,Dry eyes,No,,,
+Cat,Bloody vomit,Bloody stool,Convulsions,Yes,,
+Dog,Fatigue,Tremors,Yes,,,
+Cat,Minor weight loss,Occasional hairball vomit,Sneezing,No,,
+Cat,Mild conjunctivitis,Minor weight loss,Runny nose,Dry stool,No,
+Dog,Loss of appetite,Weight loss,Depression,Blood in vomit,Yes,
+Dog,Minor diarrhea,Bad breath,Dry eyes,Joint stiffness,No,
+Dog,Blood in vomit,Yes,,,,
+Dog,Minor diarrhea,Increased thirst,Joint stiffness,No,,
+Cat,Runny nose,Mild conjunctivitis,Occasional hairball vomit,Dry stool,Sneezing,No
+Dog,Vomiting,Blood in vomit,Paralysis,Loss of appetite,High glucose,Yes
+Dog,Increased thirst,Minor diarrhea,Joint stiffness,Dry eyes,Dry skin,No
+Cat,Occasional hairball vomit,No,,,,
+Dog,Increased thirst,Dry skin,No,,,
+Dog,Minor diarrhea,Increased thirst,Joint stiffness,No,,
+Cat,Increased scratching,Runny nose,No,,,
+Cat,Bloody stool,Yes,,,,
+Dog,Nausea,Yes,,,,
+Cat,Dry stool,Occasional hairball vomit,Runny nose,Increased scratching,No,
+Cat,Sneezing,No,,,,
+Cat,Coughing,Tremors,Yes,,,
+Cat,Sneezing,Runny nose,Occasional hairball vomit,Mild conjunctivitis,No,
+Dog,Minor diarrhea,No,,,,
+Dog,Panting,Excessive thirst,Yes,,,
+Dog,Bad breath,No,,,,
+Dog,Blood in vomit,Nausea,Panting,Paralysis,Tremors,Yes
+Dog,Dry eyes,Bad breath,Dry skin,No,,
+Cat,Coughing,Panting,Pale gums,Yes,,
+Dog,Seizures,Anxiety,Yes,,,
+Cat,Convulsions,Excess drooling,Noisy breathing,Bloody stool,Yes,
+Cat,Fast breathing,Convulsions,Bloody vomit,Opaque cornea,Yes,
+Cat,Occasional hairball vomit,No,,,,
+Cat,Bloody stool,Yes,,,,
+Cat,Foam at the mouth,Opaque cornea,Tremors,Yes,,
+Cat,Minor weight loss,No,,,,
+Cat,Excess drooling,Opaque cornea,Lethargy,Convulsions,Fast breathing,Yes
+Dog,Increased thirst,Minor diarrhea,No,,,
+Cat,Lethargy,Swollen eyes,Bloody vomit,Panting,Yes,
+Cat,Occasional hairball vomit,Dry stool,No,,,
+Cat,Bloody stool,Opaque cornea,Excess drooling,Fast breathing,Yes,
+Cat,Runny nose,Sneezing,Occasional hairball vomit,Increased scratching,No,
+Cat,Increased scratching,Occasional hairball vomit,Runny nose,Mild conjunctivitis,Sneezing,No
+Dog,Anxiety,Excessive thirst,Glassy eyes,Tremors,Seizures,Yes
+Cat,Increased scratching,No,,,,
+Cat,Sneezing,Minor weight loss,Dry stool,No,,
+Dog,Weight loss,Tremors,Yes,,,
+Dog,Seizures,Disorientation,Depression,Nausea,Excessive thirst,Yes
+Dog,Depression,Seizures,Nausea,Fatigue,Yes,
+Cat,Runny nose,Increased scratching,Minor weight loss,Occasional hairball vomit,Dry stool,No
+Dog,Dry eyes,Bad breath,Minor diarrhea,Increased thirst,Joint stiffness,No
+Dog,Minor diarrhea,No,,,,
+Dog,Minor diarrhea,No,,,,
+Cat,Pale gums,Yes,,,,
+Dog,Increased thirst,Bad breath,No,,,
+Dog,Drooling,Excessive thirst,Yes,,,
+Dog,Dry skin,Dry eyes,No,,,
+Dog,Increased thirst,Dry skin,Minor diarrhea,Dry eyes,Joint stiffness,No
+Cat,Dry stool,Increased scratching,Minor weight loss,Occasional hairball vomit,Runny nose,No
+Cat,Lethargy,Excess drooling,Bloody vomit,Yes,,
+Cat,Runny nose,Sneezing,Increased scratching,Dry stool,Occasional hairball vomit,No
+Dog,Increased thirst,Joint stiffness,No,,,
+Cat,Lethargy,Yes,,,,
+Cat,Sneezing,No,,,,
+Cat,Fast breathing,Convulsions,Yes,,,
+Cat,Occasional hairball vomit,Dry stool,Runny nose,Minor weight loss,Sneezing,No
+Cat,Increased scratching,Minor weight loss,Mild conjunctivitis,Dry stool,No,
+Cat,Foam at the mouth,Coughing,Excess drooling,Yes,,
+Dog,Minor diarrhea,Dry eyes,No,,,
+Dog,Dry eyes,No,,,,
+Dog,Paralysis,Nausea,Drooling,Yes,,
+Cat,Minor weight loss,Increased scratching,Occasional hairball vomit,Runny nose,Sneezing,No
+Dog,Dry skin,No,,,,
+Dog,Excessive thirst,Yes,,,,
+Dog,Increased thirst,Bad breath,Dry eyes,No,,
+Cat,Panting,Yes,,,,
+Cat,Mild conjunctivitis,Runny nose,Minor weight loss,Occasional hairball vomit,No,
+Dog,Dry skin,Dry eyes,Increased thirst,Minor diarrhea,Bad breath,No
+Cat,Opaque cornea,Excess drooling,Bloody vomit,Foam at the mouth,Yes,
+Cat,Minor weight loss,Runny nose,Occasional hairball vomit,Dry stool,Increased scratching,No
+Dog,Dry skin,Joint stiffness,Minor diarrhea,Dry eyes,No,
+Cat,Increased scratching,Mild conjunctivitis,Occasional hairball vomit,Dry stool,No,
+Cat,Minor weight loss,Sneezing,Runny nose,Increased scratching,No,
+Cat,Dry stool,Minor weight loss,Occasional hairball vomit,Increased scratching,No,
+Dog,Loss of appetite,Blood in vomit,Disorientation,Glassy eyes,Yes,
+Dog,Dry skin,Minor diarrhea,Bad breath,No,,
+Cat,Sneezing,Mild conjunctivitis,Occasional hairball vomit,No,,
+Dog,Dry eyes,Minor diarrhea,No,,,
+Dog,Joint stiffness,Increased thirst,Minor diarrhea,Dry skin,No,
+Dog,Glassy eyes,Loss of appetite,Yes,,,
+Dog,Bad breath,No,,,,
+Dog,Dry skin,No,,,,
+Dog,Nausea,Yes,,,,
+Dog,Vomiting,Drooling,Yes,,,
+Cat,Increased scratching,No,,,,
+Cat,Increased scratching,No,,,,
+Cat,Coughing,Yes,,,,
+Dog,Increased thirst,Dry skin,Dry eyes,No,,
+Dog,Glassy eyes,Disorientation,Yes,,,
+Cat,Minor weight loss,Runny nose,Mild conjunctivitis,Dry stool,Sneezing,No
+Dog,Increased thirst,Joint stiffness,Dry eyes,Minor diarrhea,Dry skin,No
+Dog,Panting,Drooling,Weight loss,Disorientation,Yes,
+Dog,Tremors,Panting,Loss of appetite,High glucose,Yes,
+Dog,Paralysis,Disorientation,Yes,,,
+Cat,Occasional hairball vomit,Minor weight loss,Dry stool,No,,
+Cat,Opaque cornea,Panting,Yes,,,
+Dog,Minor diarrhea,Joint stiffness,No,,,
+Cat,Sneezing,Runny nose,Occasional hairball vomit,Mild conjunctivitis,No,
+Cat,Increased scratching,No,,,,
+Dog,Minor diarrhea,Bad breath,Dry eyes,No,,
+Cat,Tremors,Bloody stool,Noisy breathing,Yes,,
+Cat,Lethargy,Swollen eyes,Yes,,,
+Dog,Weight loss,High glucose,Paralysis,Yes,,
+Dog,Bad breath,Increased thirst,Dry skin,No,,
+Cat,Minor weight loss,No,,,,
+Cat,Increased scratching,Minor weight loss,Runny nose,Sneezing,Dry stool,No
+Cat,Runny nose,Sneezing,Dry stool,No,,
+Cat,Fast breathing,Excess drooling,Foam at the mouth,Noisy breathing,Tremors,Yes
+Dog,Tremors,Glassy eyes,Drooling,Blood in vomit,Yes,
+Dog,Excessive thirst,Tremors,Yes,,,
+Dog,Glassy eyes,Yes,,,,
+Dog,Nausea,Fever,Excessive thirst,Fatigue,Yes,
+Cat,Dry stool,Increased scratching,Occasional hairball vomit,No,,
+Dog,Dry eyes,Joint stiffness,No,,,
+Cat,Sneezing,Runny nose,Minor weight loss,Occasional hairball vomit,No,
+Cat,Excess drooling,Bloody stool,Lethargy,Opaque cornea,Swollen eyes,Yes
+Cat,Bloody stool,Bloody vomit,Opaque cornea,Pale gums,Yes,
+Dog,Panting,Paralysis,Tremors,Yes,,
+Cat,Increased scratching,No,,,,
+Dog,Dry eyes,Dry skin,No,,,
+Dog,Fatigue,Excessive thirst,High glucose,Yes,,
+Cat,Sneezing,Runny nose,Mild conjunctivitis,No,,
+Cat,Lethargy,Bloody stool,Yes,,,
+Dog,Increased thirst,Dry eyes,Dry skin,Minor diarrhea,Bad breath,No
+Dog,Excessive thirst,Blood in vomit,Fever,Drooling,Glassy eyes,Yes
+Cat,Panting,Tremors,Excess drooling,Fast breathing,Yes,
+Dog,Glassy eyes,Anxiety,Fatigue,Vomiting,Yes,
+Cat,Runny nose,Mild conjunctivitis,Minor weight loss,No,,
+Cat,Minor weight loss,Increased scratching,No,,,
+Dog,Increased thirst,No,,,,
+Cat,Bloody stool,Swollen eyes,Noisy breathing,Fast breathing,Yes,
+Dog,Loss of appetite,Panting,Tremors,Excessive thirst,Drooling,Yes
+Cat,Swollen eyes,Convulsions,Panting,Coughing,Yes,
+Cat,Bloody vomit,Bloody stool,Swollen eyes,Opaque cornea,Noisy breathing,Yes
+Dog,Dry eyes,Bad breath,Minor diarrhea,Joint stiffness,No,
+Cat,Bloody vomit,Foam at the mouth,Yes,,,
+Dog,Seizures,Fever,Tremors,Nausea,Yes,
+Dog,Glassy eyes,Paralysis,Tremors,Weight loss,Depression,Yes
+Cat,Noisy breathing,Tremors,Foam at the mouth,Excess drooling,Yes,
+Cat,Opaque cornea,Noisy breathing,Lethargy,Bloody vomit,Convulsions,Yes
+Cat,Minor weight loss,Mild conjunctivitis,Runny nose,No,,
+Dog,Dry eyes,Bad breath,No,,,
+Dog,Minor diarrhea,Dry eyes,No,,,
+Dog,Drooling,Yes,,,,
+Dog,Dry skin,No,,,,
+Dog,Depression,Fatigue,Drooling,Fever,Excessive thirst,Yes
+Cat,Pale gums,Fast breathing,Yes,,,
+Dog,Joint stiffness,No,,,,
+Dog,Increased thirst,No,,,,
+Dog,Joint stiffness,Increased thirst,Dry eyes,No,,
+Cat,Increased scratching,Minor weight loss,No,,,
+Dog,Joint stiffness,No,,,,
+Cat,Runny nose,Minor weight loss,Mild conjunctivitis,Dry stool,No,
+Cat,Runny nose,Increased scratching,Occasional hairball vomit,Dry stool,No,
+Cat,Mild conjunctivitis,Minor weight loss,No,,,
+Dog,Increased thirst,No,,,,
+Cat,Minor weight loss,Runny nose,Mild conjunctivitis,Dry stool,No,
+Cat,Occasional hairball vomit,Minor weight loss,Sneezing,Runny nose,No,
+Cat,Occasional hairball vomit,Runny nose,No,,,
+Dog,Minor diarrhea,Dry eyes,Joint stiffness,Increased thirst,No,
+Cat,Increased scratching,No,,,,
+Dog,Dry eyes,Increased thirst,Minor diarrhea,No,,
+Cat,Panting,Yes,,,,
+Cat,Lethargy,Bloody vomit,Yes,,,
+Cat,Runny nose,No,,,,
+Cat,Opaque cornea,Tremors,Yes,,,
+Dog,Dry eyes,Minor diarrhea,No,,,
+Cat,Foam at the mouth,Noisy breathing,Yes,,,
+Cat,Increased scratching,Mild conjunctivitis,No,,,
+Cat,Fast breathing,Noisy breathing,Swollen eyes,Yes,,
+Dog,Loss of appetite,Yes,,,,
+Cat,Fast breathing,Coughing,Excess drooling,Bloody stool,Panting,Yes
+Dog,Disorientation,Drooling,Seizures,Yes,,
+Dog,Vomiting,Tremors,Yes,,,
+Cat,Lethargy,Tremors,Coughing,Fast breathing,Bloody stool,Yes
+Dog,Disorientation,Vomiting,Panting,Yes,,
+Dog,Joint stiffness,No,,,,
+Dog,Dry eyes,Increased thirst,No,,,
+Dog,Bad breath,Dry eyes,No,,,
+Dog,Drooling,Seizures,Yes,,,
+Cat,Opaque cornea,Lethargy,Coughing,Yes,,
+Cat,Mild conjunctivitis,Runny nose,Sneezing,Increased scratching,Minor weight loss,No
+Cat,Sneezing,No,,,,
+Dog,High glucose,Seizures,Fatigue,Nausea,Fever,Yes
+Cat,Fast breathing,Coughing,Yes,,,
+Dog,Drooling,Vomiting,Yes,,,
+Cat,Minor weight loss,Increased scratching,Mild conjunctivitis,Dry stool,Sneezing,No
+Cat,Noisy breathing,Excess drooling,Tremors,Bloody stool,Opaque cornea,Yes
+Dog,Nausea,Panting,High glucose,Yes,,
+Dog,Nausea,Disorientation,Depression,Yes,,
+Dog,Glassy eyes,Fever,Yes,,,
+Dog,Dry skin,Increased thirst,No,,,
+Dog,Fever,Weight loss,Yes,,,
+Dog,Seizures,Glassy eyes,Depression,Yes,,
+Dog,Increased thirst,No,,,,
+Cat,Mild conjunctivitis,Sneezing,No,,,
+Dog,Fatigue,Nausea,Drooling,Disorientation,Fever,Yes
+Cat,Panting,Coughing,Opaque cornea,Yes,,
+Cat,Fast breathing,Swollen eyes,Panting,Yes,,
+Dog,Vomiting,Depression,Weight loss,Yes,,
+Cat,Occasional hairball vomit,Increased scratching,Mild conjunctivitis,Minor weight loss,Runny nose,No
+Cat,Opaque cornea,Excess drooling,Yes,,,
+Cat,Tremors,Swollen eyes,Lethargy,Foam at the mouth,Excess drooling,Yes
+Dog,Joint stiffness,Bad breath,Dry eyes,Minor diarrhea,No,
+Cat,Tremors,Yes,,,,
+Cat,Panting,Yes,,,,
+Dog,Joint stiffness,Increased thirst,Dry eyes,Dry skin,No,
+Cat,Swollen eyes,Foam at the mouth,Bloody vomit,Lethargy,Yes,
+Cat,Dry stool,No,,,,
+Dog,Disorientation,Panting,Paralysis,Yes,,
+Cat,Tremors,Convulsions,Panting,Foam at the mouth,Opaque cornea,Yes
+Dog,Fever,Vomiting,Disorientation,Seizures,Excessive thirst,Yes
+Cat,Occasional hairball vomit,Mild conjunctivitis,Dry stool,Increased scratching,Sneezing,No
+Dog,Minor diarrhea,Dry eyes,Bad breath,No,,
+Dog,Joint stiffness,Bad breath,Increased thirst,Dry skin,Dry eyes,No
+Cat,Increased scratching,Occasional hairball vomit,Mild conjunctivitis,Runny nose,Sneezing,No
+Dog,Vomiting,High glucose,Tremors,Blood in vomit,Yes,
+Dog,Blood in vomit,Tremors,Fatigue,Yes,,
+Cat,Tremors,Noisy breathing,Yes,,,
+Cat,Bloody vomit,Pale gums,Opaque cornea,Foam at the mouth,Fast breathing,Yes
+Dog,Blood in vomit,Vomiting,Yes,,,
+Cat,Pale gums,Swollen eyes,Yes,,,
+Cat,Occasional hairball vomit,Dry stool,Mild conjunctivitis,Increased scratching,Sneezing,No
+Dog,Bad breath,Dry skin,Dry eyes,Increased thirst,No,
+Cat,Mild conjunctivitis,Sneezing,Dry stool,No,,
+Cat,Increased scratching,Runny nose,Dry stool,Mild conjunctivitis,No,
+Dog,Disorientation,Excessive thirst,Glassy eyes,Blood in vomit,Fever,Yes
+Cat,Mild conjunctivitis,Sneezing,Occasional hairball vomit,Minor weight loss,No,
+Cat,Occasional hairball vomit,Dry stool,Runny nose,Sneezing,Mild conjunctivitis,No
+Dog,Dry eyes,Joint stiffness,Bad breath,Increased thirst,No,
+Dog,Excessive thirst,Disorientation,Tremors,Glassy eyes,Yes,
+Cat,Sneezing,Dry stool,No,,,
+Cat,Tremors,Convulsions,Fast breathing,Bloody stool,Yes,
+Cat,Foam at the mouth,Opaque cornea,Noisy breathing,Yes,,
+Cat,Panting,Bloody vomit,Yes,,,
+Cat,Convulsions,Coughing,Yes,,,
+Dog,Bad breath,Joint stiffness,Increased thirst,No,,
+Dog,Fever,Yes,,,,
+Dog,Tremors,Yes,,,,
+Dog,Panting,Nausea,Vomiting,Fever,Seizures,Yes
+Cat,Noisy breathing,Panting,Fast breathing,Bloody vomit,Swollen eyes,Yes
+Dog,Anxiety,Glassy eyes,Loss of appetite,High glucose,Yes,
+Dog,Bad breath,Increased thirst,Minor diarrhea,Dry eyes,No,
+Dog,Increased thirst,No,,,,
+Cat,Foam at the mouth,Bloody stool,Convulsions,Yes,,
+Dog,Minor diarrhea,Joint stiffness,Increased thirst,No,,
+Dog,Dry eyes,No,,,,
+Cat,Occasional hairball vomit,Dry stool,Minor weight loss,Runny nose,Increased scratching,No
+Dog,Increased thirst,Joint stiffness,No,,,
+Dog,Weight loss,Panting,Disorientation,Nausea,Yes,
+Dog,Joint stiffness,Increased thirst,No,,,
+Dog,Fever,Disorientation,Vomiting,Nausea,Depression,Yes
+Cat,Pale gums,Yes,,,,
+Cat,Occasional hairball vomit,No,,,,
+Cat,Tremors,Lethargy,Bloody stool,Bloody vomit,Yes,
+Cat,Minor weight loss,No,,,,
+Cat,Opaque cornea,Yes,,,,
+Cat,Noisy breathing,Pale gums,Yes,,,
+Dog,Depression,High glucose,Paralysis,Yes,,
+Cat,Increased scratching,Runny nose,No,,,
+Dog,Increased thirst,Minor diarrhea,Dry eyes,No,,
+Dog,Increased thirst,No,,,,
+Dog,Anxiety,Tremors,Drooling,Excessive thirst,Yes,
+Cat,Tremors,Coughing,Convulsions,Pale gums,Yes,
+Dog,Panting,Vomiting,High glucose,Yes,,
+Cat,Minor weight loss,Mild conjunctivitis,Increased scratching,No,,
+Cat,Lethargy,Opaque cornea,Yes,,,
+Cat,Mild conjunctivitis,No,,,,
+Cat,Runny nose,Sneezing,Dry stool,Mild conjunctivitis,No,
+Dog,Minor diarrhea,Bad breath,Dry eyes,Dry skin,Joint stiffness,No
+Cat,Swollen eyes,Convulsions,Excess drooling,Noisy breathing,Foam at the mouth,Yes
+Cat,Runny nose,No,,,,
+Cat,Coughing,Opaque cornea,Yes,,,
+Dog,Panting,Seizures,Depression,Yes,,
+Dog,Glassy eyes,Yes,,,,
+Cat,Dry stool,Sneezing,Mild conjunctivitis,No,,
+Cat,Bloody vomit,Tremors,Excess drooling,Panting,Coughing,Yes
+Cat,Tremors,Fast breathing,Yes,,,
+Cat,Increased scratching,Occasional hairball vomit,Mild conjunctivitis,No,,
+Cat,Noisy breathing,Yes,,,,
+Dog,Dry skin,Minor diarrhea,Bad breath,No,,
+Dog,Joint stiffness,Dry eyes,Dry skin,Increased thirst,No,
+Dog,Joint stiffness,Bad breath,Dry skin,No,,
+Dog,Fever,Yes,,,,
+Cat,Increased scratching,No,,,,
+Dog,Depression,Disorientation,Glassy eyes,Nausea,Yes,
+Dog,Drooling,Paralysis,Nausea,Yes,,
+Cat,Swollen eyes,Yes,,,,
+Dog,High glucose,Vomiting,Anxiety,Panting,Weight loss,Yes
+Cat,Pale gums,Yes,,,,
+Dog,Minor diarrhea,Bad breath,Increased thirst,Dry skin,No,
+Dog,Dry eyes,Bad breath,Joint stiffness,Minor diarrhea,Dry skin,No
+Cat,Bloody stool,Convulsions,Panting,Bloody vomit,Swollen eyes,Yes
+Cat,Bloody stool,Fast breathing,Yes,,,
+Cat,Tremors,Swollen eyes,Panting,Excess drooling,Yes,
+Cat,Convulsions,Tremors,Excess drooling,Yes,,
+Dog,Fever,Glassy eyes,Drooling,Yes,,
+Dog,Vomiting,Yes,,,,
+Cat,Swollen eyes,Yes,,,,
+Cat,Fast breathing,Yes,,,,
+Cat,Fast breathing,Panting,Convulsions,Coughing,Tremors,Yes
+Cat,Convulsions,Excess drooling,Foam at the mouth,Pale gums,Bloody stool,Yes
+Cat,Sneezing,No,,,,
+Cat,Coughing,Convulsions,Pale gums,Fast breathing,Yes,
+Cat,Minor weight loss,Occasional hairball vomit,No,,,
+Cat,Sneezing,Runny nose,No,,,
+Dog,Depression,Vomiting,Weight loss,Yes,,
+Dog,Dry eyes,Joint stiffness,Bad breath,Minor diarrhea,Increased thirst,No
+Cat,Runny nose,Dry stool,Sneezing,Occasional hairball vomit,No,
+Dog,Blood in vomit,Nausea,Anxiety,Drooling,Yes,
+Dog,Dry eyes,Bad breath,Dry skin,Increased thirst,Minor diarrhea,No
+Cat,Panting,Bloody vomit,Opaque cornea,Noisy breathing,Pale gums,Yes
+Cat,Mild conjunctivitis,Increased scratching,No,,,
+Dog,Joint stiffness,Minor diarrhea,Increased thirst,No,,
+Dog,Blood in vomit,Paralysis,Vomiting,Yes,,
+Cat,Increased scratching,Sneezing,No,,,
+Cat,Dry stool,Sneezing,Increased scratching,No,,
+Cat,Panting,Noisy breathing,Bloody stool,Swollen eyes,Yes,
+Dog,Bad breath,Joint stiffness,Dry eyes,No,,
+Dog,Seizures,Yes,,,,
+Dog,Blood in vomit,Fever,Yes,,,
+Cat,Noisy breathing,Panting,Fast breathing,Excess drooling,Lethargy,Yes
+Cat,Sneezing,Dry stool,Increased scratching,No,,
+Cat,Runny nose,Minor weight loss,No,,,
+Dog,Dry eyes,Minor diarrhea,Dry skin,Joint stiffness,Increased thirst,No
+Cat,Convulsions,Yes,,,,
+Dog,Joint stiffness,No,,,,
+Cat,Swollen eyes,Yes,,,,
+Dog,Minor diarrhea,Dry skin,Joint stiffness,Bad breath,Dry eyes,No
+Cat,Pale gums,Fast breathing,Bloody vomit,Yes,,
+Dog,Anxiety,Weight loss,Fatigue,Depression,High glucose,Yes
+Dog,Minor diarrhea,Dry skin,Bad breath,Increased thirst,No,
+Cat,Foam at the mouth,Coughing,Opaque cornea,Swollen eyes,Yes,
+Dog,Weight loss,Depression,Blood in vomit,Glassy eyes,Fever,Yes
+Dog,Panting,Disorientation,Excessive thirst,Yes,,
+Dog,Weight loss,Yes,,,,
+Dog,Paralysis,Blood in vomit,Disorientation,Yes,,
+Cat,Excess drooling,Yes,,,,
+Cat,Tremors,Fast breathing,Yes,,,
+Dog,High glucose,Yes,,,,
+Cat,Coughing,Bloody vomit,Opaque cornea,Yes,,
+Cat,Increased scratching,No,,,,
+Dog,Vomiting,Drooling,Yes,,,
+Cat,Dry stool,Sneezing,Increased scratching,Minor weight loss,Occasional hairball vomit,No
+Cat,Excess drooling,Fast breathing,Yes,,,
+Dog,Dry eyes,No,,,,
+Cat,Lethargy,Yes,,,,
+Dog,Joint stiffness,Dry skin,Dry eyes,Increased thirst,No,
+Dog,Nausea,Seizures,Glassy eyes,Drooling,Fatigue,Yes
+Cat,Fast breathing,Excess drooling,Yes,,,
+Dog,Seizures,Disorientation,Yes,,,
+Dog,High glucose,Yes,,,,
+Cat,Opaque cornea,Lethargy,Yes,,,
+Dog,Fever,Glassy eyes,Vomiting,Yes,,
+Dog,Fever,Panting,Fatigue,Yes,,
+Dog,Glassy eyes,Tremors,Anxiety,Vomiting,Yes,
+Cat,Noisy breathing,Tremors,Yes,,,
+Cat,Swollen eyes,Panting,Lethargy,Yes,,
+Dog,Minor diarrhea,Bad breath,No,,,
+Dog,Bad breath,Increased thirst,No,,,
+Cat,Mild conjunctivitis,Minor weight loss,Occasional hairball vomit,Sneezing,Runny nose,No
+Cat,Pale gums,Bloody stool,Lethargy,Yes,,
+Cat,Pale gums,Bloody stool,Bloody vomit,Panting,Convulsions,Yes
+Cat,Tremors,Panting,Coughing,Convulsions,Yes,
+Cat,Bloody stool,Panting,Excess drooling,Yes,,
+Dog,High glucose,Panting,Paralysis,Blood in vomit,Yes,
+Dog,Panting,Fatigue,Yes,,,
+Cat,Dry stool,Minor weight loss,Occasional hairball vomit,Sneezing,Runny nose,No
+Dog,Glassy eyes,Vomiting,Excessive thirst,Fever,Yes,
+Cat,Runny nose,Mild conjunctivitis,No,,,
+Dog,Loss of appetite,Vomiting,Anxiety,Yes,,
+Dog,Anxiety,Paralysis,Disorientation,Yes,,
+Dog,Minor diarrhea,Dry skin,Increased thirst,No,,
+Cat,Excess drooling,Panting,Yes,,,
+Cat,Increased scratching,No,,,,
+Dog,Drooling,Yes,,,,
+Dog,Dry skin,Joint stiffness,Bad breath,Minor diarrhea,Increased thirst,No
+Dog,High glucose,Seizures,Drooling,Yes,,
+Cat,Occasional hairball vomit,Dry stool,Increased scratching,Sneezing,Mild conjunctivitis,No
+Dog,Disorientation,Yes,,,,
+Dog,Paralysis,High glucose,Weight loss,Yes,,
+Dog,Excessive thirst,Vomiting,Yes,,,
+Cat,Fast breathing,Convulsions,Pale gums,Bloody vomit,Noisy breathing,Yes
+Cat,Mild conjunctivitis,No,,,,
+Dog,Weight loss,Yes,,,,
+Cat,Minor weight loss,No,,,,
+Dog,Bad breath,Dry eyes,Dry skin,No,,
+Dog,Fever,Seizures,Blood in vomit,Loss of appetite,Yes,
+Dog,Dry skin,Joint stiffness,Dry eyes,No,,
+Cat,Fast breathing,Coughing,Foam at the mouth,Yes,,
+Cat,Noisy breathing,Yes,,,,
+Cat,Occasional hairball vomit,Runny nose,Dry stool,No,,
+Cat,Opaque cornea,Pale gums,Panting,Yes,,
+Dog,Dry eyes,Increased thirst,No,,,
+Dog,Dry skin,Joint stiffness,Minor diarrhea,Dry eyes,Increased thirst,No
+Dog,Increased thirst,Dry skin,Dry eyes,Joint stiffness,No,
+Dog,Disorientation,Blood in vomit,Yes,,,
+Cat,Increased scratching,Minor weight loss,Occasional hairball vomit,No,,
+Cat,Excess drooling,Yes,,,,
+Cat,Occasional hairball vomit,Runny nose,No,,,
+Dog,Joint stiffness,No,,,,
+Cat,Swollen eyes,Bloody stool,Noisy breathing,Yes,,
+Cat,Noisy breathing,Excess drooling,Fast breathing,Foam at the mouth,Pale gums,Yes
+Dog,Depression,Yes,,,,
+Dog,Increased thirst,Dry skin,Joint stiffness,Bad breath,Minor diarrhea,No
+Cat,Noisy breathing,Yes,,,,
+Dog,Anxiety,Fatigue,Yes,,,
+Dog,Fever,Excessive thirst,Fatigue,Weight loss,Depression,Yes
+Dog,Increased thirst,Bad breath,Minor diarrhea,No,,
+Cat,Minor weight loss,Occasional hairball vomit,No,,,
+Cat,Bloody stool,Noisy breathing,Panting,Coughing,Yes,
+Dog,Minor diarrhea,Dry eyes,Bad breath,No,,
+Cat,Noisy breathing,Fast breathing,Yes,,,
+Dog,Dry skin,Dry eyes,Minor diarrhea,Bad breath,No,
+Dog,Fatigue,Yes,,,,
+Cat,Convulsions,Tremors,Opaque cornea,Foam at the mouth,Yes,
+Cat,Dry stool,Sneezing,Occasional hairball vomit,Mild conjunctivitis,Increased scratching,No
+Cat,Fast breathing,Lethargy,Yes,,,
+Cat,Pale gums,Convulsions,Bloody vomit,Yes,,
+Cat,Coughing,Yes,,,,
+Dog,Disorientation,Blood in vomit,Fever,Yes,,
+Cat,Swollen eyes,Coughing,Yes,,,
+Dog,Dry eyes,Increased thirst,Dry skin,Minor diarrhea,Bad breath,No
+Dog,High glucose,Glassy eyes,Paralysis,Fever,Yes,
+Dog,Anxiety,Seizures,Yes,,,
+Cat,Panting,Tremors,Yes,,,
+Cat,Excess drooling,Swollen eyes,Fast breathing,Opaque cornea,Yes,
+Dog,Dry eyes,Dry skin,Increased thirst,No,,
+Dog,Bad breath,No,,,,
+Dog,Fatigue,Yes,,,,
+Dog,Blood in vomit,Yes,,,,
+Cat,Runny nose,Occasional hairball vomit,No,,,
+Dog,Dry eyes,Bad breath,Joint stiffness,Minor diarrhea,No,
+Dog,Tremors,Paralysis,Vomiting,Excessive thirst,Yes,
+Dog,Panting,Excessive thirst,Yes,,,
+Dog,Loss of appetite,Excessive thirst,Yes,,,
+Cat,Dry stool,No,,,,
+Dog,Dry eyes,Bad breath,No,,,
+Cat,Occasional hairball vomit,Sneezing,Mild conjunctivitis,Dry stool,No,
+Dog,Nausea,Tremors,Yes,,,
+Dog,Joint stiffness,Increased thirst,Dry eyes,Dry skin,No,
+Cat,Increased scratching,Dry stool,Occasional hairball vomit,No,,
+Cat,Bloody vomit,Yes,,,,
+Cat,Runny nose,No,,,,
+Cat,Opaque cornea,Convulsions,Foam at the mouth,Fast breathing,Panting,Yes
+Cat,Opaque cornea,Yes,,,,
+Cat,Swollen eyes,Tremors,Excess drooling,Yes,,
+Cat,Opaque cornea,Excess drooling,Bloody vomit,Fast breathing,Yes,
+Cat,Tremors,Coughing,Excess drooling,Bloody vomit,Pale gums,Yes
+Dog,Nausea,High glucose,Loss of appetite,Drooling,Excessive thirst,Yes
+Cat,Increased scratching,Sneezing,Minor weight loss,No,,
+Dog,Bad breath,No,,,,
+Cat,Coughing,Yes,,,,
+Cat,Mild conjunctivitis,Minor weight loss,Sneezing,Occasional hairball vomit,Increased scratching,No
+Cat,Noisy breathing,Swollen eyes,Yes,,,
+Dog,Dry skin,Bad breath,Minor diarrhea,No,,
+Cat,Bloody vomit,Yes,,,,
+Cat,Sneezing,Minor weight loss,No,,,
+Dog,Glassy eyes,Yes,,,,
+Dog,Bad breath,No,,,,
+Dog,Joint stiffness,Increased thirst,Dry eyes,Dry skin,Minor diarrhea,No
+Cat,Mild conjunctivitis,Minor weight loss,No,,,
+Cat,Runny nose,Occasional hairball vomit,Increased scratching,No,,
+Cat,Runny nose,Minor weight loss,Mild conjunctivitis,Sneezing,No,
+Dog,Joint stiffness,Dry skin,Bad breath,Increased thirst,No,
+Cat,Runny nose,Minor weight loss,No,,,
+Dog,Drooling,Paralysis,Yes,,,
+Dog,Joint stiffness,Dry skin,No,,,
+Cat,Pale gums,Panting,Convulsions,Excess drooling,Yes,
+Dog,Dry skin,Minor diarrhea,Joint stiffness,Dry eyes,Increased thirst,No
+Dog,Increased thirst,Joint stiffness,Dry eyes,Minor diarrhea,No,
+Dog,Joint stiffness,No,,,,
+Cat,Tremors,Coughing,Fast breathing,Yes,,
+Cat,Mild conjunctivitis,Sneezing,Runny nose,Dry stool,No,
+Dog,Joint stiffness,Dry eyes,Dry skin,No,,
+Cat,Runny nose,Sneezing,Increased scratching,Minor weight loss,Mild conjunctivitis,No
+Cat,Dry stool,No,,,,
+Cat,Minor weight loss,Mild conjunctivitis,Increased scratching,Occasional hairball vomit,No,
+Dog,Dry skin,Bad breath,Dry eyes,Joint stiffness,Increased thirst,No
+Dog,Nausea,Paralysis,Vomiting,Blood in vomit,High glucose,Yes
+Cat,Opaque cornea,Panting,Bloody stool,Bloody vomit,Convulsions,Yes
+Dog,Minor diarrhea,Dry eyes,Joint stiffness,Bad breath,Dry skin,No
+Dog,Joint stiffness,No,,,,
+Cat,Runny nose,Increased scratching,Dry stool,Occasional hairball vomit,Sneezing,No
+Dog,Drooling,Depression,Glassy eyes,Loss of appetite,Nausea,Yes
+Dog,Dry skin,Minor diarrhea,Bad breath,Dry eyes,Increased thirst,No
+Dog,Drooling,Yes,,,,
+Dog,Dry eyes,Bad breath,Joint stiffness,Minor diarrhea,No,
+Cat,Dry stool,Minor weight loss,Runny nose,No,,
+Cat,Lethargy,Noisy breathing,Panting,Tremors,Bloody vomit,Yes
+Dog,Seizures,Glassy eyes,Yes,,,
+Cat,Tremors,Bloody vomit,Lethargy,Noisy breathing,Yes,
+Dog,Bad breath,Increased thirst,Dry eyes,No,,
+Dog,Drooling,Vomiting,Loss of appetite,Yes,,
+Dog,Paralysis,Excessive thirst,Loss of appetite,Tremors,High glucose,Yes
+Dog,Increased thirst,Dry skin,Dry eyes,Joint stiffness,Minor diarrhea,No
+Cat,Dry stool,Sneezing,Mild conjunctivitis,Increased scratching,No,
+Dog,Joint stiffness,Increased thirst,Dry skin,Dry eyes,No,
+Dog,Dry eyes,Bad breath,Joint stiffness,Minor diarrhea,No,
+Cat,Bloody stool,Foam at the mouth,Yes,,,
+Dog,Dry eyes,No,,,,
+Dog,Dry eyes,Bad breath,Joint stiffness,Minor diarrhea,Dry skin,No
+Cat,Pale gums,Lethargy,Yes,,,
+Cat,Minor weight loss,Increased scratching,No,,,
+Dog,Dry eyes,Increased thirst,Joint stiffness,Dry skin,No,
+Cat,Dry stool,No,,,,
+Dog,Dry skin,Joint stiffness,Minor diarrhea,No,,
+Cat,Coughing,Excess drooling,Opaque cornea,Yes,,
+Cat,Foam at the mouth,Noisy breathing,Swollen eyes,Pale gums,Yes,
+Dog,Excessive thirst,Tremors,Vomiting,Nausea,Yes,
+Dog,Increased thirst,Bad breath,Minor diarrhea,No,,
+Cat,Runny nose,Mild conjunctivitis,Occasional hairball vomit,No,,
+Dog,Depression,High glucose,Seizures,Excessive thirst,Yes,
+Dog,Blood in vomit,Weight loss,Yes,,,
+Dog,Depression,Glassy eyes,Weight loss,Blood in vomit,Yes,
+Cat,Minor weight loss,Runny nose,Dry stool,Occasional hairball vomit,Sneezing,No
+Dog,Dry skin,Bad breath,No,,,
+Dog,Dry eyes,Joint stiffness,Increased thirst,Dry skin,Bad breath,No
+Dog,Increased thirst,Dry skin,Bad breath,Dry eyes,Joint stiffness,No
+Cat,Increased scratching,Mild conjunctivitis,Occasional hairball vomit,Runny nose,No,
+Dog,Paralysis,Vomiting,Disorientation,Tremors,Blood in vomit,Yes
+Cat,Mild conjunctivitis,Sneezing,Dry stool,Occasional hairball vomit,No,
+Dog,Disorientation,Blood in vomit,High glucose,Tremors,Glassy eyes,Yes
+Dog,Disorientation,Glassy eyes,Loss of appetite,Blood in vomit,Yes,
+Dog,Dry eyes,No,,,,
+Cat,Coughing,Opaque cornea,Yes,,,
+Cat,Bloody stool,Panting,Foam at the mouth,Yes,,
+Cat,Sneezing,Increased scratching,Runny nose,Minor weight loss,No,
+Cat,Tremors,Noisy breathing,Swollen eyes,Yes,,
+Cat,Dry stool,Mild conjunctivitis,No,,,
+Cat,Increased scratching,Sneezing,Mild conjunctivitis,No,,
+Dog,Increased thirst,Minor diarrhea,No,,,
+Cat,Bloody stool,Yes,,,,
+Dog,Disorientation,Blood in vomit,Fatigue,Yes,,
+Cat,Opaque cornea,Tremors,Yes,,,
+Dog,Glassy eyes,Drooling,Nausea,Yes,,
+Cat,Fast breathing,Lethargy,Yes,,,
+Cat,Dry stool,Occasional hairball vomit,Sneezing,Minor weight loss,No,
+Dog,Dry eyes,Dry skin,Increased thirst,Joint stiffness,No,
+Cat,Occasional hairball vomit,Increased scratching,Runny nose,Dry stool,Mild conjunctivitis,No
+Dog,Minor diarrhea,Dry skin,No,,,
+Cat,Increased scratching,Runny nose,Dry stool,No,,
+Dog,Dry eyes,No,,,,
+Dog,High glucose,Blood in vomit,Yes,,,
+Dog,Increased thirst,No,,,,
+Dog,Joint stiffness,Dry eyes,No,,,
+Cat,Sneezing,Dry stool,Minor weight loss,No,,
+Cat,Occasional hairball vomit,No,,,,
+Cat,Occasional hairball vomit,Sneezing,Mild conjunctivitis,No,,
+Dog,Nausea,Drooling,Depression,Fatigue,Disorientation,Yes
+Cat,Panting,Opaque cornea,Coughing,Swollen eyes,Bloody stool,Yes
+Cat,Lethargy,Opaque cornea,Convulsions,Excess drooling,Panting,Yes
+Cat,Occasional hairball vomit,Mild conjunctivitis,No,,,
+Cat,Noisy breathing,Pale gums,Fast breathing,Bloody stool,Yes,
+Cat,Pale gums,Convulsions,Yes,,,
+Cat,Dry stool,No,,,,
+Dog,Nausea,Fatigue,Excessive thirst,Vomiting,Weight loss,Yes
+Cat,Coughing,Convulsions,Bloody vomit,Noisy breathing,Yes,
+Cat,Dry stool,Occasional hairball vomit,Increased scratching,No,,
+Cat,Dry stool,Sneezing,No,,,
+Dog,Dry skin,Joint stiffness,No,,,
+Cat,Foam at the mouth,Excess drooling,Bloody vomit,Bloody stool,Yes,
+Cat,Excess drooling,Convulsions,Opaque cornea,Pale gums,Tremors,Yes
+Dog,Dry skin,Joint stiffness,Dry eyes,Increased thirst,Minor diarrhea,No
+Cat,Coughing,Yes,,,,
+Cat,Mild conjunctivitis,Minor weight loss,Runny nose,Dry stool,Occasional hairball vomit,No
+Cat,Tremors,Lethargy,Coughing,Bloody vomit,Yes,
+Cat,Foam at the mouth,Lethargy,Yes,,,
+Dog,Dry eyes,Minor diarrhea,No,,,
+Dog,Depression,Yes,,,,
+Dog,Joint stiffness,Minor diarrhea,Dry eyes,Bad breath,Increased thirst,No
+Dog,Minor diarrhea,No,,,,
+Cat,Lethargy,Tremors,Yes,,,
+Dog,Dry skin,Bad breath,Increased thirst,Joint stiffness,No,
+Dog,Minor diarrhea,No,,,,
+Cat,Minor weight loss,No,,,,
+Cat,Runny nose,Minor weight loss,Increased scratching,Occasional hairball vomit,Mild conjunctivitis,No
+Cat,Panting,Fast breathing,Lethargy,Convulsions,Pale gums,Yes
+Cat,Excess drooling,Swollen eyes,Convulsions,Yes,,
+Dog,Disorientation,Yes,,,,
+Dog,Joint stiffness,Increased thirst,Dry eyes,No,,
+Dog,Increased thirst,Dry eyes,No,,,
+Cat,Sneezing,Minor weight loss,Dry stool,Increased scratching,No,
+Cat,Increased scratching,Dry stool,Sneezing,No,,
+Dog,Bad breath,Dry skin,Dry eyes,No,,
+Dog,Dry eyes,No,,,,
+Dog,Loss of appetite,Fatigue,Panting,Fever,Yes,
+Dog,Blood in vomit,Disorientation,Fatigue,Yes,,
+Cat,Noisy breathing,Fast breathing,Bloody stool,Opaque cornea,Yes,
+Dog,Fever,Nausea,Loss of appetite,Yes,,
+Dog,Joint stiffness,Bad breath,No,,,
+Cat,Tremors,Opaque cornea,Yes,,,
+Dog,Vomiting,Excessive thirst,Fatigue,Yes,,
+Cat,Minor weight loss,Increased scratching,Mild conjunctivitis,Runny nose,No,
+Dog,Minor diarrhea,No,,,,
+Cat,Foam at the mouth,Excess drooling,Yes,,,
+Cat,Noisy breathing,Yes,,,,
+Cat,Occasional hairball vomit,Sneezing,No,,,
+Cat,Tremors,Foam at the mouth,Lethargy,Swollen eyes,Yes,
+Cat,Foam at the mouth,Bloody vomit,Lethargy,Yes,,
+Dog,Joint stiffness,Minor diarrhea,Bad breath,Dry eyes,No,
+Cat,Bloody vomit,Opaque cornea,Excess drooling,Bloody stool,Yes,
+Dog,Minor diarrhea,Dry skin,No,,,
+Cat,Mild conjunctivitis,Sneezing,No,,,
+Dog,Bad breath,Minor diarrhea,Increased thirst,Dry skin,Dry eyes,No
+Cat,Dry stool,Minor weight loss,Sneezing,No,,
+Cat,Dry stool,Sneezing,Runny nose,Minor weight loss,Mild conjunctivitis,No
+Dog,Bad breath,Minor diarrhea,No,,,
+Cat,Swollen eyes,Fast breathing,Tremors,Noisy breathing,Opaque cornea,Yes
+Dog,Disorientation,Paralysis,Depression,Tremors,Blood in vomit,Yes
+Dog,Seizures,Yes,,,,
+Cat,Excess drooling,Yes,,,,
+Cat,Foam at the mouth,Coughing,Bloody vomit,Yes,,
+Cat,Swollen eyes,Noisy breathing,Panting,Lethargy,Yes,
+Cat,Runny nose,Mild conjunctivitis,No,,,
+Dog,Vomiting,Anxiety,High glucose,Yes,,
+Cat,Mild conjunctivitis,No,,,,
+Cat,Mild conjunctivitis,No,,,,
+Dog,Joint stiffness,Bad breath,Minor diarrhea,Dry eyes,Dry skin,No
+Dog,Dry skin,No,,,,
+Dog,Dry eyes,No,,,,
+Dog,Joint stiffness,No,,,,
+Dog,Minor diarrhea,Dry eyes,Dry skin,No,,
+Dog,Minor diarrhea,Joint stiffness,Dry eyes,No,,
+Cat,Fast breathing,Foam at the mouth,Lethargy,Tremors,Yes,
+Cat,Bloody stool,Opaque cornea,Excess drooling,Lethargy,Pale gums,Yes
+Cat,Fast breathing,Bloody vomit,Coughing,Lethargy,Panting,Yes
+Cat,Opaque cornea,Yes,,,,
+Dog,Fatigue,Paralysis,Panting,Yes,,
+Dog,Depression,Drooling,Yes,,,
+Dog,Bad breath,No,,,,
+Dog,Fatigue,Seizures,Excessive thirst,Fever,Yes,
+Cat,Minor weight loss,Runny nose,Occasional hairball vomit,No,,
+Dog,Drooling,Tremors,Disorientation,Blood in vomit,Yes,
+Dog,Minor diarrhea,Dry eyes,Bad breath,Joint stiffness,Increased thirst,No
+Dog,Glassy eyes,Seizures,Yes,,,
+Cat,Fast breathing,Panting,Excess drooling,Bloody stool,Pale gums,Yes
+Dog,Depression,Yes,,,,
+Cat,Dry stool,Occasional hairball vomit,Minor weight loss,Runny nose,Sneezing,No
+Dog,Seizures,Weight loss,Yes,,,
+Cat,Runny nose,Minor weight loss,Mild conjunctivitis,Dry stool,Sneezing,No
+Cat,Dry stool,Increased scratching,Sneezing,Mild conjunctivitis,No,
+Dog,Bad breath,Dry skin,Joint stiffness,Dry eyes,No,
+Cat,Bloody vomit,Tremors,Yes,,,
+Dog,High glucose,Excessive thirst,Depression,Yes,,
+Cat,Increased scratching,Occasional hairball vomit,Dry stool,Runny nose,No,
+Cat,Coughing,Foam at the mouth,Panting,Pale gums,Convulsions,Yes
+Dog,Joint stiffness,No,,,,
+Cat,Pale gums,Bloody vomit,Bloody stool,Noisy breathing,Yes,
+Cat,Tremors,Bloody vomit,Foam at the mouth,Convulsions,Pale gums,Yes
+Dog,Joint stiffness,Increased thirst,No,,,
+Cat,Sneezing,Dry stool,Increased scratching,Minor weight loss,No,
+Dog,Minor diarrhea,Joint stiffness,Increased thirst,Bad breath,Dry skin,No
+Dog,Increased thirst,Joint stiffness,No,,,
+Cat,Bloody stool,Bloody vomit,Yes,,,
+Cat,Lethargy,Bloody stool,Panting,Swollen eyes,Yes,
+Cat,Pale gums,Noisy breathing,Foam at the mouth,Bloody stool,Yes,
+Cat,Increased scratching,Dry stool,Mild conjunctivitis,No,,
+Dog,Minor diarrhea,Bad breath,Joint stiffness,No,,
+Cat,Convulsions,Tremors,Foam at the mouth,Bloody vomit,Opaque cornea,Yes
+Cat,Tremors,Noisy breathing,Panting,Pale gums,Yes,
+Dog,Glassy eyes,Disorientation,Paralysis,Excessive thirst,Weight loss,Yes
+Cat,Lethargy,Panting,Opaque cornea,Yes,,
+Cat,Mild conjunctivitis,Increased scratching,No,,,
+Cat,Mild conjunctivitis,Minor weight loss,No,,,
+Cat,Sneezing,No,,,,
+Dog,Paralysis,Yes,,,,
+Dog,Joint stiffness,Bad breath,Dry eyes,Dry skin,Minor diarrhea,No
+Cat,Panting,Bloody vomit,Excess drooling,Tremors,Yes,
+Cat,Lethargy,Fast breathing,Bloody vomit,Bloody stool,Foam at the mouth,Yes
+Cat,Mild conjunctivitis,Occasional hairball vomit,No,,,
+Dog,Bad breath,Joint stiffness,Dry eyes,No,,
+Cat,Coughing,Fast breathing,Yes,,,
+Dog,Glassy eyes,Yes,,,,
+Dog,Fatigue,Nausea,Blood in vomit,Seizures,Yes,
+Cat,Runny nose,No,,,,
+Dog,Dry eyes,Bad breath,No,,,
+Cat,Runny nose,Dry stool,Mild conjunctivitis,Increased scratching,Sneezing,No
+Cat,Minor weight loss,Sneezing,No,,,
+Cat,Bloody stool,Coughing,Swollen eyes,Panting,Opaque cornea,Yes
+Dog,Bad breath,Dry skin,Minor diarrhea,No,,
+Dog,Increased thirst,Dry eyes,Joint stiffness,Bad breath,No,
+Dog,Blood in vomit,Drooling,Fever,Vomiting,Nausea,Yes
+Cat,Swollen eyes,Bloody stool,Yes,,,
+Dog,Blood in vomit,Yes,,,,
+Cat,Dry stool,Mild conjunctivitis,Runny nose,Occasional hairball vomit,Minor weight loss,No
+Dog,Joint stiffness,Dry skin,Increased thirst,Minor diarrhea,No,
+Dog,High glucose,Yes,,,,
+Dog,Dry skin,No,,,,
+Dog,Depression,Seizures,Weight loss,Paralysis,Nausea,Yes
+Cat,Increased scratching,Sneezing,Mild conjunctivitis,Runny nose,Occasional hairball vomit,No
+Dog,Anxiety,Seizures,Yes,,,
+Dog,Increased thirst,Minor diarrhea,No,,,
+Dog,Nausea,Fever,Weight loss,Yes,,
+Dog,Seizures,High glucose,Yes,,,
+Dog,Anxiety,Disorientation,Paralysis,Blood in vomit,Fever,Yes
+Cat,Dry stool,Occasional hairball vomit,No,,,
+Cat,Noisy breathing,Opaque cornea,Coughing,Bloody vomit,Panting,Yes
+Cat,Bloody vomit,Pale gums,Yes,,,
+Cat,Panting,Excess drooling,Yes,,,
+Dog,Joint stiffness,Increased thirst,No,,,
+Dog,Bad breath,Dry skin,Joint stiffness,No,,
+Dog,Dry skin,Minor diarrhea,Dry eyes,Increased thirst,Joint stiffness,No
+Cat,Minor weight loss,Mild conjunctivitis,Increased scratching,No,,
+Dog,Minor diarrhea,Bad breath,Joint stiffness,Dry eyes,Dry skin,No
+Dog,Loss of appetite,Depression,Yes,,,
+Dog,Dry skin,Increased thirst,No,,,
+Dog,Disorientation,Fever,Nausea,Panting,Loss of appetite,Yes
+Cat,Sneezing,Increased scratching,Runny nose,Minor weight loss,No,
+Dog,Bad breath,No,,,,
+Dog,Minor diarrhea,Dry eyes,No,,,
+Dog,Bad breath,Minor diarrhea,No,,,
+Cat,Panting,Swollen eyes,Opaque cornea,Fast breathing,Yes,
+Cat,Occasional hairball vomit,Dry stool,Mild conjunctivitis,Minor weight loss,Sneezing,No
+Cat,Dry stool,Occasional hairball vomit,No,,,
+Cat,Sneezing,Runny nose,No,,,
+Dog,Nausea,Vomiting,Tremors,Drooling,Yes,
+Dog,Glassy eyes,Yes,,,,
+Dog,Fatigue,Paralysis,Vomiting,Excessive thirst,Yes,
+Cat,Coughing,Excess drooling,Yes,,,
+Cat,Bloody vomit,Opaque cornea,Convulsions,Coughing,Yes,
+Cat,Runny nose,Mild conjunctivitis,Occasional hairball vomit,No,,
+Cat,Mild conjunctivitis,Occasional hairball vomit,Runny nose,No,,
+Dog,Increased thirst,No,,,,
+Dog,Bad breath,Increased thirst,No,,,
+Cat,Tremors,Pale gums,Panting,Convulsions,Coughing,Yes
+Cat,Minor weight loss,Sneezing,Runny nose,No,,
+Dog,Increased thirst,Minor diarrhea,Dry skin,Joint stiffness,Dry eyes,No
+Dog,Minor diarrhea,Increased thirst,Dry eyes,No,,
+Dog,Joint stiffness,Dry skin,No,,,
+Cat,Sneezing,Dry stool,Runny nose,Increased scratching,Minor weight loss,No
+Dog,Increased thirst,Dry eyes,No,,,
+Dog,Disorientation,Excessive thirst,Panting,High glucose,Yes,
+Dog,Minor diarrhea,No,,,,
+Dog,Loss of appetite,Blood in vomit,Panting,Nausea,Excessive thirst,Yes
+Dog,Excessive thirst,Glassy eyes,Blood in vomit,Paralysis,Yes,
+Dog,Dry eyes,Joint stiffness,Dry skin,Increased thirst,No,
+Cat,Coughing,Convulsions,Tremors,Yes,,
+Dog,Loss of appetite,Vomiting,Nausea,Depression,Weight loss,Yes
+Cat,Dry stool,Increased scratching,Sneezing,Minor weight loss,Runny nose,No
+Cat,Occasional hairball vomit,Increased scratching,Minor weight loss,Dry stool,No,
+Cat,Runny nose,Dry stool,Sneezing,Increased scratching,Occasional hairball vomit,No
+Cat,Tremors,Swollen eyes,Excess drooling,Pale gums,Yes,
+Dog,Disorientation,Blood in vomit,Loss of appetite,Anxiety,Nausea,Yes
+Cat,Occasional hairball vomit,Increased scratching,Minor weight loss,No,,
+Dog,Loss of appetite,Nausea,Yes,,,
+Dog,Bad breath,Minor diarrhea,Dry eyes,No,,
+Dog,Dry eyes,Joint stiffness,Bad breath,Increased thirst,Dry skin,No
+Dog,Joint stiffness,Bad breath,Dry eyes,Increased thirst,Dry skin,No
+Cat,Increased scratching,No,,,,
+Cat,Dry stool,Increased scratching,No,,,
+Dog,Increased thirst,Minor diarrhea,No,,,
+Cat,Noisy breathing,Pale gums,Tremors,Opaque cornea,Yes,
+Dog,Bad breath,Joint stiffness,Dry eyes,Minor diarrhea,No,
+Dog,Tremors,Fatigue,Seizures,Yes,,
+Cat,Runny nose,Minor weight loss,Dry stool,No,,
+Cat,Minor weight loss,No,,,,
+Dog,Bad breath,Joint stiffness,No,,,
+Cat,Occasional hairball vomit,Runny nose,Dry stool,Mild conjunctivitis,No,
+Cat,Minor weight loss,Mild conjunctivitis,No,,,
+Cat,Convulsions,Excess drooling,Swollen eyes,Lethargy,Opaque cornea,Yes
+Cat,Mild conjunctivitis,Minor weight loss,Occasional hairball vomit,No,,
+Dog,Bad breath,Increased thirst,Minor diarrhea,Joint stiffness,Dry skin,No
+Dog,Glassy eyes,Tremors,Fatigue,Yes,,
+Cat,Increased scratching,Dry stool,No,,,
+Dog,Bad breath,Minor diarrhea,Joint stiffness,Dry eyes,Increased thirst,No
+Dog,Joint stiffness,No,,,,
+Dog,Weight loss,Glassy eyes,Loss of appetite,Yes,,
+Dog,Increased thirst,Dry eyes,Joint stiffness,Minor diarrhea,Dry skin,No
+Cat,Swollen eyes,Panting,Yes,,,
+Dog,Excessive thirst,Weight loss,Tremors,Fatigue,Loss of appetite,Yes
+Cat,Occasional hairball vomit,No,,,,
+Cat,Coughing,Yes,,,,
+Dog,Blood in vomit,Paralysis,Tremors,Yes,,
+Dog,Seizures,Tremors,Glassy eyes,Nausea,Yes,
+Dog,Depression,Excessive thirst,Yes,,,
+Cat,Lethargy,Yes,,,,
+Cat,Bloody vomit,Pale gums,Tremors,Bloody stool,Opaque cornea,Yes
+Cat,Runny nose,Dry stool,Occasional hairball vomit,Minor weight loss,Increased scratching,No
+Cat,Foam at the mouth,Convulsions,Coughing,Opaque cornea,Yes,
+Cat,Dry stool,Runny nose,Mild conjunctivitis,Sneezing,No,
+Cat,Occasional hairball vomit,Increased scratching,Dry stool,No,,
+Cat,Runny nose,Dry stool,Minor weight loss,No,,
+Cat,Sneezing,Dry stool,Occasional hairball vomit,Mild conjunctivitis,No,
+Dog,Drooling,Excessive thirst,Yes,,,
+Dog,Joint stiffness,No,,,,
+Cat,Increased scratching,Minor weight loss,Sneezing,Runny nose,No,
+Cat,Sneezing,No,,,,
+Dog,Increased thirst,No,,,,
+Cat,Minor weight loss,No,,,,
+Dog,Panting,Fever,Depression,Blood in vomit,Yes,
+Cat,Minor weight loss,No,,,,
+Dog,Seizures,Fatigue,Excessive thirst,Yes,,
+Dog,Dry eyes,Bad breath,Dry skin,Increased thirst,Minor diarrhea,No
+Dog,Increased thirst,No,,,,
+Dog,Fatigue,Vomiting,Depression,Weight loss,Yes,
+Dog,Joint stiffness,No,,,,
+Dog,Glassy eyes,Drooling,Weight loss,Yes,,
+Cat,Bloody vomit,Yes,,,,
+Cat,Noisy breathing,Convulsions,Foam at the mouth,Yes,,
+Cat,Convulsions,Swollen eyes,Noisy breathing,Bloody stool,Fast breathing,Yes
+Dog,Glassy eyes,Yes,,,,
+Cat,Runny nose,Increased scratching,Minor weight loss,Dry stool,No,
+Cat,Minor weight loss,Sneezing,No,,,
+Cat,Fast breathing,Convulsions,Bloody stool,Bloody vomit,Yes,
+Cat,Increased scratching,Dry stool,Sneezing,Runny nose,No,
+Dog,Nausea,Paralysis,Fatigue,Yes,,
+Dog,Dry eyes,No,,,,
+Cat,Opaque cornea,Excess drooling,Convulsions,Panting,Bloody stool,Yes
+Cat,Panting,Lethargy,Yes,,,
+Dog,Depression,Weight loss,Excessive thirst,Yes,,
+Cat,Runny nose,Occasional hairball vomit,No,,,
+Cat,Sneezing,Increased scratching,Runny nose,Mild conjunctivitis,Dry stool,No
+Cat,Runny nose,Minor weight loss,Mild conjunctivitis,Sneezing,Increased scratching,No
+Cat,Excess drooling,Tremors,Panting,Fast breathing,Yes,
+Cat,Dry stool,No,,,,
+Dog,Dry skin,Bad breath,No,,,
+Cat,Convulsions,Panting,Yes,,,
+Dog,Paralysis,Vomiting,Seizures,Disorientation,Depression,Yes
+Cat,Runny nose,Mild conjunctivitis,Sneezing,No,,
+Dog,Panting,High glucose,Tremors,Blood in vomit,Yes,
+Cat,Mild conjunctivitis,Dry stool,Occasional hairball vomit,Sneezing,Runny nose,No
+Cat,Mild conjunctivitis,Dry stool,Runny nose,Increased scratching,No,
+Dog,Dry eyes,Increased thirst,Bad breath,No,,
+Cat,Fast breathing,Swollen eyes,Opaque cornea,Excess drooling,Convulsions,Yes
+Dog,Excessive thirst,Loss of appetite,Yes,,,
+Dog,Joint stiffness,Dry eyes,Minor diarrhea,Dry skin,No,
+Cat,Occasional hairball vomit,Increased scratching,No,,,
+Dog,Increased thirst,No,,,,
+Dog,Minor diarrhea,Dry skin,Bad breath,Joint stiffness,No,
+Dog,Weight loss,Yes,,,,
+Dog,Minor diarrhea,Joint stiffness,No,,,
+Cat,Mild conjunctivitis,Occasional hairball vomit,Increased scratching,No,,
+Dog,Panting,Yes,,,,
+Dog,Dry skin,No,,,,
+Cat,Opaque cornea,Yes,,,,
+Dog,Minor diarrhea,No,,,,
+Cat,Minor weight loss,Runny nose,Mild conjunctivitis,Sneezing,Occasional hairball vomit,No
+Dog,Tremors,Loss of appetite,Paralysis,Weight loss,Yes,
+Dog,Dry skin,No,,,,
+Dog,Increased thirst,Minor diarrhea,No,,,
+Cat,Occasional hairball vomit,Minor weight loss,Increased scratching,Runny nose,No,
+Dog,Vomiting,Seizures,Panting,Tremors,Yes,
+Dog,Disorientation,Fatigue,Excessive thirst,Drooling,Yes,
+Cat,Occasional hairball vomit,Dry stool,Sneezing,Increased scratching,Minor weight loss,No
+Dog,Drooling,Glassy eyes,Anxiety,Panting,Seizures,Yes
+Cat,Lethargy,Yes,,,,
+Dog,Dry skin,Increased thirst,No,,,
+Dog,Bad breath,No,,,,
+Dog,Fatigue,Depression,Disorientation,Yes,,
+Dog,Dry eyes,No,,,,
+Cat,Mild conjunctivitis,Dry stool,Minor weight loss,No,,
+Dog,Blood in vomit,Drooling,Panting,Seizures,Yes,
+Dog,Increased thirst,Joint stiffness,Dry skin,Bad breath,No,
+Cat,Mild conjunctivitis,No,,,,
+Dog,Dry skin,Minor diarrhea,Increased thirst,No,,
+Dog,Minor diarrhea,Bad breath,Increased thirst,Dry eyes,Dry skin,No
+Cat,Bloody stool,Lethargy,Yes,,,
+Dog,Fatigue,Glassy eyes,Seizures,Yes,,
+Cat,Increased scratching,Mild conjunctivitis,Minor weight loss,No,,
+Dog,Seizures,Yes,,,,
+Dog,Depression,Blood in vomit,Yes,,,
+Dog,Disorientation,Nausea,Depression,Tremors,Blood in vomit,Yes
+Dog,Seizures,Disorientation,Yes,,,
+Dog,Joint stiffness,No,,,,
+Cat,Sneezing,Mild conjunctivitis,Minor weight loss,Increased scratching,Runny nose,No
+Dog,Glassy eyes,Panting,Fever,Depression,Yes,
+Dog,Dry skin,Bad breath,No,,,
+Dog,Dry eyes,No,,,,
+Dog,Dry eyes,Increased thirst,Bad breath,Dry skin,Joint stiffness,No
+Dog,Glassy eyes,Drooling,Seizures,Anxiety,Nausea,Yes
+Dog,Joint stiffness,Minor diarrhea,No,,,
+Cat,Runny nose,Mild conjunctivitis,Occasional hairball vomit,Sneezing,No,
+Dog,Joint stiffness,Dry skin,Dry eyes,No,,
+Dog,Paralysis,Nausea,Vomiting,Yes,,
+Cat,Increased scratching,Runny nose,Occasional hairball vomit,Mild conjunctivitis,No,
+Dog,Tremors,Yes,,,,
+Dog,Joint stiffness,Dry eyes,Minor diarrhea,Increased thirst,No,
+Cat,Lethargy,Yes,,,,
+Cat,Coughing,Yes,,,,
+Dog,Panting,Seizures,Loss of appetite,Tremors,Yes,
+Dog,Paralysis,Yes,,,,
+Cat,Tremors,Lethargy,Yes,,,
+Dog,Drooling,Weight loss,High glucose,Glassy eyes,Yes,
+Dog,Anxiety,Weight loss,Yes,,,
+Dog,Bad breath,Minor diarrhea,Dry skin,Increased thirst,Joint stiffness,No
+Dog,Panting,Yes,,,,
+Dog,Glassy eyes,Fatigue,Paralysis,Blood in vomit,Excessive thirst,Yes
+Dog,Minor diarrhea,Bad breath,Dry skin,No,,
+Cat,Bloody vomit,Excess drooling,Foam at the mouth,Yes,,
+Cat,Coughing,Pale gums,Bloody vomit,Opaque cornea,Yes,
+Dog,Increased thirst,No,,,,
+Cat,Occasional hairball vomit,Dry stool,Sneezing,Increased scratching,Minor weight loss,No
+Cat,Coughing,Excess drooling,Convulsions,Foam at the mouth,Yes,
