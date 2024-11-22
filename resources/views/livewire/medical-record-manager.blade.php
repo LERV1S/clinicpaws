@@ -462,6 +462,10 @@
 
     </form>
 
+
+
+
+
     <!-- Listado de registros médicos -->
     <div class="mt-6">
         <ul class="space-y-4">

@@ -488,22 +488,31 @@ class MedicalRecordManager extends Component
 
     //ESTA RELACIONADO CON SELECT DEPENDIENTES
     public function mount()
-    {
+{
+    // Verificamos el rol del usuario para decidir qué registros mostrar
+    $user = auth()->user();
+    
+    // Si el usuario es veterinario, administrador o empleado
+    if ($user->hasRole('Administrador') || $user->hasRole('Veterinario') || $user->hasRole('Empleado')) {
+        // Obtener todos los registros médicos de todas las mascotas
+        $this->medicalRecords = MedicalRecord::all();
+    } else {
         // Obtener solo los registros médicos de las mascotas del dueño autenticado
         $this->medicalRecords = MedicalRecord::whereHas('pet', function($query) {
-            // Filtrar las mascotas cuyo 'owner_id' coincide con el usuario autenticado
             $query->where('owner_id', auth()->id());
         })->get();
-    
-        // Obtener los usuarios con el rol de "Cliente"
-        $this->owners = User::role('Cliente')->get();
-    
-        // Obtener solo las mascotas que pertenecen al usuario autenticado
-        $this->pets = Pet::where('owner_id', auth()->id())->get();
-    
-        // Obtener las especies únicas de las mascotas del dueño
-        $this->species = Pet::where('owner_id', auth()->id())->distinct()->pluck('species');
     }
+
+    // Obtener los usuarios con el rol de "Cliente"
+    $this->owners = User::role('Cliente')->get();
+
+    // Obtener solo las mascotas que pertenecen al usuario autenticado
+    $this->pets = Pet::where('owner_id', auth()->id())->get();
+
+    // Obtener las especies únicas de las mascotas del dueño
+    $this->species = Pet::where('owner_id', auth()->id())->distinct()->pluck('species');
+}
+
     
 
     //SELECT DEPENDIENTES
@@ -623,13 +632,21 @@ class MedicalRecordManager extends Component
     {
         // Asegurarse de que el usuario esté autenticado
         $userId = auth()->id();
-    
-        // Filtrar los registros médicos de las mascotas que pertenecen al usuario autenticado
-        $this->medicalRecords = MedicalRecord::whereHas('pet', function($query) use ($userId) {
-            // Filtramos por el dueño de la mascota (owner_id debe coincidir con el usuario autenticado)
-            $query->where('owner_id', $userId);
-        })
-        ->get(); // Traemos los registros médicos filtrados
+        
+        // Verificamos el rol del usuario para decidir qué registros mostrar
+        $user = auth()->user();
+        
+        // Si el usuario es veterinario, administrador o empleado
+        if ($user->hasRole('Administrador') || $user->hasRole('Veterinario') || $user->hasRole('Empleado')) {
+            // Obtener todos los registros médicos de todas las mascotas
+            $this->medicalRecords = MedicalRecord::all();
+        } else {
+            // Obtener solo los registros médicos de las mascotas que pertenecen al usuario autenticado
+            $this->medicalRecords = MedicalRecord::whereHas('pet', function($query) use ($userId) {
+                $query->where('owner_id', $userId);
+            })
+            ->get(); // Traemos los registros médicos filtrados
+        }
     }
     
 

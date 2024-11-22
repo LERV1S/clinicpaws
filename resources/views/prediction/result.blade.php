@@ -6,7 +6,7 @@
             <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Resultado de la Predicción</h1>
             {{-- Mostrar el mensaje interpretado basado en la predicción --}}
             <p class="text-lg font-semibold 
-                {{ $prediction == 1 ? 'text-red-600' : ($prediction == 0 ? 'text-green-600' : 'text-gray-500') }}">
+                {{ $prediction == 0 ? 'text-red-600' : ($prediction == 1 ? 'text-green-600' : 'text-gray-500') }}">
                 {{ $interpretation }}
             </p>
             {{-- Botón para regresar --}}
