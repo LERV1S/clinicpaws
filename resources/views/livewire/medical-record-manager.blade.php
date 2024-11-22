@@ -450,7 +450,7 @@
         </div>
 
         <!-- Boton de anadir o actualizar -->
-        @role('Administrador|Veterinario|Empleado|Cliente')
+        @role('Administrador|Veterinario|Empleado')
         <div class="flex justify-start mt-4">
             <button type="submit" class="cta-button">
                 {{ $selectedMedicalRecordId ? 'Actualizar Registro' : 'Añadir Registro' }}
