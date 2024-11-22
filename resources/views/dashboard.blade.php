@@ -1,6 +1,6 @@
 @extends('layouts.app') <!-- Extiende el layout app2.blade.php -->
 
-@section('title', 'ClinicPaws | Dashboard') <!-- Define el título de la página -->
+@section('title', 'ClinicPaws | Calendario') <!-- Define el título de la página -->
 
 @section('content') <!-- Sección de contenido -->
 

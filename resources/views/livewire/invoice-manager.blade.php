@@ -93,7 +93,7 @@
         <label for="filterStatus" class="block text-gray-700 dark:text-white">Filtrar por Estatus:</label>
         <select wire:model.lazy="filterStatus" id="filterStatus" class="input-field mt-2">
             <option value="">Todos</option>
-            <option value="Pending">Pendientte</option>
+            <option value="Pending">Pendiente</option>
             <option value="Paid">Pagado</option>
         </select>
     </div>

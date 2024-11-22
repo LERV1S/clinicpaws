@@ -33,14 +33,19 @@ Route::post('/predict', [PredictionController::class, 'predict']);
 Route::get('/appointments', [DashboardController::class, 'getAppointments']);
 
 // Ruta para el nuevo dashboard
-Route::get('/dashboard', function () {
+Route::get('/graphics', function () {
     return view('dashboard_home');
-})->name('dashboard');
+})->name('graphics');
 
 // Ruta para el calendario
 Route::get('/calendar', function () {
     return view('dashboard'); // Asegúrate de que la vista de calendario esté configurada aquí
 })->name('calendar');
+
+
+Route::get('/Inicio', function () {
+    return view('dashboard_inicio'); // Asegúrate de que la vista de calendario esté configurada aquí
+})->name('inicio');
 
 // Rutas con restricciones
 Route::get('/pets', function () {

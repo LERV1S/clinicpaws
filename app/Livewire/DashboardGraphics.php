@@ -97,20 +97,28 @@ class DashboardGraphics extends Component
     }
     public function loadAppointmentsByWeek()
     {
-        // Obtener citas agrupadas por semana
-        $appointmentsByWeek = Appointment::selectRaw('YEARWEEK(appointment_date, 1) as week, COUNT(*) as total')
-            ->groupBy('week')
-            ->pluck('total', 'week'); // Devuelve un array clave-valor: [week => total]
-
-        // Convertir a un formato adecuado para la gráfica
-        $this->appointmentsByWeek = $appointmentsByWeek->map(function ($total, $week) {
+        // Obtener citas agrupadas por año, mes y semana
+        $appointmentsByWeek = Appointment::selectRaw('
+                WEEK(appointment_date, 1) as week,
+                MONTHNAME(appointment_date) as month, 
+                YEAR(appointment_date) as year, 
+                COUNT(*) as total
+            ')
+            ->groupBy('year', 'month', 'week') // Agrupamos por año, mes y semana
+            ->orderBy('year', 'ASC')
+            ->orderBy('week', 'ASC')
+            ->get(); // Usamos get() en lugar de pluck() para obtener múltiples columnas
+    
+        // Convertir los datos a un formato adecuado para la gráfica
+        $this->appointmentsByWeek = $appointmentsByWeek->map(function ($item) {
+            $label = "Semana {$item->week} de {$item->month} {$item->year}"; // Formato: "Semana 1 de Enero 2024"
             return [
-                'week' => $week, // Semana del año
-                'total' => $total, // Total de citas
+                'week' => $label, // Etiqueta de semana en formato amigable
+                'total' => $item->total, // Total de citas
             ];
         })->values()->toArray(); // Convertimos a array para el frontend
     }
-
+    
     public function loadAppointmentsByMonth()
     {
         // Obtener todas las citas

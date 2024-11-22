@@ -243,7 +243,7 @@ class MedicalRecordManager extends Component
             // Imágenes diagnósticas
             // Serializar las rutas de imágenes a JSON para almacenarlas en la base de datos x_rays, ultrasounds, ct_scans, biopsies
             'x_rays' => json_encode($xRayPaths, JSON_UNESCAPED_SLASHES),
-            'ultrasounds' => json_encode($ultrasoundPaths, JSON_UNESCAPED_SLASHES),
+            'ultrasound' => json_encode($ultrasoundPaths, JSON_UNESCAPED_SLASHES),
             'ct_scans' => json_encode($ctScanPaths, JSON_UNESCAPED_SLASHES),
             'biopsies' => json_encode($biopsiePaths, JSON_UNESCAPED_SLASHES),
 
@@ -489,11 +489,22 @@ class MedicalRecordManager extends Component
     //ESTA RELACIONADO CON SELECT DEPENDIENTES
     public function mount()
     {
-        $this->medicalRecords = MedicalRecord::all(); //PARA EL OTRO BOTTON DE EDITAR O BORRAR
-        $this->owners = User::role('Cliente')->get(); //SE TOMAN SOLO LOS USUARIOS QUE SON CLIENTES
-        $this->pets = Pet::all(); // Obtener todas las mascotas
-        $this->species = Pet::distinct()->pluck('species'); // Obtener todas las especies únicas
+        // Obtener solo los registros médicos de las mascotas del dueño autenticado
+        $this->medicalRecords = MedicalRecord::whereHas('pet', function($query) {
+            // Filtrar las mascotas cuyo 'owner_id' coincide con el usuario autenticado
+            $query->where('owner_id', auth()->id());
+        })->get();
+    
+        // Obtener los usuarios con el rol de "Cliente"
+        $this->owners = User::role('Cliente')->get();
+    
+        // Obtener solo las mascotas que pertenecen al usuario autenticado
+        $this->pets = Pet::where('owner_id', auth()->id())->get();
+    
+        // Obtener las especies únicas de las mascotas del dueño
+        $this->species = Pet::where('owner_id', auth()->id())->distinct()->pluck('species');
     }
+    
 
     //SELECT DEPENDIENTES
     public function updatedOwnerId($owner_id)
@@ -607,4 +618,19 @@ class MedicalRecordManager extends Component
     {
         return $file instanceof \Illuminate\Http\UploadedFile;
     }
+
+    public function loadMedicalRecords()
+    {
+        // Asegurarse de que el usuario esté autenticado
+        $userId = auth()->id();
+    
+        // Filtrar los registros médicos de las mascotas que pertenecen al usuario autenticado
+        $this->medicalRecords = MedicalRecord::whereHas('pet', function($query) use ($userId) {
+            // Filtramos por el dueño de la mascota (owner_id debe coincidir con el usuario autenticado)
+            $query->where('owner_id', $userId);
+        })
+        ->get(); // Traemos los registros médicos filtrados
+    }
+    
+
 }
