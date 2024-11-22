@@ -8,7 +8,7 @@ from sklearn.pipeline import Pipeline
 app = Flask(__name__)
 
 # Cargar el modelo de machine learning entrenado
-with open('modelo.pkl', 'rb') as file:
+with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Cargar el codificador de nombres de animales
