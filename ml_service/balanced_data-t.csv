@@ -1,0 +1,2752 @@
+AnimalName,symptoms1,symptoms2,symptoms3,symptoms4,symptoms5,Dangerous
+Perro,Fiebre,Diarrea,Vómitos,Pérdida de peso,Deshidración,Yes
+Perro,Fiebre,Diarrea,Tos,Cansancio,Esfuerzos,Yes
+Perro,Fiebre,Diarrea,Tos,Vómitos,Anorexia,Yes
+Perro,Fiebre,Dificultad para respirar,Tos,Letargo,Estornudos,Yes
+Perro,Fiebre,Diarrea,Tos,Letargo,Ojo azul,Yes
+Perro,Fiebre,Dificultad respiratoria,Convulsionadores,Hiperestesia,Muerte súbita,Yes
+Perro,Úlceras,Diarrea,Falta de apetito,Taburete alquitranado,Ganglios linfáticos agrandados,Yes
+Perro,Hinchazón facial,Baba sangrienta,Mal aliento,Incapaz de comer,Dientes perdidos,Yes
+Perro,Fiebre,Dificultad para respirar,Sed y micción,Pérdida de peso,Ganglios linfáticos agrandados o hinchazón,Yes
+Perro,Hinchazón en la pierna,Doloroso,Secreción nasal,Huesos rotos,Secreción nasal,Yes
+Perro,Letargo de corta duración,Pérdida de apetito,Debilidad en las patas traseras,Frecuencia cardíaca rápida,Pulso semanal,Yes
+Perro,Ganglios linfáticos inflamados,Dificultad para caminar,Dolor de espalda,Letargo,Secreción vaginal,Yes
+Perro,Fiebre,Diarrea,Dolor abdominal,Rigidez,Debilidad severa y depresión,Yes
+Perro,Fiebre,Pérdida de apetito,Reducir la energía,Cojera,Hinchazón de las articulaciones,Yes
+Perro,Fiebre,Inflamación crónica del ojo,Falta de apetito,Letargo,Anormalidades neurológicas,Yes
+Perro,Fiebre,Hinchazón de la cara o la pierna,Falta de apetito,Depresión,Esfuerzos,Yes
+Perro,Diarrea con mucosidad,Tensemo,Heces acuosas,Flatulencia,Esfuerzos,Yes
+Perro,Tos fuerte,Rinorrea,Estornudos,Letargo,Pérdida de apetito,Yes
+Perro,Fiebre,Ojo inflamado,Tos,Depresión,Cojeando,Yes
+Perro,Fiebre,Dificultad para respirar,Tos,Cambios en los ojos y la piel,Incapaz de hacer ejercicio,Yes
+Perro,Fiebre,Pérdida de apetito,Tos,Letargo,Dolor en las articulaciones,Yes
+Perro,Lesiones en la cavidad nasal,Lesiones en la nariz,Sangrado nasal,Respiración ruidosa,Lesiones en la nariz,Yes
+Perro,Pérdida de cabello,Caspa,Piel oscurecida,Formación de costras en la piel,Piel ulcerada,Yes
+Perro,Secreción nasal de color amarillo verdoso,Falta de pigmentación,Estornudos,Letargo,Dolor en la cara,Yes
+Perro,Fiebre,Diarrea,Falta de apetito,Pérdida de peso,Vómitos,Yes
+Perro,Ictericia,Neumonía,Lesión en la piel, dolor,Vómitos,Yes
+Perro, Mala apariencia del pelaje,Diarrea,Vómitos,Pérdida de peso,Deshidración,Yes
+Perro,Riego,Sin aplicación,Vómitos,Letargo,Deshidración,Yes
+Perro,Tirante,Diarrea,Vómitos,Pérdida de peso,Ceguera,Yes
+Perro,Malestar estomacal,Diarrea,Vómitos,Dolor muscular,Rigidez muscular,Yes
+Perro,Malestar estomacal,Diarrea,Tos,Pérdida de peso,Anemia,Yes
+Perro,Reacción alérgica,Falta de apetito,Tos,Pérdida de peso,Pecho distendido,Yes
+Perro,Fiebre,Anoxeria,Pérdida de peso,Letargo,Dolor,Yes
+Perro,Cojeando,No correré para saltar, Hinchazón,Piernas débiles,Dolor en la pierna,Yes
+gato,Fiebre,Úlcera ocular,Congestión,Depresión,Ojo rosado,Yes
+gato,Neumonía,Pérdida de apetito,Descarga de ojos,Cojera,Artritis,Yes
+gato,Fiebre,Convulsiones,Hidrofobia,Me quedé con la mandíbula caída,Timidez o agresión,Yes
+gato,Orina con sangre,Dificultad para respirar,Vómitos,Pérdida de peso,Anorexia,Yes
+gato,Pérdida de comer,Dificultad para respirar, Hinchazón,Cojera,Anormalidades neurológicas,Yes
+gato,Cara oscura o negra,Diarrea,Vómitos,Sangre en las caras,Dolor,Yes
+gato,Ictericia,Dificultad para respirar,Convulsionadores,Letargo,Encías pálidas,Yes
+gato,El apetito varía,Diarrea,Vómitos,Pérdida de peso,Dolor,Yes
+gato,Pérdida de comer,Me sentí mal,Letargo,Pérdida de peso,Problema de la piel,Yes
+gato,Enfermedad,Pérdida de apetito,Vómitos,Pérdida de peso,Crecimiento elevado o protuberancia,Yes
+gato,Sangrado nasal,Dificultad para masticar, Hinchazón,Pérdida de peso,Anorexia,Yes
+gato,Úlceras, Lesiones,Costras,Bultos,"Bultos (negros, grises o rojos)",Yes
+gato,Gastón,Pérdida de apetito,Sangre en las heces,El estómago gruñe,Taburete negro,Yes
+gato,Sacudiendo la cabeza,Rasguño en la oreja,Negro en la oreja,Mal olor,Oído rojo e inflamado,Yes
+gato,Ataques,Pérdida de apetito,Tos,Pérdida de peso,Vómitos periódicos,Yes
+gato,Heces con sangre,Diarrea,Tos,Pérdida de peso,Anemia,Yes
+gato,Secreción nasal,Hemorragias nasales,fosas nasales inflamadas,Estornudos,Respiración fuerte,Yes
+gato,Poliuria,Pérdida de apetito,Vómitos,Pérdida de peso,Polidipsa,Yes
+gato,Micción excesiva,Cambio en la marcha,Vómitos,Pérdida de peso,Incapacidad para saltar,Yes
+gato,Convulsión,Pérdida de conciencia,masticación,Espasmos,Salivando,Yes
+gato,Sibilancia,Respiración rápida,Tos,Tragar,Esfuerzo para respirar,Yes
+gato,Ictericia,Debilidad,Letargo,Pérdida de peso,Anorexia,Yes
+gato,Lesión en la piel del gato,Caspa en el pelaje del gato,Manchas rojas,Pérdida de cabello,Problema de la piel,Yes
+gato,Letargo,Diarrea,Vómitos,Secreción del ojo,Anorexia,Yes
+gato,Irritación de la piel,Raspado,Letargo,Pérdida de cabello,Acicalamiento excesivo,Yes
+gato,Músculo flácido,Retraso en el habla,Discapacidad intelectual,Problema al caminar,Movimientos oculares,Yes
+gato,Sensibilidad a la luz brillante,Secreción del ojo afectado,Inflamación,Córnea nublada,Frotarse el ojo,Yes
+gato,Fiebre,Diarrea,Vómitos,Calambre,Deshidración,Yes
+gato,Ternura,Eritema, Hinchazón,Escarcha,Dolor,Yes
+gato,Fiebre,Diarrea,Vómitos,Salivación,Disminuir el apetito,Yes
+gato,Manchas escamosas de piel,Doloroso,Costras,Escarcha,Pérdida de cabello,Yes
+gato,Heces grasas,Diarrea,Vómitos,Pérdida de peso,Dolor,Yes
+gato,Náuseas,Pérdida de apetito,Vómitos,Firme,Estómago distendido,Yes
+gato,Fiebre,Hinchazón en la zona de la picadura.,Letargo,Cojear,Dolor,Yes
+gato,Fiebre,Pérdida de apetito,Problema ocular,Enfermedad del hígado,Neurológico,Yes
+gato,Fiebre,Estornudos leves,Tos,Nasal,Secreción ocular,Yes
+Conejo,"La mayoría de las veces, ninguna",Estornudos,Secreción nasal,Disnea,Dolor,Yes
+Conejo,Fiebre,Diarrea,Vómitos,Sangre de la boca,Choque,Yes
+Conejo,Malestar,Diarrea,Cabello seco o sin brillo,Rechinar los dientes,Dolor,Yes
+Conejo,Pérdida de apetito,Hinchazón,Secreción nasal,Ceguera,Letargo,Yes
+Conejo,Rinitis,Neumonía,absceso,Tortícolis,Septicemia,Yes
+Conejo,Fiebre,Diarrea,Enteritis,Pérdida de peso,Calambres estomacales,Yes
+Conejo,Muerte inmediata,Dificultad para respirar,Labios de color azul,Secreción sanguinolenta,Anormalidades neurológicas,Yes
+Conejo,Fiebre,Lesión de viruela en la piel,La piel se enrojece,Secreción nasal,La mortalidad varía,Yes
+Conejo,Rojo en la zona afectada,Crecimiento córneo,Crecimiento similar a una verruga,Piel roja,Lesiones en el oído,Yes
+Conejo,Fiebre,Escalofríos,Úlcera de la piel,Agotamiento,Hinchado y doloroso,Yes
+Conejo,Diarrea que riega,Depresión,Adelgazamiento,Abrigo con volantes,Letargo,Yes
+vaca,pérdida de peso,adelgazamiento,pérdida de apetito,Debilidad,diarrea,Yes
+pollo,pérdida de apetito,diarrea,acacia púrpura hinchada,Peine hinchado,Cojera,Yes
+pollo,pérdida de apetito,diarrea,plumas erizadas,Pérdida de peso,Incapacidad para absorber nutrientes,Yes
+pollo,La producción de huevos disminuye,crecimiento atrofiado,Ceguera,Bultos distintivos,Hinchazón facial,Yes
+pollo,pérdida de apetito,sed,plumas erizadas,Ojos cerrados,Diarrea,Yes
+vaca,Fiebre,piernas debilitadas,pérdida de la capacidad de caminar,Glaciares mamarios,Ampollas rellenas de fluido,Yes
+vaca,Fiebre,piernas debilitadas,pérdida de la capacidad de caminar,Pérdida de peso,Cojera,Yes
+ganado, aborto al final de la gestación,Fatiga,pantorrillas débiles,Unir dolores,Hinchazón de los órganos internos,Yes
+mamífero,hinchado, de color rojo,ubre caliente,La leche sale más aguada,La leche sale más espesa,Yes
+Ganado,Fiebre,Angustia,Temblor,Asombroso,Convulsión,Yes
+Ganado,Fiebre,El animal se vuelve cojo,Postrarse,Dolor al tragar,Cojera,Yes
+Ganado,Fiebre,Dificultad para respirar,Goteo de saliva,Incapacidad de alimentación de Swallown,Húmedo y doloroso,Yes
+Ganado,Heces fluidas en sangre y músculo,Muerte súbita,Líquido sangriento,Diarrea roja,Las heces están manchadas de sangre.,Yes
+Ganado,Fiebre,Neumonía,De pie con la cabeza gacha,Pérdida de peso,Comportamiento anormal,Yes
+Ganado,Fiebre,Ligeramente hinchado,Lesión en la piel,Duro como la leche,Aparecen pápulas en los pezones y la ubre.,Yes
+Ganado,Fiebre,Aburrido,Suelo troceado en cuartos traseros,Parada de alimentación para animales,Disminución de la producción de leche,Yes
+Ganado,Severo,Diarrea,Sangre en las caras,Apetito,Leche reducida,Yes
+Ganado,Fiebre,Depresión,Renuencia a moverse,Salivación,Secreción nasal,Yes
+Ganado,Apetito normal,Diarrea,Puede aparecer hinchazón debajo de la mandíbula.,Pérdida de peso,Caída en la producción de leche,Yes
+Ganado,Hinchazón en la pierna,Calor,Dureza,Enrojecimiento,Dolor,Yes
+Ganado, Incapacidad para mantenerse en pie,Diarrea,Mandíbula de botella,Barriga cervecera,Pelaje de pelo seco,Yes
+Ganado,Excitabilidad,Nerviosismo,pérdida de apetito,Hipersensibilidad,Debilidad,Yes
+Ganado,Fiebre,Depresión,Ataque,Morder a otros animales,Dolor,Yes
+Ganado,Fiebre,Dificultad para respirar,Tos,Doloroso,Los ojos se vuelven opacos,Yes
+Ganado,Fiebre,Úlcera en la encía,Ojo rojo,Secreción amarillenta,Diarrea con sangre,Yes
+Ganado,Fiebre,Diarrea,Tos,Consistencia de la leche,Dolor,Yes
+Ganado,El animal se pone inquieto,Dificultad para respirar,Dificultad para respirar,Producción excesiva,Estampación y pedding del ojo trasero,Yes
+Caballo,Fiebre,Escalofríos,Cólico severo,Debilidad,Anorexia,Yes
+Caballo,Fiebre,Rigidez corporal,Letargo,Inflamación severa,Dolor,Yes
+Caballo,Enfermedad,Diarrea,Pérdida de peso,Náuseas,Deshidración,Yes
+Caballo,Muerte súbita,Dificultad para caminar,Parálisis,Depresión,Convulsión,Yes
+Caballo,Fiebre,Aborto provocado,Insuficiencia renal,Inflamación del ojo,Enrojecimiento de los ojos,Yes
+Caballo,Pequeñas protuberancias rojas,Neumonía,Artritis séptica,Infección de la piel,Dolor,Yes
+Caballo,Fiebre,Ataxia,Agresividad,Depresión,Cojera oscura,Yes
+Caballo,Lesión en forma de anillo,Parches redondos,Piel seca,El tamaño de las lesiones varía,Dolor,Yes
+Caballo,Fiebre,Diarrea,pérdida de apetito,Cólico,Debilidad,Yes
+Caballo,Fiebre,Depresión,pérdida de apetito,Tropezando,Ataxia,Yes
+Tortuga,Burbujas en la boca,Sibilancia,pérdida de apetito,Letargo,Secreción nasal,Yes
+Tortuga,Cambios en la capa externa de la piel,Hinchazón del ojo,pérdida de apetito,Letargo,Infección respiratoria,Yes
+Tortuga,Tinte rojo,Delgado sobre la concha,Mal olor,Se daña fácilmente la carcasa,Descamación de los escudos,Yes
+Tortuga,Expulsión de alimentos no digeridos,Diarrea,Vómitos,Gases o hinchazón,Deshidración,Yes
+Hámster,Oler,Diarrea,pérdida de apetito,Exceso de sueño,Orejas dobladas,Yes
+Hámster,Pérdida de actividad,Pelaje áspero,pérdida de apetito,Pérdida de peso,Finalmente la muerte,Yes
+Hámster,Fiebre,Diarrea,Vómitos,Deshidración,Dolor,Yes
+Hámster,Parches de calvicie,Pérdida de cabello,Crujiente,Escamoso,Lesión roja en las zonas calvas,Yes
+Hámster,Mala condición,Ganglios linfáticos agrandados,Diarrea,Pérdida de peso,Dolor,Yes
+Hámster,Fiebre,Escalofríos,Tos,Debilidad progresiva,Dolor en las articulaciones,Yes
+Hámster,Infección grave,Diarrea,Deficiencia de vitaminas y minerales,Pérdida de peso,Dolor,Yes
+León,Fiebre,Diarrea,Debilidad muscular,Dolor muscular,Malestar abdominal,Yes
+León,Fiebre,Escalofríos,Dolor de cabeza,Náuseas,Dolor,Yes
+León,Piel engrosada,Tintado del cabello,Pérdida de cabello,Formación de costras,Picazón,Yes
+León,Edema facial,Pérdida de la oreja,Vómitos,Dolor de cabeza,Dolor de garganta y oído,Yes
+León,Malestar general,Insuficiencia hepática,Vómitos,Pérdida de peso,Dolor abdominal,Yes
+León,Malestar estomacal,Pérdida de apetito,Náusea,Pérdida de peso,Dolor abdominal,Yes
+León,Fiebre,Pérdida de masa muscular,Dolor esquelético,Pérdida de peso,Debilitante,Yes
+León,Edema,Hinchazón de la cara o la pierna,Hinchazón del cuello,Pérdida de peso,Dolor,Yes
+León,Crecimiento pobre,Baja estatura,Agrandamiento de los huesos,Cojera,Huesos largos que soportan peso,Yes
+León,Fiebre,Escalofríos,Sudor,Dolor de cabeza,Fatiga,Yes
+León,Fiebre,Pérdida de apetito,Debilidad,Pérdida de peso,Vómitos,Yes
+León,Lo aburrido,Lagrimeo,Tos,Diarrea,Convulsiones,Yes
+León,Vómitos,Diarrea sanguinolenta,Letargo,Deshidración,Anorexia,Yes
+León,Fiebre,Escondite poco característico,Depresión,Deshidración,Dejó de comer,Yes
+León,Fiebre,Mala condición del pelaje,Infección de la piel,Pérdida de peso,Fatiga,Yes
+León,Debilidad,Rigidez,Temblor,Marca blanca en el músculo,Pérdida de vitamina E,Yes
+Zorro,Parálisis parcial,Tambaleándose como un borracho,Automutilación,Actuar agresivamente,Actuar de forma antinaturalmente dócil,Yes
+Zorro,Fiebre,Cansancio,Dolor de cabeza,Erupciones en la piel,Dolor,Yes
+Zorro,Costra gruesa,Picazón,Pérdida de cabello,Ojo lloroso,Dolor,Yes
+ Zorro,Ritmo constante,Espasmos musculares faciales,anormalidades,Ceguera,Dolor muscular,Yes
+Zorro,Pérdida de apetito,Sibilancia,Convulsionadores,Erupciones en la piel,Fatiga,Yes
+Zorro,Indigestión,Dolor abdominal,Constipación,Diarrea,Náuseas,Yes
+Zorro,Sangre en la orina,Diarrea,Vómitos,Letargo,Sangrado en ojos y piel.,Yes
+Cabra,Fiebre,Malestar,Debilidad,Pérdida de peso,Dolor,Yes
+Cabra,Fiebre,Diarrea,Vómitos,Calambres estomacales,Náuseas,Yes
+Cabra,Fiebre,Falta de coordinación,Depresión,Salivación,Parálisis facial,Yes
+Cabra,Llagas en el labio,Infección,Llagas en la parte inferior de las piernas y en los pezones.,Lesión,Dolor,Yes
+Cabra,Aborto en etapa avanzada del embarazo,Nacimiento de un niño muerto,Placenda retenida,Endomeritis,Disminuir el apetito,Yes
+Cabra,paresia,parálisis,Debilidad,Calambres estomacales,Diarrea,Yes
+Cabra,Fiebre,Diarrea,Hinchazón,Pérdida de peso,Dolor,Yes
+Cabra,Fiebre,Anemia hemolítica,Hemoglobinuria,congestión pulmonar,Ictericia,Yes
+Cabra, Aborto provocado,Momificación,Nacimiento de un niño muerto,Niños débiles,Dolor,Yes
+Cabra,Rinorrea,Dificultad para respirar,Tos,Debilidad,Pérdida de apetito,Yes
+Cabra,Fiebre,Secreción nasal,Dificultad respiratoria,Lesión de viruela,Dolor,Yes
+Cabra,Fiebre,Sangriento de color oscuro,Incoordinación,Dificultad para respirar,Convulsión terminal,Yes
+Cabra,Fiebre,Disentería,Hinchazón,Muerte inmediata,Dolor,Yes
+Cabra,Fiebre,Dificultad respiratoria,Secreción mucosa,Reducir la alimentación,Aumento de peso,Yes
+Cabra,Disminución de la leche,Manteniendo las extremidades alejadas del suelo,Pérdida de peso,Cojera,Producción de lana,Yes
+Cabra,Hinchazón de la ubre,cambio en la leche,Hinchado,Tierno al tacto,Dolor,Yes
+Cabra,Fiebre,Dificultad respiratoria,Secreción ocular,Lesión en la boca,Secreción nasal,Yes
+Cabra,Fiebre,Lesión de herida,Exceso de saliva,Difícil para caminar,Dolor,Yes
+Cabra,Adelgazamiento,Edema en la mandíbula inferior,Tos,Temblando,Anemia,Yes
+Cabra,Fiebre,Reducir el crecimiento,Mortalidad infantil,Debilidad,Lo aburrido,Yes
+Cabra,Fiebre,Reducir el crecimiento,Edema en la mandíbula inferior,Pérdida de peso,Anemia,Yes
+Cabra,Adelgazamiento,Diarrea,Mortalidad infantil,Debilidad,Anemia,Yes
+Cabra,Alergia en la piel,Reducir el crecimiento,Herida,Dolor de cabeza,Mareo,Yes
+Cabra,Lagrimeo de ojos,Enrojecimiento de la parte blanca del ojo,Hinchazón del párpado,La córnea se vuelve turbia,Producción de lágrimas,Yes
+Cabra,Berberi,Debilitante,Nervioso,Pérdida de peso,Anorexia,Yes
+Cabra,Gastritis,morbosidad,Sangriento,Mortalidad,Anemia,Yes
+Ciervo,Fiebre,Dolor de cabeza severo,Vómitos,Tos,Fatiga,Yes
+Ciervo,Fiebre,Cansancio,Riñón hinchado,Hematuria,Dolores musculares,Yes
+Ciervo,Fiebre,Diarrea,Disminución del apetito,Vómitos,Sangriento,Yes
+Ciervo,Gas,Diarrea,Malestar abdominal,Vómitos,Náuseas,Yes
+Ciervo,Orejas caídas,Falta de coordinación,Babeando,Debilitante,Languidez,Yes
+Pollo,Edema,diarrea,Secreción nasal,Disminución de la producción de huevos,Estornudos,Yes
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Mono,Estornudos,Secreción nasal unilateral,Arcadas,Náusea,Pérdida de peso,Yes
+Mono,Fiebre,Depresión,Tos,Pérdida de peso,Anorexia,Yes
+Mono,Respiración superficial,Halitosis,Tos,Letargo,Secreción nasal,Yes
+Mono,Disnea,Estornudos,Tos,Dificultad para respirar,Infección,Yes
+Mono,Disnea,Estornudos,Tos,Dificultad para respirar,Dolor,Yes
+Mono,Fiebre,Rinorrea,Tos,Estornudos,Deshidración,Yes
+Mono,Fiebre,Rinorrea,Tos,Edema facial,Disnea,Yes
+Mono,Fiebre,Rinorrea,Tos,Estornudos,Secreción nasal,Yes
+Mono,Mortalidad,Doloroso,Tos,Pérdida de peso,Secreción nasal,Yes
+Mono,Erupciones en la piel,Diarrea,Muerte,Edema facial,Dolor,Yes
+Mono,Fiebre,Disnea,Tos,Letargo,Pérdida de peso,Yes
+Mono,Fiebre,Disnea,Tos,debilidad,Anorexia,Yes
+Mono,Edema facial,Disnea,Conjuntivitis,Debilidad,Faringitis,Yes
+Mono,Fiebre,Neumonía,Congestión,Letargo,Secreción nasal,Yes
+Mono,Fiebre,Muerte,Tos,Pérdida de peso,Secreción nasal,Yes
+Mono,Estornudos,Convulsión,Convulsionadores,Pérdida de peso,Secreción nasal,Yes
+Mono,Fiebre,Muerte,Tos,Disnea,Anorexia,Yes
+Mono,Disnea,Dificultad para respirar,Tos,Letargo,Secreción nasal,Yes
+Mono,Saculitis aérea,Halitosis,Tos,Enteritis,Pérdida de peso,Yes
+Mono,Fiebre,Convulsión,Muerte súbita,Retención de orina,Pérdida de peso,Yes
+Mono,Disnea,Signo neurológico,Tos,Depresión,Anorexia,Yes
+Mono,Fiebre,Disnea,Tos,Letargo,Anorexia,Yes
+Mono,Respiración dificultosa,Disnea,Tos,Depresión,Anorexia,Yes
+Mono,Sangre de la boca,Diarrea,Tos,Letargo,Pérdida de peso,Yes
+Mono,Hemopitsis,Diarrea,Asintomático,Muerte,Epistaxis,Yes
+Mono,Inquietud,Debilidad,Pajitas azules,Muerte,Dolor,Yes
+Pájaros,Remiges despojados,Menos crecimiento de plumas,Plumas erizadas,Deficiencia de vitamina,Diarrea,Yes
+Pájaros,Apatía,Depresión,Dilatación del duodeno,Pasta cloacal,Congestión,Yes
+Pájaros,Lepatomegalia,Esplenomegalia,Vómitos,Hinchado,Sacudiendo la cabeza,Yes
+Pájaros,Problema de equilibrio,Distensión abdominal,Parálisis del cuello,Pérdida de peso,Esfuerzos,Yes
+Pájaros,Piernas largas,Paresia,Tos,Pérdida de peso,Dificultad para respirar,Yes
+Pájaros,Fiebre,Garganta agria,Mortalidad,Dolores musculares,Anormalidades,Yes
+Pájaros,Dificultad para alimentarse,Acicalarse,Debilidad,Crecimiento excesivo del pico,Anemia,Yes
+Pájaros,Fiebre,Pérdida de apetito,Infección de oído,Depresión,Secreción nasal,Yes
+Pájaros,Cuarenta ojos,Tortícolis,Debilidad,Hinchazón,Adelgazamiento,Yes
+Pájaros,Inapetencia,Diarrea,Temblores de la cabeza,Deshidración,Pérdida de peso,Yes
+Pájaros,Falta de caminar,Falta de vuelo,Rugoso,Deshidración,Esfuerzos,Yes
+Pájaros,Erupciones en la piel,Pequeñas protuberancias amarillas,Hinchazón,Costras secas,Cojera,Yes
+Pájaros,Costras en los pies, Enrojecimiento,Tráquea,Engrosamiento de la piel,Esfuerzos,Yes
+Pájaros,Timo agrandado,Pulmones obstruidos,Letargo,Erupciones en la piel,Pérdida de peso,Yes
+Pájaros,Pluma esponjosa,Pérdida de apetito,Tos,Vómitos,Ronquidos,Yes
+Pájaros,Fiebre,Dificultad para respirar,Ojo amarillo,Estornudos,Diftérico,Yes
+Pájaros,Respiración pesada,Amarillo en el pico,Cola_moviéndose,Debilidad,Dormir excesivamente,Yes
+Pájaros,Pluma inflada,Comer menos,Dolor de cabeza,Ojo medio cerrado,Convulsiones,Yes
+Pájaros,Fiebre,Diarrea,Abdomen hinchado,Vómitos,Dificultad para respirar,Yes
+Pájaros,Movimiento de cola,Tirante,Letargo,Debilidad,Diarrea,Yes
+Pájaros,Sobrepeso,Pérdida de apetito,Plumas erizadas,Depresión,Diarrea,Yes
+Pájaros,Abatimiento,Pérdida de apetito,Estrés,Tos,Esfuerzos,Yes
+Pájaros,Infección de la piel,Infección secundaria,Tos,Depresión,Sacudiendo la cabeza,Yes
+Pájaros,Secreción de los ojos,Letargo,Tos,Estornudos,Fatiga,Yes
+Pájaros,Fiebre,Escalofríos,Crecimiento retardado,Dolor en el pecho,Dolor en el pecho,Yes
+Pájaros,Peine pálido,Aburrido,Muerte,Hinchazón de la articulación,Ojo cerrado,Yes
+Pájaros,Letargo,Pérdida de apetito,Dificultad para tragar,Debilidad,Problema de visión,Yes
+Pájaros,Adelgazamiento,Dificultad para respirar,Vómitos,Debilidad,Diarrea,Yes
+Pájaros,Goteo de líquido,Agotamiento,Ataxia,Letargo,Convulsiones,Yes
+Pájaros,Sin digerir en sus heces,Pérdida de apetito,Pérdida de pigmento,Debilidad,Sangriento en la pluma,Yes
+Pájaros,Pluma afilada,Pluma en maza,Descarga de ojos,Pérdida de polvo hacia abajo,Diarrea,Yes
+Pájaros,Aspecto ondulado,Pérdida de apetito,Vómitos,Gotas verdes,Secreción nasal,Yes
+Pájaros,Senos paranasales,Párpados hinchados,Erupciones en la piel,Estornudos,Pico deforme,Yes
+Pájaros,Pérdida de plumas,Desplume,Tos,Picor,Secreción nasal,Yes
+Pájaros,Ojos llorosos,Ojo cerrado,Pérdida de peso,Estornudos,Problema nervioso,Yes
+Pájaros,Lesión ósea,Erupciones en la piel,Ataxia,Anorexia,Debilidad,Yes
+Pájaros,Temblor de cabeza y cuello,Ceguera,Patadas en el vientre,Ejercicio de tolerancia,Esfuerzos,Yes
+Oveja,Vientre hinchado,Lo aburrido,Descargar,Micción,Acostado,Yes
+Oveja,Fiebre,Lo aburrido,Depresión,Pérdida de peso,Anorexia,Yes
+Oveja,Fiebre,Sucumbir,Propagación de la infección,Pérdida de peso,Anorexia,Yes
+Oveja,Señales en carneros,Señales en oveja,Músculos subdesarrollados,Examen de semen,Reducir el marcado de la lámpara,Yes
+Oveja,Espinas,Inusualmente delgado,Debilidad,Cráneos agrandados,Debilidad,Yes
+Oveja, Descargar,Aborto repentino,Hemoglobinuria,Muerte del cordero,Pérdida de peso,Yes
+Oveja,Fiebre,Anemia hemolítica,Sudores,congestión,Ictericia,Yes
+Oveja,Fiebre,Cansancio,pérdida de apetito,Dolores musculares,Dolor en el pecho,Yes
+Oveja,Exceso de salivación,Diarrea,Depresión,Secreción nasal,Debilidad,Yes
+Oveja,Fiebre,Diarrea,Incoordinación,Aborto provocado, Envenenamiento de la sangre,Yes
+Oveja,Fiebre,Debilitante,Deshidración,Debilidad,Debilidad,Yes
+Oveja,Fiebre,Diarrea,Espasmos musculares,Cojera,Pérdida de peso,Yes
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Oveja,Fiebre,Depresión,Acostado,Pulso débil,Cólico,Yes
+Oveja,Hinchazón,Cojera,Hiperestesia,Articulación del corvejón,Pérdida de peso,Yes
+Oveja,Inclinación de la cabeza,Dando vueltas,Los músculos duelen,Ceguera,Convulsiones,Yes
+Oveja,Disminución del crecimiento del hueso,Depresión,Gruñidos,Cojera,Pérdida de peso,Yes
+Oveja,Abdomen izquierdo hinchado,Acostado,Asombroso,Micción,Extensión del cuello,Yes
+Oveja,Cese de la eructación,Dificultad para respirar,Depresión,Anorexia,Cólico,Yes
+Oveja,Fiebre,Salivación excesiva,Conformación anormal,Músculo ulcerado,Oído ulcerado,Yes
+Oveja,Ovejas estériles,Aborto provocado,Mala conformación,Vellones peludos,Pérdida de peso,Yes
+Oveja, Temblor,Viabilidad,Tos,Anorexia,Pérdida de peso,Yes
+Oveja,Fiebre,Taquipea,Hinchazón de cabeza y cuello.,Anorexia,Secreción nasal,Yes
+Oveja,Ahorro,Lesión de la piel,Cojera,Hinchazón en el cuerpo,Pérdida de peso,Yes
+Oveja,Hinchazón,Calor,Flanco,Dolor,Secreción nasal,Yes
+Oveja,Fiebre,Pérdida de apetito,Cojera,Grupa,Pérdida de peso,Yes
+Oveja,Fiebre,Hinchazón,pérdida de apetito,Anorexia,Pérdida de peso,Yes
+Oveja,Fiebre,Diarrea,Gotas de sangre,Malestar abdominal,Letargo,Yes
+Oveja,Fiebre,Depresión,Intestino delgado,Muerte,Mortalidad del rebaño,Yes
+Oveja,hemorragia,Color paja,Dolor abdominal,Muerte,El cadáver se descompone,Yes
+Oveja,Diarrea sangrienta,Depresión,Lo aburrido,Muerte,Debilidad,Yes
+Oveja,Movimiento a regañadientes,Pérdida de apetito,Cojera,Muerte,Debilidad,Yes
+Oveja,Fiebre,Depresión,pérdida de apetito,Pérdida de apetito,Esfuerzos,Yes
+Oveja,Fiebre,Dificultad para respirar,Letargo,Muerte,Esfuerzos,Yes
+Oveja,Pobre lana,Pérdida de apetito,Cojera,Tamaño pequeño,Mala condición corporal,Yes
+Oveja,Función inmunológica deficiente,Achomotrica,Deshidración,Muerte,Esfuerzos,Yes
+Oveja,Dolor abdominal,Diarrea,Mala presentación,Choque,Anorexia,Yes
+Oveja,Desproporción fetopélvica,Inercia uterina,Depresión,Muerte,Esfuerzos,Yes
+Oveja,Desproporción de diarrea acuosa,Enfermo,Ulceración corneal,Pérdida de apetito,Muerte,Yes
+Oveja,Queritis severa,Conjuntivo,Descargar,Prolapso del iris,Pérdida del ojo,Yes
+Oveja,Hinchado,Dolor testicular,picazón,Secreción sanguinolenta,Ternura,Yes
+Oveja,Fiebre,Diarrea,Depresión,Rasguños,Pérdida de peso,Yes
+Oveja,Mal olor,Lo aburrido,Sucio,Lana teñida,Sacudiendo la cola,Yes
+Oveja,La oveja a menudo muerde,El vellón se vuelve fino,Pérdida de lana,Muerte,Esfuerzos,Yes
+Oveja,Fiebre,Lo aburrido,Lo aburrido,Erupciones en la piel,Esfuerzos,Yes
+Oveja,Fiebre,Dificultad para respirar,Frotar,Tos,Estornudos,Yes
+Oveja,Inquietud,Patada,Letargo,Masticando su lana,Rascarse,Yes
+Oveja,Ictericia,Pérdida de apetito,Pelaje de pelo áspero,Tos,Muerte,Yes
+Oveja,Fiebre,Reducir el potencial reproductivo,Agalaxia,Pérdida de producción de leche,Desprendimiento de la cola,Yes
+Oveja,Pirexia,Lesión oral,Hinchazón,Cojera,Muerte,Yes
+Oveja,Piel roja,Pérdida de apetito,Húmedo,Cojera,Esfuerzos,Yes
+Oveja,Cojeando,Cambio de color de la piel,Flácido,Crudo,Sensible al tacto,Yes
+Oveja,Ampliado groseramente,La piel puede engrosarse,Convulsión,Edema,Esfuerzos,Yes
+Oveja,Hiperexcitabilidad,Espasmos musculares,Cena,Muerte,Esfuerzos,Yes
+Oveja,Párpado disminuido,Piel muy fría,Letargo,Labio,Fiebre,Yes
+Oveja,Fiebre,Diarrea,Músculo,Pérdida de peso,Muerte,Yes
+Oveja,Mal olor,Diarrea,Cólico,Secreción sanguinolenta,Coágulos de sangre,Yes
+Oveja,Incapacidad para digerir,Diarrea,Deshidración,Pérdida de peso,Anemia,Yes
+Oveja,Fiebre,Diarrea,Barriga cervecera,Muerte,Pérdida de apetito,Yes
+Oveja,Adelgazamiento,Diarrea,Tos,Pérdida de peso,Muerte,Yes
+Oveja,Dificultad respiratoria,Diarrea,Muerte, Reducir la leche,Pérdida de peso,Yes
+Oveja,Ahorro,Mandíbula de botella,Comportamiento extraño,Anemia,Ictericia,Yes
+Oveja,Fiebre,Cojera,Debilitante,Ceguera,Asombroso,Yes
+Oveja,Fiebre,Diarrea,Claramente poco ahorrativo,Pérdida de peso,Buen apetito,Yes
+Oveja,Fiebre,Lo aburrido,Renuencia a caminar,Ombligos infectados,Esfuerzos,Yes
+Oveja,Ternura,Pie caliente,Parálisis facial,Pérdida de peso,Esfuerzos,Yes
+Oveja,Fiebre,Falta de coordinación,Doloroso al tacto,Dando vueltas,Depresión,Yes
+Oveja,Hinchado,Cálido,Constipación,Depresión,Sangriento,Yes
+Oveja,Fiebre,Pérdida de apetito,Tropezando,Inquietud,Esfuerzos,Yes
+Oveja,Marcha inestable,Espasmos,Ceguera,Hinchazón en las articulaciones,Esfuerzos,Yes
+Oveja,Fiebre,Úlcera,Costras,Secreción del ojo,Esfuerzos,Yes
+Oveja,Olor a amoniaco,Úlcera,Depresión,Hinchazón,Esfuerzos,Yes
+Oveja,Fiebre,Letargo,Ceguera,Inapetencia,Aumento de la respiración,Yes
+Oveja,Errante,Dando vueltas,Ceguera,Presionando la cabeza,Posición de yacer,Yes
+Oveja,Temblores,Acostado de lado,Dificultad para tragar,Muerte,No comer,Yes
+Oveja,Fiebre,Dificultad para respirar,Tos,Estornudos,Convulsiones,Yes
+Oveja,Hinchazón,Pérdida de apetito,Pérdida de lana,Lágrimas,Muerte,Yes
+Oveja,La lana está apelmazada,Se siente rígido,Asombroso,Erupciones en la piel,Esfuerzos,Yes
+Oveja,Balanceo,Cambio de comportamiento,Temblor,Movimientos espasmódicos de las extremidades,Esfuerzos,Yes
+Oveja,Daño celular,Cambio de comportamiento,Pérdida de peso,Prurito,Muerte,Yes
+Oveja,Hinchazón,Malestar,Dificultad para levantarse,Muerte,Esfuerzos,Yes
+Oveja,Hinchado,Articulaciones calientes,Pústulas,Dificultad para caminar,Esfuerzos,Yes
+Oveja,Formación de veYesculas,Fosas nasales,Pierna anormalmente larga,Costras en el labio,Esfuerzos,Yes
+Oveja,Anomalías esqueléticas,Defectos faciales,Pérdida de cabello,Costillas planas,Músculos subdesarrollados,Yes
+Oveja,Ya sea inquieto,Pateando,Apetito normal,Intentar orinar,Esfuerzos,Yes
+Oveja, Incapacidad para mantenerse en pie,Dolores al caminar,Depresión,Debilidad,Rigidez,Yes
+Oveja,Fiebre,Sucumbir,Lento,Anorexia,Esfuerzos,Yes
+Oveja,Apático,Mandíbula de botella,Mala presentación,Muerte,Deficiencia de oxígeno,Yes
+Oveja,Fiebre,Hinchazón,Sangriento,Muerte,Anemia,Yes
+Oveja,Piel gruesa,Crujiente,Piel escamosa,Lesión,Esfuerzos,Yes
+Oveja,Fiebre,Aborto provocado,Vómitos,Pérdida de peso,Anorexia,Yes
+Oveja,Mareos,Anemia,Vómitos,Dolor de cabeza,Náuseas,Yes
+Oveja,Fiebre,Pérdida de lana,Hinchazón,Pérdida de peso,Esfuerzos,Yes
+Oveja,Producción de lágrimas,Aversión a la luz,Opacidad de color blanco azulado,Ceguera,Esfuerzos,Yes
+Oveja,Fiebre,Hinchazón,Cojera,Calor,Esfuerzos,Yes
+Oveja,Cambio de color de la piel,Crujiente,Piel escamosa,Irritación,Ampolla,Yes
+Oveja,Inicio de la radiofrecuencia,Rígido,Temblor muscular,Debilidad,Muerte,Yes
+Oveja,Sacudiendo la cabeza,Secreción del oído,Rasguño en la oreja,Olor al oído,Enrojecimiento en la oreja,Yes
+Oveja,Secreción de los ojos,Enrojecimiento del ojo,Ceguera,Bufandas,Esfuerzos,Yes
+Oveja,Fiebre,Pérdida de apetito,Bufandas,Muerte,Esfuerzos,Yes
+Oveja,Malestar,Pérdida de apetito,Diarrea con sangre,Profuso,Esfuerzos,Yes
+Oveja,Hinchazón,Laringe,Hinchazón en la mandíbula,Ronquera,Hinchazón de las venas del cuello,Yes
+Oveja, Inflamación,Malestar,Patadas en el vientre,Infección de orina,Esfuerzos,Yes
+Oveja,Aislamiento del rebaño, Robo,Comportamiento de anidación,Manoseando la ropa de cama,Esfuerzos,Yes
+Oveja,Apático,Dificultad para caminar,Rechinar los dientes,Ceguera,Ataxia,Yes
+Oveja,Opacidad de color blanco azulado,Aversión a la luz,Lagrimas producidas,Ceguera,debilidad,Yes
+Oveja,Sacudiendo la cabeza,Pérdida de lana,Respiración rápida,Heridas sangrantes,Problema de la piel,Yes
+Cerdos,Tos,jadeo,"hinchazón facial,",Producción de moco,Fatiga,Yes
+Ave,tos,estornudo,alas caídas,cuello torcido,alas caídas,Yes
+Pato,Dificultad para respirar.,Fatiga,chirriando,pérdida de apetito,abdomen hinchado,Yes
+Otras aves,jadeando,tos,debilidad leve,alas caídas,cuello torcido,Yes
+Cerdos,Pérdida excesiva de sangre,mareos y desmayos,Visión borrosa,ojos llorosos,crecimiento lento,Yes
+Ave,Hemorragia nasal,Trauma,debilidad leve,Hurgarse la nariz,Aire seco,Yes
+Pato,Sangrado de otras partes del cuerpo.,confusión,Secreción nasal,pérdida de alerta, mareos y desmayos,Yes
+Otras aves,Mal aliento,Manosearse la cara o la nariz,tos,Estornudos,Sangrado por la nariz,Yes
+Ave,extendiendo su cuello,jadeando por aire,jadeando por respirar,dificultad para tragar,jadeando por respirar,Yes
+Pato,dificultad para tragar,tos,dificultad para tragar,jadeando por aire,extendiendo su cuello,Yes
+Otras aves,tos,jadeando por aire,Pérdida de peso,jadeando por respirar,extendiendo su cuello,Yes
+Cerdos,debilidad,disminución de la producción de heces,estómago distendido,respiración pesada,movimiento inquieto,Yes
+Ave,Enrojecimiento de los ojos,Infecciones oculares frecuentes,Pestañas con costras y enmarañamiento de las pestañas,heces con mal olor,Aumento de la flatulencia,Yes
+Pato,Lagrimeo excesivo de ojos,Enrojecimiento de los ojos,debilidad,Secreción de moco del ojo,Infecciones oculares frecuentes,Yes
+Otras aves,Muerte súbita,pérdida de apetito,latidos cardíacos rápidos,plumas esponjosas,falta de vocalizaciones,Yes
+Ave,incapaz de orinar,Mareos,flacidez,sangrado rectal,abdomen hinchado,Yes
+Pato,Sed extrema,secreción sanguinolenta,Pérdida de apetito,incapacidad para volar,pérdida de cautela,Yes
+Otras aves,La producción de huevos se detiene,Comportamiento clueco,pérdida de apetito,Pérdida de peso,Constipación,Yes
+Ave,náuseas,vómitos,pérdida de apetito,experimentando cambios en el peso,Dolor e hinchazón,Yes
+Pato,Dolor o ardor,vómitos,pérdida de apetito,experimentando cambios en el peso,Dolor e hinchazón,Yes
+Otras aves,Pérdida continua de peso,Regurgitación de alimentos,sibilancia,Ingesta excesiva de alimentos,Semillas no digeridas,Yes
+serpiente,pérdida de apetito,latargia,aborto provocado,sonido de gorgoteo,Depresión,Yes
+caballo,fiebre,cólico leve,pérdida del tono de la cola,pérdida de apetito,depresión,Yes
+caballo,Inclinación de la cabeza,latargia,latargia,goteo de orina,incapacidad para levantarse,Yes
+caballo,fiebre,pérdida de apetito,ruido respiratorio,Pérdida de peso,depresión,Yes
+caballo,fiebre,secreción nasal,rigidez muscular,ganglios linfáticos inflamados,depresión,Yes
+caballo,transpiración,espasmos musculares,sed,Pérdida de peso,Dificultad para moverse y comer,Yes
+pato,pérdida de apetito,temperatura corporal alta,falta de apetito,diarrea,muerte súbita,Yes
+burro,transpiración,encías secas o pegajosas,apetito reducido,acostado,embotamiento,Yes
+burro,cuello estirado,embotamiento,inapetencia,respiración ruidosa,tosiendo,Yes
+Burro,Pérdida de peso,embotamiento,inapetencia,autoaislamiento,posición de yacer,Yes
+mulas,Pérdida de peso,embotamiento,problema muscular,autoaislamiento,posición de yacer,Yes
+Elefante,cambio de marcha,embotamiento,problema muscular,Dolor,Esfuerzos,Yes
+Elefante,cambio de marcha,embotamiento,difuso,diagnóstico de dificultad,Anemia,Yes
+Elefante,Dificultad para respirar,problema de hinchazón,sangrado de heridas,bostezos frecuentes,anorexia,Yes
+Elefante,desnutrición,beber agua contaminada,languidez,Asombroso,anorexia,Yes
+Ciervo,debilitante,tropezando,languidez,babeando,orejas caídas,Yes
+Alce,debilitante,tropezando,languidez,babeando,problema de micción,Yes
+Wapiti,debilitante,tropezando,languidez,babeando,problema de micción,Yes
+Ciervo,debilitante,tropezando,languidez,babeando,problema de micción,Yes
+Ciervo mulo,debilitante,tropezando,languidez,babeando,problema de micción,Yes
+Venado de cola negra,debilitante,tropezando,languidez,babeando,problema de micción,Yes
+Ciervo sika,debilitante,tropezando,languidez,babeando,problema de micción,Yes
+Venado de cola blanca,debilitante,tropezando,languidez,babeando,orejas caídas,Yes
+Reno,debilitante,tropezando,languidez,babeando,orejas caídas,Yes
+Musgos,debilitante,tropezando,Fiebre,babeando,orejas caídas,Yes
+Tigre,infecciones felinas,linfosarcoma,dificultad para respirar,estomatitis,anemia,Yes
+Ciervo,muerte súbita,temperatura alta,dificultad para respirar,Pérdida de peso,temblor,Yes
+Ganado,muerte súbita,temperatura alta,dificultad para respirar,Anemia,temblor,Yes
+Cabras,muerte súbita,temperatura alta,dificultad para respirar,Asombroso,temblor,Yes
+Oveja,muerte súbita,temperatura alta,pulso y frecuencia cardíaca acelerados,Depresión,temblor,Yes
+Búfalos,fiebre,pérdida de apetito,pulso y frecuencia cardíaca acelerados,cojera en la pierna afectada,depresión,Yes
+Oveja,fiebre,pérdida de apetito,pulso y frecuencia cardíaca acelerados,cojera en la pierna afectada,depresión,Yes
+Cabras,fiebre,pérdida de apetito,pulso y frecuencia cardíaca acelerados,cojera en la pierna afectada,depresión,Yes
+Ganado,fiebre,pérdida de apetito,pezones hinchados,cojera en la pierna afectada,depresión,Yes
+Ganado,hinchazón,secreción nasal,babeando,cansancio,fiebre,Yes
+Oveja,secreciones oculares,secreción nasal,cambiar su comportamiento normal,temperatura corporal alta,cojera,Yes
+Perros,dejar de comer,deja de beber,cambiar su comportamiento normal,Cojera,Esfuerzos,Yes
+Zorro,dejar de comer,deja de beber,cambiar su comportamiento normal,Pérdida de peso,Esfuerzos,Yes
+Lobos,dejar de comer,deja de beber,cambiar su comportamiento normal,Depresión,Esfuerzos,Yes
+Hienas,dejar de comer,deja de beber,cambiar su comportamiento normal,diarrea,Esfuerzos,Yes
+Pato,Fiebre,Dificultad para tragar,Babeo excesivo,Asombroso,Convulsiones,Yes
+Pato,Fiebre,Diarrea,Vómitos,Pérdida de peso,Deshidración,Yes
+Pato,Fiebre,Diarrea,Tos,Cansancio,Esfuerzos,Yes
+Pato,Fiebre,Diarrea,Tos,Vómitos,Anorexia,Yes
+Pato,Fiebre,Dificultad para respirar,Tos,Letargo,Estornudos,Yes
+Pato,Fiebre,Diarrea,Tos,Letargo,Ojo azul,Yes
+Pato,Fiebre,Dificultad respiratoria,Convulsionadores,Hiperestesia,Muerte súbita,Yes
+Pato,Úlceras,Diarrea,Falta de apetito,Taburete alquitranado,Ganglios linfáticos agrandados,Yes
+Pato,Hinchazón facial,Baba sangrienta,Mal aliento,Incapaz de comer,Dientes perdidos,Yes
+Pato,Fiebre,Dificultad para respirar,Sed y micción,Pérdida de peso,Ganglios linfáticos agrandados o hinchazón,Yes
+Pato,Hinchazón en la pierna,Doloroso,Secreción nasal,Huesos rotos,Secreción nasal,Yes
+Pato,Letargo de corta duración,Pérdida de apetito,Debilidad en las patas traseras,Frecuencia cardíaca rápida,Pulso semanal,Yes
+Pato,Ganglios linfáticos inflamados,Dificultad para caminar,Dolor de espalda,Letargo,Secreción vaginal,Yes
+Pato,Fiebre,Diarrea,Dolor abdominal,Rigidez,Debilidad severa y depresión,Yes
+Pato,Fiebre,Pérdida de apetito,Reducir la energía,Cojera,Hinchazón de las articulaciones,Yes
+Pato,Fiebre,Inflamación crónica del ojo,Falta de apetito,Letargo,Anormalidades neurológicas,Yes
+Pato,Fiebre,Hinchazón de la cara o la pierna,Falta de apetito,Depresión,Esfuerzos,Yes
+Pato,Diarrea con mucosidad,Tensemo,Heces acuosas,Flatulencia,Esfuerzos,Yes
+Pato,Tos fuerte,Rinorrea,Estornudos,Letargo,Pérdida de apetito,Yes
+Pato,Fiebre,Ojo inflamado,Tos,Depresión,Cojeando,Yes
+Pato,Fiebre,Dificultad para respirar,Tos,Cambios en los ojos y la piel,Incapaz de hacer ejercicio,Yes
+Pato,Fiebre,Pérdida de apetito,Tos,Letargo,Dolor en las articulaciones,Yes
+Pato,Lesiones en la cavidad nasal,Lesiones en la nariz,Sangrado nasal,Respiración ruidosa,Lesiones en la nariz,Yes
+Pato,Pérdida de cabello,Caspa,Piel oscurecida,Formación de costras en la piel,Piel ulcerada,Yes
+Pato,Secreción nasal de color amarillo verdoso,Falta de pigmentación,Estornudos,Letargo,Dolor en la cara,Yes
+Pato,Fiebre,Diarrea,Falta de apetito,Pérdida de peso,Vómitos,Yes
+Pato,Ictericia,Neumonía,Lesión en la piel, dolor,Vómitos,Yes
+Pato, Mala apariencia del pelaje,Diarrea,Vómitos,Pérdida de peso,Deshidración,Yes
+Pato,Riego,Sin aplicación,Vómitos,Letargo,Deshidración,Yes
+Pato,Tirante,Diarrea,Vómitos,Pérdida de peso,Ceguera,Yes
+Pato,Malestar estomacal,Diarrea,Vómitos,Dolor muscular,Rigidez muscular,Yes
+Pato,Malestar estomacal,Diarrea,Tos,Pérdida de peso,Anemia,Yes
+Pato,Reacción alérgica,Falta de apetito,Tos,Pérdida de peso,Pecho distendido,Yes
+Pato,Fiebre,Anoxeria,Pérdida de peso,Letargo,Dolor,Yes
+Pato,Cojeando,No correré para saltar, Hinchazón,Piernas débiles,Dolor en la pierna,Yes
+Pato,Fiebre,Úlcera ocular,Congestión,Depresión,Ojo rosado,Yes
+Pato,Neumonía,Pérdida de apetito,Descarga de ojos,Cojera,Artritis,Yes
+Pato,Fiebre,Convulsiones,Hidrofobia,Me quedé con la mandíbula caída,Timidez o agresión,Yes
+Pato,Orina con sangre,Dificultad para respirar,Vómitos,Pérdida de peso,Anorexia,Yes
+Pato,Pérdida de comer,Dificultad para respirar, Hinchazón,Cojera,Anormalidades neurológicas,Yes
+Pato,Cara oscura o negra,Diarrea,Vómitos,Sangre en las caras,Dolor,Yes
+Pato,Ictericia,Dificultad para respirar,Convulsionadores,Letargo,Encías pálidas,Yes
+Pato,El apetito varía,Diarrea,Vómitos,Pérdida de peso,Dolor,Yes
+Pato,Pérdida de comer,Me sentí mal,Letargo,Pérdida de peso,Problema de la piel,Yes
+Pato,Enfermedad,Pérdida de apetito,Vómitos,Pérdida de peso,Crecimiento elevado o protuberancia,Yes
+Pato,Sangrado nasal,Dificultad para masticar, Hinchazón,Pérdida de peso,Anorexia,Yes
+Pato,Úlceras, Lesiones,Costras,Bultos,"Bultos (negros, grises o rojos)",Yes
+Pato,Gastón,Pérdida de apetito,Sangre en las heces,El estómago gruñe,Taburete negro,Yes
+Pato,Sacudiendo la cabeza,Rasguño en la oreja,Negro en la oreja,Mal olor,Oído rojo e inflamado,Yes
+Pato,Ataques,Pérdida de apetito,Tos,Pérdida de peso,Vómitos periódicos,Yes
+Elefante,Heces con sangre,Diarrea,Tos,Pérdida de peso,Anemia,Yes
+Elefante,Secreción nasal,Hemorragias nasales,fosas nasales inflamadas,Estornudos,Respiración fuerte,Yes
+Elefante,Poliuria,Pérdida de apetito,Vómitos,Pérdida de peso,Polidipsa,Yes
+Elefante,Micción excesiva,Cambio en la marcha,Vómitos,Pérdida de peso,Incapacidad para saltar,Yes
+Elefante,Convulsión,Pérdida de conciencia,masticación,Espasmos,Salivando,Yes
+Elefante,Sibilancia,Respiración rápida,Tos,Tragar,Esfuerzo para respirar,Yes
+Elefante,Ictericia,Debilidad,Letargo,Pérdida de peso,Anorexia,Yes
+Elefante,Lesión en la piel del gato,Caspa en el pelaje del gato,Manchas rojas,Pérdida de cabello,Problema de la piel,Yes
+Elefante,Letargo,Diarrea,Vómitos,Secreción del ojo,Anorexia,Yes
+Elefante,Irritación de la piel,Raspado,Letargo,Pérdida de cabello,Acicalamiento excesivo,Yes
+Elefante,Músculo flácido,Retraso en el habla,Discapacidad intelectual,Problema al caminar,Movimientos oculares,Yes
+Elefante,Sensibilidad a la luz brillante,Secreción del ojo afectado,Inflamación,Córnea nublada,Frotarse el ojo,Yes
+Elefante,Fiebre,Diarrea,Vómitos,Calambre,Deshidración,Yes
+Elefante,Ternura,Eritema, Hinchazón,Escarcha,Dolor,Yes
+Elefante,Fiebre,Diarrea,Vómitos,Salivación,Disminuir el apetito,Yes
+Elefante,Manchas escamosas de piel,Doloroso,Costras,Escarcha,Pérdida de cabello,Yes
+Elefante,Heces grasas,Diarrea,Vómitos,Pérdida de peso,Dolor,Yes
+Elefante,Náuseas,Pérdida de apetito,Vómitos,Firme,Estómago distendido,Yes
+Elefante,Fiebre,Hinchazón en la zona de la picadura.,Letargo,Cojear,Dolor,Yes
+Elefante,Fiebre,Pérdida de apetito,Problema ocular,Enfermedad del hígado,Neurológico,Yes
+Elefante,Fiebre,Estornudos leves,Tos,Nasal,Secreción ocular,Yes
+Elefante,"La mayoría de las veces, ninguna",Estornudos,Secreción nasal,Disnea,Dolor,Yes
+Elefante,Fiebre,Diarrea,Vómitos,Sangre de la boca,Choque,Yes
+Elefante,Malestar,Diarrea,Cabello seco o sin brillo,Rechinar los dientes,Dolor,Yes
+Elefante,Pérdida de apetito,Hinchazón,Secreción nasal,Ceguera,Letargo,Yes
+Elefante,Rinitis,Neumonía,absceso,Tortícolis,Septicemia,Yes
+Elefante,Fiebre,Diarrea,Enteritis,Pérdida de peso,Calambres estomacales,Yes
+Elefante,Muerte inmediata,Dificultad para respirar,Labios de color azul,Secreción sanguinolenta,Anormalidades neurológicas,Yes
+Elefante,Fiebre,Lesión de viruela en la piel,La piel se enrojece,Secreción nasal,La mortalidad varía,Yes
+Elefante,Rojo en la zona afectada,Crecimiento córneo,Crecimiento similar a una verruga,Piel roja,Lesiones en el oído,Yes
+Elefante,Fiebre,Escalofríos,Úlcera de la piel,Agotamiento,Hinchado y doloroso,Yes
+Elefante,Diarrea que riega,Depresión,Adelgazamiento,Abrigo con volantes,Letargo,Yes
+Elefante,pérdida de peso,adelgazamiento,pérdida de apetito,Debilidad,diarrea,Yes
+Elefante,pérdida de apetito,diarrea,acacia púrpura hinchada,Peine hinchado,Cojera,Yes
+Elefante,pérdida de apetito,diarrea,plumas erizadas,Pérdida de peso,Incapacidad para absorber nutrientes,Yes
+Elefante,La producción de huevos disminuye,crecimiento atrofiado,Ceguera,Bultos distintivos,Hinchazón facial,Yes
+Elefante,pérdida de apetito,sed,plumas erizadas,Ojos cerrados,Diarrea,Yes
+Elefante,Fiebre,piernas debilitadas,pérdida de la capacidad de caminar,Glaciares mamarios,Ampollas rellenas de fluido,Yes
+Elefante,Fiebre,piernas debilitadas,pérdida de la capacidad de caminar,Pérdida de peso,Cojera,Yes
+Elefante, aborto al final de la gestación,Fatiga,pantorrillas débiles,Unir dolores,Hinchazón de los órganos internos,Yes
+Elefante,hinchado, de color rojo,ubre caliente,La leche sale más aguada,La leche sale más espesa,Yes
+Elefante,Fiebre,Angustia,Temblor,Asombroso,Convulsión,Yes
+Elefante,Fiebre,El animal se vuelve cojo,Postrarse,Dolor al tragar,Cojera,Yes
+Elefante,Fiebre,Dificultad para respirar,Goteo de saliva,Incapacidad de alimentación de Swallown,Húmedo y doloroso,Yes
+Elefante,Heces fluidas en sangre y músculo,Muerte súbita,Líquido sangriento,Diarrea roja,Las heces están manchadas de sangre.,Yes
+Elefante,Fiebre,Neumonía,De pie con la cabeza gacha,Pérdida de peso,Comportamiento anormal,Yes
+Elefante,Fiebre,Ligeramente hinchado,Lesión en la piel,Duro como la leche,Aparecen pápulas en los pezones y la ubre.,Yes
+Elefante,Fiebre,Aburrido,Suelo troceado en cuartos traseros,Parada de alimentación para animales,Disminución de la producción de leche,Yes
+Elefante,Severo,Diarrea,Sangre en las caras,Apetito,Leche reducida,Yes
+Elefante,Fiebre,Depresión,Renuencia a moverse,Salivación,Secreción nasal,Yes
+Elefante,Apetito normal,Diarrea,Puede aparecer hinchazón debajo de la mandíbula.,Pérdida de peso,Caída en la producción de leche,Yes
+Elefante,Hinchazón en la pierna,Calor,Dureza,Enrojecimiento,Dolor,Yes
+Elefante, Incapacidad para mantenerse en pie,Diarrea,Mandíbula de botella,Barriga cervecera,Pelaje de pelo seco,Yes
+Elefante,Excitabilidad,Nerviosismo,pérdida de apetito,Hipersensibilidad,Debilidad,Yes
+Elefante,Fiebre,Depresión,Ataque,Morder a otros animales,Dolor,Yes
+Hámster,Fiebre,Dificultad para respirar,Tos,Doloroso,Los ojos se vuelven opacos,Yes
+Hámster,Fiebre,Úlcera en la encía,Ojo rojo,Secreción amarillenta,Diarrea con sangre,Yes
+Hámster,Fiebre,Diarrea,Tos,Consistencia de la leche,Dolor,Yes
+Hámster,El animal se pone inquieto,Dificultad para respirar,Dificultad para respirar,Producción excesiva,Estampación y pedding del ojo trasero,Yes
+Hámster,Fiebre,Escalofríos,Cólico severo,Debilidad,Anorexia,Yes
+Hámster,Fiebre,Rigidez corporal,Letargo,Inflamación severa,Dolor,Yes
+Hámster,Enfermedad,Diarrea,Pérdida de peso,Náuseas,Deshidración,Yes
+Hámster,Muerte súbita,Dificultad para caminar,Parálisis,Depresión,Convulsión,Yes
+Hámster,Fiebre,Aborto provocado,Insuficiencia renal,Inflamación del ojo,Enrojecimiento de los ojos,Yes
+Hámster,Pequeñas protuberancias rojas,Neumonía,Artritis séptica,Infección de la piel,Dolor,Yes
+Hámster,Fiebre,Ataxia,Agresividad,Depresión,Cojera oscura,Yes
+Ave,Lesión en forma de anillo,Parches redondos,Piel seca,El tamaño de las lesiones varía,Dolor,Yes
+Ave,Fiebre,Diarrea,pérdida de apetito,Cólico,Debilidad,Yes
+Ave,Fiebre,Depresión,pérdida de apetito,Tropezando,Ataxia,Yes
+Ave,Burbujas en la boca,Sibilancia,pérdida de apetito,Letargo,Secreción nasal,Yes
+Ave,Cambios en la capa externa de la piel,Hinchazón del ojo,pérdida de apetito,Letargo,Infección respiratoria,Yes
+Ave,Tinte rojo,Delgado sobre la concha,Mal olor,Se daña fácilmente la carcasa,Descamación de los escudos,Yes
+Ave,Expulsión de alimentos no digeridos,Diarrea,Vómitos,Gases o hinchazón,Deshidración,Yes
+Ave,Oler,Diarrea,pérdida de apetito,Exceso de sueño,Orejas dobladas,Yes
+Ave,Pérdida de actividad,Pelaje áspero,pérdida de apetito,Pérdida de peso,Finalmente la muerte,Yes
+Ave,Fiebre,Diarrea,Vómitos,Deshidración,Dolor,Yes
+Ave,Parches de calvicie,Pérdida de cabello,Crujiente,Escamoso,Lesión roja en las zonas calvas,Yes
+Ave,Mala condición,Ganglios linfáticos agrandados,Diarrea,Pérdida de peso,Dolor,Yes
+Ave,Fiebre,Escalofríos,Tos,Debilidad progresiva,Dolor en las articulaciones,Yes
+Ave,Infección grave,Diarrea,Deficiencia de vitaminas y minerales,Pérdida de peso,Dolor,Yes
+Ave,Fiebre,Diarrea,Debilidad muscular,Dolor muscular,Malestar abdominal,Yes
+Ave,Fiebre,Escalofríos,Dolor de cabeza,Náuseas,Dolor,Yes
+Ave,Piel engrosada,Tintado del cabello,Pérdida de cabello,Formación de costras,Picazón,Yes
+Ave,Edema facial,Pérdida de la oreja,Vómitos,Dolor de cabeza,Dolor de garganta y oído,Yes
+Ave,Malestar general,Insuficiencia hepática,Vómitos,Pérdida de peso,Dolor abdominal,Yes
+Ave,Malestar estomacal,Pérdida de apetito,Náusea,Pérdida de peso,Dolor abdominal,Yes
+Ave,Fiebre,Pérdida de masa muscular,Dolor esquelético,Pérdida de peso,Debilitante,Yes
+Ave,Edema,Hinchazón de la cara o la pierna,Hinchazón del cuello,Pérdida de peso,Dolor,Yes
+Ave,Crecimiento pobre,Baja estatura,Agrandamiento de los huesos,Cojera,Huesos largos que soportan peso,Yes
+Ave,Fiebre,Escalofríos,Sudor,Dolor de cabeza,Fatiga,Yes
+Ave,Fiebre,Pérdida de apetito,Debilidad,Pérdida de peso,Vómitos,Yes
+Ave,Lo aburrido,Lagrimeo,Tos,Diarrea,Convulsiones,Yes
+Ave,Vómitos,Diarrea sanguinolenta,Letargo,Deshidración,Anorexia,Yes
+Ave,Fiebre,Escondite poco característico,Depresión,Deshidración,Dejó de comer,Yes
+Ave,Fiebre,Mala condición del pelaje,Infección de la piel,Pérdida de peso,Fatiga,Yes
+Ave,Debilidad,Rigidez,Temblor,Marca blanca en el músculo,Pérdida de vitamina E,Yes
+Ave,Parálisis parcial,Tambaleándose como un borracho,Automutilación,Actuar agresivamente,Actuar de forma antinaturalmente dócil,Yes
+Ave,Fiebre,Cansancio,Dolor de cabeza,Erupciones en la piel,Dolor,Yes
+Ave,Costra gruesa,Picazón,Pérdida de cabello,Ojo lloroso,Dolor,Yes
+Ave,Ritmo constante,Espasmos musculares faciales,anormalidades,Ceguera,Dolor muscular,Yes
+Ave,Pérdida de apetito,Sibilancia,Convulsionadores,Erupciones en la piel,Fatiga,Yes
+Ave,Indigestión,Dolor abdominal,Constipación,Diarrea,Náuseas,Yes
+Ave,Sangre en la orina,Diarrea,Vómitos,Letargo,Sangrado en ojos y piel.,Yes
+Ave,Fiebre,Malestar,Debilidad,Pérdida de peso,Dolor,Yes
+Ave,Fiebre,Diarrea,Vómitos,Calambres estomacales,Náuseas,Yes
+Ave,Fiebre,Falta de coordinación,Depresión,Salivación,Parálisis facial,Yes
+Ave,Llagas en el labio,Infección,Llagas en la parte inferior de las piernas y en los pezones.,Lesión,Dolor,Yes
+Ave,Aborto en etapa avanzada del embarazo,Nacimiento de un niño muerto,Placenda retenida,Endomeritis,Disminuir el apetito,Yes
+Ave,paresia,parálisis,Debilidad,Calambres estomacales,Diarrea,Yes
+Ave,Fiebre,Diarrea,Hinchazón,Pérdida de peso,Dolor,Yes
+Ave,Fiebre,Anemia hemolítica,Hemoglobinuria,congestión pulmonar,Ictericia,Yes
+Ave, Aborto provocado,Momificación,Nacimiento de un niño muerto,Niños débiles,Dolor,Yes
+Ave,Rinorrea,Dificultad para respirar,Tos,Debilidad,Pérdida de apetito,Yes
+Ave,Fiebre,Secreción nasal,Dificultad respiratoria,Lesión de viruela,Dolor,Yes
+Ave,Fiebre,Sangriento de color oscuro,Incoordinación,Dificultad para respirar,Convulsión terminal,Yes
+Ave,Fiebre,Disentería,Hinchazón,Muerte inmediata,Dolor,Yes
+Ave,Fiebre,Dificultad respiratoria,Secreción mucosa,Reducir la alimentación,Aumento de peso,Yes
+Ave,Disminución de la leche,Manteniendo las extremidades alejadas del suelo,Pérdida de peso,Cojera,Producción de lana,Yes
+Ave,Hinchazón de la ubre,cambio en la leche,Hinchado,Tierno al tacto,Dolor,Yes
+Ave,Fiebre,Dificultad respiratoria,Secreción ocular,Lesión en la boca,Secreción nasal,Yes
+Ave,Fiebre,Lesión de herida,Exceso de saliva,Difícil para caminar,Dolor,Yes
+Ave,Adelgazamiento,Edema en la mandíbula inferior,Tos,Temblando,Anemia,Yes
+Búfalos,Fiebre,Reducir el crecimiento,Mortalidad infantil,Debilidad,Lo aburrido,Yes
+Búfalos,Fiebre,Reducir el crecimiento,Edema en la mandíbula inferior,Pérdida de peso,Anemia,Yes
+Búfalos,Adelgazamiento,Diarrea,Mortalidad infantil,Debilidad,Anemia,Yes
+Búfalos,Alergia en la piel,Reducir el crecimiento,Herida,Dolor de cabeza,Mareo,Yes
+Búfalos,Lagrimeo de ojos,Enrojecimiento de la parte blanca del ojo,Hinchazón del párpado,La córnea se vuelve turbia,Producción de lágrimas,Yes
+Búfalos,Berberi,Debilitante,Nervioso,Pérdida de peso,Anorexia,Yes
+Búfalos,Gastritis,morbosidad,Sangriento,Mortalidad,Anemia,Yes
+Búfalos,Fiebre,Dolor de cabeza severo,Vómitos,Tos,Fatiga,Yes
+Búfalos,Fiebre,Cansancio,Riñón hinchado,Hematuria,Dolores musculares,Yes
+Búfalos,Fiebre,Diarrea,Disminución del apetito,Vómitos,Sangriento,Yes
+Búfalos,Gas,Diarrea,Malestar abdominal,Vómitos,Náuseas,Yes
+Búfalos,Orejas caídas,Falta de coordinación,Babeando,Debilitante,Languidez,Yes
+Búfalos,Edema,diarrea,Secreción nasal,Disminución de la producción de huevos,Estornudos,Yes
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Estornudos,Secreción nasal unilateral,Arcadas,Náusea,Pérdida de peso,Yes
+Búfalos,Fiebre,Depresión,Tos,Pérdida de peso,Anorexia,Yes
+Búfalos,Respiración superficial,Halitosis,Tos,Letargo,Secreción nasal,Yes
+Búfalos,Disnea,Estornudos,Tos,Dificultad para respirar,Infección,Yes
+Búfalos,Disnea,Estornudos,Tos,Dificultad para respirar,Dolor,Yes
+Búfalos,Fiebre,Rinorrea,Tos,Estornudos,Deshidración,Yes
+Búfalos,Fiebre,Rinorrea,Tos,Edema facial,Disnea,Yes
+Búfalos,Fiebre,Rinorrea,Tos,Estornudos,Secreción nasal,Yes
+Búfalos,Mortalidad,Doloroso,Tos,Pérdida de peso,Secreción nasal,Yes
+Búfalos,Erupciones en la piel,Diarrea,Muerte,Edema facial,Dolor,Yes
+Búfalos,Fiebre,Disnea,Tos,Letargo,Pérdida de peso,Yes
+Búfalos,Fiebre,Disnea,Tos,debilidad,Anorexia,Yes
+Búfalos,Edema facial,Disnea,Conjuntivitis,Debilidad,Faringitis,Yes
+Búfalos,Fiebre,Neumonía,Congestión,Letargo,Secreción nasal,Yes
+Búfalos,Fiebre,Muerte,Tos,Pérdida de peso,Secreción nasal,Yes
+Búfalos,Estornudos,Convulsión,Convulsionadores,Pérdida de peso,Secreción nasal,Yes
+Búfalos,Fiebre,Muerte,Tos,Disnea,Anorexia,Yes
+Búfalos,Disnea,Dificultad para respirar,Tos,Letargo,Secreción nasal,Yes
+Búfalos,Saculitis aérea,Halitosis,Tos,Enteritis,Pérdida de peso,Yes
+Búfalos,Fiebre,Convulsión,Muerte súbita,Retención de orina,Pérdida de peso,Yes
+Búfalos,Disnea,Signo neurológico,Tos,Depresión,Anorexia,Yes
+Búfalos,Fiebre,Disnea,Tos,Letargo,Anorexia,Yes
+Búfalos,Respiración dificultosa,Disnea,Tos,Depresión,Anorexia,Yes
+Búfalos,Sangre de la boca,Diarrea,Tos,Letargo,Pérdida de peso,Yes
+Búfalos,Hemopitsis,Diarrea,Asintomático,Muerte,Epistaxis,Yes
+Búfalos,Inquietud,Debilidad,Pajitas azules,Muerte,Dolor,Yes
+Búfalos,Remiges despojados,Menos crecimiento de plumas,Plumas erizadas,Deficiencia de vitamina,Diarrea,Yes
+Búfalos,Apatía,Depresión,Dilatación del duodeno,Pasta cloacal,Congestión,Yes
+Búfalos,Lepatomegalia,Esplenomegalia,Vómitos,Hinchado,Sacudiendo la cabeza,Yes
+Búfalos,Problema de equilibrio,Distensión abdominal,Parálisis del cuello,Pérdida de peso,Esfuerzos,Yes
+Búfalos,Piernas largas,Paresia,Tos,Pérdida de peso,Dificultad para respirar,Yes
+Búfalos,Fiebre,Garganta agria,Mortalidad,Dolores musculares,Anormalidades,Yes
+Búfalos,Dificultad para alimentarse,Acicalarse,Debilidad,Crecimiento excesivo del pico,Anemia,Yes
+Búfalos,Fiebre,Pérdida de apetito,Infección de oído,Depresión,Secreción nasal,Yes
+Búfalos,Cuarenta ojos,Tortícolis,Debilidad,Hinchazón,Adelgazamiento,Yes
+Búfalos,Inapetencia,Diarrea,Temblores de la cabeza,Deshidración,Pérdida de peso,Yes
+Búfalos,Falta de caminar,Falta de vuelo,Rugoso,Deshidración,Esfuerzos,Yes
+Búfalos,Erupciones en la piel,Pequeñas protuberancias amarillas,Hinchazón,Costras secas,Cojera,Yes
+Búfalos,Costras en los pies, Enrojecimiento,Tráquea,Engrosamiento de la piel,Esfuerzos,Yes
+Búfalos,Timo agrandado,Pulmones obstruidos,Letargo,Erupciones en la piel,Pérdida de peso,Yes
+Búfalos,Pluma esponjosa,Pérdida de apetito,Tos,Vómitos,Ronquidos,Yes
+Búfalos,Fiebre,Dificultad para respirar,Ojo amarillo,Estornudos,Diftérico,Yes
+Búfalos,Respiración pesada,Amarillo en el pico,Cola_moviéndose,Debilidad,Dormir excesivamente,Yes
+Búfalos,Pluma inflada,Comer menos,Dolor de cabeza,Ojo medio cerrado,Convulsiones,Yes
+Búfalos,Fiebre,Diarrea,Abdomen hinchado,Vómitos,Dificultad para respirar,Yes
+Búfalos,Movimiento de cola,Tirante,Letargo,Debilidad,Diarrea,Yes
+Búfalos,Sobrepeso,Pérdida de apetito,Plumas erizadas,Depresión,Diarrea,Yes
+Búfalos,Abatimiento,Pérdida de apetito,Estrés,Tos,Esfuerzos,Yes
+Búfalos,Infección de la piel,Infección secundaria,Tos,Depresión,Sacudiendo la cabeza,Yes
+Búfalos,Secreción de los ojos,Letargo,Tos,Estornudos,Fatiga,Yes
+Búfalos,Fiebre,Escalofríos,Crecimiento retardado,Dolor en el pecho,Dolor en el pecho,Yes
+Búfalos,Peine pálido,Aburrido,Muerte,Hinchazón de la articulación,Ojo cerrado,Yes
+Búfalos,Letargo,Pérdida de apetito,Dificultad para tragar,Debilidad,Problema de visión,Yes
+Búfalos,Adelgazamiento,Dificultad para respirar,Vómitos,Debilidad,Diarrea,Yes
+Búfalos,Goteo de líquido,Agotamiento,Ataxia,Letargo,Convulsiones,Yes
+Búfalos,Sin digerir en sus heces,Pérdida de apetito,Pérdida de pigmento,Debilidad,Sangriento en la pluma,Yes
+Búfalos,Pluma afilada,Pluma en maza,Descarga de ojos,Pérdida de polvo hacia abajo,Diarrea,Yes
+Búfalos,Aspecto ondulado,Pérdida de apetito,Vómitos,Gotas verdes,Secreción nasal,Yes
+Búfalos,Senos paranasales,Párpados hinchados,Erupciones en la piel,Estornudos,Pico deforme,Yes
+Búfalos,Pérdida de plumas,Desplume,Tos,Picor,Secreción nasal,Yes
+Búfalos,Ojos llorosos,Ojo cerrado,Pérdida de peso,Estornudos,Problema nervioso,Yes
+Búfalos,Lesión ósea,Erupciones en la piel,Ataxia,Anorexia,Debilidad,Yes
+Búfalos,Temblor de cabeza y cuello,Ceguera,Patadas en el vientre,Ejercicio de tolerancia,Esfuerzos,Yes
+Búfalos,Vientre hinchado,Lo aburrido,Descargar,Micción,Acostado,Yes
+Búfalos,Fiebre,Lo aburrido,Depresión,Pérdida de peso,Anorexia,Yes
+Búfalos,Fiebre,Sucumbir,Propagación de la infección,Pérdida de peso,Anorexia,Yes
+Búfalos,Señales en carneros,Señales en oveja,Músculos subdesarrollados,Examen de semen,Reducir el marcado de la lámpara,Yes
+Búfalos,Espinas,Inusualmente delgado,Debilidad,Cráneos agrandados,Debilidad,Yes
+Búfalos, Descargar,Aborto repentino,Hemoglobinuria,Muerte del cordero,Pérdida de peso,Yes
+Búfalos,Fiebre,Anemia hemolítica,Sudores,congestión,Ictericia,Yes
+Búfalos,Fiebre,Cansancio,pérdida de apetito,Dolores musculares,Dolor en el pecho,Yes
+Búfalos,Exceso de salivación,Diarrea,Depresión,Secreción nasal,Debilidad,Yes
+Búfalos,Fiebre,Diarrea,Incoordinación,Aborto provocado, Envenenamiento de la sangre,Yes
+Búfalos,Fiebre,Debilitante,Deshidración,Debilidad,Debilidad,Yes
+Búfalos,Fiebre,Diarrea,Espasmos musculares,Cojera,Pérdida de peso,Yes
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Fiebre,Depresión,Acostado,Pulso débil,Cólico,Yes
+Búfalos,Hinchazón,Cojera,Hiperestesia,Articulación del corvejón,Pérdida de peso,Yes
+Búfalos,Inclinación de la cabeza,Dando vueltas,Los músculos duelen,Ceguera,Convulsiones,Yes
+Búfalos,Disminución del crecimiento del hueso,Depresión,Gruñidos,Cojera,Pérdida de peso,Yes
+Búfalos,Abdomen izquierdo hinchado,Acostado,Asombroso,Micción,Extensión del cuello,Yes
+Búfalos,Cese de la eructación,Dificultad para respirar,Depresión,Anorexia,Cólico,Yes
+Búfalos,Fiebre,Salivación excesiva,Conformación anormal,Músculo ulcerado,Oído ulcerado,Yes
+Búfalos,Ovejas estériles,Aborto provocado,Mala conformación,Vellones peludos,Pérdida de peso,Yes
+Cerdo, Temblor,Viabilidad,Tos,Anorexia,Pérdida de peso,Yes
+Cerdo,Fiebre,Taquipea,Hinchazón de cabeza y cuello.,Anorexia,Secreción nasal,Yes
+Cerdo,Ahorro,Lesión de la piel,Cojera,Hinchazón en el cuerpo,Pérdida de peso,Yes
+Cerdo,Hinchazón,Calor,Flanco,Dolor,Secreción nasal,Yes
+Cerdo,Fiebre,Pérdida de apetito,Cojera,Grupa,Pérdida de peso,Yes
+Cerdo,Fiebre,Hinchazón,pérdida de apetito,Anorexia,Pérdida de peso,Yes
+Cerdo,Fiebre,Diarrea,Gotas de sangre,Malestar abdominal,Letargo,Yes
+Cerdo,Fiebre,Depresión,Intestino delgado,Muerte,Mortalidad del rebaño,Yes
+Cerdo,hemorragia,Color paja,Dolor abdominal,Muerte,El cadáver se descompone,Yes
+Cerdo,Diarrea sangrienta,Depresión,Lo aburrido,Muerte,Debilidad,Yes
+Cerdo,Movimiento a regañadientes,Pérdida de apetito,Cojera,Muerte,Debilidad,Yes
+Cerdo,Fiebre,Depresión,pérdida de apetito,Pérdida de apetito,Esfuerzos,Yes
+Cerdo,Fiebre,Dificultad para respirar,Letargo,Muerte,Esfuerzos,Yes
+Cerdo,Pobre lana,Pérdida de apetito,Cojera,Tamaño pequeño,Mala condición corporal,Yes
+Cerdo,Función inmunológica deficiente,Achomotrica,Deshidración,Muerte,Esfuerzos,Yes
+Cerdo,Dolor abdominal,Diarrea,Mala presentación,Choque,Anorexia,Yes
+Cerdo,Desproporción fetopélvica,Inercia uterina,Depresión,Muerte,Esfuerzos,Yes
+Cerdo,Desproporción de diarrea acuosa,Enfermo,Ulceración corneal,Pérdida de apetito,Muerte,Yes
+Cerdo,Queritis severa,Conjuntivo,Descargar,Prolapso del iris,Pérdida del ojo,Yes
+Cerdo,Hinchado,Dolor testicular,picazón,Secreción sanguinolenta,Ternura,Yes
+Cerdo,Fiebre,Diarrea,Depresión,Rasguños,Pérdida de peso,Yes
+Cerdo,Mal olor,Lo aburrido,Sucio,Lana teñida,Sacudiendo la cola,Yes
+Cerdo,La oveja a menudo muerde,El vellón se vuelve fino,Pérdida de lana,Muerte,Esfuerzos,Yes
+Cerdo,Fiebre,Lo aburrido,Lo aburrido,Erupciones en la piel,Esfuerzos,Yes
+Cerdo,Fiebre,Dificultad para respirar,Frotar,Tos,Estornudos,Yes
+Cerdo,Inquietud,Patada,Letargo,Masticando su lana,Rascarse,Yes
+Cerdo,Ictericia,Pérdida de apetito,Pelaje de pelo áspero,Tos,Muerte,Yes
+Cerdo,Fiebre,Reducir el potencial reproductivo,Agalaxia,Pérdida de producción de leche,Desprendimiento de la cola,Yes
+Cerdo,Pirexia,Lesión oral,Hinchazón,Cojera,Muerte,Yes
+Cerdo,Piel roja,Pérdida de apetito,Húmedo,Cojera,Esfuerzos,Yes
+Cerdo,Cojeando,Cambio de color de la piel,Flácido,Crudo,Sensible al tacto,Yes
+Cerdo,Ampliado groseramente,La piel puede engrosarse,Convulsión,Edema,Esfuerzos,Yes
+Cerdo,Hiperexcitabilidad,Espasmos musculares,Cena,Muerte,Esfuerzos,Yes
+Cerdo,Párpado disminuido,Piel muy fría,Letargo,Labio,Fiebre,Yes
+Cerdo,Fiebre,Diarrea,Músculo,Pérdida de peso,Muerte,Yes
+Cerdo,Mal olor,Diarrea,Cólico,Secreción sanguinolenta,Coágulos de sangre,Yes
+Cerdo,Incapacidad para digerir,Diarrea,Deshidración,Pérdida de peso,Anemia,Yes
+Cerdo,Fiebre,Diarrea,Barriga cervecera,Muerte,Pérdida de apetito,Yes
+Cerdo,Adelgazamiento,Diarrea,Tos,Pérdida de peso,Muerte,Yes
+Cerdo,Dificultad respiratoria,Diarrea,Muerte, Reducir la leche,Pérdida de peso,Yes
+Cerdo,Ahorro,Mandíbula de botella,Comportamiento extraño,Anemia,Ictericia,Yes
+Cerdo,Fiebre,Cojera,Debilitante,Ceguera,Asombroso,Yes
+Cerdo,Fiebre,Diarrea,Claramente poco ahorrativo,Pérdida de peso,Buen apetito,Yes
+Cerdo,Fiebre,Lo aburrido,Renuencia a caminar,Ombligos infectados,Esfuerzos,Yes
+Cerdo,Ternura,Pie caliente,Parálisis facial,Pérdida de peso,Esfuerzos,Yes
+Cerdo,Fiebre,Falta de coordinación,Doloroso al tacto,Dando vueltas,Depresión,Yes
+Cerdo,Hinchado,Cálido,Constipación,Depresión,Sangriento,Yes
+Cerdo,Fiebre,Pérdida de apetito,Tropezando,Inquietud,Esfuerzos,Yes
+Cerdo,Marcha inestable,Espasmos,Ceguera,Hinchazón en las articulaciones,Esfuerzos,Yes
+Cerdo,Fiebre,Úlcera,Costras,Secreción del ojo,Esfuerzos,Yes
+Cerdo,Olor a amoniaco,Úlcera,Depresión,Hinchazón,Esfuerzos,Yes
+Cerdo,Fiebre,Letargo,Ceguera,Inapetencia,Aumento de la respiración,Yes
+Cerdo,Errante,Dando vueltas,Ceguera,Presionando la cabeza,Posición de yacer,Yes
+Cerdo,Temblores,Acostado de lado,Dificultad para tragar,Muerte,No comer,Yes
+Cerdo,Fiebre,Dificultad para respirar,Tos,Estornudos,Convulsiones,Yes
+Cerdo,Hinchazón,Pérdida de apetito,Pérdida de lana,Lágrimas,Muerte,Yes
+Cerdo,La lana está apelmazada,Se siente rígido,Asombroso,Erupciones en la piel,Esfuerzos,Yes
+Cerdo,Balanceo,Cambio de comportamiento,Temblor,Movimientos espasmódicos de las extremidades,Esfuerzos,Yes
+Cerdo,Daño celular,Cambio de comportamiento,Pérdida de peso,Prurito,Muerte,Yes
+Cerdo,Hinchazón,Malestar,Dificultad para levantarse,Muerte,Esfuerzos,Yes
+Cerdo,Hinchado,Articulaciones calientes,Pústulas,Dificultad para caminar,Esfuerzos,Yes
+Cerdo,Formación de veYesculas,Fosas nasales,Pierna anormalmente larga,Costras en el labio,Esfuerzos,Yes
+Cerdo,Anomalías esqueléticas,Defectos faciales,Pérdida de cabello,Costillas planas,Músculos subdesarrollados,Yes
+Tigre,Ya sea inquieto,Pateando,Apetito normal,Intentar orinar,Esfuerzos,Yes
+Tigre, Incapacidad para mantenerse en pie,Dolores al caminar,Depresión,Debilidad,Rigidez,Yes
+Tigre,Fiebre,Sucumbir,Lento,Anorexia,Esfuerzos,Yes
+Tigre,Apático,Mandíbula de botella,Mala presentación,Muerte,Deficiencia de oxígeno,Yes
+Tigre,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Tigre,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Tigre,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Tigre,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Tigre,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Tigre,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Tigre,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Tigre,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Tigre,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Tigre,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Tigre,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Tigre,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Burro,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Burro,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Burro,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Burro,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Burro,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Burro,Desproporción fetopélvica,Inercia uterina,Mala presentación,Muerte,Esfuerzos,Yes
+Burro,Desproporción fetopélvica,Inercia uterina,Respiración rápida,Muerte,Esfuerzos,Yes
+Burro,Tos,jadeo,"hinchazón facial,",Producción de moco,Fatiga,Yes
+Burro,tos,estornudo,alas caídas,cuello torcido,alas caídas,Yes
+Burro,Dificultad para respirar.,Fatiga,chirriando,pérdida de apetito,abdomen hinchado,Yes
+Burro,jadeando,tos,debilidad leve,alas caídas,cuello torcido,Yes
+Burro,Pérdida excesiva de sangre,mareos y desmayos,Visión borrosa,ojos llorosos,crecimiento lento,Yes
+Burro,Hemorragia nasal,Trauma,debilidad leve,Hurgarse la nariz,Aire seco,Yes
+Burro,Sangrado de otras partes del cuerpo.,confusión,Secreción nasal,pérdida de alerta, mareos y desmayos,Yes
+Burro,Mal aliento,Manosearse la cara o la nariz,tos,Estornudos,Sangrado por la nariz,Yes
+Burro,extendiendo su cuello,jadeando por aire,jadeando por respirar,dificultad para tragar,jadeando por respirar,Yes
+Burro,dificultad para tragar,tos,dificultad para tragar,jadeando por aire,extendiendo su cuello,Yes
+Burro,tos,jadeando por aire,Pérdida de peso,jadeando por respirar,extendiendo su cuello,Yes
+Burro,debilidad,disminución de la producción de heces,estómago distendido,respiración pesada,movimiento inquieto,Yes
+Burro,Enrojecimiento de los ojos,Infecciones oculares frecuentes,Pestañas con costras y enmarañamiento de las pestañas,heces con mal olor,Aumento de la flatulencia,Yes
+Burro,Lagrimeo excesivo de ojos,Enrojecimiento de los ojos,debilidad,Secreción de moco del ojo,Infecciones oculares frecuentes,Yes
+Burro,Muerte súbita,pérdida de apetito,latidos cardíacos rápidos,plumas esponjosas,falta de vocalizaciones,Yes
+Burro,incapaz de orinar,Mareos,flacidez,sangrado rectal,abdomen hinchado,Yes
+Burro,Sed extrema,secreción sanguinolenta,Pérdida de apetito,incapacidad para volar,pérdida de cautela,Yes
+Burro,La producción de huevos se detiene,Comportamiento clueco,pérdida de apetito,Pérdida de peso,Constipación,Yes
+Burro,náuseas,vómitos,pérdida de apetito,experimentando cambios en el peso,Dolor e hinchazón,Yes
+Burro,Dolor o ardor,vómitos,pérdida de apetito,experimentando cambios en el peso,Dolor e hinchazón,Yes
+Burro,Pérdida continua de peso,Regurgitación de alimentos,sibilancia,Ingesta excesiva de alimentos,Semillas no digeridas,Yes
+Burro,pérdida de apetito,latargia,aborto provocado,sonido de gorgoteo,Depresión,Yes
+Burro,fiebre,cólico leve,pérdida del tono de la cola,pérdida de apetito,depresión,Yes
+Burro,Inclinación de la cabeza,latargia,latargia,goteo de orina,incapacidad para levantarse,Yes
+Burro,fiebre,pérdida de apetito,ruido respiratorio,Pérdida de peso,depresión,Yes
+Burro,fiebre,secreción nasal,rigidez muscular,ganglios linfáticos inflamados,depresión,Yes
+Burro,transpiración,espasmos musculares,sed,Pérdida de peso,Dificultad para moverse y comer,Yes
+Burro,pérdida de apetito,temperatura corporal alta,falta de apetito,diarrea,muerte súbita,Yes
+Burro,transpiración,encías secas o pegajosas,apetito reducido,acostado,embotamiento,Yes
+Burro,cuello estirado,embotamiento,inapetencia,respiración ruidosa,tosiendo,Yes
+Ciervo,Pérdida de peso,embotamiento,inapetencia,autoaislamiento,posición de yacer,Yes
+Ciervo,Pérdida de peso,embotamiento,problema muscular,autoaislamiento,posición de yacer,Yes
+Ciervo,cambio de marcha,embotamiento,problema muscular,Dolor,Esfuerzos,Yes
+Ciervo,cambio de marcha,embotamiento,difuso,diagnóstico de dificultad,Anemia,Yes
+Ciervo,Dificultad para respirar,problema de hinchazón,sangrado de heridas,bostezos frecuentes,anorexia,Yes
+Ciervo,desnutrición,beber agua contaminada,languidez,Asombroso,anorexia,Yes
+Ciervo,debilitante,tropezando,languidez,babeando,orejas caídas,Yes
+Ciervo,debilitante,tropezando,languidez,babeando,problema de micción,Yes
+Ciervo,debilitante,tropezando,languidez,babeando,problema de micción,Yes
+Ciervo,debilitante,tropezando,languidez,babeando,problema de micción,Yes
+Ciervo,debilitante,tropezando,languidez,babeando,problema de micción,Yes
+Ciervo,debilitante,tropezando,languidez,babeando,problema de micción,Yes
+Ciervo,debilitante,tropezando,languidez,babeando,problema de micción,Yes
+Ciervo,debilitante,tropezando,languidez,babeando,orejas caídas,Yes
+Ciervo,debilitante,tropezando,languidez,babeando,orejas caídas,Yes
+Ciervo,debilitante,tropezando,Fiebre,babeando,orejas caídas,Yes
+Ciervo,infecciones felinas,linfosarcoma,dificultad para respirar,estomatitis,anemia,Yes
+Ciervo,muerte súbita,temperatura alta,dificultad para respirar,Pérdida de peso,temblor,Yes
+Ciervo,muerte súbita,temperatura alta,dificultad para respirar,Anemia,temblor,Yes
+Ciervo,muerte súbita,temperatura alta,dificultad para respirar,Asombroso,temblor,Yes
+Ciervo,muerte súbita,temperatura alta,pulso y frecuencia cardíaca acelerados,Depresión,temblor,Yes
+Ciervo,fiebre,pérdida de apetito,pulso y frecuencia cardíaca acelerados,cojera en la pierna afectada,depresión,Yes
+Ciervo,fiebre,pérdida de apetito,pulso y frecuencia cardíaca acelerados,cojera en la pierna afectada,depresión,Yes
+Ciervo,fiebre,pérdida de apetito,pulso y frecuencia cardíaca acelerados,cojera en la pierna afectada,depresión,Yes
+Ciervo,fiebre,pérdida de apetito,pezones hinchados,cojera en la pierna afectada,depresión,Yes
+Ciervo,hinchazón,secreción nasal,babeando,cansancio,fiebre,Yes
+Ciervo,secreciones oculares,secreción nasal,cambiar su comportamiento normal,temperatura corporal alta,cojera,Yes
+Ciervo,dejar de comer,deja de beber,cambiar su comportamiento normal,Cojera,Esfuerzos,Yes
+Ciervo,dejar de comer,deja de beber,cambiar su comportamiento normal,Pérdida de peso,Esfuerzos,Yes
+Ciervo,dejar de comer,deja de beber,cambiar su comportamiento normal,Depresión,Esfuerzos,Yes
+Búfalos,Fiebre,Dificultad para respirar,Sed y micción,Letargo,Estornudos,Yes
+Búfalos,Fiebre,Diarrea,Secreción nasal,Letargo,Ojo azul,Yes
+Búfalos,Fiebre,Dificultad respiratoria,Debilidad en las patas traseras,Hiperestesia,Muerte súbita,Yes
+Búfalos,Úlceras,Diarrea,Dolor de espalda,Taburete alquitranado,Ganglios linfáticos agrandados,Yes
+Búfalos,Hinchazón facial,Baba sangrienta,Dolor abdominal,Incapaz de comer,Dientes perdidos,Yes
+Búfalos,Fiebre,Dificultad para respirar,Reducir la energía,Pérdida de peso,Ganglios linfáticos agrandados o hinchazón,Yes
+Búfalos,Hinchazón en la pierna,Doloroso,Falta de apetito,Huesos rotos,Secreción nasal,Yes
+Búfalos,Letargo de corta duración,Pérdida de apetito,Falta de apetito,Frecuencia cardíaca rápida,Pulso semanal,Yes
+Búfalos,Ganglios linfáticos inflamados,Dificultad para caminar,Heces acuosas,Letargo,Secreción vaginal,Yes
+Búfalos,Fiebre,Diarrea,Estornudos,Rigidez,Debilidad severa y depresión,Yes
+Búfalos,Fiebre,Pérdida de apetito,Tos,Cojera,Hinchazón de las articulaciones,Yes
+Búfalos,Fiebre,Inflamación crónica del ojo,Tos,Letargo,Anormalidades neurológicas,Yes
+Búfalos,Fiebre,Hinchazón de la cara o la pierna,Tos,Depresión,Esfuerzos,Yes
+Búfalos,Diarrea con mucosidad,Tensemo,Sangrado nasal,Flatulencia,Esfuerzos,Yes
+Búfalos,Tos fuerte,Rinorrea,Piel oscurecida,Letargo,Pérdida de apetito,Yes
+Búfalos,Fiebre,Ojo inflamado,Estornudos,Depresión,Cojeando,Yes
+Búfalos,Fiebre,Dificultad para respirar,Falta de apetito,Cambios en los ojos y la piel,Incapaz de hacer ejercicio,Yes
+Búfalos,Fiebre,Pérdida de apetito,Lesión en la piel,Letargo,Dolor en las articulaciones,Yes
+Búfalos,Lesiones en la cavidad nasal,Lesiones en la nariz,Vómitos,Respiración ruidosa,Lesiones en la nariz,Yes
+Búfalos,Pérdida de cabello,Caspa,Vómitos,Formación de costras en la piel,Piel ulcerada,Yes
+Búfalos,Secreción nasal de color amarillo verdoso,Falta de pigmentación,Vómitos,Letargo,Dolor en la cara,Yes
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Pollo,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Pollo,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Pollo,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Pollo,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Pollo,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Pollo,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Pollo,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Pollo,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Mono,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Mono,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Oveja,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Búfalos,Alas caídas,Depresión,Secreción nasal,Tos,Diarrea verdosa,No
+Búfalos,Debilidad,Goteo amarillo o verde,Peines purpurados,Carúnculas,Caída en la producción de huevos,No
+Búfalos,Parálisis del cuello,Diarrea,plumas erizadas,Respiración dificultosa,Debilidad,No
+Búfalos,Hinchazón facial,Lagrimeo,Diarrea,Anorexia,Secreción nasal,No
+Búfalos,pérdida de apetito,Depresión,Pierna paralizada,Pérdida de peso,Anemia,No
+Búfalos,Abatimiento,Pérdida de apetito,Crecimiento lento,Diarrea,Lesión,No
+Búfalos,Hinchazón severa,Respiración pesada,Diarrea,Pérdida de peso,Dolor,No
+Búfalos,Debilidad,Diarrea,Alta mortalidad,Deshidración,Anorexia,No
+Búfalos,Fiebre,Hepatitis,Erupciones en la piel,Pérdida de peso,Dolor,No
+Búfalos,Estornudos,Epistaxis,Tos,Dificultad para respirar,Secreción nasal,No
+Búfalos,Rechinar los dientes,Apatía,Deshidración,Estasis ruminal,Heces acuosas,No
+Gato,Vómito ocasional de bolas de pelo,Rinorrea,Estornudos,Pérdida de peso leve,Aumento del rascado,No
+Perro,Piel seca,Aumento de la sed,,,,No
+Gato,Vómito con sangre,Córnea opaca,Letargo,,,Yes
+Perro,Sangre en el vómito,,,,,Yes
+Perro,Ojos secos,Rigidez articular,Piel seca,Diarrea leve,,No
+Perro,Náuseas,,,,,Yes
+Perro,Mal aliento,Rigidez articular,,,,No
+Perro,Aumento de la sed,Ojos secos,,,,No
+Gato,Encías pálidas,Tos,Ojos hinchados,Vómito con sangre,,Yes
+Gato,Encías pálidas,Jadeo,Espuma en la boca,Temblores,Respiración rápida,Yes
+Gato,Tos,,,,,Yes
+Perro,Pérdida de peso,Parálisis,Fiebre,Temblores,Vómitos,Yes
+Gato,Jadeo,Temblores,Letargo,Vómito con sangre,,Yes
+Gato,Pérdida de peso leve,Conjuntivitis leve,Estornudos,Vómito ocasional de bolas de pelo,,No
+Perro,Sed excesiva,Fiebre,,,,Yes
+Perro,Ojos secos,Diarrea leve,Rigidez articular,Aumento de la sed,Piel seca,No
+Gato,Tos,Temblores,Espuma en la boca,Jadeo,Respiración ruidosa,Yes
+Perro,Glucemia alta,Pérdida de apetito,Ansiedad,Jadeo,Convulsiones,Yes
+Perro,Ojos secos,Diarrea leve,Mal aliento,Rigidez articular,,No
+Gato,Ojos hinchados,Encías pálidas,Temblores,Respiración rápida,,Yes
+Perro,Sed excesiva,Glucemia alta,Convulsiones,Sangre en el vómito,Parálisis,Yes
+Perro,Pérdida de apetito,,,,,Yes
+Gato,Heces secas,Estornudos,Aumento del rascado,Rinorrea,Pérdida de peso leve,No
+Gato,Vómito ocasional de bolas de pelo,Estornudos,,,,No
+Perro,Pérdida de peso,Parálisis,Temblores,Náuseas,Pérdida de apetito,Yes
+Perro,Diarrea leve,Piel seca,Rigidez articular,Aumento de la sed,,No
+Gato,Pérdida de peso leve,Rinorrea,Heces secas,,,No
+Perro,Náuseas,Desorientación,,,,Yes
+Gato,Pérdida de peso leve,,,,,No
+Perro,Pérdida de apetito,Vómitos,Jadeo,,,Yes
+Perro,Piel seca,Aumento de la sed,,,,No
+Perro,Sed excesiva,,,,,Yes
+Gato,Conjuntivitis leve,Estornudos,,,,No
+Gato,Aumento del rascado,,,,,No
+Gato,Heces secas,Pérdida de peso leve,Conjuntivitis leve,Estornudos,,No
+Gato,Encías pálidas,Ojos hinchados,Córnea opaca,Vómito con sangre,Respiración rápida,Yes
+Gato,Espuma en la boca,,,,,Yes
+Perro,Temblores,,,,,Yes
+Perro,Pérdida de peso,Fiebre,Glucemia alta,Babeando,Sangre en el vómito,Yes
+Gato,Temblores,,,,,Yes
+Gato,Tos,Temblores,,,,Yes
+Perro,Mal aliento,Rigidez articular,Ojos secos,Diarrea leve,,No
+Perro,Aumento de la sed,Mal aliento,Piel seca,Ojos secos,Rigidez articular,No
+Gato,Rinorrea,Aumento del rascado,Pérdida de peso leve,Estornudos,Conjuntivitis leve,No
+Gato,Convulsiones,Respiración rápida,,,,Yes
+Perro,Mal aliento,Aumento de la sed,Diarrea leve,,,No
+Perro,Ojos secos,Mal aliento,Aumento de la sed,,,No
+Gato,Temblores,,,,,Yes
+Gato,Heces secas,Pérdida de peso leve,Conjuntivitis leve,Vómito ocasional de bolas de pelo,,No
+Perro,Babeando,Jadeo,Ojos vidriosos,Temblores,,Yes
+Perro,Ojos secos,Mal aliento,Piel seca,Diarrea leve,Rigidez articular,No
+Perro,Ojos vidriosos,Vómitos,Pérdida de peso,Jadeo,,Yes
+Perro,Vómitos,Ansiedad,,,,Yes
+Perro,Diarrea leve,Piel seca,Aumento de la sed,Ojos secos,,No
+Perro,Parálisis,Náuseas,Pérdida de apetito,,,Yes
+Perro,Pérdida de apetito,Desorientación,Sangre en el vómito,Temblores,Vómitos,Yes
+Gato,Estornudos,Pérdida de peso leve,,,,No
+Gato,Letargo,Respiración rápida,Tos,,,Yes
+Gato,Rinorrea,Aumento del rascado,Heces secas,Conjuntivitis leve,Estornudos,No
+Gato,Encías pálidas,Respiración rápida,Espuma en la boca,,,Yes
+Perro,Depresión,Náuseas,,,,Yes
+Perro,Jadeo,,,,,Yes
+Perro,Fiebre,Ojos vidriosos,Vómitos,Parálisis,Sangre en el vómito,Yes
+Gato,Vómito con sangre,Tos,Ojos hinchados,,,Yes
+Gato,Pérdida de peso leve,Estornudos,,,,No
+Gato,Estornudos,,,,,No
+Gato,Heces secas,Rinorrea,,,,No
+Gato,Espuma en la boca,Letargo,,,,Yes
+Perro,Mal aliento,Diarrea leve,Aumento de la sed,Piel seca,Ojos secos,No
+Perro,Pérdida de apetito,Fiebre,Parálisis,Babeando,Ansiedad,Yes
+Perro,Ojos secos,Aumento de la sed,,,,No
+Perro,Mal aliento,,,,,No
+Gato,Vómito ocasional de bolas de pelo,,,,,No
+Gato,Ojos hinchados,Córnea opaca,Respiración ruidosa,Tos,,Yes
+Perro,Aumento de la sed,Rigidez articular,Piel seca,Ojos secos,,No
+Perro,Vómitos,,,,,Yes
+Gato,Aumento del rascado,Estornudos,Heces secas,Rinorrea,Conjuntivitis leve,No
+Perro,Pérdida de apetito,Sangre en el vómito,,,,Yes
+Perro,Mal aliento,Piel seca,Diarrea leve,,,No
+Perro,Ojos vidriosos,Sed excesiva,,,,Yes
+Gato,Temblores,Respiración ruidosa,Heces con sangre,,,Yes
+Gato,Respiración rápida,Temblores,Convulsiones,Vómito con sangre,Córnea opaca,Yes
+Perro,Aumento de la sed,,,,,No
+Gato,Aumento del rascado,,,,,No
+Perro,Pérdida de apetito,Temblores,Convulsiones,,,Yes
+Gato,Estornudos,Pérdida de peso leve,Rinorrea,,,No
+Gato,Jadeo,Convulsiones,Córnea opaca,Temblores,,Yes
+Gato,Aumento del rascado,,,,,No
+Gato,Conjuntivitis leve,Estornudos,Vómito ocasional de bolas de pelo,Aumento del rascado,,No
+Perro,Glucemia alta,Desorientación,Convulsiones,,,Yes
+Gato,Heces con sangre,Vómito con sangre,Temblores,,,Yes
+Perro,Rigidez articular,Piel seca,Aumento de la sed,Ojos secos,,No
+Gato,Aumento del rascado,,,,,No
+Gato,Estornudos,Vómito ocasional de bolas de pelo,Heces secas,Conjuntivitis leve,Rinorrea,No
+Gato,Encías pálidas,Convulsiones,Respiración rápida,Córnea opaca,Espuma en la boca,Yes
+Perro,Jadeo,Temblores,Pérdida de peso,,,Yes
+Perro,Rigidez articular,Piel seca,,,,No
+Perro,Rigidez articular,,,,,No
+Perro,Babeando,Pérdida de apetito,Depresión,,,Yes
+Gato,Conjuntivitis leve,Pérdida de peso leve,,,,No
+Perro,Piel seca,Ojos secos,Mal aliento,,,No
+Perro,Diarrea leve,Ojos secos,,,,No
+Gato,Temblores,Respiración ruidosa,Vómito con sangre,Convulsiones,Encías pálidas,Yes
+Gato,Pérdida de peso leve,,,,,No
+Perro,Mal aliento,Diarrea leve,,,,No
+Perro,Piel seca,Ojos secos,Rigidez articular,Mal aliento,Aumento de la sed,No
+Gato,Respiración rápida,Heces con sangre,Convulsiones,,,Yes
+Gato,Heces secas,Rinorrea,,,,No
+Perro,Vómitos,Glucemia alta,Temblores,Fatiga,,Yes
+Perro,Piel seca,,,,,No
+Gato,Convulsiones,Temblores,Babeo excesivo,,,Yes
+Gato,Vómito ocasional de bolas de pelo,,,,,No
+Gato,Jadeo,Respiración ruidosa,Heces con sangre,Convulsiones,Babeo excesivo,Yes
+Gato,Letargo,Heces con sangre,Vómito con sangre,,,Yes
+Gato,Heces con sangre,Babeo excesivo,Encías pálidas,,,Yes
+Gato,Letargo,Espuma en la boca,,,,Yes
+Perro,Ojos secos,Mal aliento,,,,No
+Gato,Heces secas,Pérdida de peso leve,,,,No
+Gato,Heces secas,Vómito ocasional de bolas de pelo,Conjuntivitis leve,Rinorrea,Aumento del rascado,No
+Perro,Mal aliento,Rigidez articular,Diarrea leve,Piel seca,,No
+Perro,Ojos vidriosos,Vómitos,Fiebre,,,Yes
+Perro,Parálisis,Desorientación,,,,Yes
+Gato,Rinorrea,Pérdida de peso leve,Vómito ocasional de bolas de pelo,,,No
+Perro,Aumento de la sed,Mal aliento,Diarrea leve,Ojos secos,Piel seca,No
+Gato,Heces con sangre,,,,,Yes
+Perro,Fatiga,,,,,Yes
+Perro,Ojos secos,Rigidez articular,Diarrea leve,Piel seca,Aumento de la sed,No
+Gato,Ojos hinchados,Babeo excesivo,Espuma en la boca,,,Yes
+Gato,Temblores,Vómito con sangre,Respiración rápida,,,Yes
+Perro,Jadeo,Glucemia alta,,,,Yes
+Perro,Ojos secos,,,,,No
+Gato,Heces secas,,,,,No
+Gato,Conjuntivitis leve,Heces secas,Rinorrea,,,No
+Gato,Estornudos,Pérdida de peso leve,Aumento del rascado,,,No
+Gato,Estornudos,Conjuntivitis leve,Aumento del rascado,Heces secas,Vómito ocasional de bolas de pelo,No
+Gato,Pérdida de peso leve,Rinorrea,Estornudos,,,No
+Perro,Piel seca,Aumento de la sed,Diarrea leve,Rigidez articular,Mal aliento,No
+Perro,Náuseas,,,,,Yes
+Gato,Espuma en la boca,Encías pálidas,Respiración rápida,,,Yes
+Perro,Sangre en el vómito,Ansiedad,Pérdida de apetito,Pérdida de peso,,Yes
+Perro,Fatiga,Depresión,Jadeo,,,Yes
+Perro,Mal aliento,Aumento de la sed,Diarrea leve,,,No
+Perro,Parálisis,Babeando,,,,Yes
+Perro,Sangre en el vómito,Parálisis,,,,Yes
+Perro,Ojos secos,Aumento de la sed,Piel seca,Diarrea leve,Mal aliento,No
+Gato,Rinorrea,,,,,No
+Gato,Rinorrea,Heces secas,Vómito ocasional de bolas de pelo,,,No
+Perro,Temblores,,,,,Yes
+Perro,Temblores,Parálisis,Jadeo,Sed excesiva,Fiebre,Yes
+Perro,Ojos secos,Rigidez articular,,,,No
+Perro,Convulsiones,Desorientación,Pérdida de peso,Vómitos,,Yes
+Gato,Vómito ocasional de bolas de pelo,Estornudos,Aumento del rascado,Heces secas,,No
+Perro,Piel seca,Rigidez articular,Mal aliento,,,No
+Perro,Jadeo,Fatiga,Sangre en el vómito,,,Yes
+Perro,Mal aliento,Diarrea leve,Ojos secos,,,No
+Perro,Sed excesiva,Ansiedad,Pérdida de apetito,Vómitos,Ojos vidriosos,Yes
+Perro,Diarrea leve,Aumento de la sed,Ojos secos,,,No
+Perro,Pérdida de peso,,,,,Yes
+Gato,Encías pálidas,,,,,Yes
+Perro,Ojos secos,Diarrea leve,Rigidez articular,Aumento de la sed,Piel seca,No
+Perro,Parálisis,Fatiga,Ansiedad,,,Yes
+Gato,Temblores,Heces con sangre,Espuma en la boca,Letargo,,Yes
+Perro,Mal aliento,,,,,No
+Gato,Vómito con sangre,,,,,Yes
+Perro,Aumento de la sed,Rigidez articular,Piel seca,Mal aliento,Diarrea leve,No
+Gato,Tos,Respiración ruidosa,,,,Yes
+Perro,Ojos secos,Rigidez articular,,,,No
+Gato,Rinorrea,Estornudos,,,,No
+Gato,Vómito ocasional de bolas de pelo,Conjuntivitis leve,Pérdida de peso leve,Heces secas,,No
+Gato,Ojos hinchados,Encías pálidas,Babeo excesivo,Respiración ruidosa,Espuma en la boca,Yes
+Perro,Náuseas,Ojos vidriosos,,,,Yes
+Gato,Vómito ocasional de bolas de pelo,Rinorrea,,,,No
+Gato,Encías pálidas,Babeo excesivo,Temblores,Letargo,,Yes
+Perro,Aumento de la sed,,,,,No
+Gato,Rinorrea,,,,,No
+Gato,Vómito con sangre,Ojos hinchados,Heces con sangre,,,Yes
+Gato,Espuma en la boca,Ojos hinchados,,,,Yes
+Perro,Ojos secos,,,,,No
+Perro,Jadeo,Vómitos,Convulsiones,Desorientación,,Yes
+Perro,Fatiga,Jadeo,,,,Yes
+Gato,Aumento del rascado,,,,,No
+Perro,Aumento de la sed,,,,,No
+Perro,Diarrea leve,Piel seca,Ojos secos,Mal aliento,,No
+Perro,Mal aliento,Aumento de la sed,,,,No
+Gato,Vómito ocasional de bolas de pelo,Conjuntivitis leve,Pérdida de peso leve,Aumento del rascado,Estornudos,No
+Perro,Aumento de la sed,Piel seca,Ojos secos,Diarrea leve,Rigidez articular,No
+Perro,Sangre en el vómito,,,,,Yes
+Gato,Aumento del rascado,Conjuntivitis leve,,,,No
+Perro,Ojos vidriosos,,,,,Yes
+Gato,Vómito con sangre,Respiración rápida,Convulsiones,Tos,,Yes
+Gato,Convulsiones,Tos,Respiración ruidosa,Jadeo,Ojos hinchados,Yes
+Gato,Rinorrea,Conjuntivitis leve,Aumento del rascado,,,No
+Gato,Heces secas,,,,,No
+Gato,Ojos hinchados,,,,,Yes
+Gato,Pérdida de peso leve,,,,,No
+Perro,Rigidez articular,Mal aliento,Diarrea leve,Aumento de la sed,,No
+Gato,Rinorrea,Pérdida de peso leve,Vómito ocasional de bolas de pelo,Heces secas,Conjuntivitis leve,No
+Gato,Temblores,Vómito con sangre,,,,Yes
+Gato,Tos,Heces con sangre,Ojos hinchados,,,Yes
+Gato,Jadeo,Córnea opaca,,,,Yes
+Gato,Vómito ocasional de bolas de pelo,Rinorrea,,,,No
+Perro,Sangre en el vómito,Parálisis,Fatiga,Babeando,,Yes
+Perro,Pérdida de peso,Pérdida de apetito,Desorientación,Sangre en el vómito,Náuseas,Yes
+Gato,Aumento del rascado,Pérdida de peso leve,Vómito ocasional de bolas de pelo,Heces secas,,No
+Perro,Sangre en el vómito,,,,,Yes
+Gato,Pérdida de peso leve,,,,,No
+Perro,Aumento de la sed,Rigidez articular,Piel seca,Ojos secos,Diarrea leve,No
+Gato,Heces con sangre,Convulsiones,,,,Yes
+Perro,Sangre en el vómito,Fiebre,Babeando,Desorientación,Convulsiones,Yes
+Gato,Pérdida de peso leve,Rinorrea,Heces secas,,,No
+Gato,Conjuntivitis leve,,,,,No
+Gato,Conjuntivitis leve,Aumento del rascado,Pérdida de peso leve,Estornudos,Vómito ocasional de bolas de pelo,No
+Perro,Mal aliento,Piel seca,Diarrea leve,Aumento de la sed,Rigidez articular,No
+Perro,Jadeo,Glucemia alta,Pérdida de peso,Sed excesiva,,Yes
+Gato,Tos,Letargo,,,,Yes
+Gato,Conjuntivitis leve,Rinorrea,Heces secas,,,No
+Gato,Heces secas,Aumento del rascado,Rinorrea,Vómito ocasional de bolas de pelo,,No
+Perro,Ansiedad,Náuseas,,,,Yes
+Perro,Depresión,Ojos vidriosos,Jadeo,,,Yes
+Perro,Glucemia alta,Temblores,Náuseas,,,Yes
+Gato,Aumento del rascado,Rinorrea,,,,No
+Perro,Temblores,Jadeo,,,,Yes
+Perro,Convulsiones,Glucemia alta,Jadeo,Ojos vidriosos,Pérdida de apetito,Yes
+Gato,Aumento del rascado,Vómito ocasional de bolas de pelo,Rinorrea,,,No
+Perro,Náuseas,Pérdida de apetito,Fiebre,Desorientación,,Yes
+Perro,Diarrea leve,Mal aliento,,,,No
+Perro,Mal aliento,Rigidez articular,,,,No
+Perro,Mal aliento,Aumento de la sed,,,,No
+Perro,Vómitos,Depresión,Fatiga,Temblores,Babeando,Yes
+Perro,Aumento de la sed,,,,,No
+Perro,Jadeo,Sed excesiva,Pérdida de apetito,Glucemia alta,,Yes
+Gato,Tos,Respiración rápida,Heces con sangre,,,Yes
+Perro,Vómitos,Convulsiones,Depresión,,,Yes
+Gato,Estornudos,Aumento del rascado,Pérdida de peso leve,Heces secas,Vómito ocasional de bolas de pelo,No
+Perro,Ansiedad,,,,,Yes
+Perro,Convulsiones,,,,,Yes
+Perro,Diarrea leve,Piel seca,Rigidez articular,,,No
+Perro,Fiebre,Depresión,,,,Yes
+Gato,Córnea opaca,Respiración rápida,Letargo,,,Yes
+Gato,Vómito ocasional de bolas de pelo,Aumento del rascado,Conjuntivitis leve,Estornudos,,No
+Perro,Aumento de la sed,Piel seca,Rigidez articular,,,No
+Perro,Aumento de la sed,Ojos secos,,,,No
+Perro,Ansiedad,Sangre en el vómito,,,,Yes
+Perro,Parálisis,Pérdida de apetito,Fiebre,,,Yes
+Perro,Parálisis,Sangre en el vómito,,,,Yes
+Gato,Córnea opaca,Respiración rápida,Temblores,,,Yes
+Perro,Temblores,Pérdida de apetito,Fiebre,Convulsiones,,Yes
+Gato,Heces con sangre,Letargo,Encías pálidas,Vómito con sangre,Respiración ruidosa,Yes
+Gato,Letargo,Encías pálidas,,,,Yes
+Gato,Estornudos,Pérdida de peso leve,,,,No
+Gato,Jadeo,Respiración ruidosa,Respiración rápida,,,Yes
+Gato,Tos,Vómito con sangre,Encías pálidas,Córnea opaca,Babeo excesivo,Yes
+Gato,Córnea opaca,Respiración rápida,,,,Yes
+Perro,Ojos secos,Mal aliento,Diarrea leve,Piel seca,Rigidez articular,No
+Gato,Encías pálidas,Respiración rápida,Ojos hinchados,Córnea opaca,,Yes
+Perro,Diarrea leve,Ojos secos,Aumento de la sed,,,No
+Perro,Fatiga,Ojos vidriosos,Glucemia alta,Convulsiones,,Yes
+Perro,Jadeo,Sed excesiva,Fiebre,Náuseas,,Yes
+Gato,Pérdida de peso leve,Aumento del rascado,Vómito ocasional de bolas de pelo,Heces secas,,No
+Gato,Espuma en la boca,Respiración rápida,Convulsiones,Jadeo,,Yes
+Gato,Estornudos,Pérdida de peso leve,,,,No
+Gato,Tos,Convulsiones,,,,Yes
+Gato,Tos,Heces con sangre,,,,Yes
+Gato,Estornudos,Pérdida de peso leve,Rinorrea,,,No
+Gato,Respiración ruidosa,Vómito con sangre,,,,Yes
+Perro,Depresión,Fatiga,Babeando,Náuseas,Pérdida de apetito,Yes
+Gato,Vómito con sangre,Encías pálidas,Temblores,,,Yes
+Perro,Depresión,Glucemia alta,Parálisis,,,Yes
+Perro,Sed excesiva,Sangre en el vómito,Jadeo,Glucemia alta,Pérdida de peso,Yes
+Perro,Fatiga,Parálisis,,,,Yes
+Gato,Aumento del rascado,Vómito ocasional de bolas de pelo,Conjuntivitis leve,Estornudos,,No
+Perro,Glucemia alta,Pérdida de apetito,Sangre en el vómito,,,Yes
+Gato,Encías pálidas,Tos,,,,Yes
+Perro,Sangre en el vómito,,,,,Yes
+Perro,Ojos secos,Rigidez articular,Diarrea leve,Mal aliento,Piel seca,No
+Gato,Convulsiones,Letargo,Temblores,Respiración rápida,Encías pálidas,Yes
+Perro,Náuseas,Convulsiones,Glucemia alta,,,Yes
+Gato,Heces con sangre,Ojos hinchados,Babeo excesivo,Jadeo,Convulsiones,Yes
+Gato,Vómito ocasional de bolas de pelo,Pérdida de peso leve,Conjuntivitis leve,Heces secas,Rinorrea,No
+Perro,Náuseas,,,,,Yes
+Gato,Encías pálidas,Vómito con sangre,,,,Yes
+Gato,Pérdida de peso leve,Conjuntivitis leve,Rinorrea,Heces secas,,No
+Perro,Vómitos,Jadeo,Fatiga,,,Yes
+Gato,Respiración rápida,Encías pálidas,Babeo excesivo,Jadeo,Letargo,Yes
+Perro,Pérdida de apetito,Jadeo,Convulsiones,,,Yes
+Perro,Ansiedad,Babeando,,,,Yes
+Gato,Vómito con sangre,Letargo,,,,Yes
+Perro,Piel seca,Ojos secos,Mal aliento,,,No
+Gato,Aumento del rascado,Vómito ocasional de bolas de pelo,Rinorrea,Estornudos,Heces secas,No
+Perro,Diarrea leve,Mal aliento,Piel seca,Ojos secos,,No
+Perro,Diarrea leve,Ojos secos,Rigidez articular,Aumento de la sed,Mal aliento,No
+Gato,Estornudos,,,,,No
+Gato,Babeo excesivo,Encías pálidas,Respiración ruidosa,Vómito con sangre,Córnea opaca,Yes
+Gato,Estornudos,Vómito ocasional de bolas de pelo,Rinorrea,,,No
+Perro,Piel seca,Diarrea leve,Ojos secos,Rigidez articular,,No
+Perro,Ojos secos,Piel seca,,,,No
+Gato,Temblores,Tos,Letargo,Convulsiones,Heces con sangre,Yes
+Gato,Heces con sangre,Respiración ruidosa,Vómito con sangre,,,Yes
+Gato,Estornudos,Aumento del rascado,Pérdida de peso leve,Vómito ocasional de bolas de pelo,Rinorrea,No
+Perro,Piel seca,Rigidez articular,Diarrea leve,,,No
+Perro,Ojos vidriosos,Babeando,,,,Yes
+Perro,Pérdida de apetito,Ojos vidriosos,,,,Yes
+Perro,Ojos secos,Aumento de la sed,Diarrea leve,,,No
+Perro,Rigidez articular,Diarrea leve,Aumento de la sed,Ojos secos,Piel seca,No
+Gato,Vómito ocasional de bolas de pelo,,,,,No
+Perro,Fatiga,Pérdida de apetito,Ojos vidriosos,,,Yes
+Perro,Diarrea leve,Mal aliento,Ojos secos,,,No
+Gato,Conjuntivitis leve,Vómito ocasional de bolas de pelo,Pérdida de peso leve,Aumento del rascado,Estornudos,No
+Perro,Fatiga,Vómitos,Temblores,Babeando,,Yes
+Gato,Temblores,,,,,Yes
+Perro,Mal aliento,Ojos secos,,,,No
+Perro,Temblores,Náuseas,Jadeo,Glucemia alta,,Yes
+Gato,Córnea opaca,Heces con sangre,,,,Yes
+Gato,Vómito con sangre,Tos,Jadeo,Encías pálidas,,Yes
+Gato,Respiración rápida,Letargo,Córnea opaca,Respiración ruidosa,,Yes
+Perro,Pérdida de peso,,,,,Yes
+Perro,Aumento de la sed,Rigidez articular,,,,No
+Perro,Fatiga,,,,,Yes
+Gato,Convulsiones,,,,,Yes
+Gato,Vómito ocasional de bolas de pelo,Pérdida de peso leve,,,,No
+Gato,Pérdida de peso leve,,,,,No
+Gato,Heces con sangre,Respiración ruidosa,Temblores,Convulsiones,Jadeo,Yes
+Perro,Aumento de la sed,Ojos secos,,,,No
+Gato,Heces secas,Rinorrea,,,,No
+Gato,Pérdida de peso leve,Estornudos,Rinorrea,,,No
+Perro,Diarrea leve,Aumento de la sed,Mal aliento,,,No
+Gato,Espuma en la boca,Babeo excesivo,Córnea opaca,Letargo,,Yes
+Gato,Encías pálidas,Espuma en la boca,Temblores,Convulsiones,Letargo,Yes
+Perro,Babeando,Temblores,Náuseas,,,Yes
+Perro,Ansiedad,Sed excesiva,Parálisis,,,Yes
+Gato,Rinorrea,,,,,No
+Gato,Aumento del rascado,Heces secas,,,,No
+Gato,Aumento del rascado,Conjuntivitis leve,Pérdida de peso leve,Vómito ocasional de bolas de pelo,Estornudos,No
+Gato,Letargo,Jadeo,Vómito con sangre,Babeo excesivo,,Yes
+Perro,Pérdida de peso,Fiebre,Fatiga,,,Yes
+Perro,Rigidez articular,,,,,No
+Perro,Ojos secos,,,,,No
+Gato,Estornudos,,,,,No
+Perro,Ojos secos,Aumento de la sed,,,,No
+Gato,Letargo,,,,,Yes
+Gato,Respiración rápida,,,,,Yes
+Gato,Heces con sangre,Convulsiones,Espuma en la boca,Babeo excesivo,,Yes
+Perro,Aumento de la sed,,,,,No
+Perro,Piel seca,Ojos secos,Rigidez articular,Diarrea leve,,No
+Gato,Heces secas,,,,,No
+Perro,Depresión,Vómitos,,,,Yes
+Perro,Temblores,Depresión,Sed excesiva,Convulsiones,,Yes
+Gato,Rinorrea,,,,,No
+Gato,Jadeo,,,,,Yes
+Gato,Babeo excesivo,Temblores,,,,Yes
+Perro,Babeando,Convulsiones,Glucemia alta,,,Yes
+Gato,Temblores,Respiración rápida,Letargo,Babeo excesivo,Tos,Yes
+Perro,Aumento de la sed,Diarrea leve,,,,No
+Perro,Ansiedad,Convulsiones,,,,Yes
+Gato,Heces secas,Estornudos,Pérdida de peso leve,,,No
+Perro,Desorientación,Pérdida de apetito,Depresión,Glucemia alta,Ojos vidriosos,Yes
+Gato,Estornudos,Rinorrea,Conjuntivitis leve,,,No
+Perro,Pérdida de apetito,Desorientación,Ojos vidriosos,Ansiedad,,Yes
+Gato,Rinorrea,Aumento del rascado,Vómito ocasional de bolas de pelo,Estornudos,,No
+Gato,Vómito ocasional de bolas de pelo,Estornudos,,,,No
+Perro,Ojos vidriosos,,,,,Yes
+Gato,Estornudos,,,,,No
+Gato,Conjuntivitis leve,Rinorrea,Aumento del rascado,Vómito ocasional de bolas de pelo,,No
+Perro,Desorientación,Pérdida de apetito,Sangre en el vómito,Vómitos,Depresión,Yes
+Gato,Heces secas,Estornudos,Aumento del rascado,,,No
+Gato,Espuma en la boca,Ojos hinchados,Respiración ruidosa,Letargo,Encías pálidas,Yes
+Gato,Aumento del rascado,Pérdida de peso leve,Heces secas,Estornudos,Conjuntivitis leve,No
+Perro,Piel seca,Aumento de la sed,Rigidez articular,Diarrea leve,Mal aliento,No
+Perro,Ojos vidriosos,,,,,Yes
+Gato,Heces con sangre,,,,,Yes
+Perro,Vómitos,,,,,Yes
+Gato,Respiración ruidosa,Convulsiones,Temblores,Ojos hinchados,,Yes
+Gato,Rinorrea,Conjuntivitis leve,Pérdida de peso leve,Estornudos,,No
+Gato,Jadeo,Encías pálidas,Heces con sangre,Espuma en la boca,,Yes
+Perro,Diarrea leve,Aumento de la sed,Piel seca,Mal aliento,,No
+Gato,Pérdida de peso leve,Estornudos,Aumento del rascado,Rinorrea,Heces secas,No
+Perro,Mal aliento,Diarrea leve,Aumento de la sed,,,No
+Gato,Rinorrea,Heces secas,Conjuntivitis leve,Pérdida de peso leve,Aumento del rascado,No
+Gato,Córnea opaca,Babeo excesivo,Ojos hinchados,,,Yes
+Perro,Babeando,Sed excesiva,Sangre en el vómito,Glucemia alta,Ojos vidriosos,Yes
+Gato,Heces secas,,,,,No
+Gato,Encías pálidas,Tos,Jadeo,Ojos hinchados,,Yes
+Gato,Vómito ocasional de bolas de pelo,Conjuntivitis leve,Rinorrea,Estornudos,Heces secas,No
+Gato,Aumento del rascado,Heces secas,Vómito ocasional de bolas de pelo,Conjuntivitis leve,,No
+Perro,Rigidez articular,Diarrea leve,Piel seca,Ojos secos,,No
+Gato,Córnea opaca,Vómito con sangre,Babeo excesivo,,,Yes
+Gato,Respiración rápida,Letargo,Vómito con sangre,Babeo excesivo,,Yes
+Gato,Respiración rápida,,,,,Yes
+Gato,Babeo excesivo,,,,,Yes
+Gato,Estornudos,Vómito ocasional de bolas de pelo,,,,No
+Gato,Aumento del rascado,Estornudos,Conjuntivitis leve,Heces secas,Vómito ocasional de bolas de pelo,No
+Gato,Encías pálidas,Tos,Espuma en la boca,Convulsiones,,Yes
+Perro,Piel seca,Mal aliento,,,,No
+Perro,Piel seca,,,,,No
+Perro,Piel seca,,,,,No
+Gato,Vómito ocasional de bolas de pelo,Estornudos,,,,No
+Perro,Convulsiones,Desorientación,Ansiedad,,,Yes
+Gato,Espuma en la boca,Babeo excesivo,Encías pálidas,Heces con sangre,Respiración rápida,Yes
+Gato,Vómito ocasional de bolas de pelo,Rinorrea,Heces secas,,,No
+Gato,Letargo,,,,,Yes
+Gato,Espuma en la boca,Convulsiones,,,,Yes
+Gato,Córnea opaca,Tos,,,,Yes
+Gato,Heces con sangre,Jadeo,Babeo excesivo,,,Yes
+Perro,Desorientación,Ojos vidriosos,Jadeo,Ansiedad,,Yes
+Gato,Respiración ruidosa,Convulsiones,Jadeo,Espuma en la boca,,Yes
+Perro,Aumento de la sed,Diarrea leve,Rigidez articular,,,No
+Gato,Letargo,Babeo excesivo,Espuma en la boca,,,Yes
+Perro,Mal aliento,Piel seca,,,,No
+Gato,Aumento del rascado,Heces secas,,,,No
+Gato,Ojos hinchados,Temblores,Respiración rápida,Respiración ruidosa,Babeo excesivo,Yes
+Perro,Sangre en el vómito,Jadeo,,,,Yes
+Perro,Fatiga,,,,,Yes
+Perro,Fiebre,Fatiga,Sangre en el vómito,Convulsiones,Ojos vidriosos,Yes
+Gato,Aumento del rascado,Heces secas,,,,No
+Perro,Rigidez articular,,,,,No
+Gato,Conjuntivitis leve,Vómito ocasional de bolas de pelo,Heces secas,Aumento del rascado,Rinorrea,No
+Perro,Glucemia alta,Sangre en el vómito,Ojos vidriosos,Depresión,,Yes
+Perro,Piel seca,Rigidez articular,,,,No
+Gato,Rinorrea,Conjuntivitis leve,Pérdida de peso leve,,,No
+Gato,Letargo,Babeo excesivo,Vómito con sangre,,,Yes
+Gato,Babeo excesivo,Encías pálidas,,,,Yes
+Gato,Pérdida de peso leve,Conjuntivitis leve,Estornudos,Rinorrea,Aumento del rascado,No
+Gato,Heces con sangre,Córnea opaca,Vómito con sangre,Convulsiones,Ojos hinchados,Yes
+Gato,Heces secas,Pérdida de peso leve,Aumento del rascado,Estornudos,Conjuntivitis leve,No
+Gato,Respiración rápida,Letargo,Convulsiones,Espuma en la boca,Respiración ruidosa,Yes
+Gato,Tos,,,,,Yes
+Perro,Babeando,Glucemia alta,Ansiedad,,,Yes
+Gato,Vómito con sangre,,,,,Yes
+Gato,Pérdida de peso leve,Vómito ocasional de bolas de pelo,Conjuntivitis leve,Rinorrea,Aumento del rascado,No
+Perro,Depresión,Parálisis,,,,Yes
+Gato,Temblores,Córnea opaca,Vómito con sangre,Babeo excesivo,,Yes
+Perro,Rigidez articular,Mal aliento,,,,No
+Gato,Córnea opaca,Respiración ruidosa,Babeo excesivo,,,Yes
+Gato,Jadeo,,,,,Yes
+Perro,Piel seca,Ojos secos,Rigidez articular,Aumento de la sed,Mal aliento,No
+Perro,Rigidez articular,Ojos secos,Mal aliento,,,No
+Gato,Letargo,Tos,Heces con sangre,,,Yes
+Gato,Jadeo,Tos,,,,Yes
+Perro,Diarrea leve,Aumento de la sed,,,,No
+Perro,Convulsiones,Pérdida de peso,Glucemia alta,Temblores,,Yes
+Gato,Letargo,Temblores,,,,Yes
+Perro,Náuseas,Fatiga,,,,Yes
+Perro,Aumento de la sed,Diarrea leve,Ojos secos,Rigidez articular,Mal aliento,No
+Gato,Heces secas,Estornudos,Rinorrea,Aumento del rascado,,No
+Gato,Ojos hinchados,Tos,Vómito con sangre,,,Yes
+Perro,Ansiedad,Glucemia alta,Fatiga,,,Yes
+Perro,Mal aliento,Piel seca,Aumento de la sed,,,No
+Perro,Aumento de la sed,Diarrea leve,Piel seca,Ojos secos,Mal aliento,No
+Gato,Respiración rápida,Letargo,,,,Yes
+Perro,Sed excesiva,Vómitos,Jadeo,Desorientación,Sangre en el vómito,Yes
+Perro,Convulsiones,Temblores,Depresión,Náuseas,Sed excesiva,Yes
+Gato,Encías pálidas,Jadeo,Heces con sangre,Convulsiones,Letargo,Yes
+Gato,Espuma en la boca,Vómito con sangre,Jadeo,,,Yes
+Gato,Heces secas,Rinorrea,,,,No
+Gato,Babeo excesivo,Heces con sangre,,,,Yes
+Perro,Desorientación,,,,,Yes
+Perro,Pérdida de peso,Babeando,Parálisis,Glucemia alta,,Yes
+Gato,Vómito con sangre,Jadeo,Heces con sangre,Ojos hinchados,,Yes
+Gato,Encías pálidas,Espuma en la boca,Letargo,Convulsiones,,Yes
+Gato,Respiración ruidosa,Respiración rápida,Babeo excesivo,Tos,Vómito con sangre,Yes
+Perro,Sangre en el vómito,Sed excesiva,Glucemia alta,Convulsiones,Parálisis,Yes
+Gato,Vómito ocasional de bolas de pelo,Conjuntivitis leve,Rinorrea,,,No
+Gato,Espuma en la boca,Jadeo,Respiración ruidosa,,,Yes
+Perro,Piel seca,Mal aliento,,,,No
+Perro,Fatiga,Parálisis,Pérdida de apetito,Desorientación,Temblores,Yes
+Gato,Respiración rápida,Convulsiones,Temblores,Córnea opaca,,Yes
+Gato,Estornudos,Conjuntivitis leve,Aumento del rascado,,,No
+Perro,Mal aliento,Rigidez articular,Aumento de la sed,Piel seca,Ojos secos,No
+Gato,Conjuntivitis leve,Vómito ocasional de bolas de pelo,,,,No
+Gato,Heces secas,Conjuntivitis leve,Aumento del rascado,Estornudos,,No
+Perro,Mal aliento,,,,,No
+Gato,Conjuntivitis leve,Heces secas,,,,No
+Gato,Temblores,Espuma en la boca,Respiración ruidosa,Jadeo,,Yes
+Perro,Mal aliento,Diarrea leve,Ojos secos,Rigidez articular,Aumento de la sed,No
+Perro,Fatiga,Vómitos,Sangre en el vómito,,,Yes
+Gato,Rinorrea,,,,,No
+Gato,Pérdida de peso leve,Conjuntivitis leve,Estornudos,Aumento del rascado,,No
+Gato,Rinorrea,Estornudos,,,,No
+Gato,Vómito con sangre,,,,,Yes
+Perro,Sed excesiva,Glucemia alta,,,,Yes
+Perro,Sangre en el vómito,Temblores,Fiebre,Glucemia alta,Sed excesiva,Yes
+Perro,Rigidez articular,Mal aliento,,,,No
+Gato,Pérdida de peso leve,Conjuntivitis leve,Vómito ocasional de bolas de pelo,,,No
+Perro,Ansiedad,Fatiga,Náuseas,Pérdida de peso,Fiebre,Yes
+Gato,Vómito con sangre,Respiración ruidosa,Córnea opaca,Tos,,Yes
+Perro,Aumento de la sed,Rigidez articular,,,,No
+Gato,Heces secas,Pérdida de peso leve,,,,No
+Perro,Mal aliento,,,,,No
+Gato,Rinorrea,Heces secas,Estornudos,,,No
+Perro,Ojos secos,,,,,No
+Gato,Respiración ruidosa,Heces con sangre,Letargo,Encías pálidas,,Yes
+Gato,Córnea opaca,Espuma en la boca,Tos,Heces con sangre,,Yes
+Gato,Babeo excesivo,Tos,Respiración rápida,Heces con sangre,,Yes
+Gato,Rinorrea,,,,,No
+Gato,Vómito ocasional de bolas de pelo,Conjuntivitis leve,Aumento del rascado,,,No
+Perro,Diarrea leve,Rigidez articular,Mal aliento,Piel seca,,No
+Perro,Desorientación,Temblores,,,,Yes
+Gato,Vómito con sangre,,,,,Yes
+Gato,Respiración rápida,Encías pálidas,Ojos hinchados,,,Yes
+Gato,Respiración rápida,Letargo,Heces con sangre,Temblores,,Yes
+Gato,Heces con sangre,Respiración ruidosa,Convulsiones,Córnea opaca,,Yes
+Gato,Pérdida de peso leve,Conjuntivitis leve,Estornudos,Heces secas,,No
+Gato,Aumento del rascado,,,,,No
+Gato,Heces secas,Estornudos,Vómito ocasional de bolas de pelo,,,No
+Perro,Aumento de la sed,,,,,No
+Gato,Respiración rápida,Vómito con sangre,Respiración ruidosa,Ojos hinchados,Córnea opaca,Yes
+Gato,Aumento del rascado,Heces secas,,,,No
+Perro,Vómitos,Glucemia alta,Fiebre,,,Yes
+Perro,Desorientación,Convulsiones,,,,Yes
+Perro,Pérdida de peso,Babeando,,,,Yes
+Perro,Mal aliento,,,,,No
+Perro,Piel seca,Rigidez articular,Mal aliento,Aumento de la sed,Ojos secos,No
+Gato,Babeo excesivo,Heces con sangre,Córnea opaca,Temblores,Convulsiones,Yes
+Gato,Córnea opaca,Convulsiones,Jadeo,Letargo,,Yes
+Perro,Diarrea leve,Piel seca,Aumento de la sed,Rigidez articular,Ojos secos,No
+Perro,Mal aliento,,,,,No
+Gato,Conjuntivitis leve,Vómito ocasional de bolas de pelo,Rinorrea,,,No
+Gato,Respiración rápida,Espuma en la boca,Vómito con sangre,,,Yes
+Gato,Vómito ocasional de bolas de pelo,Heces secas,Pérdida de peso leve,Estornudos,Rinorrea,No
+Gato,Pérdida de peso leve,Aumento del rascado,Vómito ocasional de bolas de pelo,,,No
+Gato,Encías pálidas,,,,,Yes
+Perro,Depresión,Ansiedad,,,,Yes
+Gato,Conjuntivitis leve,Heces secas,,,,No
+Perro,Diarrea leve,Rigidez articular,Mal aliento,Aumento de la sed,,No
+Gato,Vómito ocasional de bolas de pelo,,,,,No
+Perro,Mal aliento,Piel seca,Rigidez articular,Aumento de la sed,,No
+Perro,Ojos secos,Piel seca,,,,No
+Gato,Aumento del rascado,,,,,No
+Perro,Piel seca,Rigidez articular,Aumento de la sed,Ojos secos,,No
+Gato,Vómito con sangre,Letargo,Jadeo,Respiración rápida,,Yes
+Perro,Mal aliento,Rigidez articular,,,,No
+Gato,Respiración ruidosa,,,,,Yes
+Perro,Sangre en el vómito,,,,,Yes
+Gato,Convulsiones,Espuma en la boca,,,,Yes
+Gato,Conjuntivitis leve,Aumento del rascado,,,,No
+Perro,Fiebre,,,,,Yes
+Perro,Mal aliento,Ojos secos,Diarrea leve,,,No
+Perro,Parálisis,Ansiedad,Desorientación,,,Yes
+Perro,Aumento de la sed,,,,,No
+Gato,Aumento del rascado,Pérdida de peso leve,Heces secas,,,No
+Gato,Vómito ocasional de bolas de pelo,Conjuntivitis leve,,,,No
+Gato,Aumento del rascado,Rinorrea,Estornudos,Conjuntivitis leve,,No
+Perro,Fatiga,Vómitos,Desorientación,,,Yes
+Perro,Rigidez articular,Mal aliento,Aumento de la sed,Piel seca,Diarrea leve,No
+Perro,Piel seca,Ojos secos,Mal aliento,Aumento de la sed,Rigidez articular,No
+Perro,Diarrea leve,Piel seca,,,,No
+Gato,Aumento del rascado,,,,,No
+Perro,Pérdida de peso,Jadeo,Ojos vidriosos,Temblores,Desorientación,Yes
+Gato,Conjuntivitis leve,Rinorrea,Aumento del rascado,Heces secas,Pérdida de peso leve,No
+Perro,Piel seca,Ojos secos,,,,No
+Gato,Heces con sangre,,,,,Yes
+Perro,Piel seca,,,,,No
+Perro,Ansiedad,Babeando,Depresión,,,Yes
+Gato,Aumento del rascado,,,,,No
+Perro,Vómitos,Desorientación,,,,Yes
+Gato,Estornudos,Heces secas,Vómito ocasional de bolas de pelo,Aumento del rascado,Conjuntivitis leve,No
+Perro,Parálisis,Vómitos,,,,Yes
+Perro,Aumento de la sed,Rigidez articular,Diarrea leve,Ojos secos,,No
+Gato,Encías pálidas,,,,,Yes
+Gato,Estornudos,Pérdida de peso leve,,,,No
+Perro,Parálisis,,,,,Yes
+Gato,Vómito ocasional de bolas de pelo,Aumento del rascado,Pérdida de peso leve,Estornudos,,No
+Gato,Babeo excesivo,,,,,Yes
+Perro,Ojos secos,Piel seca,Diarrea leve,Mal aliento,Rigidez articular,No
+Gato,Convulsiones,Encías pálidas,Tos,,,Yes
+Perro,Vómitos,Desorientación,Fatiga,,,Yes
+Gato,Vómito ocasional de bolas de pelo,Rinorrea,Pérdida de peso leve,,,No
+Perro,Diarrea leve,Piel seca,Rigidez articular,Ojos secos,Aumento de la sed,No
+Perro,Rigidez articular,Piel seca,Mal aliento,Aumento de la sed,,No
+Gato,Rinorrea,Conjuntivitis leve,Vómito ocasional de bolas de pelo,Estornudos,Aumento del rascado,No
+Gato,Tos,Vómito con sangre,Respiración ruidosa,,,Yes
+Gato,Conjuntivitis leve,,,,,No
+Perro,Vómitos,,,,,Yes
+Gato,Heces con sangre,Letargo,,,,Yes
+Gato,Estornudos,Heces secas,Rinorrea,,,No
+Perro,Diarrea leve,Piel seca,Ojos secos,Rigidez articular,Aumento de la sed,No
+Perro,Parálisis,Vómitos,Sed excesiva,,,Yes
+Perro,Mal aliento,,,,,No
+Gato,Tos,Vómito con sangre,Temblores,Encías pálidas,Convulsiones,Yes
+Gato,Pérdida de peso leve,,,,,No
+Perro,Ojos vidriosos,Parálisis,Temblores,Sangre en el vómito,,Yes
+Perro,Ansiedad,Convulsiones,Glucemia alta,Vómitos,,Yes
+Perro,Desorientación,,,,,Yes
+Perro,Piel seca,Rigidez articular,Aumento de la sed,Ojos secos,Diarrea leve,No
+Gato,Aumento del rascado,Heces secas,Rinorrea,Conjuntivitis leve,,No
+Gato,Conjuntivitis leve,Rinorrea,Vómito ocasional de bolas de pelo,,,No
+Perro,Mal aliento,,,,,No
+Gato,Pérdida de peso leve,Aumento del rascado,Estornudos,Rinorrea,,No
+Gato,Espuma en la boca,Ojos hinchados,Babeo excesivo,,,Yes
+Gato,Vómito ocasional de bolas de pelo,,,,,No
+Gato,Pérdida de peso leve,Estornudos,,,,No
+Gato,Jadeo,Espuma en la boca,Córnea opaca,Temblores,,Yes
+Gato,Encías pálidas,Temblores,Tos,Babeo excesivo,Ojos hinchados,Yes
+Perro,Pérdida de peso,Vómitos,Depresión,Náuseas,Temblores,Yes
+Gato,Córnea opaca,Vómito con sangre,Espuma en la boca,Tos,,Yes
+Gato,Convulsiones,Temblores,Tos,Córnea opaca,Respiración ruidosa,Yes
+Gato,Rinorrea,Pérdida de peso leve,Conjuntivitis leve,,,No
+Perro,Babeando,Parálisis,Sed excesiva,,,Yes
+Gato,Letargo,Babeo excesivo,Respiración rápida,Convulsiones,Vómito con sangre,Yes
+Perro,Aumento de la sed,Mal aliento,,,,No
+Perro,Diarrea leve,Piel seca,Mal aliento,Rigidez articular,,No
+Gato,Tos,Letargo,Convulsiones,Córnea opaca,,Yes
+Gato,Rinorrea,Conjuntivitis leve,Estornudos,Aumento del rascado,Pérdida de peso leve,No
+Gato,Vómito ocasional de bolas de pelo,Heces secas,Pérdida de peso leve,,,No
+Gato,Babeo excesivo,Córnea opaca,Convulsiones,Respiración ruidosa,,Yes
+Perro,Fiebre,Depresión,,,,Yes
+Gato,Respiración rápida,Letargo,Córnea opaca,Ojos hinchados,,Yes
+Perro,Piel seca,Mal aliento,,,,No
+Perro,Pérdida de peso,Ojos vidriosos,,,,Yes
+Gato,Heces secas,,,,,No
+Gato,Rinorrea,,,,,No
+Perro,Ojos vidriosos,Temblores,,,,Yes
+Perro,Aumento de la sed,,,,,No
+Perro,Desorientación,Depresión,Fatiga,Parálisis,,Yes
+Gato,Rinorrea,Pérdida de peso leve,Conjuntivitis leve,Estornudos,Heces secas,No
+Perro,Sed excesiva,Vómitos,,,,Yes
+Perro,Diarrea leve,Rigidez articular,Ojos secos,,,No
+Gato,Ojos hinchados,Encías pálidas,,,,Yes
+Perro,Aumento de la sed,Ojos secos,Piel seca,Diarrea leve,,No
+Gato,Ojos hinchados,Babeo excesivo,Tos,,,Yes
+Perro,Ojos vidriosos,Fiebre,Jadeo,Sed excesiva,,Yes
+Gato,Vómito ocasional de bolas de pelo,Estornudos,Heces secas,Conjuntivitis leve,,No
+Perro,Rigidez articular,Diarrea leve,Aumento de la sed,Ojos secos,Piel seca,No
+Perro,Sed excesiva,,,,,Yes
+Perro,Convulsiones,,,,,Yes
+Perro,Glucemia alta,Babeando,Náuseas,Depresión,Temblores,Yes
+Perro,Piel seca,Ojos secos,Mal aliento,Aumento de la sed,,No
+Perro,Fatiga,Vómitos,Sed excesiva,Pérdida de apetito,,Yes
+Perro,Aumento de la sed,Ojos secos,Diarrea leve,Mal aliento,Rigidez articular,No
+Gato,Heces secas,Pérdida de peso leve,,,,No
+Perro,Náuseas,Temblores,Ojos vidriosos,Vómitos,Babeando,Yes
+Perro,Rigidez articular,,,,,No
+Gato,Conjuntivitis leve,Rinorrea,,,,No
+Gato,Vómito con sangre,Espuma en la boca,Respiración ruidosa,Heces con sangre,,Yes
+Gato,Aumento del rascado,Rinorrea,Estornudos,Pérdida de peso leve,,No
+Perro,Piel seca,Rigidez articular,,,,No
+Gato,Aumento del rascado,Vómito ocasional de bolas de pelo,Heces secas,,,No
+Perro,Ojos vidriosos,Sed excesiva,,,,Yes
+Gato,Heces secas,Aumento del rascado,,,,No
+Perro,Jadeo,,,,,Yes
+Perro,Rigidez articular,,,,,No
+Gato,Rinorrea,,,,,No
+Gato,Babeo excesivo,Heces con sangre,Córnea opaca,Temblores,Letargo,Yes
+Perro,Diarrea leve,Piel seca,Aumento de la sed,,,No
+Perro,Diarrea leve,,,,,No
+Perro,Mal aliento,Ojos secos,Rigidez articular,Diarrea leve,Piel seca,No
+Perro,Ojos vidriosos,Temblores,Depresión,,,Yes
+Gato,Heces con sangre,Respiración ruidosa,Temblores,,,Yes
+Perro,Fatiga,Fiebre,,,,Yes
+Gato,Heces con sangre,,,,,Yes
+Gato,Estornudos,Aumento del rascado,,,,No
+Gato,Conjuntivitis leve,,,,,No
+Perro,Fiebre,Fatiga,Temblores,Sangre en el vómito,Babeando,Yes
+Perro,Fiebre,Glucemia alta,Sangre en el vómito,Vómitos,,Yes
+Gato,Heces con sangre,Ojos hinchados,Vómito con sangre,Temblores,,Yes
+Perro,Sed excesiva,Depresión,Vómitos,,,Yes
+Perro,Ansiedad,,,,,Yes
+Perro,Fatiga,,,,,Yes
+Gato,Temblores,Encías pálidas,Ojos hinchados,Respiración ruidosa,,Yes
+Gato,Espuma en la boca,Babeo excesivo,Ojos hinchados,,,Yes
+Perro,Depresión,Fiebre,Pérdida de apetito,,,Yes
+Perro,Rigidez articular,,,,,No
+Gato,Vómito con sangre,Ojos hinchados,,,,Yes
+Gato,Vómito con sangre,Heces con sangre,,,,Yes
+Gato,Estornudos,Conjuntivitis leve,,,,No
+Gato,Conjuntivitis leve,Estornudos,Rinorrea,Pérdida de peso leve,,No
+Perro,Pérdida de apetito,Náuseas,,,,Yes
+Gato,Conjuntivitis leve,Rinorrea,Aumento del rascado,,,No
+Gato,Conjuntivitis leve,,,,,No
+Perro,Rigidez articular,Aumento de la sed,Ojos secos,Mal aliento,,No
+Gato,Vómito con sangre,Encías pálidas,Convulsiones,Letargo,,Yes
+Perro,Fiebre,Náuseas,Pérdida de peso,,,Yes
+Perro,Babeando,Pérdida de peso,Ojos vidriosos,Convulsiones,Sed excesiva,Yes
+Gato,Pérdida de peso leve,Vómito ocasional de bolas de pelo,,,,No
+Gato,Vómito con sangre,,,,,Yes
+Gato,Convulsiones,Heces con sangre,Ojos hinchados,Espuma en la boca,,Yes
+Perro,Aumento de la sed,Rigidez articular,Mal aliento,Diarrea leve,,No
+Perro,Ansiedad,Sed excesiva,,,,Yes
+Gato,Respiración ruidosa,,,,,Yes
+Gato,Convulsiones,Córnea opaca,Babeo excesivo,Jadeo,Encías pálidas,Yes
+Gato,Heces secas,Pérdida de peso leve,,,,No
+Perro,Piel seca,Mal aliento,,,,No
+Perro,Pérdida de peso,Ojos vidriosos,Vómitos,Temblores,Babeando,Yes
+Perro,Rigidez articular,,,,,No
+Gato,Babeo excesivo,Letargo,,,,Yes
+Perro,Ojos secos,Piel seca,,,,No
+Gato,Jadeo,Letargo,Convulsiones,Tos,Respiración rápida,Yes
+Perro,Diarrea leve,Rigidez articular,Piel seca,,,No
+Perro,Piel seca,Mal aliento,Ojos secos,,,No
+Gato,Jadeo,,,,,Yes
+Gato,Letargo,Convulsiones,Respiración rápida,,,Yes
+Perro,Vómitos,Glucemia alta,Convulsiones,Náuseas,Pérdida de peso,Yes
+Perro,Desorientación,Náuseas,Glucemia alta,Pérdida de apetito,Vómitos,Yes
+Perro,Temblores,Fatiga,Babeando,Desorientación,Fiebre,Yes
+Perro,Rigidez articular,Diarrea leve,,,,No
+Gato,Encías pálidas,Babeo excesivo,Convulsiones,Letargo,,Yes
+Gato,Conjuntivitis leve,Aumento del rascado,Pérdida de peso leve,,,No
+Perro,Diarrea leve,Ojos secos,Mal aliento,Aumento de la sed,,No
+Gato,Aumento del rascado,Vómito ocasional de bolas de pelo,Estornudos,Pérdida de peso leve,,No
+Gato,Vómito con sangre,Babeo excesivo,Letargo,Encías pálidas,Ojos hinchados,Yes
+Perro,Babeando,Pérdida de peso,Náuseas,Desorientación,Temblores,Yes
+Perro,Rigidez articular,Mal aliento,Diarrea leve,Ojos secos,Piel seca,No
+Perro,Mal aliento,Piel seca,,,,No
+Perro,Fatiga,Jadeo,,,,Yes
+Gato,Temblores,Heces con sangre,Respiración ruidosa,,,Yes
+Perro,Fiebre,Desorientación,Vómitos,Náuseas,,Yes
+Gato,Heces con sangre,,,,,Yes
+Perro,Piel seca,Diarrea leve,Aumento de la sed,Ojos secos,Mal aliento,No
+Perro,Convulsiones,Depresión,Babeando,Desorientación,,Yes
+Gato,Ojos hinchados,Babeo excesivo,Córnea opaca,Respiración ruidosa,,Yes
+Gato,Rinorrea,Estornudos,,,,No
+Perro,Glucemia alta,Babeando,Temblores,,,Yes
+Gato,Convulsiones,Tos,,,,Yes
+Perro,Ojos secos,Diarrea leve,Piel seca,Aumento de la sed,Rigidez articular,No
+Perro,Ojos secos,,,,,No
+Perro,Piel seca,,,,,No
+Gato,Jadeo,Heces con sangre,Espuma en la boca,Temblores,,Yes
+Gato,Heces secas,Vómito ocasional de bolas de pelo,Rinorrea,Conjuntivitis leve,,No
+Perro,Parálisis,Sangre en el vómito,,,,Yes
+Gato,Vómito ocasional de bolas de pelo,Aumento del rascado,Conjuntivitis leve,,,No
+Perro,Rigidez articular,Aumento de la sed,Diarrea leve,Piel seca,,No
+Gato,Estornudos,Conjuntivitis leve,Vómito ocasional de bolas de pelo,Aumento del rascado,Pérdida de peso leve,No
+Perro,Fiebre,Ojos vidriosos,Ansiedad,Temblores,,Yes
+Perro,Diarrea leve,Mal aliento,Rigidez articular,,,No
+Gato,Aumento del rascado,Pérdida de peso leve,Rinorrea,Conjuntivitis leve,,No
+Gato,Heces secas,Estornudos,Rinorrea,Aumento del rascado,,No
+Perro,Mal aliento,,,,,No
+Gato,Heces secas,Pérdida de peso leve,Vómito ocasional de bolas de pelo,Aumento del rascado,Rinorrea,No
+Gato,Estornudos,Aumento del rascado,,,,No
+Gato,Temblores,,,,,Yes
+Gato,Babeo excesivo,Espuma en la boca,Tos,,,Yes
+Perro,Mal aliento,Rigidez articular,Diarrea leve,Ojos secos,Piel seca,No
+Perro,Ojos vidriosos,Convulsiones,Depresión,,,Yes
+Perro,Ansiedad,,,,,Yes
+Perro,Piel seca,Diarrea leve,Rigidez articular,Ojos secos,,No
+Perro,Jadeo,Ansiedad,Glucemia alta,Sangre en el vómito,,Yes
+Perro,Desorientación,Depresión,,,,Yes
+Gato,Rinorrea,Conjuntivitis leve,Heces secas,Vómito ocasional de bolas de pelo,,No
+Gato,Córnea opaca,Babeo excesivo,Tos,Encías pálidas,,Yes
+Perro,Rigidez articular,Ojos secos,Mal aliento,Piel seca,Diarrea leve,No
+Gato,Vómito ocasional de bolas de pelo,Estornudos,Aumento del rascado,Conjuntivitis leve,,No
+Perro,Náuseas,,,,,Yes
+Gato,Heces con sangre,Vómito con sangre,Córnea opaca,,,Yes
+Gato,Respiración rápida,Ojos hinchados,Espuma en la boca,Vómito con sangre,,Yes
+Gato,Espuma en la boca,Encías pálidas,,,,Yes
+Perro,Mal aliento,Rigidez articular,,,,No
+Perro,Parálisis,,,,,Yes
+Gato,Aumento del rascado,Estornudos,Conjuntivitis leve,Heces secas,,No
+Perro,Parálisis,,,,,Yes
+Perro,Náuseas,Fatiga,Temblores,Ansiedad,,Yes
+Gato,Aumento del rascado,Rinorrea,Vómito ocasional de bolas de pelo,,,No
+Gato,Vómito ocasional de bolas de pelo,Rinorrea,Conjuntivitis leve,,,No
+Perro,Diarrea leve,Aumento de la sed,,,,No
+Gato,Vómito con sangre,Convulsiones,Encías pálidas,Heces con sangre,Córnea opaca,Yes
+Perro,Mal aliento,Ojos secos,Piel seca,,,No
+Gato,Encías pálidas,Heces con sangre,Babeo excesivo,Ojos hinchados,Córnea opaca,Yes
+Perro,Mal aliento,Rigidez articular,,,,No
+Gato,Estornudos,Pérdida de peso leve,Conjuntivitis leve,Rinorrea,Vómito ocasional de bolas de pelo,No
+Gato,Espuma en la boca,Jadeo,Convulsiones,,,Yes
+Gato,Convulsiones,Ojos hinchados,Letargo,Córnea opaca,,Yes
+Perro,Parálisis,Ojos vidriosos,,,,Yes
+Gato,Heces con sangre,Respiración ruidosa,Tos,Temblores,,Yes
+Gato,Vómito ocasional de bolas de pelo,Estornudos,,,,No
+Gato,Encías pálidas,Convulsiones,Temblores,Babeo excesivo,Tos,Yes
+Perro,Ansiedad,Ojos vidriosos,Pérdida de apetito,,,Yes
+Gato,Encías pálidas,Ojos hinchados,Vómito con sangre,Jadeo,,Yes
+Gato,Vómito ocasional de bolas de pelo,Heces secas,,,,No
+Gato,Ojos hinchados,Córnea opaca,Letargo,Jadeo,,Yes
+Perro,Aumento de la sed,Diarrea leve,,,,No
+Perro,Convulsiones,,,,,Yes
+Gato,Jadeo,Ojos hinchados,Letargo,,,Yes
+Gato,Rinorrea,Vómito ocasional de bolas de pelo,,,,No
+Perro,Fiebre,Pérdida de apetito,Fatiga,Náuseas,,Yes
+Perro,Piel seca,,,,,No
+Perro,Mal aliento,Aumento de la sed,,,,No
+Gato,Rinorrea,Estornudos,,,,No
+Gato,Córnea opaca,Encías pálidas,Respiración ruidosa,Temblores,,Yes
+Perro,Mal aliento,Piel seca,,,,No
+Perro,Pérdida de peso,Pérdida de apetito,Sangre en el vómito,Ojos vidriosos,Temblores,Yes
+Perro,Depresión,Temblores,Sed excesiva,,,Yes
+Gato,Respiración rápida,Encías pálidas,Letargo,Ojos hinchados,Córnea opaca,Yes
+Perro,Rigidez articular,Diarrea leve,Mal aliento,Piel seca,Ojos secos,No
+Gato,Rinorrea,,,,,No
+Gato,Aumento del rascado,Heces secas,Conjuntivitis leve,Rinorrea,Pérdida de peso leve,No
+Perro,Aumento de la sed,Mal aliento,Diarrea leve,,,No
+Gato,Babeo excesivo,,,,,Yes
+Perro,Fiebre,,,,,Yes
+Gato,Conjuntivitis leve,Heces secas,Rinorrea,Estornudos,,No
+Perro,Mal aliento,Rigidez articular,Diarrea leve,,,No
+Gato,Aumento del rascado,Vómito ocasional de bolas de pelo,Heces secas,Conjuntivitis leve,Pérdida de peso leve,No
+Perro,Ojos secos,Rigidez articular,,,,No
+Perro,Ansiedad,,,,,Yes
+Perro,Temblores,Babeando,Fiebre,,,Yes
+Perro,Glucemia alta,,,,,Yes
+Perro,Mal aliento,,,,,No
+Perro,Parálisis,Fiebre,Convulsiones,,,Yes
+Gato,Aumento del rascado,Conjuntivitis leve,,,,No
+Gato,Aumento del rascado,Pérdida de peso leve,Rinorrea,Heces secas,,No
+Perro,Aumento de la sed,Rigidez articular,Diarrea leve,Piel seca,,No
+Gato,Respiración ruidosa,Letargo,,,,Yes
+Perro,Diarrea leve,Aumento de la sed,Rigidez articular,Mal aliento,Piel seca,No
+Gato,Heces secas,,,,,No
+Gato,Aumento del rascado,,,,,No
+Gato,Temblores,Vómito con sangre,Babeo excesivo,,,Yes
+Gato,Respiración ruidosa,,,,,Yes
+Gato,Aumento del rascado,Estornudos,Conjuntivitis leve,,,No
+Perro,Babeando,Fiebre,Glucemia alta,Ojos vidriosos,Convulsiones,Yes
+Perro,Piel seca,,,,,No
+Gato,Letargo,Convulsiones,Ojos hinchados,,,Yes
+Gato,Rinorrea,Aumento del rascado,Pérdida de peso leve,Heces secas,Conjuntivitis leve,No
+Perro,Rigidez articular,Diarrea leve,Ojos secos,Mal aliento,Aumento de la sed,No
+Perro,Diarrea leve,Aumento de la sed,Rigidez articular,,,No
+Perro,Temblores,,,,,Yes
+Gato,Babeo excesivo,,,,,Yes
+Gato,Tos,Letargo,Convulsiones,Córnea opaca,,Yes
+Perro,Diarrea leve,Rigidez articular,,,,No
+Perro,Piel seca,,,,,No
+Perro,Rigidez articular,Diarrea leve,Ojos secos,,,No
+Perro,Sed excesiva,,,,,Yes
+Gato,Pérdida de peso leve,,,,,No
+Gato,Pérdida de peso leve,Rinorrea,Heces secas,,,No
+Perro,Ansiedad,Vómitos,Pérdida de apetito,,,Yes
+Gato,Convulsiones,Jadeo,Espuma en la boca,Córnea opaca,,Yes
+Gato,Convulsiones,,,,,Yes
+Gato,Estornudos,Pérdida de peso leve,Vómito ocasional de bolas de pelo,,,No
+Perro,Mal aliento,Rigidez articular,Ojos secos,Piel seca,Diarrea leve,No
+Perro,Rigidez articular,,,,,No
+Perro,Pérdida de apetito,Náuseas,Depresión,Ansiedad,,Yes
+Perro,Mal aliento,Aumento de la sed,Rigidez articular,Diarrea leve,Ojos secos,No
+Perro,Temblores,Pérdida de peso,Fiebre,Parálisis,Jadeo,Yes
+Perro,Mal aliento,Ojos secos,,,,No
+Gato,Tos,Vómito con sangre,,,,Yes
+Gato,Ojos hinchados,Encías pálidas,,,,Yes
+Gato,Estornudos,,,,,No
+Gato,Respiración ruidosa,Encías pálidas,,,,Yes
+Perro,Vómitos,Convulsiones,Ojos vidriosos,Pérdida de peso,,Yes
+Gato,Rinorrea,,,,,No
+Gato,Vómito ocasional de bolas de pelo,Estornudos,Rinorrea,,,No
+Gato,Babeo excesivo,Convulsiones,Encías pálidas,Vómito con sangre,,Yes
+Perro,Diarrea leve,,,,,No
+Gato,Respiración rápida,Ojos hinchados,Córnea opaca,,,Yes
+Perro,Ojos secos,,,,,No
+Perro,Náuseas,Ojos vidriosos,Sangre en el vómito,,,Yes
+Gato,Babeo excesivo,Espuma en la boca,Convulsiones,,,Yes
+Perro,Aumento de la sed,Mal aliento,Ojos secos,,,No
+Gato,Conjuntivitis leve,Aumento del rascado,Heces secas,Rinorrea,Pérdida de peso leve,No
+Perro,Fiebre,Pérdida de apetito,Convulsiones,Vómitos,Glucemia alta,Yes
+Perro,Aumento de la sed,Diarrea leve,Mal aliento,Rigidez articular,Ojos secos,No
+Gato,Vómito ocasional de bolas de pelo,Estornudos,,,,No
+Perro,Diarrea leve,Ojos secos,Mal aliento,Rigidez articular,,No
+Gato,Aumento del rascado,Rinorrea,Conjuntivitis leve,,,No
+Gato,Aumento del rascado,Heces secas,,,,No
+Perro,Aumento de la sed,,,,,No
+Perro,Náuseas,Vómitos,Depresión,Babeando,Desorientación,Yes
+Perro,Náuseas,,,,,Yes
+Gato,Heces con sangre,Convulsiones,Temblores,Tos,Vómito con sangre,Yes
+Gato,Ojos hinchados,Respiración rápida,Heces con sangre,,,Yes
+Gato,Pérdida de peso leve,Conjuntivitis leve,Estornudos,Heces secas,Rinorrea,No
+Gato,Pérdida de peso leve,Heces secas,,,,No
+Perro,Fatiga,Ansiedad,,,,Yes
+Gato,Aumento del rascado,Conjuntivitis leve,Estornudos,Heces secas,Rinorrea,No
+Gato,Estornudos,Aumento del rascado,Vómito ocasional de bolas de pelo,Pérdida de peso leve,,No
+Gato,Pérdida de peso leve,Aumento del rascado,Vómito ocasional de bolas de pelo,Rinorrea,Heces secas,No
+Perro,Pérdida de peso,Náuseas,Convulsiones,Temblores,,Yes
+Perro,Convulsiones,,,,,Yes
+Perro,Ojos secos,Piel seca,,,,No
+Perro,Aumento de la sed,Piel seca,Mal aliento,Rigidez articular,,No
+Perro,Fatiga,Ansiedad,Pérdida de peso,Desorientación,Pérdida de apetito,Yes
+Perro,Vómitos,Pérdida de apetito,Ansiedad,Ojos vidriosos,Babeando,Yes
+Gato,Rinorrea,Conjuntivitis leve,Pérdida de peso leve,Heces secas,Aumento del rascado,No
+Perro,Pérdida de apetito,Parálisis,Fatiga,,,Yes
+Perro,Diarrea leve,Piel seca,Rigidez articular,Mal aliento,,No
+Perro,Ansiedad,Desorientación,Fiebre,Parálisis,Pérdida de peso,Yes
+Gato,Córnea opaca,Vómito con sangre,,,,Yes
+Perro,Pérdida de apetito,Temblores,,,,Yes
+Gato,Pérdida de peso leve,Vómito ocasional de bolas de pelo,Heces secas,Rinorrea,Aumento del rascado,No
+Perro,Parálisis,Sangre en el vómito,Glucemia alta,,,Yes
+Perro,Náuseas,Ansiedad,Fiebre,Glucemia alta,,Yes
+Gato,Babeo excesivo,Espuma en la boca,,,,Yes
+Perro,Mal aliento,Aumento de la sed,Diarrea leve,Ojos secos,,No
+Gato,Conjuntivitis leve,,,,,No
+Gato,Conjuntivitis leve,Estornudos,,,,No
+Perro,Glucemia alta,Pérdida de peso,Babeando,,,Yes
+Gato,Tos,Espuma en la boca,Vómito con sangre,Letargo,Jadeo,Yes
+Gato,Respiración rápida,Ojos hinchados,Encías pálidas,Tos,Vómito con sangre,Yes
+Perro,Rigidez articular,Aumento de la sed,Piel seca,Ojos secos,,No
+Gato,Aumento del rascado,Conjuntivitis leve,Rinorrea,,,No
+Gato,Ojos hinchados,Respiración rápida,,,,Yes
+Gato,Heces secas,Conjuntivitis leve,Estornudos,,,No
+Perro,Diarrea leve,,,,,No
+Perro,Mal aliento,Aumento de la sed,Ojos secos,,,No
+Gato,Letargo,,,,,Yes
+Perro,Sed excesiva,Náuseas,Ojos vidriosos,Fiebre,,Yes
+Perro,Rigidez articular,Mal aliento,Diarrea leve,,,No
+Gato,Rinorrea,Estornudos,Aumento del rascado,Conjuntivitis leve,,No
+Perro,Jadeo,,,,,Yes
+Perro,Rigidez articular,Ojos secos,,,,No
+Gato,Ojos hinchados,,,,,Yes
+Perro,Aumento de la sed,Piel seca,Ojos secos,Diarrea leve,Rigidez articular,No
+Gato,Temblores,Respiración rápida,,,,Yes
+Gato,Córnea opaca,Vómito con sangre,Letargo,Convulsiones,,Yes
+Perro,Fatiga,Depresión,Temblores,Sed excesiva,Fiebre,Yes
+Gato,Vómito ocasional de bolas de pelo,,,,,No
+Gato,Pérdida de peso leve,,,,,No
+Perro,Aumento de la sed,Mal aliento,,,,No
+Gato,Vómito ocasional de bolas de pelo,,,,,No
+Perro,Vómitos,Sangre en el vómito,Pérdida de apetito,Pérdida de peso,,Yes
+Perro,Depresión,Pérdida de peso,,,,Yes
+Gato,Rinorrea,,,,,No
+Gato,Vómito con sangre,Ojos hinchados,Letargo,,,Yes
+Perro,Sangre en el vómito,Desorientación,Fatiga,Pérdida de peso,,Yes
+Gato,Estornudos,Heces secas,Aumento del rascado,Rinorrea,,No
+Perro,Ojos vidriosos,Temblores,Fatiga,Convulsiones,,Yes
+Gato,Letargo,,,,,Yes
+Perro,Aumento de la sed,Diarrea leve,,,,No
+Perro,Sangre en el vómito,,,,,Yes
+Gato,Heces secas,Vómito ocasional de bolas de pelo,Pérdida de peso leve,,,No
+Perro,Mal aliento,Aumento de la sed,Diarrea leve,,,No
+Perro,Ansiedad,,,,,Yes
+Gato,Espuma en la boca,Jadeo,Letargo,Córnea opaca,,Yes
+Perro,Diarrea leve,Aumento de la sed,Ojos secos,,,No
+Perro,Ojos vidriosos,Fatiga,Depresión,Pérdida de peso,Sangre en el vómito,Yes
+Perro,Jadeo,Náuseas,,,,Yes
+Perro,Desorientación,Ansiedad,,,,Yes
+Gato,Respiración ruidosa,Ojos hinchados,Heces con sangre,Espuma en la boca,Convulsiones,Yes
+Perro,Ojos secos,Piel seca,,,,No
+Gato,Vómito con sangre,Babeo excesivo,Respiración ruidosa,Jadeo,Tos,Yes
+Perro,Temblores,Parálisis,Convulsiones,Sed excesiva,,Yes
+Perro,Aumento de la sed,Piel seca,Rigidez articular,,,No
+Gato,Ojos hinchados,Convulsiones,Tos,,,Yes
+Perro,Mal aliento,Aumento de la sed,Diarrea leve,Rigidez articular,Ojos secos,No
+Gato,Vómito ocasional de bolas de pelo,Pérdida de peso leve,Estornudos,Heces secas,,No
+Perro,Mal aliento,Diarrea leve,,,,No
+Perro,Jadeo,,,,,Yes
+Perro,Temblores,Fiebre,Parálisis,Sangre en el vómito,Depresión,Yes
+Perro,Ojos secos,Aumento de la sed,,,,No
+Perro,Diarrea leve,Rigidez articular,Piel seca,,,No
+Perro,Diarrea leve,Rigidez articular,Aumento de la sed,,,No
+Gato,Estornudos,,,,,No
+Perro,Aumento de la sed,Mal aliento,,,,No
+Gato,Vómito ocasional de bolas de pelo,Aumento del rascado,Estornudos,,,No
+Perro,Mal aliento,Ojos secos,Diarrea leve,Rigidez articular,,No
+Gato,Estornudos,Aumento del rascado,Heces secas,Pérdida de peso leve,Vómito ocasional de bolas de pelo,No
+Gato,Vómito con sangre,Respiración ruidosa,,,,Yes
+Perro,Ojos secos,Rigidez articular,Piel seca,,,No
+Perro,Ojos vidriosos,Convulsiones,Babeando,,,Yes
+Perro,Ojos vidriosos,Depresión,Convulsiones,Pérdida de apetito,Vómitos,Yes
+Perro,Sangre en el vómito,,,,,Yes
+Gato,Vómito con sangre,Babeo excesivo,,,,Yes
+Perro,Depresión,Pérdida de peso,Glucemia alta,Sed excesiva,Temblores,Yes
+Gato,Estornudos,Pérdida de peso leve,,,,No
+Perro,Rigidez articular,Ojos secos,,,,No
+Gato,Convulsiones,Heces con sangre,Temblores,,,Yes
+Gato,Tos,,,,,Yes
+Gato,Rinorrea,Vómito ocasional de bolas de pelo,Pérdida de peso leve,Heces secas,Estornudos,No
+Perro,Depresión,Convulsiones,,,,Yes
+Perro,Parálisis,Convulsiones,Babeando,Desorientación,Temblores,Yes
+Gato,Heces secas,Conjuntivitis leve,Rinorrea,,,No
+Gato,Pérdida de peso leve,,,,,No
+Gato,Heces con sangre,,,,,Yes
+Gato,Respiración ruidosa,Letargo,Heces con sangre,Córnea opaca,Jadeo,Yes
+Gato,Conjuntivitis leve,Aumento del rascado,,,,No
+Perro,Sangre en el vómito,,,,,Yes
+Perro,Piel seca,Diarrea leve,Mal aliento,Rigidez articular,,No
+Perro,Ojos secos,Rigidez articular,Mal aliento,Diarrea leve,,No
+Perro,Diarrea leve,,,,,No
+Gato,Jadeo,,,,,Yes
+Perro,Pérdida de peso,Parálisis,,,,Yes
+Gato,Temblores,Encías pálidas,Babeo excesivo,Vómito con sangre,Córnea opaca,Yes
+Perro,Aumento de la sed,Ojos secos,Diarrea leve,Piel seca,,No
+Perro,Fiebre,Babeando,Glucemia alta,,,Yes
+Gato,Aumento del rascado,Conjuntivitis leve,Estornudos,Vómito ocasional de bolas de pelo,,No
+Perro,Diarrea leve,Piel seca,Rigidez articular,Aumento de la sed,Mal aliento,No
+Gato,Encías pálidas,Heces con sangre,Jadeo,Respiración ruidosa,Convulsiones,Yes
+Gato,Conjuntivitis leve,Vómito ocasional de bolas de pelo,Aumento del rascado,Heces secas,Pérdida de peso leve,No
+Gato,Conjuntivitis leve,Vómito ocasional de bolas de pelo,Pérdida de peso leve,Heces secas,,No
+Perro,Rigidez articular,Mal aliento,Piel seca,Aumento de la sed,,No
+Gato,Aumento del rascado,,,,,No
+Perro,Sed excesiva,Ojos vidriosos,Desorientación,Jadeo,,Yes
+Gato,Heces secas,Aumento del rascado,Pérdida de peso leve,,,No
+Gato,Vómito con sangre,Convulsiones,Tos,Jadeo,Córnea opaca,Yes
+Gato,Conjuntivitis leve,Aumento del rascado,Vómito ocasional de bolas de pelo,Rinorrea,Pérdida de peso leve,No
+Perro,Piel seca,Ojos secos,Mal aliento,Diarrea leve,Rigidez articular,No
+Gato,Rinorrea,Estornudos,Heces secas,Pérdida de peso leve,Conjuntivitis leve,No
+Perro,Aumento de la sed,Ojos secos,Rigidez articular,Diarrea leve,Piel seca,No
+Perro,Fatiga,Pérdida de peso,Depresión,Sed excesiva,Temblores,Yes
+Perro,Mal aliento,Aumento de la sed,Piel seca,,,No
+Perro,Jadeo,Fatiga,Temblores,Glucemia alta,,Yes
+Perro,Piel seca,Diarrea leve,Rigidez articular,Ojos secos,,No
+Gato,Jadeo,Respiración rápida,,,,Yes
+Gato,Letargo,Córnea opaca,Temblores,Respiración ruidosa,,Yes
+Perro,Rigidez articular,,,,,No
+Perro,Desorientación,Pérdida de peso,,,,Yes
+Gato,Aumento del rascado,Conjuntivitis leve,,,,No
+Gato,Rinorrea,Estornudos,Vómito ocasional de bolas de pelo,Pérdida de peso leve,,No
+Gato,Estornudos,Rinorrea,,,,No
+Perro,Rigidez articular,,,,,No
+Perro,Diarrea leve,,,,,No
+Gato,Encías pálidas,,,,,Yes
+Perro,Babeando,Desorientación,Ansiedad,Fatiga,,Yes
