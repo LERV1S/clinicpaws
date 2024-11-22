@@ -8,6 +8,7 @@
         @php
         $isReadonly = true; // Puedes cambiar esta variable según las necesidades
         @endphp
+            @role('Administrador|Veterinario|Empleado')
 
         <br>
         <hr class="my-6 border-gray-300 dark:border-gray-600" style="border-width: 3px;">
@@ -76,6 +77,7 @@
 
         </div>
         <!-- FIN DE LA PRIMERA PARTE-->
+        @endrole
 
         <br>
         <hr class="my-6 border-gray-300 dark:border-gray-600" style="border-width: 3px;">
@@ -487,6 +489,7 @@
             @endforeach
         </ul>
     </div>
+    
 
     <button onclick="scrollToTop()" class="fixed bottom-5 right-5 bg-blue-500 text-white rounded-full p-3 shadow-lg hover:bg-blue-700">
         ↑

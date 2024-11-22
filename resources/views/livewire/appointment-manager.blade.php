@@ -132,7 +132,7 @@
             <div class="mb-4">
                 <select wire:model.lazy="payment_method" class="input-field" required>
                     <option value="">Metodo de pago</option>
-                    <option value="">Efectivo</option>
+                    <option value="efectivo">Efectivo</option>
                     <option value="credit_card">Tarjeta de Credito</option>
                     <option value="paypal">PayPal</option>
                 </select>
@@ -162,7 +162,11 @@
             <div class="mb-4">
                 <select wire:model.lazy="payment_amount" class="input-field" required>
                     <option value="0">0 - En Proceso</option>
+
+                    @role('Administrador|Veterinario|Empleado')
                     <option value="50">50 - Pagado</option>
+                    @endrole
+
                 </select>
             </div>
     

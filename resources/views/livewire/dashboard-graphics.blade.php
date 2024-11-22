@@ -29,67 +29,78 @@
             });
         });
     </script>
-  <script>
-    // Script para el gráfico de Citas por Semana
+<script>
     document.addEventListener("DOMContentLoaded", function () {
         const weekData = @json($appointmentsByWeek); // Datos desde Livewire
 
-        const weekLabels = weekData.map(item => item.week); // Semanas
-        const weekTotals = weekData.map(item => item.total); // Totales de citas
+        const weekLabels = weekData.map(item => item.week); // Etiquetas de semanas (por ejemplo, "Semana 1 de Enero 2024")
+        const weekTotals = weekData.map(item => item.total); // Totales de citas por semana
 
         const ctx2 = document.getElementById('appointmentsByWeekChart').getContext('2d');
         new Chart(ctx2, {
-            type: 'line',
+            type: 'line', // Tipo de gráfico
             data: {
-                labels: weekLabels,
+                labels: weekLabels, // Etiquetas de semanas
                 datasets: [{
                     label: 'Citas por Semana',
-                    data: weekTotals,
-                    backgroundColor: 'rgba(153, 102, 255, 0.2)',
-                    borderColor: 'rgba(153, 102, 255, 1)',
+                    data: weekTotals, // Totales de citas por semana
+                    backgroundColor: 'rgba(153, 102, 255, 0.2)', // Color de fondo
+                    borderColor: 'rgba(153, 102, 255, 1)', // Color de borde
                     borderWidth: 1,
                     fill: true
                 }]
             },
             options: {
                 scales: {
-                    y: { beginAtZero: true }
+                    y: {
+                        beginAtZero: true
+                    },
+                    x: {
+                        ticks: {
+                            autoSkip: false, // Evita que se salten las etiquetas
+                            maxRotation: 45, // Rota las etiquetas si es necesario
+                            minRotation: 45
+                        }
+                    }
                 }
             }
         });
     });
 </script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Datos desde Livewire para Citas por Mes
-            const monthData = @json($appointmentsByMonth); // Datos desde el backend
-            const monthLabels = monthData.map(item => item.month); // Meses (e.g., "Enero 2024")
-            const monthTotals = monthData.map(item => item.total); // Totales de citas por mes
 
-            const ctx3 = document.getElementById('appointmentsByMonthChart').getContext('2d');
-            new Chart(ctx3, {
-                type: 'bar', // Tipo de gráfica
-                data: {
-                    labels: monthLabels, // Meses como etiquetas en el eje X
-                    datasets: [{
-                        label: 'Citas por Mes', // Etiqueta del dataset
-                        data: monthTotals, // Datos (totales de citas por mes)
-                        backgroundColor: 'rgba(54, 162, 235, 0.2)', // Color de fondo de las barras
-                        borderColor: 'rgba(54, 162, 235, 1)', // Color del borde de las barras
-                        borderWidth: 1 // Ancho del borde
-                    }]
-                },
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true // Comienza el eje Y en cero
-                        }
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Datos desde Livewire para Citas por Mes
+        const monthData = @json($appointmentsByMonth); // Datos desde el backend
+        const monthLabels = monthData.map(item => item.month); // Meses (e.g., "Enero 2024")
+        const monthTotals = monthData.map(item => item.total); // Totales de citas por mes
+
+        const ctx3 = document.getElementById('appointmentsByMonthChart').getContext('2d');
+        new Chart(ctx3, {
+            type: 'bar', // Tipo de gráfica
+            data: {
+                labels: monthLabels, // Meses como etiquetas en el eje X
+                datasets: [{
+                    label: 'Citas por Mes', // Etiqueta del dataset
+                    data: monthTotals, // Datos (totales de citas por mes)
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)', // Color de fondo de las barras
+                    borderColor: 'rgba(54, 162, 235, 1)', // Color del borde de las barras
+                    borderWidth: 1 // Ancho del borde
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true // Comienza el eje Y en cero
                     }
                 }
-            });
+            }
         });
-    </script>
+    });
+</script>
 
 <script>
     // Script para el gráfico de Citas por Estado
@@ -537,6 +548,8 @@
         Livewire.on('updateInvoiceRevenueChart', renderChart);
     });
 </script>
+<h1 class="text-2xl font-bold mb-4">Gráficos</h1>
+
 
     <div class="chart-container">
         <h1 class="text-xl font-bold mb-2">Citas por Veterinario</h1>

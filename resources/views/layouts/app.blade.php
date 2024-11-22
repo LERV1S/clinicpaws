@@ -27,7 +27,45 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
     <style>
+        .welcome-container {
+            font-family: 'Figtree', sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f8fafcc9; /* Blanco suave */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
+        .welcome-container h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #ffffff; /* Azul suave */            margin-bottom: 20px;
+        }
+        .welcome-container h2 {
+            color: #ffffff; /* Azul suave */            margin-bottom: 20px;
+        }
+        .welcome-container p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .welcome-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .welcome-container ul li {
+            font-size: 1rem;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .welcome-container ul li i {
+            color: #007bff;
+            margin-right: 8px;
+        }
          /* Estilo para limitar el tamaño de los gráficos */
     canvas {
         max-width: 400px; /* Ajusta el ancho máximo del gráfico */
@@ -269,44 +307,39 @@
 
         <!-- Sidebar -->
         <nav :class="sidebarVisible ? 'sidebar' : 'sidebar hidden'" class="sidebar">
-            <a href="{{ route('dashboard') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('dashboard') ? 'active' : '' }}">Tablero de inicio</a>
-
+            @role('Administrador|Veterinario|Empleado|Cliente')
+            <a href="{{ route('inicio') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('inicio') ? 'active' : '' }}">Inicio</a>
+            @endrole
+            @role('Administrador|Empleado')
+            <a href="{{ route('graphics') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('graphics') ? 'active' : '' }}">Gráficos</a>
+            @endrole
             @role('Administrador|Veterinario|Empleado|Cliente')
             <a href="{{ route('calendar') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('calendar') ? 'active' : '' }}">Calendario</a>
             @endrole
-
             @role('Administrador|Veterinario|Empleado|Cliente')
             <a href="{{ route('pets.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('pets.index') ? 'active' : '' }}">Mascotas</a>
             @endrole
-
             @role('Administrador|Veterinario|Empleado|Cliente')
             <a href="{{ route('appointments.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('appointments.index') ? 'active' : '' }}">Citas</a>
             @endrole
-
             @role('Administrador|Veterinario|Empleado')
             <a href="{{ route('inventories.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('inventories.index') ? 'active' : '' }}">Inventario</a>
             @endrole
-
             @role('Administrador|Veterinario|Cliente')
             <a href="{{ route('medical_records.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('medical_records.index') ? 'active' : '' }}">Expediente Medico</a>
             @endrole
-
             @role('Administrador|Empleado|Cliente')
             <a href="{{ route('invoices.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('invoices.index') ? 'active' : '' }}">Facturas</a>
             @endrole
-
             @role('Administrador|Cliente|Empleado')
             <a href="{{ route('tickets.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('tickets.index') ? 'active' : '' }}">Tickets</a>
             @endrole
-
             @role('Administrador|Veterinario|Empleado|Cliente')
             <a href="{{ route('prescriptions.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('prescriptions.index') ? 'active' : '' }}">Recetas</a>
             @endrole
-
             @role('Administrador')
             <a href="{{ route('employees.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('employees.index') ? 'active' : '' }}">Empleados</a>
             @endrole
-
             @role('Administrador')
             <a href="{{ route('veterinarians.index') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('veterinarians.index') ? 'active' : '' }}">Veterinarios</a>
             @endrole
@@ -316,9 +349,7 @@
             @role('Administrador|Empleado|Veterinario')
             <a href="{{ route('predict') }}" class="block py-2.5 px-4 transition-colors {{ request()->routeIs('predict') ? 'active' : '' }}">Predict</a>
             @endrole
-
         </nav>
-
         <!-- Main Content -->
         <div :class="sidebarVisible ? 'content' : 'content expanded'" class="content">
             <!-- Page Heading -->
