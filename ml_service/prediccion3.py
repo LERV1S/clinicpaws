@@ -8,7 +8,7 @@ from sklearn.pipeline import Pipeline
 app = Flask(__name__)
 
 # Cargar el modelo de machine learning entrenado con su pipeline completo
-with open('ml_service/animal_label_encoder.pkl', 'rb') as file:
+with open('animal_label_encoder.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Crear el preprocesador para las columnas de síntomas (usando TfidfVectorizer)
