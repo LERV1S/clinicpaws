@@ -484,7 +484,7 @@
                     <button wire:click="deleteMedicalRecord({{ $record->id }})" class="cta-button bg-red-500 hover:bg-red-600">Borrar</button>
                 </div>
                 @endrole
-                @role('Cliente')
+                @role('Veterinario|Cliente')
                 <div class="flex space-x-4">
                     <button wire:click="editMedicalRecord({{ $record->id }})" class="cta-button bg-green-500 hover:bg-green-600">Ver Expediente</button>
                 </div>
@@ -493,7 +493,7 @@
             @endforeach
         </ul>
     </div>
-    
+
 
     <button onclick="scrollToTop()" class="fixed bottom-5 right-5 bg-blue-500 text-white rounded-full p-3 shadow-lg hover:bg-blue-700">
         ↑
